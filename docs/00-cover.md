@@ -28,10 +28,10 @@ Proyecto:
 | Código | Apellidos y Nombres |
 |---|---|
 | U202416276 | Higa Kohatsu, Alonso Enrique |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+|  | Asmat Alminco, Martin Alejandro |
+|  | Huaman Oscco, Aldo Jesus |
+|  | Ortiz Laura, Leyla Alisson |
+|  | Tuesta Girón, Kiara Lucia |
 <br><br>
 
 **Periodo 202620**
