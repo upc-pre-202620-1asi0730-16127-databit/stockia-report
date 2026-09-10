@@ -133,6 +133,46 @@ Esta sección tiene como objetivo que nuestra startup conozca mejor a sus compet
 </table>
 
 ### **2.1.2. Strategies and Tactics Against Competitors**
+## Fortalezas
+
+- **Predicción de demanda con Machine Learning y clima**
+
+  A diferencia de Toteat y Panca, que se enfocan principalmente en reportes históricos y alertas sobre el inventario, StockIA analiza las ventas, la asistencia y las condiciones climáticas para predecir la demanda. Esto permite que el administrador pueda anticipar sus necesidades de insumos y evitar problemas de falta o exceso de stock.
+
+- **Notificaciones automáticas por diferentes canales**
+
+  StockIA busca diferenciarse mediante el envío de alertas por WhatsApp, SMS y correo electrónico. Las recomendaciones operativas pueden enviarse por WhatsApp, mientras que las alertas de mayor prioridad pueden enviarse mediante SMS. El correo permite mantener un registro de las notificaciones recibidas. De esta manera, el personal no necesita ingresar constantemente al sistema para revisar el estado del inventario.
+
+## Debilidades
+
+- **Poca presencia en el mercado**
+
+  Al ser una startup nueva, StockIA todavía no cuenta con una base de clientes ni con el reconocimiento que tienen empresas como Toteat y Panca. Para reducir esta desventaja, se pueden realizar pilotos gratuitos con algunos restaurantes. Esto permitiría obtener resultados reales y demostrar cómo la solución puede ayudar a reducir el desperdicio y los problemas de stock.
+
+- **Dependencia de datos históricos para el modelo de Machine Learning**
+
+  El modelo de predicción de StockIA necesita información sobre las ventas del restaurante para generar resultados más precisos. Durante las primeras etapas puede existir poca información disponible. Para solucionar esto, el sistema puede utilizar reglas básicas relacionadas con los niveles de stock y los patrones de venta mientras recopila suficientes datos para mejorar sus predicciones.
+
+## Oportunidades
+
+- **Integración de IoT y datos climáticos**
+
+  Existe una oportunidad para diferenciar StockIA mediante la integración de sensores IoT con información climática y predicción de demanda. Esto permitiría obtener información más completa sobre el funcionamiento del restaurante y mejorar la toma de decisiones relacionadas con el inventario.
+
+- **Creciente digitalización del sector gastronómico**
+
+  Cada vez más restaurantes están reemplazando métodos manuales como cuadernos y hojas de Excel por sistemas digitales de gestión. Esta situación representa una oportunidad para StockIA, especialmente en restaurantes que ya utilizan sistemas de venta pero todavía realizan la gestión de inventario y compras de manera manual o reactiva.
+
+## Amenazas
+
+- **Competidores establecidos que incorporen IA o IoT**
+
+  Empresas como Toteat y Panca ya cuentan con una gran cantidad de clientes y datos históricos. Esto podría facilitar que desarrollen funciones de predicción de demanda utilizando inteligencia artificial. Frente a esta situación, StockIA debe enfocarse en desarrollar rápidamente su producto y mantener una especialización en la gestión predictiva del inventario.
+
+- **Resistencia al cambio y costo del hardware IoT**
+
+  Algunos restaurantes pequeños pueden considerar que la instalación de sensores IoT representa un costo adicional o una implementación complicada. Para reducir esta barrera, StockIA puede ofrecer las funciones principales de predicción y notificaciones desde el plan básico. La integración de sensores puede mantenerse como una opción adicional para los restaurantes que necesiten un mayor nivel de monitoreo.
+
 ## **2.2. Interviews**
 ### **2.2.1. Interview Design**
 ### **2.2.2. Interview Recording**
