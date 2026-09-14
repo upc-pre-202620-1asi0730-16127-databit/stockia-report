@@ -21,6 +21,9 @@
 ### **4.6.1. Design-Level EventStorming**
 ### **4.6.2. Software Architecture Context Diagram**
 ### **4.6.3. Software Architecture Container Diagrams**
+
+<img src="/assets/chapter-4/C4/container-diagram.png" alt="C4 Diagram" width="1000"/> <br>
+
 ### **4.6.4. Software Architecture Components Diagrams**
 ## **4.7. Object-Oriented Design Software**
 ### **4.7.1. Class Diagrams**
