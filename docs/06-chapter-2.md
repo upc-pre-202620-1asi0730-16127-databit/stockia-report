@@ -175,6 +175,26 @@ Esta sección tiene como objetivo que nuestra startup conozca mejor a sus compet
 
 ## **2.2. Interviews**
 ### **2.2.1. Interview Design**
+Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar construir sobre hipótesis no verificadas, se diseñó un conjunto de preguntas de entrevista dirigidas al segmento objetivo definido en el Needfinding, que sería administradores, dueños o CEOs de restaurantes que gestionan de manera directa el inventario, las compras y las mermas de su negocio. El propósito de estas entrevistas no es validar la solución tecnológica en sí misma, sino profundizar en el problema real que enfrentan estos usuarios en su operación diaria —el descontrol de inventario, los quiebres de stock y el desperdicio de insumos perecibles—, así como comprender sus procesos actuales, las herramientas que ya utilizan y el nivel de frustración o impacto económico que perciben frente a estas dificultades. 
+
+**Segmento #1: Administradores o CEOs de restaurantes**
+
+1) ¿Cómo controlan actualmente la cantidad de insumos disponibles en el restaurante y cómo saben cuándo necesitan reponerlos?
+2) ¿Qué problemas suelen tener con el inventario, como falta de insumos, exceso de productos, desperdicios o vencimientos?
+3) ¿Con qué frecuencia necesitan agregar, modificar o retirar productos e insumos del inventario?
+4) ¿Qué información sobre el inventario considera más importante tener disponible para tomar decisiones rápidamente?
+5) ¿Cómo registran actualmente las recetas de los platos y las cantidades de cada ingrediente que utiliza cada uno?
+6) Cuando se vende un plato, ¿cómo se registra actualmente el consumo de los ingredientes utilizados para prepararlo?
+7) Cuando cambia una receta o la cantidad de alguno de sus ingredientes, ¿cómo gestionan actualmente ese cambio?
+8) ¿Cómo determinan actualmente cuánto preparar de cada plato antes de comenzar una jornada de trabajo?
+9) ¿Existen días, horarios, temporadas o eventos en los que la demanda de determinados platos aumente o disminuya? ¿Cómo lo identifican?
+10) ¿Han tenido situaciones en las que prepararon demasiado o muy poco de algún plato? ¿Qué consecuencias tuvo para el restaurante?
+11) ¿Qué información de las ventas anteriores utilizan actualmente para planificar la cantidad de alimentos e insumos que necesitarán en los próximos días?
+12) ¿Cómo deciden qué insumos comprar y en qué cantidad para los próximos días o semanas?
+13) ¿Qué decisiones relacionadas con el menú o el inventario le gustaría que un sistema pudiera recomendarle automáticamente?
+14) Si tuviera un sistema que analizara el historial de ventas, el inventario y los patrones de demanda, ¿qué tipo de información o alertas le gustaría recibir para ayudarle a tomar decisiones?
+
+
 ### **2.2.2. Interview Recording**
 ### **2.2.3. Interview Analysis**
 ## **2.3. Needfinding**
