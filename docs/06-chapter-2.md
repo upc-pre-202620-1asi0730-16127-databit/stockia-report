@@ -196,6 +196,60 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
 
 
 ### **2.2.2. Interview Recording**
+
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #1</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td>Carlos Marcelo Mansilla Rivero</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>24 años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Administra un chifa</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td>Surquillo</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416276_upc_edu_pe/IQB-osWrC_H7T6R5T7-N7eaXAZtcDu1Qq2xMipHLdc0nJas?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wZCxnN">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td>9:46 minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:00</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="../assets/chapter-2/screenshot-interview-to-carlos-mansilla.png" alt="screenshot-interview-to-carlos-mansilla" width="400">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ### **2.2.3. Interview Analysis**
 ## **2.3. Needfinding**
 ### **2.3.1. User Personas**
