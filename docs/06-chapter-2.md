@@ -247,10 +247,77 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
         <img src="../assets/chapter-2/screenshot-interview-to-carlos-mansilla.png" alt="screenshot-interview-to-carlos-mansilla" width="400">
       </td>
     </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+        La entrevista con el señor Carlos Mansilla permitió identificar que el restaurante gestiona actualmente su inventario y planificación de compras de forma manual, basándose principalmente en la experiencia del personal y en las ventas anteriores. Esto genera problemas como falta o exceso de insumos, desperdicios y vencimientos. También se evidenció que las recetas no están completamente estandarizadas y que el consumo de ingredientes no se descuenta automáticamente al realizar una venta. Por ello, existe interés en contar con un sistema que permita predecir la demanda, recomendar compras, controlar el stock y generar alertas para facilitar la toma de decisiones.
+      </td>
+    </tr>
   </tbody>
 </table>
 
-**Resumen descriptivo:** La entrevista con el señor Carlos Mansilla permitió identificar que el restaurante gestiona actualmente su inventario y planificación de compras de forma manual, basándose principalmente en la experiencia del personal y en las ventas anteriores. Esto genera problemas como falta o exceso de insumos, desperdicios y vencimientos. También se evidenció que las recetas no están completamente estandarizadas y que el consumo de ingredientes no se descuenta automáticamente al realizar una venta. Por ello, existe interés en contar con un sistema que permita predecir la demanda, recomendar compras, controlar el stock y generar alertas para facilitar la toma de decisiones.
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #2</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td>Ian Kimi Sevastian San Martín Cauti</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>24 años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Administrador</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td>Santiago de Surco</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20251i477_upc_edu_pe/IQBWZVhQuuENSJBt-5G44fTeAQ_862C3f6Sg2PX4aJMNPyY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=T1eWzl">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td>6:25 minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>9:47</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="../assets/chapter-2/screenshot-interview-to-kimi-san-martin.jpeg" alt="screenshot-interview-to-kimi-san-martin" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+        La entrevista con el señor Ian Kimi Sevastian San Martín Cauti permitió identificar que el restaurante gestiona actualmente su inventario y planificación de compras mediante una combinación de hojas de Excel y revisiones físicas de almacén, basándose principalmente en el historial de ventas anteriores, reservas y la experiencia del personal. Esto genera problemas operativos como la falta de insumos durante picos de demanda, exceso de productos, desperdicios, vencimientos y descuadres entre el stock registrado y el físico. Aunque cuentan con fichas de recetas y registran las ventas, el descuento de ingredientes no es automático, sino que se calcula manualmente al finalizar la jornada, lo que facilita la aparición de errores. Por ello, existe interés en contar con un sistema que proyecte la demanda, recomiende qué y cuánto comprar o preparar, y genere alertas sobre productos próximos a vencer, bajo stock y discrepancias en el inventario para optimizar la toma de decisiones.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### **2.2.3. Interview Analysis**
 
