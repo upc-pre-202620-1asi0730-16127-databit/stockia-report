@@ -165,6 +165,59 @@ Scenario: Stock is reduced when a dish is sold
 ```
 
 ### **5.1.4. Software Deployment Configuration**
+A continuación se describe la configuración de despliegue de cada producto digital de StockIA, partiendo desde los repositorios de código fuente hasta su publicación.
+#### Landing Page → Vercel
+
+1. El código fuente del Landing Page (HTML, CSS y JavaScript estático) reside en el repositorio `stockia-website`, rama `main`.
+
+2. Crear una cuenta en Vercel e iniciar sesión con la cuenta de GitHub de la organización del equipo, autorizando el acceso a los repositorios.
+
+3. Importar el repositorio desde el panel de Vercel mediante **"Add New Project" → "Import Git Repository"**.
+
+4. Configurar el proyecto con Framework Preset **"Other"**, al tratarse de un sitio estático sin proceso de build.
+
+<img src="/assets/chapter-5/2.jpeg" alt="C4 Diagram" width="500"/> <br>
+
+5. Establecer `develop` como rama de producción. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request hacia `develop` genera un preview deployment para revisión previa a la integración.
+
+6. Verificar el despliegue accediendo a la URL pública asignada por Vercel y registrarla en la documentación del proyecto.
+
+
+
+##### Evidencia del despliegue en Vercel
+
+La siguiente imagen muestra el panel de Vercel con el **Production Deployment** del Landing Page, donde se observa el estado `Ready`, la rama utilizada y el dominio público asignado.
+
+<img src="/assets/chapter-5/1.jpeg" alt="C4 Diagram" width="500"/> <br>
+
+##### Landing Page desplegada
+
+La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible mediante el dominio público proporcionado por Vercel**.
+
+<img src="/assets/chapter-5/3.jpeg" alt="C4 Diagram" width="500"/> <br>
+
+#### RESTful Web Services (ASP.NET Core + MySQL)
+
+El RESTful API requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en una plataforma compatible junto con su base de datos relacional.
+
+La configuración prevista contempla:
+
+1. Crear el servicio de base de datos MySQL.
+
+2. Registrar las variables de entorno de conexión (host, puerto, nombre de base de datos, usuario y contraseña) en la plataforma de despliegue.
+
+3. Referenciar dichas variables desde el archivo de configuración `appsettings.json` del proyecto en lugar de escribir las credenciales directamente en el código.
+
+4. La documentación de los endpoints quedará disponible públicamente vía Swagger UI.
+
+5. La configuración detallada y las URLs finales se documentarán en el Sprint correspondiente, una vez implementado el servicio.
+
+##### Configuración de variables de entorno
+
+La siguiente imagen muestra el apartado de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
+
+<img src="/assets/chapter-5/4.jpeg" alt="C4 Diagram" width="500"/> <br>
+
 ## **5.2. Landing Page, Services & Applications Implementation**
 ### **5.2.1. Sprint 1**
 #### **5.2.1.1. Sprint Planning 1**
