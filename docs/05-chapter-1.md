@@ -96,6 +96,25 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
 
 ## **1.2. Solution Profile**
 ### **1.2.1 Background and Problem Statement**
+En el día a día, la gestión de restaurantes especialmente cuando el negocio crece y suma nuevas sucursales se ha convertido en un verdadero dolor de cabeza logístico. Hoy en día, la mayoría de los locales intentan resolver su operatividad usando sistemas de punto de venta que, si bien cumplen su función transaccional al momento de cobrar, operan de forma aislada y no se comunican con la gestión real del almacén. Es crucial destacar que la solución a este problema no pasa por reemplazar el POS actual ni crear un nuevo sistema de ventas, sino por aprovechar la información que estos ya generan.  
+
+El desperdicio alimentario y la ineficiencia detrás de esta desconexión son problemas estadísticamente comprobados. Según el Programa de las Naciones Unidas para el Medio Ambiente (PNUMA, 2024), en América Latina se desperdician millones de toneladas de alimentos al año. En la industria restaurantera, diversos estudios revelan que los locales tiran a la basura entre el 4% y el 10% de todos los alimentos que compran (Gunders et al., 2017). A pesar de estas enormes pérdidas, los restaurantes se ven obligados a llevar el control en cuadernos o excels aislados porque no existe una "capa de inteligencia" accesible que reciba los datos de ventas de sus sistemas actuales, los procese mediante Machine Learning y les diga exactamente qué y cuándo comprar para evitar que falten ingredientes o se echen a perder.
+
+**5Ws & 2Hs**
+
+| Elemento | Preguntas | Definición |
+|---|---|---|
+| **(“Who?”) ¿Quién?** | ¿Quién sufre este problema? | Los administradores de los restaurantes y sucursales, quienes están en la "primera línea" administrando y lidiando con las compras, el inventario y el personal. |
+| **(“What?”) ¿Qué?** | ¿Cuál es el problema exacto? | Sufren de pérdidas económicas porque las herramientas de ventas actuales no les dan una visión operativa real. Al depender de un control de stock manual, se enfrentan a mermas invisibles ya que no existe un ecosistema que reciba el dato de la venta y descuente automáticamente los ingredientes usados. |
+| **(“Where?”) ¿Dónde?** | ¿Dónde ocurre el problema? | Nace en los almacenes y en el ajetreo de las cocinas de las sucursales, pero termina impactando directamente en la caja registradora y en la oficina de administración. |
+| **(“When?”) ¿Cuándo?** | ¿Cuándo sucede el problema? | Ocurre todos los días cada vez que el sistema de ventas emite un ticket sin que el inventario se entere, y explota en los momentos de crisis cuando descubren que falta un insumo clave y tienen que salir a comprarlo de urgencia. |
+| **(“Why?”) ¿Por qué?** | ¿Por qué ocurre este problema? | Porque las soluciones actuales se quedan solo en la transacción de la venta y mantienen el resto de los procesos logísticos desconectados. Los administradores no cuentan con una herramienta predictiva que se alimente de ese historial de ventas para recomendarles automáticamente su próxima compra. |
+| **(“How?”) ¿Cómo?** | ¿Cómo se evidencia el problema? | Se nota rápidamente en el descontrol de los almacenes, en los errores humanos al llenar los reportes semanales y en la frustración del administrador al detectar pérdidas de insumos por la falta de roles y permisos digitales en la cocina. |
+| **(“How Much?”) ¿Cuánto?** | ¿Cuánto impacto económico o de tiempo representa? | El impacto es enorme. Puede representar hasta un 25% en costos evitables solo por el desperdicio de comida perecible y las compras no planificadas. Además, un administrador llega a perder hasta el 15% de su jornada laboral tratando de cuadrar inventarios manualmente (Cullen, 2021). |
+
+#### Objetivo del proyecto:
+Nuestro objetivo principal es crear y lanzar una plataforma web (Web Application) respaldada por un API RESTful propio, diseñada para actuar como el "cerebro" operativo de los restaurantes. Nuestra plataforma está diseñada para recibir los datos de ventas, vincularlos con las recetas y descontar los ingredientes por sí sola. Adicionalmente, el sistema usará esa información histórica y modelos de Machine Learning para predecir la demanda futura.
+
 
 ### 1.2.2. **Lean UX Process**
 
