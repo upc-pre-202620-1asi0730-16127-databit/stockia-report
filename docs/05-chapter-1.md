@@ -162,4 +162,3 @@ We’ll know we are successful when we see los siguientes comportamientos medibl
 ## **1.3. Target Segments**
 ### Segmento #1 
 
-### Segmento #2 
