@@ -250,7 +250,14 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
   </tbody>
 </table>
 
+**Resumen descriptivo:** La entrevista con el señor Carlos Mansilla permitió identificar que el restaurante gestiona actualmente su inventario y planificación de compras de forma manual, basándose principalmente en la experiencia del personal y en las ventas anteriores. Esto genera problemas como falta o exceso de insumos, desperdicios y vencimientos. También se evidenció que las recetas no están completamente estandarizadas y que el consumo de ingredientes no se descuenta automáticamente al realizar una venta. Por ello, existe interés en contar con un sistema que permita predecir la demanda, recomendar compras, controlar el stock y generar alertas para facilitar la toma de decisiones.
+
 ### **2.2.3. Interview Analysis**
+
+**Entrevista 1:** Lo que se pudo sacar de esta entrevista es de que el principal problema del restaurante se encuentra en la gestión manual del inventario y la planificación de la producción, ya que las decisiones dependen principalmente de la experiencia del personal y de una revisión aproximada de las ventas. Esto puede generar compras innecesarias, falta de insumos durante las horas de mayor demanda, desperdicio de alimentos y pérdidas por vencimiento. También, destaca la falta de estandarización de las recetas y la ausencia de un descuento automático de ingredientes al registrar una venta, lo que dificulta conocer el stock real. Por otro lado, se identifican patrones de demanda relacionados con fines de semana, feriados, horarios de almuerzo y determinados platos de mayor salida. Lo más importante es que existe una necesidad clara de contar con información más precisa para anticiparse a la demanda, controlar mejor los insumos y reducir pérdidas, por lo que un sistema que genere predicciones, alertas y recomendaciones de compra podría apoyar directamente la toma de decisiones del restaurante.
+
+
+
 ## **2.3. Needfinding**
 ### **2.3.1. User Personas**
 ### **2.3.2. User Task Matrix**
