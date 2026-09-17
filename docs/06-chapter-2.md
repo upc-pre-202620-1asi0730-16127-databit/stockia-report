@@ -318,6 +318,62 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
   </tbody>
 </table>
 
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #3</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td>Harold Benji</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>23 años</td>
+    </tr>
+    <tr>
+      <td><b>Segmento</b></td>
+      <td>Ganadero</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href= "https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416272_upc_edu_pe/IQC0cRwH-puJRrvBJ6T3KrPqAQV8QSQRVmGPklzGhRSnmAw?e=5AZ4LI">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td>7:43 min</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>10:30 </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+         <img src="../assets/chapter-2/screentshot-interview-to-harold-san-borja.png" alt="screenshot-interview-to-harold-benigno" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+        Harold es un profesional de 23 años el cual ha estado en este rubro por un par de años en el mercado. Considera importante el uso de una aplicación que le ahorre el tiempo, sin embargo, cree que es un poco complicado debido a que el control con respecto a vacunas y contacto con profesionales como podría ser veterinarios es un poco tedioso y al ser una solución un poco ambiciosa cree que requiere bastante trabajo para que esté bien implementado. Por otro lado, considera que es una buena oportunidad de mejora, ya que normalmente utilizaban hojas de cálculo para registros e incluso escrituras de hoja a mano para recuerdos breves.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### **2.2.3. Interview Analysis**
 
@@ -325,6 +381,7 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
 
 **Entrevista 2:** A partir de la entrevista con el administrador Ian Kimi Sevastian San Martín Cauti, se evidencia que el restaurante enfrenta desajustes significativos al gestionar su stock mediante revisiones físicas y hojas de Excel, basando la proyección de compras en estimaciones empíricas e historiales de ventas. Esta falta de automatización deriva en picos de desabastecimiento, merma por productos vencidos y descuadres entre el inventario registrado y el real. Además, aunque las recetas se encuentran documentadas en fichas, el consumo de ingredientes no se descuenta en tiempo real al vender un plato, sino que se calcula manualmente al cierre del día, favoreciendo el margen de error. Para solucionar esta brecha operativa, el negocio requiere una herramienta tecnológica que no solo organice el stock, sino que ayude a anticipar la demanda de almuerzos y feriados mediante alertas de reabastecimiento y vencimiento, así como sugerencias automatizadas sobre qué insumos priorizar y en qué cantidad comprar o preparar para reducir pérdidas.
 
+**Entrevista 3:** La entrevista con Harold, joven profesional del sector ganadero, revela la necesidad de optimizar los tiempos de gestión y la oportunidad de mejora frente al uso tradicional de hojas de cálculo y apuntes a mano. Si bien la idea de una aplicación le parece importante y valiosa, resalta los retos operativos en su sector, tales como el control detallado de vacunas y la interacción con profesionales como veterinarios. Desde su perspectiva, al tratarse de un sistema con funcionalidades ambiciosas, requerirá de un desarrollo minucioso para garantizar que su implementación se adapte correctamente a las tareas tediosas y específicas que enfrentan a diario.
 
 ## **2.3. Needfinding**
 Esta parte del trabajo nos permitirá conocer de manera más cercana las necesidades, problemas y dificultades que enfrentan los responsables de la gestión de un restaurante en sus actividades diarias. A partir de las entrevistas y la información recopilada, podremos identificar oportunidades de mejora y definir qué funcionalidades debería ofrecer nuestra solución para responder a problemas reales.
