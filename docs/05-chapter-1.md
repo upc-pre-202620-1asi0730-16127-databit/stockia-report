@@ -182,5 +182,21 @@ We’ll know we are successful when we see los siguientes comportamientos medibl
 
 
 ## **1.3. Target Segments**
-### Segmento #1 
+
+Luego de aplicar el proceso de validación y empatizar con los dolores operativos del rubro gastronómico, StockIA ha delimitado su alcance para enfocarse en un único segmento objetivo. Hemos identificado que la verdadera transformación digital debe ocurrir en la "primera línea" operativa, es decir, en manos de quienes gestionan el negocio día a día. 
+
+
+**Segmento Único: Administradores de Restaurante y Jefes de Sucursal** 
+
+StockIA se enfoca exclusivamente en los administradores de restaurante y jefes de sucursal, profesionales dinámicos de 25 a 45 años que dependen de sus dispositivos para gestionar la operación diaria. Estos usuarios sufren un alto estrés operativo al invertir entre 8 y 10 horas semanales en conteos manuales de inventario y lidiar con un sector que desperdicia entre el 4% y el 10% de sus insumos (Lopez, 2025). Al no contar con una herramienta que deduzca automáticamente los ingredientes vendidos, se ven obligados a realizar compras basadas en la intuición (Lopez, 2025), lo que genera constantes quiebres de stock o mermas por excesos que impactan negativamente la rentabilidad financiera del negocio.  Para resolver estos dolores, estos administradores buscan en StockIA una plataforma que actúe como un asistente ágil y proactivo. Su expectativa principal es que el sistema reciba los datos de ventas y descuente automáticamente los insumos sin requerir intervención manual. Además, necesitan aprovechar la tecnología de Machine Learning para recibir alertas predictivas de reposición directamente en canales rápidos como WhatsApp, todo esto operando bajo un entorno digital seguro que les permita delegar responsabilidades en la cocina mediante una estricta configuración de roles y permisos.
+
+| Característica | Descripción |
+|---|---|
+| **Edad** | Predominantemente entre los 25 y 45 años |
+| **Ubicación** | Zonas urbanas del Perú |
+| **Género** | Masculino y Femenino |
+| **Nivel socioeconómico** | medio - alto |
+| **Perfil tecnológico** | Intermedio - alto |
+| **Dispositivos Utilizados** | Teléfonos inteligentes, ordenadores y dispositivos IOT |
+| **Objetivo principal** | Monitorear y optimizar los procesos en los restaurantes o sitios de comida. |
 
