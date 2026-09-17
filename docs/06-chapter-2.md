@@ -259,7 +259,16 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
 
 
 ## **2.3. Needfinding**
+Esta parte del trabajo nos permitirá conocer de manera más cercana las necesidades, problemas y dificultades que enfrentan los responsables de la gestión de un restaurante en sus actividades diarias. A partir de las entrevistas y la información recopilada, podremos identificar oportunidades de mejora y definir qué funcionalidades debería ofrecer nuestra solución para responder a problemas reales.
+
 ### **2.3.1. User Personas**
+
+**Segmento 1:** Administradores y dueños de restaurantes que sufren por las pérdidas financieras generadas por el descontrol de sus inventarios y el desperdicio de insumos perecibles. 
+
+<p align="center"><img src="../assets/chapter-2/user-persona.png" alt="STOCKIA user persona" width="500">
+
+Carlos Gómez representa al administrador o jefe de operaciones de un restaurante quien se encarga de supervisar el funcionamiento diario, controlar los insumos y coordinar con proveedores y personal. Su principal necesidad es tener un mayor control del inventario y anticiparse a la demanda, evitando quiebres de stock, desperdicios y compras innecesarias. Busca soluciones digitales que sean fáciles de utilizar y que le permitan ahorrar tiempo, mejorar la eficiencia y mantener la rentabilidad del restaurante.
+
 ### **2.3.2. User Task Matrix**
 ### **2.3.3. User Journey Mapping**
 ### **2.3.4. Empathy Mapping**
