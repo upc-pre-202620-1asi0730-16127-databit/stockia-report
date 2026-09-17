@@ -316,6 +316,13 @@ El User Task Matrix nos ayudará a organizar las principales actividades que rea
 El cuadro muestra que las tareas más importantes para Carlos están relacionadas principalmente con el control y disponibilidad de los insumos. Revisar el inventario, detectar productos próximos a vencer o con stock bajo, planificar las compras y controlar las mermas son actividades de alta importancia y varias se realizan diariamente o durante la semana. En cambio, registrar nuevos insumos y analizar la demanda tienen una frecuencia menor o variable. Esto evidencia que existe una oportunidad para automatizar y facilitar las tareas de mayor frecuencia e importancia, especialmente mediante alertas de stock, vencimientos, control de mermas y recomendaciones para la planificación de compras.
 
 ### **2.3.3. User Journey Mapping**
+
+El User Journey Mapping nos ayudará en alinear las metas del usuario con los procesos operativos reales, permitiendo evidenciar no solo las tareas y canales involucrados, sino también la curva emocional, los puntos de fricción y las oportunidades actuales para optimizar la experiencia global.
+
+<p align="center"><img src="../assets/chapter-2/Customer-journey-map-1.png" alt="STOCKIA user journey mapping" width="500">
+
+Se evidencia una curva emocional negativa constante y descendente, que va de los nervios a la preocupación y la frustración, provocada por la dependencia de procesos manuales, ya sea por conteos visuales imprecisos, falta de deducción automática de insumos por comanda y compras basadas en la intuición. Ante estas fricciones operativas, el mapa identifica oportunidades de alto impacto tecnológico, tales como plataformas en tiempo real para visibilidad y descarga automática de ingredientes, alertas proactivas multicanal frente a mermas o quiebres de stock y algoritmos de inteligencia artificial para sugerir compras automatizadas que prevengan sobrecostos y desabastecimiento.
+
 ### **2.3.4. Empathy Mapping**
 ## **2.4. Big Picture Event Storming**
 ## **2.5. Ubiquitous Language**
