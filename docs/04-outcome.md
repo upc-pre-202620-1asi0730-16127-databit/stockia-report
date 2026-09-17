@@ -49,7 +49,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+            Durante el desarrollo del proyecto asumi un rol de desarrollador, en la creacion de diseños para la lading page. Además, con la elaboracion de la landing page, asumi el desplegar la pagina para que nuestros usuarios puedan acceder desde sus ordenares y mantenga el responsive. 
       <br><br>
       <b>
         Ortiz Laura, Leyla Alisson
