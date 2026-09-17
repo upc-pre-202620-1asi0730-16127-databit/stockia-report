@@ -270,6 +270,51 @@ Esta parte del trabajo nos permitirá conocer de manera más cercana las necesid
 Carlos Gómez representa al administrador o jefe de operaciones de un restaurante quien se encarga de supervisar el funcionamiento diario, controlar los insumos y coordinar con proveedores y personal. Su principal necesidad es tener un mayor control del inventario y anticiparse a la demanda, evitando quiebres de stock, desperdicios y compras innecesarias. Busca soluciones digitales que sean fáciles de utilizar y que le permitan ahorrar tiempo, mejorar la eficiencia y mantener la rentabilidad del restaurante.
 
 ### **2.3.2. User Task Matrix**
+El User Task Matrix nos ayudará a organizar las principales actividades que realiza Carlos en la gestión del restaurante, teniendo en cuenta la frecuencia con la que las realiza y el nivel de importancia que tienen para su trabajo, ya sea Baja, Media o Alta. Esto ayuda a identificar cuáles son las tareas que requieren mayor atención y en cuáles nuestra solución puede generar un mayor impacto.
+
+<table>
+  <tr>
+    <th rowspan="2">User task</th>
+    <th colspan="2">Carlos Gomez</th>
+  </tr>
+  <tr>
+    <th>Frecuencia</th>
+    <th>Importancia</th>
+  </tr>
+  <tr>
+    <td>Revisar inventario</td>
+    <td>Diaria</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>Registrar nuevos insumos</td>
+    <td>Según necesidad</td>
+    <td>media</td>
+  </tr>
+  <tr>
+    <td>Revisar productos por vencer y stock bajo</td>
+    <td>Diaria</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>Planificación de compras de suministros</td>
+    <td>Varias veces por semana</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>Analizar demanda</td>
+    <td>No tan frecuente</td>
+    <td>Media</td>
+  </tr>
+  <tr>
+    <td>Controlar mermas</td>
+    <td>Diaria/semanal</td>
+    <td>Alta</td>
+  </tr>
+</table>
+
+El cuadro muestra que las tareas más importantes para Carlos están relacionadas principalmente con el control y disponibilidad de los insumos. Revisar el inventario, detectar productos próximos a vencer o con stock bajo, planificar las compras y controlar las mermas son actividades de alta importancia y varias se realizan diariamente o durante la semana. En cambio, registrar nuevos insumos y analizar la demanda tienen una frecuencia menor o variable. Esto evidencia que existe una oportunidad para automatizar y facilitar las tareas de mayor frecuencia e importancia, especialmente mediante alertas de stock, vencimientos, control de mermas y recomendaciones para la planificación de compras.
+
 ### **2.3.3. User Journey Mapping**
 ### **2.3.4. Empathy Mapping**
 ## **2.4. Big Picture Event Storming**
