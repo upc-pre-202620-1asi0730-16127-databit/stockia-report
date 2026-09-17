@@ -324,5 +324,12 @@ El User Journey Mapping nos ayudará en alinear las metas del usuario con los pr
 Se evidencia una curva emocional negativa constante y descendente, que va de los nervios a la preocupación y la frustración, provocada por la dependencia de procesos manuales, ya sea por conteos visuales imprecisos, falta de deducción automática de insumos por comanda y compras basadas en la intuición. Ante estas fricciones operativas, el mapa identifica oportunidades de alto impacto tecnológico, tales como plataformas en tiempo real para visibilidad y descarga automática de ingredientes, alertas proactivas multicanal frente a mermas o quiebres de stock y algoritmos de inteligencia artificial para sugerir compras automatizadas que prevengan sobrecostos y desabastecimiento.
 
 ### **2.3.4. Empathy Mapping**
+
+En esta parte se busca profundizar en la comprensión emocional, cognitiva y conductual de un arquetipo o persona específica, en este caso el user persona. Al desglosar lo que la persona piensa, siente, ve, oye, dice y hace, este artefacto permite ir más allá de los datos demográficos básicos para identificar sus motivaciones profundas, frustraciones subyacentes y necesidades reales, asegurando que las decisiones de producto respondan a problemas humanos auténticos.
+
+<p align="center"><img src="../assets/chapter-2/emphaty-mapping.png" alt="STOCKIA empathy mapping" width="500">
+
+El entorno cotidiano de Carlos está marcado por la tensión operativa, donde observa desperdicio constante en la cocina y escucha reclamos de insumos faltantes de última hora o advertencias de proveedores sobre alzas de precios. Esto detona una conducta agotadora, obligándolo a realizar compras de emergencia a sobreprecio y a invertir horas no remuneradas contando ingredientes al cierre del turno. También experimenta una constante ansiedad por tirar productos vencidos, perder dinero y enfrentar descuadres en auditorías, sumado al estrés de revisar múltiples registros manuales. Como contraparte, sus ganancias esperadas apuntan a la rentabilidad y el alivio operativo, donde ahí entraría un inventario automatizado y confiable que minimice el error humano, le permita tomar decisiones de abastecimiento predictivas y devuelva el control financiero a su negocio.
+
 ## **2.4. Big Picture Event Storming**
 ## **2.5. Ubiquitous Language**
