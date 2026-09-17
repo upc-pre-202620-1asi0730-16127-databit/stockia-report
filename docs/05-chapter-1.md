@@ -61,17 +61,17 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
     </tr>
     <tr>
       <td width="30%" align="center" valign="middle">
-        <img src="../assets/chapter-1/img/" alt="Foto de " width="180" style="border-radius: 8px;">
+        <img src="../assets/chapter-1/aldo-huaman.jpeg" alt="Foto de Aldo Jesus Huaman" width="180" style="border-radius: 8px;">
         <br>
         <i></i>
       </td>
       <td width="70%" valign="top" style="padding-left: 20px;">
         <h3></h3>
-        <p><b>Código de estudiante: </b> </p>
-        <p><b>Edad: </b> </p>
-        <p><b>Carrera: </b> </p>
+        <p><b>Código de estudiante: u20231h067</b> </p>
+        <p><b>Edad: 20</b> </p>
+        <p><b>Carrera: Ingenieria de Software</b> </p>
         <br>
-        <p><b>Sobre mí:</b></p>
+        <p><b>Sobre mí: </b><br> Me llamo Aldo Jesus Huaman Oscco, estudio Ingeniería de Software y me apasiona el generar soluciones tecnologicas a problemas usuales en la sociedad. Tengo conocimientos en diversos campos del desarrollo del software como en arquitectura o analisis de datos. Me considero una persona comprometida y disciplinada. Dentro del equipo desarrollare y aportare conocimientos en todos los capos del desarrollo del proyecto.</b></p>
         <p></p>
       </td>
     </tr>
