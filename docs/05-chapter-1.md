@@ -2,6 +2,9 @@
 ## **1.1. Startup Profile**
 
 ### **1.1.1. Startup Description**
+DataBite Corp es una startup tecnológica innovadora que aunque su creacion es reciente su enfoque está en liderar la transformación digital del sector gastronómico en el país y Latinoamérica. Nuestro enfoque principal radica en el desarrollo de soluciones de software as a Service (SaaS) que integran analítica predictiva asistida por Machine Learning (ML) y tecnologías de Internet de las Cosas (IoT).
+
+Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas avanzadas para pequeñas y medianas cadenas de restaurantes, permitiendo optimizar sus operaciones y tomar decisiones basadas en datos en tiempo real. A través de nuestro producto estrella, "StockIA", buscamos resolver problemas críticos de la industria como el descontrol de inventarios, los quiebres de stock y las mermas financieras. Nos motiva generar un impacto directo tanto económico como ambiental, ayudando a las empresas a reducir el desperdicio de alimentos y a maximizar sus márgenes de rentabilidad, todo centralizado en un ecosistema web unificado, accesible y altamente escalable.
 
 ### **1.1.2. Team Member Profiles**
 
