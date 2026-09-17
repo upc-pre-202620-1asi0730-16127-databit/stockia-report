@@ -69,7 +69,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+      Durante el desarrollo del proyecto, demostré capacidad de aprendizaje e implementación técnica al liderar el diseño de los Style Guidelines y la Information Architecture, garantizando una Web App intuitiva que cumple con los sprints y el product backlog gracias a la integración del análisis de mi entrevista; asimismo, aseguré la calidad, mantenibilidad y trabajo colaborativo mediante la redacción de los apartados de Source Code Management , Source Code Style Guide & Conventions y Software Deployment Configuration bajo el flujo de GitFlow, manteniendo una actitud de mejora continua al iterar y refinar constantemente estos artefactos a partir de las validaciones y el feedback del equipo para cumplir con los outcomes del curso.
       <br><br>
     </td>
     <td style="text-align: justify; vertical-align: top;">
@@ -138,7 +138,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+      Durante el desarrollo del proyecto, ayudé a mantener un entorno de trabajo colaborativo participando activamente en las reuniones, coordinando la distribución de tareas y cumpliendo a tiempo con mis entregables para no retrasar al equipo. En la fase de UX Research y Lean UX, analicé la entrevista asignada para levantar hallazgos sobre la problemática del usuario y apoyar en la definición del User Persona y su Journey Map. Con base en esto, diseñé la Information Architecture y los Style Guidelines para definir la estructura y la línea gráfica de la Web App en los prototipos. Además, me encargué de la documentación técnica de Source Code Management, Style Guide & Conventions y Software Deployment Configuration usando GitFlow, iterando los artefactos según el feedback recibido para asegurar un trabajo completo y de calidad.
       <br><br>
     </td>
     <td style="text-align: justify; vertical-align: top;">
