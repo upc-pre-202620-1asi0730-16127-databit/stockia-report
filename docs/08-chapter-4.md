@@ -447,4 +447,51 @@ Esta decisión responde a la importancia de las notificaciones críticas, las cu
 ## **4.7. Object-Oriented Design Software**
 ### **4.7.1. Class Diagrams**
 ## **4.8. Database Design**
+En esta sección se presentan los diagramas de base de datos diseñados para asegurar la persistencia de la información en StockIA. La base de datos sigue un enfoque relacional, y el diseño se ha estructurado dividiéndolo por cada Bounded Context identificado, de manera que cada módulo gestiona sus propias tablas, columnas y relaciones (llaves primarias y foráneas). Esto facilita el mantenimiento, la escalabilidad y mantiene la coherencia con la arquitectura orientada a dominios (Domain-Driven Design).
+
 ### **4.8.1. Database Diagrams**
+
+#### Diagrama de Base de Datos General
+Este diagrama presenta una vista global de todas las tablas de la base de datos de StockIA y cómo se relacionan los diferentes contextos entre sí, mostrando la estructura completa del sistema relacional.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-general.png" alt="General Database Diagram" width="1000"/> <br>
+
+#### Identity & Access Management
+Este diagrama modela la persistencia de los usuarios, credenciales, roles y permisos. Permite controlar quién tiene acceso al sistema y qué acciones puede realizar, garantizando la seguridad en el acceso de administradores y empleados.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-identity-access-management.png" alt="Identity Access Management DB Diagram" width="1000"/> <br>
+
+#### Restaurant Registration
+Este diagrama se enfoca en la información fundamental de los restaurantes o negocios registrados en la plataforma. Guarda los detalles de configuración, ubicaciones y datos principales que identifican a cada cliente.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-restaurant-registration.png" alt="Restaurant Registration DB Diagram" width="1000"/> <br>
+
+#### Subscriptions & Payments
+Aquí se detallan las tablas responsables de gestionar los planes de pago, suscripciones (Esencial, Profesional, IoT Completo) y el historial de transacciones o pagos de los restaurantes, permitiendo el control de la facturación.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-subscriptions-payments.png" alt="Subscriptions Payments DB Diagram" width="1000"/> <br>
+
+#### Stock Management & Sales Intake
+Es uno de los diagramas centrales, responsable de gestionar el inventario en tiempo real. Modela los insumos, lotes, movimientos de entrada y salida, así como el registro de las ventas que impactan directamente en la reducción de stock.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-stock-management-sales-intake.png" alt="Stock Management DB Diagram" width="1000"/> <br>
+
+#### Recipes Management
+Este contexto gestiona la composición de los platos. El diagrama de base de datos muestra cómo se relacionan los platos del menú con los insumos del inventario (recetas), permitiendo el descuento automático de stock cuando se registra una venta.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-recipes-management.png" alt="Recipes Management DB Diagram" width="1000"/> <br>
+
+#### ML & Recommendations
+Este diagrama estructura la información necesaria para los algoritmos de predicción de demanda e inteligencia artificial. Almacena el historial de predicciones, los patrones identificados y las recomendaciones de compras generadas para el restaurante.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-ml-recommendations.png" alt="ML Recommendations DB Diagram" width="1000"/> <br>
+
+#### Notifications & Messaging
+Diseñado para almacenar el historial de notificaciones y alertas críticas (stock bajo, productos por vencer, alertas IoT). Maneja el estado de entrega y los canales por los que fueron enviados (WhatsApp, Email, SMS).
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-notifications-messaging.png" alt="Notifications Messaging DB Diagram" width="1000"/> <br>
+
+#### Analytics & Dashboard
+Este diagrama soporta las consultas y métricas agregadas que se visualizan en el Dashboard principal. Almacena resúmenes estadísticos, reportes de mermas y ahorro, optimizando las consultas de lectura para una carga rápida de los gráficos.
+
+<img src="/assets/chapter-4/diagrama-base-datos/bd-analytics-dashboard.png" alt="Analytics Dashboard DB Diagram" width="1000"/> <br>
