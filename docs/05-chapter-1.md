@@ -42,17 +42,17 @@
     </tr>
     <tr>
       <td width="30%" align="center" valign="middle">
-        <img src="../assets/chapter-1/img/" alt="Foto de " width="180" style="border-radius: 8px;">
+        <img src="../assets/chapter-1/kiara-tuesta.jpeg" alt="Foto de Kiara Tuesta" width="180" style="border-radius: 8px;">
         <br>
         <i></i>
       </td>
       <td width="70%" valign="top" style="padding-left: 20px;">
         <h3></h3>
-        <p><b>Código de estudiante: </b> </p>
-        <p><b>Edad: </b> </p>
-        <p><b>Carrera: </b> </p>
+        <p><b>Código de estudiante: u20251i477</b> </p>
+        <p><b>Edad: 21</b> </p>
+        <p><b>Carrera: Ingeniería de Software</b> </p>
         <br>
-        <p><b>Sobre mí:</b></p>
+        <p><b>Sobre mí:</b><br> Me llamo Kiara Lucia Tuesta Girón, estudio Ingeniería de Software y me apasiona la tecnología y aprender cosas nuevas constantemente. Tengo conocimientos en C++, Python y muchas ganas de seguir aprendiendo. Me considero una persona curiosa, responsable, adaptable a los cambios y con una buena gestión del tiempo para cumplir mis metas. En los proyectos de la universidad disfruto involucrarme en todo el proceso, desde la documentación hasta la programación y búsqueda de soluciones en equipo.</p>
         <p></p>
       </td>
     </tr>
