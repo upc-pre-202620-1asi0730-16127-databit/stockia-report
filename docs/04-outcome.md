@@ -118,7 +118,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+            Durante el desarrollo del proyecto, participe en las reuniones y aporte ideas para un trabajo remoto estable, coordinando y apoyando en la distribución de tareas, cumpliendo a tiempo con mis entregables para no retrasar al equipo. En la fase del modelado de las HU, priorize la informacion otorgada por mi equipo sobre los entrevistados para poder modelar posteriormente las task del equipo. Con base en esto, diseñe los modelos de la landing page en wireframes y mockups que nos ayudaron a poder desarrollar la website para su posterior despliegue en vercel. Además, me encargue de aplicar y orientar el uso de la metodologia agil SCRUM para el trabajo colaborativo.
       <br><br>
       <b>
         Ortiz Laura, Leyla Alisson
