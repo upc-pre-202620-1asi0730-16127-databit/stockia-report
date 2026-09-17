@@ -47,7 +47,7 @@
         <i></i>
       </td>
       <td width="70%" valign="top" style="padding-left: 20px;">
-        <h3></h3>
+        <h3>Kiara Lucia Tuesta Girón</h3>
         <p><b>Código de estudiante: u20251i477</b> </p>
         <p><b>Edad: 21</b> </p>
         <p><b>Carrera: Ingeniería de Software</b> </p>
