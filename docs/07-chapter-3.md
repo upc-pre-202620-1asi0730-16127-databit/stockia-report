@@ -972,6 +972,20 @@ Entonces guarda un registro con fecha, canal y contenido.
 | 50 | **RNF10** | Textos traducibles centralizados en un solo archivo | Como equipo de desarrollo, quiero que todos los textos traducibles vivan en un único archivo, para actualizar el contenido sin editar cada página. | 1 |
 
 </br>
+<p align="center">
+  <img src="../assets/chapter-3/Jira-Epics.png" width="500" alt="Epicas"/>
+  <br/><i>Artefacto: Jira para Epics</i>
+</p>
+
+<p align="center">
+  <img src="../assets/chapter-3/Jira-HU.png" width="500" alt="Historias de Usuario"/>
+  <br/><i>Artefacto: Jira para User Storys</i>
+</p>
+
+<p align="center">
+  <img src="../assets/chapter-3/Jira-Backlog.png" width="500" alt="Product Backlog"/>
+  <br/><i>Artefacto: Jira para Backlog Priorizado</i>
+</p>
 
 >Acceso a artefacto Jira para el desarrollo de Backlog
 <https://laplaceho-22.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&groupBy=none&atlOrigin=eyJpIjoiOGVhOTM0YjRkNzZkNGEzZWExMmY0ZmQ4MTU1NTcyYmQiLCJwIjoiaiJ9>
