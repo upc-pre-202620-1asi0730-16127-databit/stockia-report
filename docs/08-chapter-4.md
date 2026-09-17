@@ -72,6 +72,8 @@ Los colores semánticos se utilizan principalmente en alertas de inventario y fu
 
 Cada color semántico cuenta además con una variante `light` para utilizarse como fondo de badges y alertas.
 
+<img src="/assets/chapter-4/styleguidelines/1.jpeg" alt="C4 Diagram" width="500"/> <br>
+
 ---
 
 ## Spacing
@@ -161,6 +163,9 @@ Para mejorar la accesibilidad visual se utiliza:
 - Texto secundario `--text-muted (#5B6B66)` para mantener una lectura clara.
 - Los estados críticos utilizan color + texto + ícono simultáneamente, evitando depender únicamente del color para transmitir información.
 
+<img src="/assets/chapter-4/styleguidelines/2.jpeg" alt="C4 Diagram" width="1000"/> <br>
+
+
 ---
 
 ## **4.2. Information Architecture**
@@ -238,6 +243,9 @@ Se utiliza en:
 - Las predicciones de demanda organizadas por día de la semana (US25).
 - Las alertas ordenadas según urgencia y proximidad del vencimiento (US22 y US23).
 
+<img src="/assets/chapter-4/styleguidelines/3.jpeg" alt="C4 Diagram" width="1000"/> <br>
+
+
 ---
 ### **4.2.2. Labeling Systems**
 Se definieron etiquetas para representar cada conjunto de información dentro del producto, priorizando términos simples y directos.
@@ -256,6 +264,9 @@ El objetivo es que el usuario pueda asociar rápidamente cada etiqueta con su co
 | Gestión de accesos | **Roles y Permisos** | Asignación de Administrador / Empleado (US24) |
 | Planes de pago | **Planes / Precios** | Planes Esencial, Profesional e IoT Completo (US16) |
 | Impacto ambiental | **Sostenibilidad y Gamificación** | Métricas de reducción de desperdicio y logros de equipo (US23) |
+
+<img src="/assets/chapter-4/styleguidelines/4.jpeg" alt="C4 Diagram" width="1000"/> <br>
+
 
 ---
 ### **4.2.3. SEO Tags and Meta Tags**
@@ -412,6 +423,9 @@ En dispositivos móviles:
 - Se priorizan los accesos rápidos a **Dashboard** y **Alertas**.
 
 Esta decisión responde a la importancia de las notificaciones críticas, las cuales también pueden enviarse mediante **WhatsApp (US27 / US28)**.
+
+<img src="/assets/chapter-4/styleguidelines/5.jpeg" alt="C4 Diagram" width="1000"/> <br>
+
 
 ## **4.3. Landing Page UI Design**
 ### **4.3.1. Landing Page Wireframe**
