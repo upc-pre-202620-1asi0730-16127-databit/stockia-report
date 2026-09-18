@@ -507,6 +507,15 @@ Para finalizar, se mostrará una demostración del avance sobre la Landing Page 
 </p>
 
 #### **5.2.1.6. Services Documentation Evidence for Sprint Review**
+Para este Sprint, se han implementado y documentado los puntos de interacción de la Landing Page. Aunque el almacenamiento persistente será parte de un Sprint posterior, se ha programado la lógica de captura, validación y respuesta visual en el frontend para el siguiente servicio simulado:
+
+| Endpoint / Interacción | Acción (HTTP) | Campos del formulario | Descripción del Response |
+| :--- | :---: | :--- | :--- |
+| `about.html#contactForm` | **POST (Mock)** | Nombre*, Restaurante, Correo*, Mensaje (`*` obligatorios vía `required`) | **202 Accepted (simulado)**: `preventDefault()` bloquea el envío real, el botón cambia a "✓ Enviado" (fondo de éxito) y se deshabilita 3 segundos; luego el formulario se resetea (`form.reset()`) automáticamente. |
+
+* **URL del Repositorio de Landing Page:** https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website
+* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app/about.html#contacto
+
 #### **5.2.1.7. Software Deployment Evidence for Sprint Review**
 #### **5.2.1.8. Team Collaboration Insights during Sprint**
 ## **5.3. Validation Interviews**
