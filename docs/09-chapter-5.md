@@ -517,6 +517,25 @@ Para este Sprint, se han implementado y documentado los puntos de interacción d
 * **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app/about.html#contacto
 
 #### **5.2.1.7. Software Deployment Evidence for Sprint Review**
+El proceso de despliegue para el Sprint 1 priorizó una infraestructura de hosting estático en **Vercel**, aprovechando su infraestructura global (CDN) para garantizar tiempos de carga óptimos para la Landing Page. Se priorizó la automatización para permitir iteraciones rápidas sobre el diseño y el contenido informativo orientado a los segmentos objetivo.
+
+**Actividades de Despliegue Realizadas**
+* Configuración del proyecto en Vercel, vinculado al repositorio `upc-pre-202620-1asi0730-16127-databit/stockia-website` para despliegues automáticos.
+* Despliegue continuo activado en cada push a la rama `develop`, publicado en: **[pendiente de confirmar URL de Vercel del repositorio de la organización]**
+* Verificación de las 4 páginas del sitio (`index.html`, `features.html`, `pricing.html`, `about.html`) en el dominio de Vercel.
+
+**Evidencia Deploy: Landing Page - Responsive**
+<p align="center">
+  <img src="../assets/chapter-5/deploy-desktop-index.png" width="500" alt="Landing Page Desplegada"/>
+  <br/><i>Landing Page Desplegada</i>
+</p>
+
+**Evidencia Deploy: Landing Page Mobile - Responsive**
+<p align="center">
+  <img src="../assets/chapter-5/deploy-mobile-index.png" width="200" alt="Landing Page Desplegada - Mobile"/>
+  <br/><i>Landing Page Desplegada (vista móvil, 390px)</i>
+</p>
+
 #### **5.2.1.8. Team Collaboration Insights during Sprint**
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
