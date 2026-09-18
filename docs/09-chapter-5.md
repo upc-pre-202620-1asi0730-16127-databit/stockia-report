@@ -9,11 +9,13 @@ Para ello, se creó una organización pública que contiene los siguientes repos
 | Solución | Nombre del repositorio | Enlace |
 |---|---|---|
 | Report (documentación en Markdown) | `stockia-report` | https://github.com/upc-pre-202620-1asi0730-16127-stockia/stockia-report.git |
-| Website (Landing Page) | `stockia-website` |  |
-| WebApp (Frontend Web Application) | `stockia-webapp` |  |
-| Platform (RESTful Web Services) | `stockia-platform` |  |
+| Website (Landing Page) | `stockia-website` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website.git |
+| WebApp (Frontend Web Application) | `stockia-webapp` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-webapp.git |
+| Platform (RESTful Web Services) | `stockia-platform` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-platform-api.git |
 
 En el caso del repositorio **`stockia-platform`**, este incluye tanto el proyecto principal del API como los archivos de pruebas, tanto unitarias como de integración / aceptación.
+
+<img src="/assets/chapter-5/5.jpeg" alt="C4 Diagram" width="500"/> <br>
 
 ---
 
@@ -62,6 +64,10 @@ hotfix/stock-discount-error
 ```
 Todas las ramas se nombran en inglés y aplicando kebab-case.
 
+<img src="/assets/chapter-5/6.jpeg" alt="C4 Diagram" width="500"/> <br>
+
+
+
 ## Semantic Versioning
 
 El equipo aplica **Semantic Versioning 2.0.0** para el nombrado de releases, bajo el esquema `MAJOR.MINOR.PATCH`, donde **MAJOR** corresponde a cambios incompatibles con versiones anteriores del API, **MINOR** a nuevas funcionalidades compatibles con versiones anteriores, y **PATCH** a correcciones de errores compatibles. La primera versión funcional del producto será `v1.0.0`, correspondiente al entregable del Sprint 1.
@@ -88,6 +94,9 @@ fix(auth): correct expired token validation
 docs(chapter-iv): add information architecture section
 ```
 Este enfoque facilita la generación de historiales de cambios y mantiene un registro organizado y semántico del desarrollo.
+
+<img src="/assets/chapter-5/7.jpeg" alt="C4 Diagram" width="500"/> <br>
+
 
 ### **5.1.3. Source Code Style Guide & Conventions**
 Como norma general, todo el código desarrollado en StockIA se redacta completamente en inglés, incluyendo nombres de variables, funciones, clases, archivos y comentarios, garantizando consistencia, mantenibilidad y alineación con estándares internacionales. Los nombres deben ser descriptivos y alineados al Ubiquitous Language del dominio (por ejemplo: `ingredient`, `recipe`, `stockLevel`, `demandForecast`, `expirationDate`), evitando ambigüedad.
