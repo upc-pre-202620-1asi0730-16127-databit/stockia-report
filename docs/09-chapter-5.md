@@ -537,6 +537,34 @@ El proceso de despliegue para el Sprint 1 priorizó una infraestructura de hosti
 </p>
 
 #### **5.2.1.8. Team Collaboration Insights during Sprint**
+**Dinámica de Implementación**
+<p align="center">
+Durante este ciclo, el equipo DataBit (Martín, Alonso Higa Kohatsu, Aldo Jesús, Kiara Tuesta y Leyla Ortiz) concentró sus esfuerzos en el desarrollo Frontend y la Documentación Técnica de la Landing Page. El equipo trabajó de forma remota, distribuyendo tareas mediante un tablero Kanban (ver evidencia en 5.2.1.3) y centralizando el control de versiones en GitHub, bajo la organización <code>upc-pre-202620-1asi0730-16127-databit</code>.
+</p>
+
+**Analíticos de Colaboración**
+<p align="center">
+La carga de trabajo se distribuyó para asegurar que todos los integrantes participaran en la construcción de los artefactos visuales y técnicos:
+
+* Desarrollo Frontend: Aldo Jesús implementó la página `pricing.html` completa (navbar, hero, tarjetas de planes, FAQ, CTA y footer); Alonso Higa Kohatsu implementó `about.html`; Kiara Tuesta implementó `index.html`. Martín y Leyla Ortiz aportaron a la documentación técnica y artefactos de diseño (diagramas C4, wireframes).
+
+* Documentación y Calidad: Los cinco integrantes redactaron en paralelo los capítulos del informe mediante ramas `feature/chapter-1` a `feature/chapter-5`: Alonso Higa Kohatsu lideró los Capítulos I y II (Startup/Solution Profile, Competidores, Entrevistas, Needfinding); Aldo Jesús los Capítulos III y V (User Stories, Product Backlog, Sprint 1); Kiara Tuesta y Martín aportaron a los Capítulos I, II y IV (arquitectura, diagramas de clase y base de datos); Leyla Ortiz contribuyó a los Capítulos I a III (perfiles, entrevistas, Ubiquitous Language, Impact Mapping).
+
+* Control de Versiones: El equipo aplica **GitFlow** en los repositorios `stockia-report` y `stockia-website`, con `main` y `develop` como ramas estables y una rama `feature/chapter-X` por cada capítulo del informe (`feature/chapter-1` a `feature/chapter-5`) y `feature/pricing` para la Landing Page, integradas mediante Pull Requests revisados antes de cada merge (a la fecha, PR #1 en `stockia-report` y PR #1 en `stockia-website`, ambos mergeados). Se aplica Conventional Commits en ambos repositorios.
+</p>
+
+**Evidencia GitFlow: Graph**
+<p align="center">
+  <img src="../assets/chapter-5/Network-Grapho.png" width="200" alt="Graph"/>
+  <br/><i>Grafo de versiones para el gitflow</i>
+</p>
+
+**Evidencia GitFlow: Network**
+<p align="center">
+  <img src="../assets/chapter-5/Network.png" width="500" alt="Network"/>
+  <br/><i>Grafo de trabajo</i>
+</p>
+
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
 ### **5.3.2. Interview Recording**
