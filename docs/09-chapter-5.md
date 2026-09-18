@@ -320,6 +320,25 @@ La organización de líderes y colaboradores está directamente relacionada con 
 | **TOTAL** | | | | **Esfuerzo total estimado para el Sprint** | **162** | | |
 
 ---
+<p align="center">
+  <img src="../assets/chapter-5/Sprint.png" width="800" alt="Product Backlog Sprint 1"/>
+  <br/><i>Artefacto: Jira para Sprint 1 Priorizado</i>
+</p>
+<p align="center">
+  <img src="../assets/chapter-5/Jira-KP.png" width="800" alt="Tablero Kanban en proceso"/>
+  <br/><i>Artefacto: Jira para demostrar el tablero Kanban - Proceso -</i>
+</p>
+<p align="center">
+  <img src="../assets/chapter-5/Jira-KF.png" width="800" alt="Tablero Kanban finalizado"/>
+  <br/><i>Artefacto: Jira para demostrar el tablero Kanban - Finalizado —</i>
+</p>
+
+##### Resumen Técnico
+- **Total de Horas:** 162 horas.
+- **Distribución:** 2 semanas de desarrollo (considerando jornada laboral estándar).
+- **Entregable Principal:** Landing Page de StockIA (4 páginas), bilingüe ES/EN, responsiva, con formulario de solicitud de demo funcional.
+
+---
 
 #### **5.2.1.4. Development Evidence for Sprint Review**
 
