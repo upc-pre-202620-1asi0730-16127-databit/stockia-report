@@ -497,6 +497,29 @@ Este diagrama describe la arquitectura de clases del lado del cliente para la ge
 - **Limitaciones de Planes:** La vista `PlanLimitsView` requiere información sobre los límites de los planes. Dado que el esquema actual aún no cuenta con persistencia para los límites de planes, el contrato de la API deberá proveer estos datos provisionales antes de que el componente sea completamente funcional.
 
 <img src="/assets/chapter-4/class-diagrams/class-subscriptions-payments.png" alt="Class Diagram - Subscriptions and Payments" width="1000"/> <br>
+
+#### Identity & Access Management (Front-End)
+
+Este diagrama modela la estructura de componentes encargados de la autenticación, gestión de sesión y administración de usuarios de StockIA, que ahora soporta dos roles por restaurante: Administrador (CEO/dueño) y Trabajador. Incluye componentes como `LoginFormComponent`, `AccountProfileView` y `UserManagementView`, los cuales interactúan con `AuthController` y `AuthStore`.
+
+**Consideraciones y restricciones de diseño:**
+
+- **Seguridad e Integración:** El Front-End se comunica de forma exclusiva con el backend de StockIA. El backend es la única fuente autoritativa de autorización: la verificación de rol en el front-end es solo una conveniencia de experiencia de usuario, no un mecanismo de seguridad.
+- **Sincronización de Contratos:** El enumerador UserRole refleja exactamente el contrato de la tabla roles definida en la base de datos, con los valores `ADMINISTRATOR` y `WORKER`.
+
+<img src="/assets/chapter-4/class-diagrams/class-identity-management.png" alt="Class Diagram - Identity Management" width="1000"/> <br>
+
+#### Restaurant Registration (Front-End)
+
+Este diagrama modela la estructura de componentes encargados del registro y la gestión del perfil del restaurante asociado al único administrador de StockIA. Incluye componentes como `RestaurantRegistrationFormComponent` y `RestaurantProfileView`, los cuales interactúan con `RestaurantController` y `RestaurantStore`.
+
+**Consideraciones y restricciones de diseño:**
+
+- **Seguridad e Integración:** El Front-End se comunica de forma exclusiva con el backend de StockIA. Todos los endpoints de restaurante están protegidos: cada llamada requiere el JWT emitido por la sesión de Identity & Access, y el administratorId se deriva de ese token, nunca de un dato ingresado por el usuario.
+- **Sincronización de Contratos:** Los enumeradores BusinessType y RestaurantStatus reflejan exactamente el contrato actual definido en la base de datos. Actualmente no se modelan campos de sucursal en la vista, ya que StockIA registra un único restaurante por administrador, sin soporte multi-sucursal.
+
+<img src="/assets/chapter-4/class-diagrams/class-registration-restaurant.png" alt="Class Diagram - Registration Restaurant" width="1000"/> <br>
+
 ## **4.8. Database Design**
 En esta sección se presentan los diagramas de base de datos diseñados para asegurar la persistencia de la información en StockIA. La base de datos sigue un enfoque relacional, y el diseño se ha estructurado dividiéndolo por cada Bounded Context identificado, de manera que cada módulo gestiona sus propias tablas, columnas y relaciones (llaves primarias y foráneas). Esto facilita el mantenimiento, la escalabilidad y mantiene la coherencia con la arquitectura orientada a dominios (Domain-Driven Design).
 ## **4.8. Database Design**
