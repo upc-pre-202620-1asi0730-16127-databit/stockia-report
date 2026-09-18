@@ -223,6 +223,23 @@ La siguiente imagen muestra el apartado de **Environment Variables** de la plata
 Este primer ciclo de desarrollo se centró en establecer los pilares de la identidad digital de **StockIA**, integrando el esfuerzo colaborativo del equipo para entregar un sitio de marketing funcional inicial. Durante este Sprint, el equipo priorizó la captación de visitantes mediante una Landing Page de 4 páginas (`index.html`, `features.html`, `pricing.html`, `about.html`), completamente bilingüe (ES/EN) y responsiva, documentando cada fase desde la planificación hasta el despliegue final para validar la propuesta de valor frente al segmento elegido.
 
 #### **5.2.1.1. Sprint Planning 1**
+El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de StockIA. Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionaron las Historias de Usuario más prioritarias del Product Backlog (correspondientes a los Epics EP01–EP08) para definir el objetivo central de la iteración. A continuación, se presenta el cuadro resumen con los detalles y acuerdos de esta reunión:
+
+| **Sprint #** | Sprint 1 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 09/09/2026 |
+| **Time** | 10:00 am |
+| **Location** | Lima/Lima/Santiago de Surco/UPC |
+| **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
+| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra/ Huaman Oscco, Aldo Jesus/ Miranda Cordova, Jesus Angel Yvan/ Ortiz Laura, Leyla Alisson/ Toro Turpo, Ronal |
+| **Sprint Review Summary** | Al ser el primer Sprint, la revisión anterior corresponde a la fase de ideación: segmentos objetivo y propuesta de valor. Resultados alcanzados: Arquitectura C4 finalizada, modelado de base de datos diseñada y repositorios GitHub configurados para el uso de gitflow. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio y siguiendo como base las User Storys. |
+| **Sprint Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de programas de trabajo remoto, el uso de herramientas colaborativos como GitHub y Jira, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 1 Goal** | **Contexto:** El equipo prioriza establecer la identidad digital de StockIA y comunicar la propuesta de valor a el segmento objetivo, publicando un sitio de marketing de 4 páginas totalmente bilingüe (ES/EN), antes de invertir esfuerzo en la Web Application. <br><br> **Sprint Goal:**<br>*"Our focus is on building a trustworthy digital presence that clearly communicates StockIA's value proposition. We believe this will let visitors understand the product's benefits within seconds and request a demo with confidence. This will be confirmed when the four-page site is live, fully bilingual, responsive, and generating demo requests."* |
+| **Sprint 1 Velocity** | 40 Story Points |
+| **Sum of Story Points** | 88 Story Points |
+
 #### **5.2.1.2. Aspect Leaders and Collaborators**
 #### **5.2.1.3. Sprint Backlog 1**
 #### **5.2.1.4. Development Evidence for Sprint Review**
