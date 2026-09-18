@@ -462,10 +462,534 @@ Esta decisión responde a la importancia de las notificaciones críticas, las cu
 <br/><i>Artefacto: Figma</i></p>
 
 ## **4.4. Web Applications UX/UI Design**
-### **4.4.1. Web Applications Wireframes**
+Esta sección incluye secciones internas donde se presenta y explica la propuesta
+visual y de interacción para las aplicaciones que constituyen la experiencia de
+usuario con los productos digitales.
+
+### 4.4.1. Web Applications Wireframes
+
+1) **Wireframe 1:** 
+**User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
+
+![wireframe 1](../assets/chapter-4/wireframes/mobile/mobile-wireframe1.png)
+
+![wireframe 1](../assets/chapter-4/wireframes/web/web-wireframe1.png)
+
+2) **Wireframe 2:** 
+**User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
+
+3) **Wireframe 3:** 
+**User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
+
+![wireframe 3](../assets/chapter-4/wireframes/mobile/mobile-wireframe2.png)
+![wireframe 3](../assets/chapter-4/wireframes/web/web-wireframe2.png)
+
+4) **Wireframe 4:** 
+**User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+![wireframe 4](../assets/chapter-4/wireframes/mobile/mobile-wireframe3.png)
+![wireframe 4](../assets/chapter-4/wireframes/web/web-wireframe3.png)
+
+5) **Wireframe 5:** 
+**User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
+
+![wireframe 5](../assets/chapter-4/wireframes/mobile/mobile-wireframe4.png)
+![wireframe 5](../assets/chapter-4/wireframes/web/web-wireframe4.png)
+
+6) **Wireframe 6:** 
+**User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+
+
+7) **Wireframe 7:** 
+**User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
+
+![wireframe 7](../assets/chapter-4/wireframes/mobile/mobile-wireframe5.png)
+![wireframe 7](../assets/chapter-4/wireframes/web/web-wireframe5.png)
+
+8) **Wireframe 8:** 
+**User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
+
+![wireframe 8](../assets/chapter-4/wireframes/mobile/mobile-wireframe6.png)
+![wireframe 8](../assets/chapter-4/wireframes/web/web-wireframe6.png)
+
+9) **Wireframe 9:** 
+**User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
+![wireframe 9](../assets/chapter-4/wireframes/mobile/mobile-wireframe7.png)
+![wireframe 9](../assets/chapter-4/wireframes/web/web-wireframe7.png)
+
+10) **Wireframe 10:** 
+**User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
+
+![wireframe 10](../assets/chapter-4/wireframes/mobile/US30%20mobile.png)
+![wireframe 10](../assets/chapter-4/wireframes/web/US30%20web.png)
+
+11) **Wireframe 11:** 
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+
+![wireframe 11](../assets/chapter-4/wireframes/mobile/US31%20mobile.png)
+![wireframe 11](../assets/chapter-4/wireframes/web/US31%20web.png)
+
+12) **Wireframe 12:** 
+**User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
+
+![wireframe 12](../assets/chapter-4/wireframes/mobile/US32%20mobile.png)
+![wireframe 12](../assets/chapter-4/wireframes/web/US32%20web.png)
+
+13) **Wireframe 13:** 
+**User Story relacionada:** US33 - Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real.
+
+![wireframe 13](../assets/chapter-4/wireframes/mobile/US33%20mobile.png)
+![wireframe 13](../assets/chapter-4/wireframes/web/US33%20web.png)
+
+14) **Wireframe 14:** 
+**User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
+
+![wireframe 14](../assets/chapter-4/wireframes/mobile/US34%20mobile.png)
+![wireframe 14](../assets/chapter-4/wireframes/web/US34%20web.png)
+
+15) **Wireframe 15:** 
+**User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
+
+![wireframe 15](../assets/chapter-4/wireframes/mobile/US35%20mobile.png)
+![wireframe 15](../assets/chapter-4/wireframes/web/US35%20web.png)
+
+16) **Wireframe 16:** 
+**User Story relacionada:** US36 - Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento.
+
+![wireframe 16](../assets/chapter-4/wireframes/mobile/US36%20mobile.png)
+![wireframe 16](../assets/chapter-4/wireframes/web/US36%20web.png)
+
+17) **Wireframe 17:** 
+**User Story relacionada:** US37 - Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo.
+
+![wireframe 17](../assets/chapter-4/wireframes/mobile/US37%20mobile.png)
+![wireframe 17](../assets/chapter-4/wireframes/web/US37%20web.png)
+
 ### **4.4.2. Web Applications Wireflow Diagrams**
-### **4.4.2. Web Applications Mock-ups**
-### **4.4.3. Web Applications User Flow Diagrams**
+1) **Wireflow 1:** 
+
+- User goal: Como administrador, quiero agregar, eliminar y modificar insumos en el inventario
+
+**User Story relacionada:** 
+US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
+
+- mobile:
+![wireflow 1](../assets/chapter-4/wireflow/mobile/wireflow-mobile1.png)
+
+2) **Wireflow 2:** 
+
+- User goal: Como administrador, quiero guardar recetas con ingredientes vinculados al inventario
+
+**User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
+
+3) **Wireflow 3:** 
+
+- User goal: Como administrador, quiero ver un dashboard con métricas de stock y alertas.
+
+**User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
+
+- mobile: 
+![wireflow 3](../assets/chapter-4/wireflow/mobile/wireflow-mobile2.png)
+
+4) **Wireflow 4:** 
+
+- User goal: Como administrador, quiero asignar roles a empleados.
+
+**User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+- mobile: 
+![wireflow 4](../assets/chapter-4/wireflow/mobile/wireflow-mobile3.png)
+
+5) **Wireflow 5:** 
+
+- User goal: Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima.
+
+**User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
+
+- mobile: 
+![wireflow 5](../assets/chapter-4/wireflow/mobile/wireflow-mobile4.png)
+
+6) **Wireflow 6:** 
+
+- User goal: Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad.
+
+**User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+
+
+7) **Wireflow 7:**
+
+- User goal: Como administrador, quiero recibir alertas antes de que falten insumos
+
+**User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
+
+- mobile: 
+![wireflow 7](../assets/chapter-4/wireflow/mobile/wireflow-mobile5.png)
+
+8) **Wireflow 8:** 
+
+- User goal: Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp
+
+**User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
+
+- mobile: 
+![wireflow 8](../assets/chapter-4/wireflow/mobile/wireflow-mobile6.png)
+
+9) **Wireflow 9:**
+
+- User goal: Como nuevo usuario, quiero registrarme en StockIA con mis datos.
+
+**User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
+- mobile: 
+![wireflow 9](../assets/chapter-4/wireflow/mobile/wireflow-mobile7.png)
+
+10) **Wireflow 10:**
+
+- User goal: Como usuario registrado, quiero iniciar sesión con mis datos.
+
+**User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
+
+- mobile: 
+![wireflow 10](../assets/chapter-4/wireflow/mobile/US30%20-%20Wireflow%20diagram.png)
+
+11) **Wireflow 11:**
+
+- User goal: Como administrador, quiero pagar mi suscripción.
+
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+
+- mobile: 
+![wireflow 11](../assets/chapter-4/wireflow/mobile/US31%20-%20Wireflow%20diagram.png)
+
+12) **Wireflow 12:**
+
+- User goal: omo administrador, quiero recibir alertas críticas por correo.
+
+**User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
+
+- mobile: 
+![wireflow 12](../assets/chapter-4/wireflow/mobile/US32%20-%20Wireflow%20diagram.png)
+
+13) **Wireflow 13:**
+
+- User goal: omo administrador, quiero que el sistema consulte la vida útil de alimentos
+
+**User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
+
+- mobile: 
+![wireflow 13](../assets/chapter-4/wireflow/mobile/US34%20-%20Wireflow%20diagram.png)
+
+14) **Wireflow 14:**
+
+- User goal: Como administrador, quiero poder modificar la vida útil sugerida.
+
+**User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
+
+- mobile: 
+![wireflow 14](../assets/chapter-4/wireflow/mobile/US35%20-%20Wireflow%20diagram.png)
+
+### **4.4.3. Web Applications Mock-ups**
+1) **Mock-up 1:** 
+**User Story relacionada:** US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
+
+![mockup 1](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile1.png)
+![mockup 1](../assets/chapter-4/mockups/mockups-web/mockup-web1.png)
+
+2) **Mock-up 2:** 
+**User Story relacionada:** US22 - Como administrador, quiero guardar recetas con ingredientes vinculados al inventario, para que al venderse un plato se descuenten automáticamente los insumos.
+
+
+3) **Mock-up 3:** 
+**User Story relacionada:** US23 - Como administrador, quiero ver un dashboard con métricas de stock y alertas, para tomar decisiones rápidas sobre insumos críticos.
+
+![mockup 3](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile2.png)
+![mockup 3](../assets/chapter-4/mockups/mockups-web/mockup-web2.png)
+
+4) **Mock-up 4:** 
+**User Story relacionada:** US24 - Como administrador, quiero asignar roles a empleados, para que cada uno tenga recomendaciones personalizadas y permisos adecuados dentro del sistema.
+
+![mockup 4](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile4.png)
+![mockup 4](../assets/chapter-4/mockups/mockups-web/mockup-web3.png)
+
+5) **Mock-up 5:** 
+**User Story relacionada:** US25 - Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación.
+
+![mockup 5](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile3.png)
+![mockup 3](../assets/chapter-4/mockups/mockups-web/mockup-web4.png)
+
+6) **Mock-up 6:** 
+**User Story relacionada:** US26 - Como administrador, quiero recibir sugerencias de menú según popularidad y estacionalidad, para ajustar la oferta de mi restaurante.
+
+
+7) **Mock-up 7:** 
+**User Story relacionada:** US27 - Como administrador, quiero recibir alertas antes de que falten insumos, para poder comprar con tiempo y evitar quiebres de stock.
+
+![mockup 7](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile6.png)
+![mockup 7](../assets/chapter-4/mockups/mockups-web/mockup-web5.png)
+
+8) **Mock-up 8:** 
+**User Story relacionada:** US28 - Como empleado, quiero recibir sugerencias y alertas en mi WhatsApp, para poder actuar rápido sin necesidad de entrar al sistema.
+
+![mockup 8](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile7.png)
+![mockup 3](../assets/chapter-4/mockups/mockups-web/mockup-web6.png)
+9) **Mock-up 9:** 
+**User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
+![mockup 5](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile8.png)
+![mockup 3](../assets/chapter-4/mockups/mockups-web/mockup-web7.png)
+
+10) **Mock-up 10:** 
+**User Story relacionada:** US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
+
+| ![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US30%20-%20Escenario%201%20Mobile.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US30%20-%20Escenario%201-1%20Mobile.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US30%20-%20Escenario%201-2%20Mobile.png) |
+|---------------------------------------------|---------------------------------------------|---------------------------------------------|
+| ![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US30%20-%20Escenario%201-3%20Mobile.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US30%20-%20Escenario%203-1%20Mobile.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US30%20-%20Escenario%203-2%20Mobile.png) |
+
+| ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%201%20Web-1.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%201%20Web.png) |
+|---------------------------------------------|---------------------------------------------|
+| ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%202%20Web.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%203%20Web.png) |
+
+11) **Mock-up 11:** 
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+
+| ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-1%20Mobile.png) | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-2%20mobile.png) | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-3%20Mobile.png) |
+|---------------------------------------------|---------------------------------------------|---------------------------------------------|
+
+|![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%202%20Mobile.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%203%20Mobile.png) |
+|---------------------------------------------|---------------------------------------------|
+
+|![mockup 10](../assets/chapter-4/mockups/mockups-web/US31%20-%20Escenario%201%20Web-1.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US31%20-%20Escenario%201%20Web-2.png) |
+|---------------------------------------------|---------------------------------------------|
+
+|![mockup 10](../assets/chapter-4/mockups/mockups-web/US31%20-%20Escenario%201%20Web.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US31%20-%20Escenario%202%20Web.png) |
+|---------------------------------------------|---------------------------------------------|
+
+![mockup 10](../assets/chapter-4/mockups/mockups-web/US31%20-%20Escenario%203%20Web.png)
+
+12) **Mock-up 12:** 
+**User Story relacionada:** US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
+
+| ![mockup 12](../assets/chapter-4/mockups/mockups-mobile/US32%20-%20Escenario%201%20Mobile.png) | ![mockup 12](../assets/chapter-4/mockups/mockups-mobile/US32%20-%20Escenario%202%20Mobile.png) | ![mockup 12](../assets/chapter-4/mockups/mockups-mobile/US32%20-%20Escenario%203%20Mobile.png) |
+|---------------------------------------------|---------------------------------------------|---------------------------------------------|
+
+| ![mockup 12](../assets/chapter-4/mockups/mockups-web/US32%20-%20Escenario%201%20Web.png) | ![mockup 12](../assets/chapter-4/mockups/mockups-web/US32%20-%20Escenario%202%20Web.png)|
+|---------------------------------------------|---------------------------------------------|
+
+![mockup 12](../assets/chapter-4/mockups/mockups-web/US32%20-%20Escenario%203%20Web.png)
+
+13) **Mock-up 13:** 
+**User Story relacionada:** US33 - Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real.
+
+| ![mockup 13](../assets/chapter-4/mockups/mockups-mobile/US33%20-%20Escenario%201%20Mobile.png) | ![mockup 13](../assets/chapter-4/mockups/mockups-mobile/US33%20-%20Escenario%202%20Mobile.png) | 
+|---------------------------------------------|---------------------------------------------|
+| ![mockup 13](../assets/chapter-4/mockups/mockups-web/US33%20-%20Escenario%201%20Web.png) | ![mockup 13](../assets/chapter-4/mockups/mockups-web/US33%20-%20Escenario%202%20Web.png) | 
+
+14) **Mock-up 14:** 
+**User Story relacionada:** US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
+
+| ![mockup 14](../assets/chapter-4/mockups/mockups-mobile/US34%20-%20Escenario%201%20Mobile.png) | ![mockup 14](../assets/chapter-4/mockups/mockups-mobile/US34%20-%20Escenario%202%20Mobile.png) | 
+|---------------------------------------------|---------------------------------------------|
+| ![mockup 14](../assets/chapter-4/mockups/mockups-web/US34%20-%20Escenario%201%20Web.png) | ![mockup 14](../assets/chapter-4/mockups/mockups-web/US34%20-%20Escenario%202%20Web.png) |
+
+15) **Mock-up 15:** 
+**User Story relacionada:** US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
+
+| ![mockup 15](../assets/chapter-4/mockups/mockups-mobile/US35%20-%20Escenario%201%20Mobile.png) | ![mockup 15](../assets/chapter-4/mockups/mockups-mobile/US35%20-%20Escenario%202%20Mobile.png) | 
+|---------------------------------------------|---------------------------------------------|
+| ![mockup 15](../assets/chapter-4/mockups/mockups-web/US35%20-%20Escenario%201%20Web.png) | ![mockup 15](../assets/chapter-4/mockups/mockups-web/US35%20-%20Escenario%202%20Web.png) | 
+
+16) **Mock-up 16:** 
+**User Story relacionada:** US36 - Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento.
+
+![mockup 16](../assets/chapter-4/mockups/mockups-mobile/US36%20-%20Escenario%201%20Mobile.png)
+![mockup 16](../assets/chapter-4/mockups/mockups-web/US36%20-%20Escenario%201%20Web.png)
+
+17) **Mock-up 17:** 
+**User Story relacionada:** US37 - Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo
+
+![mockup 17](../assets/chapter-4/mockups/mockups-mobile/US37%20-%20Escenario%201%20y%202%20Mobileh.png)
+![mockup 17](../assets/chapter-4/mockups/mockups-web/US37%20-%20Escenario%201%20y%202%20Web.png)
+
+### **4.4.4. Web Applications User Flow Diagrams**
+
+1) **User flow 1:** 
+
+- User goal: Como administrador, quiero agregar, eliminar y modificar insumos en el inventario.
+
+**User Story relacionada:** 
+US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el inventario, para mantener actualizado el stock de mi restaurante.
+
+![user flow 1](../assets/chapter-4/user%20flow/mobile/userflow-mobile1.png)
+
+#### Happy Path — Registro Exitoso de Nuevo Producto
+
+1) El usuario ingresa a la sección "Inventario" de StockIA.
+2) Hace clic en el botón "+ Nuevo".
+3) El sistema muestra el formulario "Nuevo producto".
+4) El usuario completa correctamente la información del producto:
+   - Nombre del producto.
+   - Categoría.
+   - Cantidad.
+   - Unidad.
+   - Stock mínimo.
+   - Almacenamiento.
+   - Fecha de ingreso.
+   - Fecha de vencimiento.
+   - Proveedor.
+5) Hace clic en el botón "Guardar".
+6) El sistema valida la información ingresada.
+7) ¿La información de la tarjeta está vacía? → No.
+8) El sistema registra correctamente el nuevo producto.
+9) El sistema redirige al usuario a la sección "Inventario".
+10) El nuevo producto aparece correctamente en la lista de inventario.
+
+#### Unhappy Path — Información incompleta o inválida
+1) El usuario ingresa a la sección "Inventario" de StockIA.
+2) Hace clic en el botón "+ Nuevo".
+3) El sistema muestra el formulario "Nuevo producto".
+4) El usuario deja uno o más campos obligatorios vacíos o introduce información inválida.
+5) Hace clic en el botón "Guardar".
+6) El sistema valida la información ingresada.
+7) ¿La información de la tarjeta está vacía? → Sí.
+8) El sistema no permite guardar el producto.
+9) El sistema muestra los campos que presentan errores en color rojo.
+10) El sistema muestra mensajes de validación, por ejemplo:
+   - "Campo requerido".
+   - "Cantidad inválida".
+11) El usuario debe completar o corregir la información solicitada.
+12) El usuario hace clic nuevamente en "Guardar".
+13) El sistema vuelve a validar la información.
+14) Si todos los campos son válidos, el sistema registra el nuevo producto y lo muestra en la sección "Inventario".
+
+
+2. **User flow 2:**
+
+- User goal: Como nuevo usuario, quiero registrarme en StockIA con mis datos.
+
+**User Story relacionada:** US29 - Como nuevo usuario, quiero registrarme en StockIA con mis datos, para poder acceder al sistema y configurar mi restaurante.
+
+![user flow 2](../assets/chapter-4/user%20flow/mobile/userflow-mobile2.png)
+![user flow 2](../assets/chapter-4/user%20flow/mobile/userflow-mobile3.png)
+
+#### Happy Path — Camino Feliz del Inicio de Sesión y Recuperación
+1) El usuario abre la pantalla de inicio de sesión de StockIA.
+2) Introduce su correo electrónico correcto y su contraseña correcta.
+3) Hace clic en el botón "Iniciar sesión".
+4) El sistema valida las credenciales correctamente.
+5) El sistema redirige al usuario al Panel de Administrador (Dashboard) de StockIA.
+
+#### Unhappy Path 1 — Credenciales erróneas en el Login
+1) El usuario introduce un correo electrónico o una contraseña incorrectos.
+2) Hace clic en el botón "Iniciar sesión".
+3) El sistema valida las credenciales.
+4) ¿La información ingresada es incorrecta? → Sí.
+5) El sistema bloquea el acceso.
+6) El sistema muestra una alerta en color rojo:
+7) El usuario debe corregir sus datos e intentar iniciar sesión nuevamente.
+
+#### Unhappy Path 2 — Fallo en la recuperación por correo no registrado o inválido
+1) El usuario intenta iniciar sesión, pero no recuerda su contraseña.
+2) Hace clic en "¿Olvidaste tu contraseña?".
+3) El sistema muestra la pantalla de recuperación de contraseña.
+4) El usuario introduce un correo electrónico que está registrado en el sistema.
+5) Hace clic en "Enviar instrucciones".
+6) El sistema valida el correo ingresado.
+7) ¿El correo es válido y está registrado? → Sí.
+8) El sistema acepta la solicitud.
+
+
+3. **User flow 3:** 
+
+- User goal: Como usuario registrado, quiero iniciar sesión con mis datos.
+
+**User Story relacionada:** 
+US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado.
+
+![user flow 3](../assets/chapter-4/user%20flow/mobile/US30%20-%20UserFlow%20diagram.png)
+
+#### Happy Path - Inicio de Sesión exitoso
+1) El usuario llega a la pantalla de **Iniciar sesión**.
+2) Ingresa correo y contraseña (ej. `admin@cantinaverde.mx`).
+3) El sistema valida: **¿Datos correctos?** → **Sí**
+4) Accede al **Dashboard** con su panel de administrador (productos en inventario, stock crítico, alertas activas, ahorro estimado, etc.).
+
+#### Unhappy path - Datos incorrectos al iniciar sesión
+- **Credenciales incorrectas:** si los datos no son correctos, el sistema muestra el mensaje *"Credenciales incorrectas. Verifica tu email y contraseña"* y regresa al formulario de login.
+- **Olvidó su contraseña:** desde el login, el usuario puede pulsar *"¿Olvidaste tu contraseña?"* → ingresa su correo → el sistema envía instrucciones → pantalla de confirmación *"¡Instrucciones enviadas!"* → botón *"Volver al Login"*.
+
+4. **User flow 4:** 
+
+- User goal: Como administrador, quiero pagar mi suscripción.
+
+**User Story relacionada:** 
+US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+
+![user flow 4](../assets/chapter-4/user%20flow/mobile/US31%20-%20UserFlow%20diagram.png)
+
+#### Happy path - Pago de plan exitoso
+1) El usuario visualiza los **Planes de StockIA** y selecciona uno (ej. Starter).
+2) Va al **Checkout**, completa los datos de la tarjeta y pulsa **"Pagar"**.
+3) El pago se procesa correctamente → pantalla **"¡Suscripción activada!"** con resumen del plan.
+4) En una renovación futura, el flujo es análogo → **"¡Suscripción renovada!"**.
+
+#### Unhappy path - Error al realizar pago
+- **Pago rechazado:** al intentar pagar, el sistema muestra el error *"Pago rechazado. Intenta con otro método"* dentro del mismo checkout.
+- El usuario puede pulsar **"Reintentar"** para volver a intentar el pago o regresar a la selección de plan.
+
+5. **User flow 5:** 
+
+- User goal: Como administrador, quiero recibir alertas críticas por correo.
+
+**User Story relacionada:** 
+US32 - Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de los eventos importantes.
+
+![user flow 5](../assets/chapter-4/user%20flow/mobile/US32%20-%20UserFlow%20diagram.png)
+
+#### Happy path
+1) Desde el Dashboard, el usuario **recibe alertas** (críticas, altas, medias).
+2) Puede entrar al detalle de una alerta (ej. *"Cilantro agotándose"*) y **marcarla como resuelta** o **enviarla por WhatsApp**.
+3) También puede consolidar el historial de alertas y pulsar **"Generar resumen"**.
+4) El sistema confirma: *"Resumen generado y enviado al correo electrónico"*.
+
+6. **User flow 6:** 
+
+- User goal: Como administrador, quiero que el sistema consulte la vida útil de alimentos.
+
+**User Story relacionada:** 
+US34 - Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo.
+
+![user flow 6](../assets/chapter-4/user%20flow/mobile/US34%20-%20UserFlow%20diagram.png)
+
+#### Happy path
+1) El usuario pulsa **"+ Nuevo"** en Inventario.
+2) Llena el formulario **"Nuevo producto"** (nombre, categoría, cantidad, stock mínimo, etc.).
+3) El sistema evalúa: **¿Producto encontrado en la API?** → **Sí**
+4) Se autocompletan datos como categoría, stock mínimo sugerido y **"Vida útil sugerida"** (ej. 10 días).
+5) El usuario guarda el producto.
+#### Unhappy path
+1) El sistema evalúa: **¿Producto encontrado en la API?** → **No**
+2) Se muestra el mensaje *"No se encontró información de vida útil"* con la opción **"Ingresar manualmente"**.
+3) El usuario completa los campos faltantes por su cuenta y guarda el producto igualmente.
+
+7. **User flow 7:** 
+
+- User goal: Como administrador, quiero poder modificar la vida útil sugerida.
+
+**User Story relacionada:** 
+US35 - Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante.
+
+![user flow 7](../assets/chapter-4/user%20flow/mobile/US35%20-%20UserFlow%20diagram.png)
+
+#### Happy path
+1) El usuario pulsa **"Editar"** sobre un producto existente (ej. Tomate cherry).
+2) Se abre el formulario con los datos precargados.
+3) Modifica algún campo, como el almacenamiento (de *"ambient"* a *"frozen"*).
+4) El sistema recalcula automáticamente la **"Vida útil sugerida"** (de 10 a 30 días) según el nuevo dato.
+5) El usuario pulsa **"Guardar"** y los cambios se aplican.
+
 ## **4.5. Web Applications Prototyping**
 ## **4.6. Domain-Driven Software Architecture**
 ### **4.6.1. Design-Level EventStorming**
