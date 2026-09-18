@@ -917,6 +917,12 @@ Entonces guarda un registro con fecha, canal y contenido.
 </table>
 
 ## **3.2. Impact Mapping**
+En la siguiente sección se presenta el Impact Mapping elaborado a partir del user persona principal: el administrador o dueño del restaurante. Este mapa asegura que se construya funcionalidades que realmente aporten valor al negocio y resuelvan los problemas más críticos de nuestro segmento objetivo.
+
+**Business Goal de StockIA:** Gestión de stock y reducción de pérdidas
+<p align="center"><img alt="Impact-Map" src="../assets/chapter-3/Impact-map.png" /></p>
+<p align="center"><i>Artefacto: Mapa de impacto orientado a la optimización del stock y reducción del desperdicio en restaurantes.</i></p>
+
 ## **3.3. Product Backlog**
 | # Orden | User Story ID | Título | Descripción | Story Points(1/2/3/5/8) |
 | :---: | :--- | :--- | :--- | :---: |
