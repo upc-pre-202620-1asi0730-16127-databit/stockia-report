@@ -430,6 +430,68 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
   </tbody>
 </table>
 
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td>David Ayllon</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>35 años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Jefe de cocina</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td>Surco</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQAhxq46xJppRYQitF9vuT4QAXiqXKi1Lqj2EPdSO2jkYMA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=WrOhnl">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td>7:14 minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:10</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="../assets/chapter-2/screenshot-interview-david.png" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+        David, de 35 años, es jefe de cocina de un restaurante de comida italiana ubicada en Surco, que lleva aproximadamente 5 años funcionando y cuenta con 3 cocineros y 5 mosos mas personal de cajas y otros. Nos comenta que actualmente controla el inventario de manera manual y utiliza Excel para gestionar las recetas, las ventas se registran en un sistema independiente y hacen uso de la gestion y experiencia del jefe de cocinar para la compra de insumos en alta demanda. Esta forma de trabajo le ha generado sobrecarga y fallos en el inventario por margenes de error al manejarlo, mermas y cambios inesperados en la demanda, ocasionando en algunas situaciones en las que se quede sin determinados platos.
+
+Asimismo, David señala que le gustaría contar con un sistema que integre el inventario, genere reportes de oferta y demanda, poder visualizar el stock del producto en tiempo real y poder acceder a notificaciones que le indiquen de manera no intrusiva que mandar a comprar los fines de semana o los feriados por venir.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ### **2.2.3. Interview Analysis**
 
 **Entrevista 1:** Lo que se pudo sacar de esta entrevista es de que el principal problema del restaurante se encuentra en la gestión manual del inventario y la planificación de la producción, ya que las decisiones dependen principalmente de la experiencia del personal y de una revisión aproximada de las ventas. Esto puede generar compras innecesarias, falta de insumos durante las horas de mayor demanda, desperdicio de alimentos y pérdidas por vencimiento. También, destaca la falta de estandarización de las recetas y la ausencia de un descuento automático de ingredientes al registrar una venta, lo que dificulta conocer el stock real. Por otro lado, se identifican patrones de demanda relacionados con fines de semana, feriados, horarios de almuerzo y determinados platos de mayor salida. Lo más importante es que existe una necesidad clara de contar con información más precisa para anticiparse a la demanda, controlar mejor los insumos y reducir pérdidas, por lo que un sistema que genere predicciones, alertas y recomendaciones de compra podría apoyar directamente la toma de decisiones del restaurante.
@@ -441,6 +503,9 @@ Isabel cuenta con más de cinco años de experiencia como CEO y prioriza analiza
 
 **Entrevista 4:**
 La señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. Aunque reconoce patrones de consumo y ajusta la oferta según preferencias de clientes y horarios, carece de un sistema que le permita proyectar tendencias o automatizar decisiones. Su negocio funciona de manera práctica, pero tiene vulnerabilidades: falta de datos estructurados, poca previsión y ausencia de alertas sobre insumos críticos. 
+
+**Entrevista 4:**
+David Ayllon, administrador del restaurante, comenta que la gestión del stock se realiza mediante revisiones físicas y hojas de Excel, proyectando las compras a partir de estimaciones empíricas e historiales de ventas. Esta falta de automatización genera desajustes significativos: picos de desabastecimiento, merma por productos vencidos y descuadres entre el inventario registrado y el real. Ante esta brecha operativa, David indica que el negocio requiere una herramienta tecnológica que no solo organice el stock, sino que también ayude a anticipar la demanda de almuerzos y feriados mediante alertas de reabastecimiento y vencimiento, además de ofrecer sugerencias automatizadas sobre qué insumos priorizar y en qué cantidad comprar o preparar para reducir las pérdidas.
 
 ## **2.3. Needfinding**
 Esta parte del trabajo nos permitirá conocer de manera más cercana las necesidades, problemas y dificultades que enfrentan los responsables de la gestión de un restaurante en sus actividades diarias. A partir de las entrevistas y la información recopilada, podremos identificar oportunidades de mejora y definir qué funcionalidades debería ofrecer nuestra solución para responder a problemas reales.
