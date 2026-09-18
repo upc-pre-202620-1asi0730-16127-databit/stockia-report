@@ -387,7 +387,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/01-header-navbar.png" width="800" alt="Sección header / navbar"/>
+  <img src="../assets/chapter-5/01-header-navbar.png" width="800" alt="Sección header / navbar"/>
   <br/><i>Sección header / navbar — StockIA</i>
 </p>
 <br/>
@@ -396,7 +396,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Sección hero + mockup de dashboard"/>
+  <img src="../assets/chapter-5/02-hero-mockup-dashboard.png" width="800" alt="Sección hero + mockup de dashboard"/>
   <br/><i>Sección hero + mockup de dashboard — StockIA</i>
 </p>
 <br/>
@@ -405,7 +405,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
+  <img src="../assets/chapter-5/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
   <br/><i>Barra de estadísticas — StockIA</i>
 </p>
 <br/>
@@ -423,7 +423,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/05-grid-funcionalidades.png" width="800" alt="Grid de funcionalidades"/>
+  <img src="../assets/chapter-5/05-grid-funcionalidades.png" width="800" alt="Grid de funcionalidades"/>
   <br/><i>Grid de funcionalidades — StockIA</i>
 </p>
 <br/>
@@ -432,7 +432,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/06-mas-que-un-inventario.png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
+  <img src="../assets/chapter-5/06-mas-que-un-inventario.png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
   <br/><i>Sección "Más que un inventario" (diferenciadores) — StockIA</i>
 </p>
 <br/>
@@ -441,7 +441,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/07-integraciones-externas.png" width="800" alt="Sección de integraciones externas"/>
+  <img src="../assets/chapter-5/07-integraciones-externas.png" width="800" alt="Sección de integraciones externas"/>
   <br/><i>Sección de integraciones externas — StockIA</i>
 </p>
 <br/>
@@ -450,7 +450,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/08-seccion-portafolio.png" width="800" alt="Sección de portafolio"/>
+  <img src="../assets/chapter-5/08-seccion-portafolio.png" width="800" alt="Sección de portafolio"/>
   <br/><i>Sección de portafolio — StockIA</i>
 </p>
 <br/>
@@ -459,7 +459,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/09-placeholder-video.png" width="800" alt="Placeholder de video demostrativo"/>
+  <img src="../assets/chapter-5/09-placeholder-video.png" width="800" alt="Placeholder de video demostrativo"/>
   <br/><i>Placeholder de video demostrativo — StockIA</i>
 </p>
 <br/>
@@ -468,7 +468,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/10-features-grid-completo.png" width="800" alt="features.html — grid completo"/>
+  <img src="../assets/chapter-5/10-features-grid-completo.png" width="800" alt="features.html — grid completo"/>
   <br/><i>features.html — grid completo — StockIA</i>
 </p>
 <br/>
@@ -477,7 +477,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/11-pricing-planes-y-faq.png" width="800" alt="pricing.html — planes y FAQ"/>
+  <img src="../assets/chapter-5/11-pricing-planes-y-faq.png" width="800" alt="pricing.html — planes y FAQ"/>
   <br/><i>pricing.html — planes y FAQ — StockIA</i>
 </p>
 <br/>
@@ -486,7 +486,7 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
+  <img src="../assets/chapter-5/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
   <br/><i>about.html — misión, visión, equipo y formulario — StockIA</i>
 </p>
 <br/>
@@ -495,14 +495,14 @@ En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la 
 
 <br/>
 <p align="center">
-  <img src="assets/img/chapter-05/13-seccion-footer.png" width="800" alt="Sección footer"/>
+  <img src="../assets/chapter-5/13-seccion-footer.png" width="800" alt="Sección footer"/>
   <br/><i>Sección footer — StockIA</i>
 </p>
 <br/>
 
 Para finalizar, se mostrará una demostración del avance sobre la Landing Page dentro de GitHub, para la publicación de la página web:
 <p align="center">
-  <img src="assets/img/chapter-05/14-repositorio-github.png" width="800" alt="Repositorio de GitHub"/>
+  <img src="../assets/chapter-5/14-repositorio-github.png" width="800" alt="Repositorio de GitHub"/>
   <br/><i>Repositorio de GitHub sobre la Landing Page de StockIA — https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website</i>
 </p>
 
