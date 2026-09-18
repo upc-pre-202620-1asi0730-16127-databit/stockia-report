@@ -477,6 +477,28 @@ Esta decisión responde a la importancia de las notificaciones críticas, las cu
 ### **4.6.4. Software Architecture Components Diagrams**
 ## **4.7. Object-Oriented Design Software**
 ### **4.7.1. Class Diagrams**
+
+Los diagramas de clases presentados a continuación detallan la estructura interna de los componentes del Front-End para contextos clave de StockIA. Se ilustra la separación de responsabilidades entre la capa de Presentación (UI Components), la lógica de Aplicación y Estado (Controllers y Stores), los Modelos de Vista (View Models) y la Infraestructura (API Clients).
+
+#### Notifications & Messaging (Front-End)
+Este diagrama modela la estructura de componentes encargados de mostrar y gestionar las notificaciones y alertas críticas para el usuario (como stock bajo o vencimientos). Incluye componentes como `NotificationCenterView` y `NotificationBadgeComponent`, los cuales interactúan con `NotificationController` y `NotificationStore`.
+
+**Consideraciones y restricciones de diseño:**
+- **Seguridad e Integración:** El Front-End se comunica de forma exclusiva con el backend de StockIA. Las integraciones con servicios de mensajería (SendGrid, WhatsApp y SMS) deben mantenerse ocultas detrás de la API. Bajo ninguna circunstancia se deben exponer credenciales de estos proveedores en el navegador.
+- **Sincronización de Contratos:** El enumerador `AlertType` refleja exactamente el contrato actual definido en la base de datos (`schema.sql`). Actualmente, el estado de entrega por destinatario no está disponible en la vista, funcionalidad que estará restringida hasta que el backend exponga los registros correspondientes de entrega y destinatario.
+
+<img src="/assets/chapter-4/class-diagrams/class-notifications-messaging.png" alt="Class Diagram - Notifications and Messaging" width="1000"/> <br>
+
+#### Subscriptions & Payments (Front-End)
+Este diagrama describe la arquitectura de clases del lado del cliente para la gestión de planes y pagos. Se compone de vistas como `SubscriptionStatusView` y `AvailablePlansView`, respaldadas por `SubscriptionController`, `PaymentController` y `SubscriptionStore`.
+
+**Consideraciones y restricciones de diseño:**
+- **Procesamiento de Pagos Seguros:** El navegador (Front-End) utiliza `Stripe.js` única y exclusivamente para *tokenizar* la información de pago. Todas las operaciones sensibles de cobro, renovación de suscripción y autorización de reembolsos están delegadas y aseguradas en el backend.
+- **Limitaciones de Planes:** La vista `PlanLimitsView` requiere información sobre los límites de los planes. Dado que el esquema actual aún no cuenta con persistencia para los límites de planes, el contrato de la API deberá proveer estos datos provisionales antes de que el componente sea completamente funcional.
+
+<img src="/assets/chapter-4/class-diagrams/class-subscriptions-payments.png" alt="Class Diagram - Subscriptions and Payments" width="1000"/> <br>
+## **4.8. Database Design**
+En esta sección se presentan los diagramas de base de datos diseñados para asegurar la persistencia de la información en StockIA. La base de datos sigue un enfoque relacional, y el diseño se ha estructurado dividiéndolo por cada Bounded Context identificado, de manera que cada módulo gestiona sus propias tablas, columnas y relaciones (llaves primarias y foráneas). Esto facilita el mantenimiento, la escalabilidad y mantiene la coherencia con la arquitectura orientada a dominios (Domain-Driven Design).
 ## **4.8. Database Design**
 En esta sección se presentan los diagramas de base de datos diseñados para asegurar la persistencia de la información en StockIA. La base de datos sigue un enfoque relacional, y el diseño se ha estructurado dividiéndolo por cada Bounded Context identificado, de manera que cada módulo gestiona sus propias tablas, columnas y relaciones (llaves primarias y foráneas). Esto facilita el mantenimiento, la escalabilidad y mantiene la coherencia con la arquitectura orientada a dominios (Domain-Driven Design).
 
