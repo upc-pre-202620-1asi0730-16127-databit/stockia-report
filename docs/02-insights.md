@@ -11,4 +11,4 @@ Para la gestión colaborativa se empleó **GitHub**, plataforma que facilitó el
 
 Los respaldos incluidos en este apartado guardan total coherencia con el Registro de Versiones del informe, reflejando de forma precisa las actualizaciones y cambios reportados en cada iteración.
 
-<img src="assets/chapter-1/insights-stockia.png" width="500"/>
+<img src="../assets/chapter-1/insights-stockia.png" width="500"/>
