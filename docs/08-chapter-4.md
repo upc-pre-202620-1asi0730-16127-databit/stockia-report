@@ -1018,6 +1018,40 @@ US35 - Como administrador, quiero poder modificar la vida útil sugerida por la 
 <img src="../assets/chapter-4/C4/container-diagram.png" alt="C4 Diagram" width="1000"/> <br>
 
 ### **4.6.4. Software Architecture Components Diagrams**
+
+#### Analytics and Dashboard 
+
+<img src="../assets/chapter-4/C4/AnalyticsComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+#### IAM 
+<img src="../assets/chapter-4/C4/IAMComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+#### ML and Recommendations
+
+<img src="../assets/chapter-4/C4/MLComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+#### Notifications and messaging
+
+<img src="../assets/chapter-4/C4/NotificationsComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+#### Recipes Management 
+
+<img src="../assets/chapter-4/C4/RecipesComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+#### Restaurant Registration 
+
+<img src="../assets/chapter-4/C4/RegistrationComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+#### Stock Management 
+
+<img src="../assets/chapter-4/C4/StockComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+
+#### Subscription and Payments Management
+
+<img src="../assets/chapter-4/C4/SubscriptionComponents.png" alt="C4 Diagram" width="1000"/> <br>
+
+
 ## **4.7. Object-Oriented Design Software**
 ### **4.7.1. Class Diagrams**
 
