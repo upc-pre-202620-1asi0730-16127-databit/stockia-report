@@ -350,6 +350,34 @@ La organización de líderes y colaboradores está directamente relacionada con 
 ---
 
 #### **5.2.1.4. Development Evidence for Sprint Review**
+En esta sección se explica y presenta los avances en implementación con relación a los productos de la solución según el alcance del Sprint: Landing Page.
+
+Primero, se mostrarán los commits más importantes para el Reporte, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó, usa y usará para el desarrollo del proyecto:
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-report | develop | `147c971` | chore: initialize report repository structure | Creación del repositorio del informe con la estructura inicial de carpetas (`docs/`). | 27/08/2026 |
+| stockia-report | develop | `3f41c6d` | chore: create develop branch | Se crea la rama `develop` como base de integración de GitFlow para el equipo. | 10/09/2026 |
+| stockia-report | feature/chapter-1 | `5715eee` | docs: add picture for team member profiles | Se agregan las fotografías de los integrantes para la sección de Startup Profile. | 10/09/2026 |
+| stockia-report | develop | `043c2d6` | Merge pull request #1 from feature/chapter-1 | Integra a `develop` el Capítulo I completo (Startup Profile, Solution Profile, Segmentos objetivo) tras revisión vía Pull Request. | 16/09/2026 |
+| stockia-report | feature/chapter-5 | `d4e06cc` | docs(chapter-5): add Aspect Leaders and Collaborators section | Se agrega la matriz de Líderes y Colaboradores (LACX) para el Sprint 1. | 18/09/2026 |
+| stockia-report | feature/chapter-5 | `4d7211e` | docs: update source code management section | Se actualiza la sección de Source Code Management con las convenciones de GitFlow y Conventional Commits aplicadas. | 18/09/2026 |
+
+<br/>
+
+A continuación se presentan los commits más importantes para la Landing Page, los cuales muestran todo el contenido visual y las funcionalidades implementadas en el Sprint 1:
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-website | develop | `1a58474` | chore: set up project structure | Se sube la estructura base del sitio: `index.html`, `features.html`, `pricing.html`, `about.html`, hojas de estilo (`css/`) y scripts (`js/`). | 18/09/2026 |
+| stockia-website | develop | `2efd03a` | feat: add about section | Se implementa el contenido de `about.html` (misión, visión, equipo y formulario de contacto). | 18/09/2026 |
+| stockia-website | develop | `6e0d010` | feat: add index.html code | Se implementa el Home (`index.html`) con header, hero, estadísticas, segmentos, funcionalidades y footer. | 18/09/2026 |
+| stockia-website | feature/pricing | `9ca1046` | feat(pricing): add footer section | Última sección de `pricing.html` (planes, toggle mensual/anual, FAQ y footer), cierre de la feature. | 18/09/2026 |
+| stockia-website | develop | `0e54999` | Merge pull request #1 from feature/pricing | Integra a `develop` la página `pricing.html` completa tras revisión vía Pull Request. | 18/09/2026 |
+
+*Nota: se listan los commits más representativos de cada rama; el detalle completo puede revisarse en el historial de GitHub de cada repositorio de la organización [upc-pre-202620-1asi0730-16127-databit](https://github.com/upc-pre-202620-1asi0730-16127-databit).*
+
+<br/>
 
 #### **5.2.1.5. Execution Evidence for Sprint Review**
 #### **5.2.1.6. Services Documentation Evidence for Sprint Review**
