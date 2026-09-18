@@ -59,7 +59,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+      Durante el desarrollo del proyecto asumí un rol de liderazgo conversando y coordinando en equipo distintos aspectos del proyecto. Tuve un rol activo en la definición del Ubiquitous Language, la redacción de User Stories y el Impact Mapping, asegurando claridad y metas compartidas para el equipo. Lideré el diseño de la experiencia de usuario y la elaboración de prototipos, integrando las observaciones de mis compañeros para mantener interfaces coherentes y cumplir con los objetivos del sprint, demostrando liderazgo conjunto en cada entregable.
       <br><br>
       <b>
         Tuesta Girón, Kiara Lucia
@@ -128,7 +128,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+      Participé en reuniones y coordinación de tareas, escuchando las opiniones del equipo para integrar sus aportes en diversas partes del proyecto como las User Stories y los prototipos. Al diseñar la interfaz y planificar el Impact Mapping, establecí metas claras y apoyé la distribución de responsabilidades, asegurando un entorno inclusivo y colaborativo que permitió cumplir los objetivos del AV1 de manera ordenada y efectiva.
       <br><br>
       <b>
         Tuesta Girón, Kiara Lucia
