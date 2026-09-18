@@ -34,9 +34,9 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
       </td>
       <td width="70%" valign="top" style="padding-left: 20px;">
         <h3></h3>
-        <p><b>Código de estudiante: u202416272</b> </p>
-        <p><b>Edad: 19 </b> </p>
-        <p><b>Carrera: Ingeniería de Software </b> </p>
+        <p><b>Código de estudiante: </b>u202416272 </p>
+        <p><b>Edad: </b>19 </p>
+        <p><b>Carrera: </b>Ingeniería de Software </p>
         <br>
         <p><b>Sobre mí:</b></p>
         <p>Soy Martin Alejandro Asmat Alminco, estudiante de quinto ciclo de la carrera de Ingeniería de Software. Cuento con experiencia en lenguajes de programación como Python y C++ para proyectos enfocados en el desarrollo de habilidades computacionales, las cuales apliqué en proyectos académicos enfocados en solucionar un problema a través de procesos de documentación de Ingeniería de software.
@@ -51,9 +51,9 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
       </td>
       <td width="70%" valign="top" style="padding-left: 20px;">
         <h3>Kiara Lucia Tuesta Girón</h3>
-        <p><b>Código de estudiante: u20251i477</b> </p>
-        <p><b>Edad: 21</b> </p>
-        <p><b>Carrera: Ingeniería de Software</b> </p>
+        <p><b>Código de estudiante: </b>u20251i477 </p>
+        <p><b>Edad: </b>21 </p>
+        <p><b>Carrera: </b>Ingeniería de Software </p>
         <br>
         <p><b>Sobre mí:</b><br> Me llamo Kiara Lucia Tuesta Girón, estudio Ingeniería de Software y me apasiona la tecnología y aprender cosas nuevas constantemente. Tengo conocimientos en C++, Python y muchas ganas de seguir aprendiendo. Me considero una persona curiosa, responsable, adaptable a los cambios y con una buena gestión del tiempo para cumplir mis metas. En los proyectos de la universidad disfruto involucrarme en todo el proceso, desde la documentación hasta la programación y búsqueda de soluciones en equipo.</p>
         <p></p>
@@ -67,8 +67,8 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
       </td>
       <td width="70%" valign="top" style="padding-left: 20px;">
         <h3></h3>
-        <p><b>Código de estudiante: u20231h067</b> </p>
-        <p><b>Edad: 20</b> </p>
+        <p><b>Código de estudiante: </b>u20231h067 </p>
+        <p><b>Edad: </b>20 </p>
         <p><b>Carrera: Ingenieria de Software</b> </p>
         <br>
         <p><b>Sobre mí: </b><br> Me llamo Aldo Jesus Huaman Oscco, estudio Ingeniería de Software y me apasiona el generar soluciones tecnologicas a problemas usuales en la sociedad. Tengo conocimientos en diversos campos del desarrollo del software como en arquitectura o analisis de datos. Me considero una persona comprometida y disciplinada. Dentro del equipo desarrollare y aportare conocimientos en todos los capos del desarrollo del proyecto.</b></p>
@@ -84,11 +84,11 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
       <td width="70%" valign="top" style="padding-left: 20px;">
         <h3></h3>
         <p><b>Código de estudiante: u202415088</b> </p>
-        <p><b>Edad: 19</b> </p>
-        <p><b>Carrera: Ingeniería de Software</b> </p>
+        <p><b>Edad: </b>19 </p>
+        <p><b>Carrera: </b>Ingeniería de Software </p>
         <br>
-        <p><b>Sobre mí:</b>Soy Leyla Alisson Ortiz Laura. Estoy cursando el sexto ciclo de la carrera de Ingeniería de Software y cuento con los conocimientos en programación en C++, python y JavaScript. Poseo un pensamiento analítico y crítico ante cualquier situación. En un equipo aporto organización, comunicación clara, capacidad de análisis y creatividad en el diseño de soluciones, fomentando la colaboración y asegurando resultados de calidad. Soy responsable y disciplinada en cuanto a trabajos. Me gusta la convivencia en grupo y colaboro siempre que puedo.</p>
-        <p></p>
+        <p><b>Sobre mí:</b></p>
+        <p>Soy Leyla Alisson Ortiz Laura. Estoy cursando el sexto ciclo de la carrera de Ingeniería de Software y cuento con los conocimientos en programación en C++, python y JavaScript. Poseo un pensamiento analítico y crítico ante cualquier situación. En un equipo aporto organización, comunicación clara, capacidad de análisis y creatividad en el diseño de soluciones, fomentando la colaboración y asegurando resultados de calidad. Soy responsable y disciplinada en cuanto a trabajos. Me gusta la convivencia en grupo y colaboro siempre que puedo.</p>
       </td>
     </tr>
   </tbody>
