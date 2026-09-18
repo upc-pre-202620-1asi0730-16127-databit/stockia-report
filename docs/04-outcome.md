@@ -77,7 +77,7 @@
         AV1
       </i></b>
       <br>
-        Durante el AV1
+        Como equipo durante el AV1, logramos cumplir con el objetivo de proporcionar liderazgo de forma conjunta mediante la participación activa de todos los integrantes en las distintas actividades del proyecto. Durante las clases mantuvimos una comunicación constante para coordinar avances, resolver dudas y tomar decisiones sobre los entregables, mientras que también realizamos reuniones después de clase para revisar lo trabajado, distribuir nuevas tareas y verificar que cada parte estuviera alineada con los objetivos del proyecto. Cada integrante asumió responsabilidades diferentes, desde la organización y análisis, hasta el diseño, desarrollo, documentación y despliegue de la solución. Además, cuando surgían dificultades o era necesario modificar algún entregable, recurríamos a la opinión del equipo para discutir las alternativas y llegar a acuerdos. Esta dinámica nos permitió que el liderazgo fuera compartido y que cada miembro pudiera aportar desde su rol, logrando avanzar de manera coordinada y cumplir con los objetivos planteados.
       <br><br>
     </td>
   </tr>
@@ -146,7 +146,7 @@
         AV1
       </i></b>
       <br>
-        Durante el AV1
+        Logramos crear un entorno colaborativo e inclusivo mediante una dinámica de trabajo basada en la comunicación constante, tanto durante las clases como en las reuniones que realizamos después de ellas. Estos espacios nos permitieron definir metas, distribuir las tareas según las responsabilidades de cada integrante y revisar los avances para evitar retrasos en las fechas limites de cada tarea. También, procuramos que todos pudieran aportar sus ideas y opiniones antes de tomar decisiones relacionadas con las User Stories, prototipos, arquitectura, desarrollo y documentación del proyecto. El cumplimiento oportuno de las tareas individuales también permitió que los demás integrantes pudieran continuar con sus actividades sin depender de entregables pendientes. Además, cuando surgieron dudas o dificultades, se buscó el apoyo de los demás miembros mediante la comunicación del equipo, lo que facilitó resolver problemas y mantener el avance del proyecto. 
       <br><br>
     </td>
   </tr>
