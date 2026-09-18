@@ -555,7 +555,7 @@ La carga de trabajo se distribuyó para asegurar que todos los integrantes parti
 
 **Evidencia GitFlow: Graph**
 <p align="center">
-  <img src="../assets/chapter-5/Network-Grapho.png" width="200" alt="Graph"/>
+  <img src="../assets/chapter-5/Network-Grapho.png" width="500" alt="Graph"/>
   <br/><i>Grafo de versiones para el gitflow</i>
 </p>
 
