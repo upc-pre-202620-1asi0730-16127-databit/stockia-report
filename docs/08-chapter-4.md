@@ -991,6 +991,25 @@ US35 - Como administrador, quiero poder modificar la vida útil sugerida por la 
 5) El usuario pulsa **"Guardar"** y los cambios se aplican.
 
 ## **4.5. Web Applications Prototyping**
+###### Desktop & Mobile Web Browser | Simulación de Interacción y Navegación
+
+**Mobile Prototype**
+
+
+[Click aquí...](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQAeJ5En9ZXKQKKlsRmwBNEOAf4JqGZAxDCajfDW6xUogYo?e=FLUb7s&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
+**Mobile**
+![desktop](../assets/chapter-4/mockups/mockups-mobile/mockup-mobile4.png)
+
+**Desktop Prototype**
+
+[Click aquí...](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414970_upc_edu_pe/IQDpE1STAw4TSqwn-sFXAO-ZAcpqo0nHY2u1g9JJ-eK467A?e=ifAiA8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
+**Desktop**
+![desktop](../assets/chapter-4/mockups/mockups-web/mockup-web2.png)
+
 ## **4.6. Domain-Driven Software Architecture**
 ### **4.6.1. Design-Level EventStorming**
 ### **4.6.2. Software Architecture Context Diagram**
