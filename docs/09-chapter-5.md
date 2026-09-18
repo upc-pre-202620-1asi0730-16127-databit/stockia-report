@@ -380,6 +380,132 @@ A continuación se presentan los commits más importantes para la Landing Page, 
 <br/>
 
 #### **5.2.1.5. Execution Evidence for Sprint Review**
+En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la Landing Page de StockIA. A continuación, se explorarán los avances a través de imágenes que muestren el resultado obtenido *(capturas pendientes de reemplazo, tomadas ahora desde el repositorio `stockia-website` de la organización)*:
+<br/>
+
+1. **Sección header / navbar:** Barra de navegación compartida entre las 4 páginas del sitio, con selector de idioma (ES/EN).
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/01-header-navbar.png" width="800" alt="Sección header / navbar"/>
+  <br/><i>Sección header / navbar — StockIA</i>
+</p>
+<br/>
+
+2. **Sección hero + mockup de dashboard:** Título con la propuesta de valor, descripción, botones CTA y un mockup ilustrativo del dashboard de StockIA.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/02-hero-mockup-dashboard.png" width="800" alt="Sección hero + mockup de dashboard"/>
+  <br/><i>Sección hero + mockup de dashboard — StockIA</i>
+</p>
+<br/>
+
+3. **Barra de estadísticas:** Los cuatro indicadores de impacto mostrados en el Home, con nota de transparencia sobre cifras de ejemplo.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
+  <br/><i>Barra de estadísticas — StockIA</i>
+</p>
+<br/>
+
+4. **Sección "¿Para quién es StockIA?":** Tarjetas diferenciadas para los segmentos dueños/CEOs de restaurantes y administradores/jefes de cocina.
+
+<br/>
+<p align="center">
+  <img src="../assets/chapter-5/04-para-quien-es-stockia.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
+  <br/><i>Sección "¿Para quién es StockIA?" — StockIA</i>
+</p>
+<br/>
+
+5. **Grid de funcionalidades:** Seis tarjetas de funcionalidades principales en el Home, con enlace al detalle completo en features.html.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/05-grid-funcionalidades.png" width="800" alt="Grid de funcionalidades"/>
+  <br/><i>Grid de funcionalidades — StockIA</i>
+</p>
+<br/>
+
+6. **Sección "Más que un inventario" (diferenciadores):** Las tres tarjetas de diferenciadores de StockIA frente a otras soluciones.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/06-mas-que-un-inventario.png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
+  <br/><i>Sección "Más que un inventario" (diferenciadores) — StockIA</i>
+</p>
+<br/>
+
+7. **Sección de integraciones externas:** Las cuatro tarjetas de integraciones en evaluación (Google Maps, OpenWeather, Stripe/PayPal, Twilio/SendGrid), con nota de decisión pendiente.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/07-integraciones-externas.png" width="800" alt="Sección de integraciones externas"/>
+  <br/><i>Sección de integraciones externas — StockIA</i>
+</p>
+<br/>
+
+8. **Sección de portafolio:** Vistas ilustrativas con tabs para alternar entre Inventario e IA & IoT.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/08-seccion-portafolio.png" width="800" alt="Sección de portafolio"/>
+  <br/><i>Sección de portafolio — StockIA</i>
+</p>
+<br/>
+
+9. **Placeholder de video demostrativo:** Bloque "Video demostrativo próximamente", con el iframe de YouTube ya preparado en el código para su reemplazo futuro.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/09-placeholder-video.png" width="800" alt="Placeholder de video demostrativo"/>
+  <br/><i>Placeholder de video demostrativo — StockIA</i>
+</p>
+<br/>
+
+10. **features.html — grid completo:** Detalle extendido de las seis funcionalidades y la sección "Cómo funciona" (4 pasos).
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/10-features-grid-completo.png" width="800" alt="features.html — grid completo"/>
+  <br/><i>features.html — grid completo — StockIA</i>
+</p>
+<br/>
+
+11. **pricing.html — planes y FAQ:** Las tarjetas de los planes Esencial, Profesional e IoT Completo, el toggle mensual/anual y el acordeón de preguntas frecuentes.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/11-pricing-planes-y-faq.png" width="800" alt="pricing.html — planes y FAQ"/>
+  <br/><i>pricing.html — planes y FAQ — StockIA</i>
+</p>
+<br/>
+
+12. **about.html — misión, visión, equipo y formulario:** Sección de misión/visión/valores, las fichas de equipo (placeholder) y el formulario de solicitud de demo.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
+  <br/><i>about.html — misión, visión, equipo y formulario — StockIA</i>
+</p>
+<br/>
+
+13. **Sección footer:** Parte final del sitio, compartida entre las 4 páginas.
+
+<br/>
+<p align="center">
+  <img src="assets/img/chapter-05/13-seccion-footer.png" width="800" alt="Sección footer"/>
+  <br/><i>Sección footer — StockIA</i>
+</p>
+<br/>
+
+Para finalizar, se mostrará una demostración del avance sobre la Landing Page dentro de GitHub, para la publicación de la página web:
+<p align="center">
+  <img src="assets/img/chapter-05/14-repositorio-github.png" width="800" alt="Repositorio de GitHub"/>
+  <br/><i>Repositorio de GitHub sobre la Landing Page de StockIA — https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website</i>
+</p>
+
 #### **5.2.1.6. Services Documentation Evidence for Sprint Review**
 #### **5.2.1.7. Software Deployment Evidence for Sprint Review**
 #### **5.2.1.8. Team Collaboration Insights during Sprint**
