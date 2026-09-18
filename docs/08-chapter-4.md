@@ -444,6 +444,23 @@ Esta decisión responde a la importancia de las notificaciones críticas, las cu
 <br/><i>Artefacto: Figma</i></p>
 
 ### **4.3.2. Landing Page Mockup**
+<p align="center"><img src="../assets/chapter-4/landing-page/M-Inicio.png" width="500" alt="Inicio"/></p>
+
+<p align="center"><img src="../assets/chapter-4/landing-page/M-Inicio-Continuacion.png" width="500" alt="Inicio-Continuacion"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="../assets/chapter-4/landing-page/M-Caracteristicas.png" width="500" alt="Caracteristicas"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="../assets/chapter-4/landing-page/M-Precios.png" width="500" alt="Precios"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="../assets/chapter-4/landing-page/M-Nosotros.png" width="500" alt="Nosotros"/>
+<br/><i>Artefacto: Figma</i></p>
+
+<p align="center"><img src="../assets/chapter-4/landing-page/M-Contacto.png" width="500" alt="Contacto"/>
+<br/><i>Artefacto: Figma</i></p>
+
 ## **4.4. Web Applications UX/UI Design**
 ### **4.4.1. Web Applications Wireframes**
 ### **4.4.2. Web Applications Wireflow Diagrams**
