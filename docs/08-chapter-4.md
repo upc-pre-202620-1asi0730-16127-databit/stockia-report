@@ -72,7 +72,7 @@ Los colores semánticos se utilizan principalmente en alertas de inventario y fu
 
 Cada color semántico cuenta además con una variante `light` para utilizarse como fondo de badges y alertas.
 
-<img src="/assets/chapter-4/styleguidelines/1.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-4/styleguidelines/1.jpeg" alt="C4 Diagram" width="500"/> <br>
 
 ---
 
@@ -163,7 +163,7 @@ Para mejorar la accesibilidad visual se utiliza:
 - Texto secundario `--text-muted (#5B6B66)` para mantener una lectura clara.
 - Los estados críticos utilizan color + texto + ícono simultáneamente, evitando depender únicamente del color para transmitir información.
 
-<img src="/assets/chapter-4/styleguidelines/2.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/2.jpeg" alt="C4 Diagram" width="1000"/> <br>
 
 
 ---
@@ -243,7 +243,7 @@ Se utiliza en:
 - Las predicciones de demanda organizadas por día de la semana (US25).
 - Las alertas ordenadas según urgencia y proximidad del vencimiento (US22 y US23).
 
-<img src="/assets/chapter-4/styleguidelines/3.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/3.jpeg" alt="C4 Diagram" width="1000"/> <br>
 
 
 ---
@@ -265,7 +265,7 @@ El objetivo es que el usuario pueda asociar rápidamente cada etiqueta con su co
 | Planes de pago | **Planes / Precios** | Planes Esencial, Profesional e IoT Completo (US16) |
 | Impacto ambiental | **Sostenibilidad y Gamificación** | Métricas de reducción de desperdicio y logros de equipo (US23) |
 
-<img src="/assets/chapter-4/styleguidelines/4.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/4.jpeg" alt="C4 Diagram" width="1000"/> <br>
 
 
 ---
@@ -424,7 +424,7 @@ En dispositivos móviles:
 
 Esta decisión responde a la importancia de las notificaciones críticas, las cuales también pueden enviarse mediante **WhatsApp (US27 / US28)**.
 
-<img src="/assets/chapter-4/styleguidelines/5.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/5.jpeg" alt="C4 Diagram" width="1000"/> <br>
 
 
 ## **4.3. Landing Page UI Design**
@@ -1012,6 +1012,19 @@ US35 - Como administrador, quiero poder modificar la vida útil sugerida por la 
 
 ## **4.6. Domain-Driven Software Architecture**
 ### **4.6.1. Design-Level EventStorming**
+
+Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de Miro](https://miro.com/app/board/uXjVHl6cdl0=/?share_link_id=720842621161) donde fue realizado el Design-Level Event Storming.
+
+<img src="../assets/chapter-4/Design-Level-Recipes-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/Design-Level-stoc-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/Design-Level-Subscription.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+<img src="../assets/chapter-4/Analitics-dashboard-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/IAM-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/ML-recomendations-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+
+<img src="../assets/chapter-4/notification-messaging-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/restaurant-registration-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 ### **4.6.2. Software Architecture Context Diagram**
 ### **4.6.3. Software Architecture Container Diagrams**
 
