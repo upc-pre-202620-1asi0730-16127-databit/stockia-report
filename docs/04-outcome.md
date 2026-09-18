@@ -39,7 +39,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+      Durante el desarrollo de este avance, mantuve una comunicación constante y activa con el equipo a través de canales como WhatsApp y una hoja de cálculo colaborativa en Google Sheets, donde desglosamos las actividades y fijamos plazos de entrega (deadlines) claros para asegurar el cumplimiento del cronograma. Me encargué de elaborar el Lean UX Process completo, mi respectiva entrevista de validación, dos diagramas de clases, dos diagramas de componentes y dos bounded contexts, además de todos los diagramas de base de datos (los 8 específicos y el diagrama general consolidado). Cumplí de manera puntual con cada una de las tareas asignadas, velando por que los entregables estuvieran listos a tiempo para mantener el ritmo de trabajo y permitir que el equipo avanzara sin bloqueos hacia los objetivos del proyecto.
       <br><br>
       <b>
         Huaman Oscco, Aldo Jesus
@@ -108,7 +108,7 @@
         AV1
       </i></b>
       <br>
-      Escribir
+      Ayudé con el planteamiento técnico y la consolidación del proyecto, tomando la iniciativa en la estructuración y avance de los diagramas de arquitectura y base de datos, así como en la realización de las entrevistas y la revisión exhaustiva del documento final previo a la entrega. Asimismo, durante las sesiones de reunión por Meet, aporté en la toma de decisiones clave, orientando la definición y delimitación de los bounded contexts y alineando las funcionalidades del sistema directamente con las necesidades del modelo de negocio. Esto permitió establecer un criterio técnico compartido y garantizar la coherencia de los entregables del equipo.
       <br><br>
       <b>
         Huaman Oscco, Aldo Jesus
