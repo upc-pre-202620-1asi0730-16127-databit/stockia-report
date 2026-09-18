@@ -1026,6 +1026,9 @@ Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de 
 <img src="../assets/chapter-4/notification-messaging-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 <img src="../assets/chapter-4/restaurant-registration-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
 ### **4.6.2. Software Architecture Context Diagram**
+
+<img src="../assets/chapter-4/SystemContext.png" alt="" alingn ="center"  ><br><br>
+
 ### **4.6.3. Software Architecture Container Diagrams**
 
 <img src="../assets/chapter-4/C4/container-diagram.png" alt="C4 Diagram" width="1000"/> <br>
