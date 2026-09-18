@@ -370,6 +370,65 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
   </tbody>
 </table>
 
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #4</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td>Albertina  Apumayta</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>45 años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Administradora de restaurante</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td>Ate</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415088_upc_edu_pe/IQAjp5LL9kziQ5tAfau1fWAwAen2YAaH4_axggWimvldRIs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=FmSOZ0">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td>7:42 minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:13</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="../assets/chapter-2/screenshot-interview-albertina.png" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+        La entrevista con la señora Albertina, dueña del restaurante Misty Mercury, muestra que gestiona sus insumos de manera muy básica y manual: compra lo justo para cada día según los platos que decide preparar, evitando desperdicios pero sin llevar un registro formal ni contar con un sistema que le anticipe necesidades. Aunque rara vez enfrenta problemas de stock, depende de su memoria y observación de ventas pasadas para decidir qué ofrecer, lo que limita la eficiencia y la capacidad de respuesta ante cambios en la demanda. Reconoce que le sería útil contar con un sistema automático que le sugiera menús, alerte sobre insumos próximos a agotarse y le indique cuáles productos se consumen más, lo que evidencia que aún necesita apoyo adicional en la gestión de inventario y planificación.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### **2.2.3. Interview Analysis**
 
@@ -378,8 +437,10 @@ Con el fin de contrastar los supuestos planteados en el Lean UX Canvas y evitar 
 **Entrevista 2:** A partir de la entrevista con el administrador Ian Kimi Sevastian San Martín Cauti, se evidencia que el restaurante enfrenta desajustes significativos al gestionar su stock mediante revisiones físicas y hojas de Excel, basando la proyección de compras en estimaciones empíricas e historiales de ventas. Esta falta de automatización deriva en picos de desabastecimiento, merma por productos vencidos y descuadres entre el inventario registrado y el real. Además, aunque las recetas se encuentran documentadas en fichas, el consumo de ingredientes no se descuenta en tiempo real al vender un plato, sino que se calcula manualmente al cierre del día, favoreciendo el margen de error. Para solucionar esta brecha operativa, el negocio requiere una herramienta tecnológica que no solo organice el stock, sino que ayude a anticipar la demanda de almuerzos y feriados mediante alertas de reabastecimiento y vencimiento, así como sugerencias automatizadas sobre qué insumos priorizar y en qué cantidad comprar o preparar para reducir pérdidas.
 
 **Entrevista 3:** 
-
 Isabel cuenta con más de cinco años de experiencia como CEO y prioriza analizar cada etapa del negocio para determinar sus necesidades específicas. Hoy en día, su equipo gestiona las operaciones de manera colaborativa mediante hojas de cálculo, reuniones breves y acuerdos internos. Por ello, ante la implementación de la nueva plataforma, busca agilizar procesos clave que actualmente demandan demasiado tiempo de consolidación, especialmente la generación de reportes
+
+**Entrevista 4:**
+La señora Albertina gestiona su restaurante de manera práctica y eficiente en lo básico, pero carece de herramientas que le permitan anticiparse y tomar decisiones basadas en datos. Aunque reconoce patrones de consumo y ajusta la oferta según preferencias de clientes y horarios, carece de un sistema que le permita proyectar tendencias o automatizar decisiones. Su negocio funciona de manera práctica, pero tiene vulnerabilidades: falta de datos estructurados, poca previsión y ausencia de alertas sobre insumos críticos. 
 
 ## **2.3. Needfinding**
 Esta parte del trabajo nos permitirá conocer de manera más cercana las necesidades, problemas y dificultades que enfrentan los responsables de la gestión de un restaurante en sus actividades diarias. A partir de las entrevistas y la información recopilada, podremos identificar oportunidades de mejora y definir qué funcionalidades debería ofrecer nuestra solución para responder a problemas reales.
