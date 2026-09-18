@@ -77,17 +77,17 @@ Nacemos con el propósito de democratizar el acceso a herramientas tecnológicas
     </tr>
     <tr>
       <td width="30%" align="center" valign="middle">
-        <img src="../assets/chapter-1/img/" alt="Foto de " width="180" style="border-radius: 8px;">
+        <img src="../assets/chapter-1/leyla-ortiz.JPG" alt="Foto de Leyla Ortiz" width="180" style="border-radius: 8px;">
         <br>
         <i></i>
       </td>
       <td width="70%" valign="top" style="padding-left: 20px;">
         <h3></h3>
-        <p><b>Código de estudiante: </b> </p>
-        <p><b>Edad: </b> </p>
-        <p><b>Carrera: </b> </p>
+        <p><b>Código de estudiante: u202415088</b> </p>
+        <p><b>Edad: 19</b> </p>
+        <p><b>Carrera: Ingeniería de Software</b> </p>
         <br>
-        <p><b>Sobre mí:</b></p>
+        <p><b>Sobre mí:</b>Soy Leyla Alisson Ortiz Laura. Estoy cursando el sexto ciclo de la carrera de Ingeniería de Software y cuento con los conocimientos en programación en C++, python y JavaScript. Poseo un pensamiento analítico y crítico ante cualquier situación. En un equipo aporto organización, comunicación clara, capacidad de análisis y creatividad en el diseño de soluciones, fomentando la colaboración y asegurando resultados de calidad. Soy responsable y disciplinada en cuanto a trabajos. Me gusta la convivencia en grupo y colaboro siempre que puedo.</p>
         <p></p>
       </td>
     </tr>
