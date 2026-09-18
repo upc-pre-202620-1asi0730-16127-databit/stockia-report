@@ -522,4 +522,54 @@ Se elaboró un Big Picture Event Storming con el objetivo de visualizar de maner
 <p align="center"><img src="../assets/chapter-2/big-picture-event-storming.png" alt="STOCKIA big-picture-event-storming" width="650">
 
 El resultado evidencia que el flujo de eventos de StockIA gira en torno a el CEO del restaurante y el trabajador, mientras que un segundo bloque de eventos corresponde a procesos internos ejecutados automáticamente por el sistema, como la consolidación del historial de ventas, el entrenamiento del modelo de Machine Learning y el envío de notificaciones multicanal, sin intervención directa de una persona adicional. En la columna de problemas se confirma que el dolor principal de los restaurantes es la desconexión entre el sistema de ventas y el control real de inventario, lo que se traduce en pérdidas económicas cuantificables (hasta 15% del tiempo laboral y entre 4% y 10% de los alimentos comprados). Las dudas identificadas apuntan principalmente a riesgos técnicos y de negocio que deberán resolverse durante el diseño detallado, donde la precisión del modelo predictivo en etapas tempranas con poca data histórica, la confiabilidad de las notificaciones externas y la definición de los límites técnicos de cada plan de suscripción. Por su parte, los sistemas externos (OpenWeather, Google Maps, Stripe/PayPal, SendGrid, Twilio) confirman la naturaleza altamente integrada de la plataforma, mientras que las oportunidades reafirman la ventaja competitiva detectada en el análisis de competidores, donde ningún competidor combina actualmente predicción de demanda con ML, correlación climática y alertas multicanal en una sola solución, lo cual posiciona a StockIA con una propuesta diferenciada frente a Toteat, Panca Software y RestoIQ.
+
 ## **2.5. Ubiquitous Language**
+En esta sección se define el lenguaje ubicuo del dominio del negocio, el cual permite establecer una comunicación clara, consistente y sin ambigüedades entre todos los stakeholders del proyecto, incluyendo desarrolladores, diseñadores y usuarios del sistema.
+
+El **Ubiquitous Language** se construye a partir de términos propios del dominio de la gestión de inventarios y predicción de demanda para restaurantes (**StockIA**), evitando el uso de conceptos técnicos de ingeniería de software.
+
+Este lenguaje debe mantenerse consistente a lo largo de todo el proyecto, incluyendo la definición de requerimientos, User Stories, modelos de dominio y diseño del sistema.
+
+## Glosario de Términos del Dominio
+
+- **Restaurant Owner (Dueño / Administrador)**  
+  Persona encargada de la administración general del establecimiento, responsable de registrar el restaurante, gestionar planes, configurar roles y tomar decisiones operativas.
+
+- **Employee (Empleado)**  
+  Personal operativo del restaurante que utiliza el sistema con una vista simplificada para cumplir tareas básicas de cocina, servicio o inventario.
+
+- **Supply / Ingredient (Insumo / Ingrediente)**  
+  Materia prima o producto físico almacenado en el inventario para la preparación de los platos del menú.
+
+- **Inventory (Inventario)**  
+  Conjunto de existencias de insumos disponibles en el restaurante, sujeto a altas, bajas y modificaciones automáticas o manuales.
+
+- **Recipe (Receta)**  
+  Estructura que define los ingredientes exactos y las proporciones necesarias para preparar un plato del menú, vinculada al inventario para el descuento automático.
+
+- **Dish Sold (Plato Vendido)**  
+  Evento de negocio que se registra al concretar la venta de un platillo a un cliente, disparando el descuento de los insumos correspondientes.
+
+- **Shelf Life (Vida Útil)**  
+  Tiempo de conservación estándar o ajustado de un insumo, utilizado para calcular automáticamente su fecha límite de consumo.
+
+- **Expiration Date (Fecha Límite de Consumo / Vencimiento)**  
+  Fecha límite calculada a partir de la vida útil del insumo para prevenir mermas y generar alertas oportunas.
+
+- **Demand Forecast (Predicción de Demanda)**  
+  Proyección generada por Machine Learning sobre la cantidad de platos o insumos que se requerirán, considerando históricos de ventas y condiciones climáticas.
+
+- **Alert (Alerta)**  
+  Notificación generada por el sistema ante situaciones críticas, tales como insumos con stock bajo, próximos a vencer o anomalías en equipos de cocina.
+
+- **Recommendation (Recomendación)**  
+  Sugerencia automática generada por el sistema para ajustar el menú, optimizar compras o mejorar la operación del restaurante.
+
+- **Gamification Profile (Perfil de Gamificación)**  
+  Sistema de logros y reconocimientos otorgados al personal al aplicar con éxito las recomendaciones y mejoras operativas en el restaurante.
+
+- **Subscription Plan (Plan de Suscripción)**  
+  Modelo de acceso comercial contratado por el restaurante, como Esencial, Profesional o IoT Completo, para utilizar las funcionalidades de la plataforma.
+
+- **Transaction (Transacción)**  
+  Registro financiero del pago, renovación o gestión de la suscripción a través de pasarelas externas como Stripe o PayPal.
