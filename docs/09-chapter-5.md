@@ -232,7 +232,7 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Time** | 10:00 am |
 | **Location** | Lima/Lima/Santiago de Surco/UPC |
 | **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
-| **Attendees (to planning meeting)** | Gallardo Morales, Carla Alejandra/ Huaman Oscco, Aldo Jesus/ Miranda Cordova, Jesus Angel Yvan/ Ortiz Laura, Leyla Alisson/ Toro Turpo, Ronal |
+| **Attendees (to planning meeting)** | Tuesta Girón, Kiara Lucia/ Huaman Oscco, Aldo Jesus/ Higa Kohatsu, Alonso Enrique/ Ortiz Laura, Leyla Alisson/ Asmat Alminco, Martin Alejandro |
 | **Sprint Review Summary** | Al ser el primer Sprint, la revisión anterior corresponde a la fase de ideación: segmentos objetivo y propuesta de valor. Resultados alcanzados: Arquitectura C4 finalizada, modelado de base de datos diseñada y repositorios GitHub configurados para el uso de gitflow. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio y siguiendo como base las User Storys. |
 | **Sprint Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de programas de trabajo remoto, el uso de herramientas colaborativos como GitHub y Jira, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
 | **Sprint Goal & User Stories** | |
@@ -241,6 +241,23 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Sum of Story Points** | 88 Story Points |
 
 #### **5.2.1.2. Aspect Leaders and Collaborators**
+* En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **StockIA**.
+
+La organización de líderes y colaboradores está directamente relacionada con la selección de tareas (tasks) que se desarrollarán durante el Sprint. Dado que este Sprint se concentra únicamente en la Landing Page, se proponen los siguientes aspectos:
+
+| Team Member | GitHub Username | Maquetación & UI/UX (L/C) | Contenido & Traducción (i18n) (L/C) | Responsive & Accesibilidad (L/C) | Despliegue & QA (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga | L | C | C | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | L |
+| Asmat Alminco, Martin Alejandro | Alemarr2 | C | C | L | C |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C |
+| Tuesta Girón, Kiara Lucia | kitu05g | C | L | C | C |
+---
+
+> **Leyenda:**  </br>
+> **L:** Líder (Líder del aspecto)  
+> **C:** Colaborador (Colaborador y desarrollo)
+
 #### **5.2.1.3. Sprint Backlog 1**
 #### **5.2.1.4. Development Evidence for Sprint Review**
 #### **5.2.1.5. Execution Evidence for Sprint Review**
