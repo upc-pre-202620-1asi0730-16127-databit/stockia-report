@@ -1021,6 +1021,39 @@ En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS
   <br/><i>Web Application desplegada</i>
 </p>
 
+#### **5.2.2.8. Team Collaboration Insights during Sprint**
+ 
+**Dinámica de trabajo**
+ 
+En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante es responsable de un contexto completo del Capítulo IV en sus cuatro capas (domain, infrastructure, application y presentation) y de su integración en la Web Application (ver 5.2.2.2 y la tabla de distribución de 5.2.2.4). Cada responsable revisa también el diagrama de clases y el diagrama C4 de su contexto para que reflejen lo implementado. Las tareas se gestionaron en Jira, en el proyecto SCRUM, con un responsable por tarea y su estado actualizado. La comunicación diaria se mantuvo por WhatsApp y las reuniones de sincronización por Google Meet. Aplicando la mejora de la retrospectiva del Sprint 1, el trabajo se integra con una rama `feature/*` por contexto o tarea, con el ID de la tarea en el mensaje de commit y con revisión por Pull Request antes de llegar a `develop`.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits en el Sprint 2** |
+| :--- | :--- | :--- | :---: | :---: |
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga | Restaurant Registration: registro, inicio de sesión, perfil, shell con menú por rol, equipo y roles (US09, US10, US11) y control de acceso (RNF08) | 32.5 | <!-- ACTUALIZAR --> |
+| Asmat Alminco, Martin Alejandro | Alemarr2 | Stock Management & Recipes Management (US12, US13, US14); inglés por defecto en la Landing Page (TS08) | 33.5 | <!-- ACTUALIZAR --> |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | ML and Recommendations (US18); arquitectura por Bounded Context (TS05), API simulada (TS06) y despliegue en Vercel (TS07) | 26 | <!-- ACTUALIZAR --> |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Analytics and Dashboard (US16), alertas operativas (US17), historial de ventas (US15) y accesibilidad de la Web Application (RNF11) | 31 | <!-- ACTUALIZAR --> |
+| Tuesta Girón, Kiara Lucia | kitu05g | Subscription and Payment Management (US19); nueva versión de la Landing Page y enlace con la Web Application (TS08); internacionalización de la Web Application (RNF10); verificación de estados y pruebas en producción (RNF09, TS07) | 30 | <!-- ACTUALIZAR --> |
+ 
+**Evidencia: tablero del Sprint 2 en Jira**
+<p align="center">
+  <img src="../assets/chapter-5/sprint-2/s2-jira-board.png" width="800" alt="Tablero del Sprint 2 en Jira"/>
+  <br/><i>Tablero del Sprint 2 en Jira (SCRUM)</i>
+</p>
+**Evidencia: contribuciones por integrante en `stockia-webapp`**
+<p align="center">
+  <img src="../assets/chapter-5/sprint-2/s2-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
+  <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
+</p>
+**Evidencia: grafo de GitFlow**
+<p align="center">
+  <img src="../assets/chapter-5/sprint-2/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
+  <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
+</p>
+
+
 
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
