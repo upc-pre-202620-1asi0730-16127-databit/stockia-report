@@ -466,130 +466,96 @@ La Landing Page se integró en el repositorio de la organización siguiendo GitF
 | stockia-website | feature/js-files | `0897fec` | feat: update js files | TS03: limpieza de `i18n.js` y `main.js` (Leylaa-O). | 18/09/2026 |
 
 #### **5.2.1.5. Execution Evidence for Sprint Review**
-En el Sprint 1 se busca implementar todas las secciones de las 4 páginas de la Landing Page de StockIA. A continuación, se explorarán los avances a través de imágenes que muestren el resultado obtenido *(capturas pendientes de reemplazo, tomadas ahora desde el repositorio `stockia-website` de la organización)*:
-<br/>
-
-1. **Sección header / navbar:** Barra de navegación compartida entre las 4 páginas del sitio, con selector de idioma (ES/EN).
-
-<br/>
+En el Sprint 1 se implementaron las cuatro páginas de la Landing Page de StockIA. A continuación se presenta cada sección publicada junto con la User Story o el requisito que la respalda:
+ 
+1. **Barra de navegación (US07, US08):** menú común a las cuatro páginas con los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES/EN y el botón "Solicitar demo".
 <p align="center">
-  <img src="../assets/chapter-5/01-header-navbar.png" width="800" alt="Sección header / navbar"/>
-  <br/><i>Sección header / navbar — StockIA</i>
+  <img src="../assets/chapter-5/01-header-navbar.png" width="800" alt="Barra de navegación"/>
+  <br/><i>Barra de navegación — US07 y US08</i>
 </p>
-<br/>
-
-2. **Sección hero + mockup de dashboard:** Título con la propuesta de valor, descripción, botones CTA y un mockup ilustrativo del dashboard de StockIA.
-
-<br/>
+2. **Hero con mockup del dashboard (US01):** propuesta de valor, CTA principal y secundario, tres indicadores clave y la vista previa ilustrativa del dashboard.
 <p align="center">
-  <img src="../assets/chapter-5/02-hero-mockup-dashboard.png" width="800" alt="Sección hero + mockup de dashboard"/>
-  <br/><i>Sección hero + mockup de dashboard — StockIA</i>
+  <img src="../assets/chapter-5/02-hero-mockup-dashboard.png" width="800" alt="Hero con mockup del dashboard"/>
+  <br/><i>Hero con mockup del dashboard — US01</i>
 </p>
-<br/>
-
-3. **Barra de estadísticas:** Los cuatro indicadores de impacto mostrados en el Home, con nota de transparencia sobre cifras de ejemplo.
-
-<br/>
+3. **Barra de estadísticas (US01, RNF07):** los cuatro indicadores de impacto y la nota que identifica las cifras referenciales.
 <p align="center">
   <img src="../assets/chapter-5/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
-  <br/><i>Barra de estadísticas — StockIA</i>
+  <br/><i>Barra de estadísticas — US01 y RNF07</i>
 </p>
-<br/>
-
-4. **Sección "¿Para quién es StockIA?":** Tarjetas diferenciadas para los segmentos dueños/CEOs de restaurantes y administradores/jefes de cocina.
-
-<br/>
+4. **"¿Para quién es StockIA?" (US02):** una tarjeta para dueños y CEOs y otra para administradores y jefes de cocina.
 <p align="center">
   <img src="../assets/chapter-5/04-para-quien-es-stockia.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
-  <br/><i>Sección "¿Para quién es StockIA?" — StockIA</i>
+  <br/><i>Sección "¿Para quién es StockIA?" — US02</i>
 </p>
-<br/>
-
-5. **Grid de funcionalidades:** Seis tarjetas de funcionalidades principales en el Home, con enlace al detalle completo en features.html.
-
-<br/>
+5. **Funcionalidades del Home (US02):** seis tarjetas de funcionalidades y el botón "Ver todas las características →".
 <p align="center">
-  <img src="../assets/chapter-5/05-grid-funcionalidades.png" width="800" alt="Grid de funcionalidades"/>
-  <br/><i>Grid de funcionalidades — StockIA</i>
+  <img src="../assets/chapter-5/05-grid-funcionalidades.png" width="800" alt="Funcionalidades del Home"/>
+  <br/><i>Funcionalidades del Home — US02</i>
 </p>
-<br/>
-
-6. **Sección "Más que un inventario" (diferenciadores):** Las tres tarjetas de diferenciadores de StockIA frente a otras soluciones.
-
-<br/>
+6. **"Más que un inventario" (US03):** las tres tarjetas de diferenciadores de StockIA.
 <p align="center">
-  <img src="../assets/chapter-5/06-mas-que-un-inventario.png" width="800" alt="Sección Más que un inventario (diferenciadores)"/>
-  <br/><i>Sección "Más que un inventario" (diferenciadores) — StockIA</i>
+  <img src="../assets/chapter-5/06-mas-que-un-inventario.png" width="800" alt="Diferenciadores"/>
+  <br/><i>Diferenciadores — US03</i>
 </p>
-<br/>
-
-7. **Sección de integraciones externas:** Las cuatro tarjetas de integraciones en evaluación (Google Maps, OpenWeather, Stripe/PayPal, Twilio/SendGrid), con nota de decisión pendiente.
-
-<br/>
+7. **Integraciones en evaluación (US03, RNF07):** cuatro tarjetas con la etiqueta "En evaluación" y la nota de que la integración definitiva aún no se ha elegido.
 <p align="center">
-  <img src="../assets/chapter-5/07-integraciones-externas.png" width="800" alt="Sección de integraciones externas"/>
-  <br/><i>Sección de integraciones externas — StockIA</i>
+  <img src="../assets/chapter-5/07-integraciones-externas.png" width="800" alt="Integraciones en evaluación"/>
+  <br/><i>Integraciones en evaluación — US03 y RNF07</i>
 </p>
-<br/>
-
-8. **Sección de portafolio:** Vistas ilustrativas con tabs para alternar entre Inventario e IA & IoT.
-
-<br/>
+8. **Portafolio (US03):** vistas ilustrativas de la plataforma con pestañas que resaltan la categoría activa.
 <p align="center">
-  <img src="../assets/chapter-5/08-seccion-portafolio.png" width="800" alt="Sección de portafolio"/>
-  <br/><i>Sección de portafolio — StockIA</i>
+  <img src="../assets/chapter-5/08-seccion-portafolio.png" width="800" alt="Portafolio"/>
+  <br/><i>Portafolio — US03</i>
 </p>
-<br/>
-
-9. **Placeholder de video demostrativo:** Bloque "Video demostrativo próximamente", con el iframe de YouTube ya preparado en el código para su reemplazo futuro.
-
-<br/>
+9. **Video del producto (US03):** bloque "Video demostrativo próximamente" sin enlaces rotos.
 <p align="center">
-  <img src="../assets/chapter-5/09-placeholder-video.png" width="800" alt="Placeholder de video demostrativo"/>
-  <br/><i>Placeholder de video demostrativo — StockIA</i>
+  <img src="../assets/chapter-5/09-placeholder-video.png" width="800" alt="Bloque del video del producto"/>
+  <br/><i>Bloque del video del producto — US03</i>
 </p>
-<br/>
-
-10. **features.html — grid completo:** Detalle extendido de las seis funcionalidades y la sección "Cómo funciona" (4 pasos).
-
-<br/>
+10. **features.html (US02):** detalle de los seis módulos y la sección "Cómo funciona" con cuatro pasos.
 <p align="center">
-  <img src="../assets/chapter-5/10-features-grid-completo.png" width="800" alt="features.html — grid completo"/>
-  <br/><i>features.html — grid completo — StockIA</i>
+  <img src="../assets/chapter-5/10-features-grid-completo.png" width="800" alt="features.html"/>
+  <br/><i>features.html — US02</i>
 </p>
-<br/>
-
-11. **pricing.html — planes y FAQ:** Las tarjetas de los planes Esencial, Profesional e IoT Completo, el toggle mensual/anual y el acordeón de preguntas frecuentes.
-
-<br/>
+11. **pricing.html (US04, RNF07):** planes Esencial, Profesional e IoT Completo con el interruptor mensual/anual, la nota de precios de ejemplo y el acordeón de preguntas frecuentes.
 <p align="center">
-  <img src="../assets/chapter-5/11-pricing-planes-y-faq.png" width="800" alt="pricing.html — planes y FAQ"/>
-  <br/><i>pricing.html — planes y FAQ — StockIA</i>
+  <img src="../assets/chapter-5/11-pricing-planes-y-faq.png" width="800" alt="pricing.html"/>
+  <br/><i>pricing.html — US04 y RNF07</i>
 </p>
-<br/>
-
-12. **about.html — misión, visión, equipo y formulario:** Sección de misión/visión/valores, las fichas de equipo (placeholder) y el formulario de solicitud de demo.
-
-<br/>
+12. **about.html (US05, US06):** misión, visión, valores, fichas del equipo y formulario de solicitud de demo.
 <p align="center">
-  <img src="../assets/chapter-5/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html — misión, visión, equipo y formulario"/>
-  <br/><i>about.html — misión, visión, equipo y formulario — StockIA</i>
+  <img src="../assets/chapter-5/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html"/>
+  <br/><i>about.html — US05 y US06</i>
 </p>
-<br/>
-
-13. **Sección footer:** Parte final del sitio, compartida entre las 4 páginas.
-
-<br/>
+13. **Pie de página (US07):** columnas Producto, Empresa y Legal, comunes a las cuatro páginas.
 <p align="center">
-  <img src="../assets/chapter-5/13-seccion-footer.png" width="800" alt="Sección footer"/>
-  <br/><i>Sección footer — StockIA</i>
+  <img src="../assets/chapter-5/13-seccion-footer.png" width="800" alt="Pie de página"/>
+  <br/><i>Pie de página — US07</i>
 </p>
-<br/>
-
-Para finalizar, se mostrará una demostración del avance sobre la Landing Page dentro de GitHub, para la publicación de la página web:
+**Verificación de los requisitos no funcionales**
+ 
+Los requisitos no funcionales del Sprint 1 se verificaron con el criterio medible definido en el Capítulo III:
+ 
+| **RNF** | **Criterio medible** | **Herramienta de verificación** | **Evidencia** |
+| :--- | :--- | :--- | :--- |
+| RNF01 | Sin scroll horizontal a 360 px; breakpoints en 1024, 768 y 480 px | DevTools a 360, 768, 1024 y 1440 px | `rnf01-responsive.png` |
+| RNF02 | Contraste ≥ 4.5:1 en texto normal y ≥ 3:1 en texto grande | WebAIM Contrast Checker y Lighthouse Accessibility | `rnf02-lighthouse-accessibility.png` |
+| RNF03 | Lighthouse Performance móvil ≥ 90; LCP ≤ 2.5 s; CLS ≤ 0.1 | Lighthouse en modo móvil | `rnf03-lighthouse-performance.png` |
+| RNF04 | `title` ≤ 60 y `description` ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90 | Inspección del `<head>` y Lighthouse SEO | `rnf04-lighthouse-seo.png` |
+| RNF05 | Funcionamiento igual en Chrome, Edge, Firefox, Safari, Chrome Android y Safari iOS; 0 errores de consola | Matriz de pruebas manual | `rnf05-navegadores.png` |
+| RNF06 | Animaciones ≤ 500 ms; contenido visible sin IntersectionObserver | Revisión de `main.js` y prueba con el observador deshabilitado | `rnf06-animaciones.png` |
+| RNF07 | 100 % de cifras, precios y fichas de ejemplo con nota visible en ES/EN | Revisión de las cuatro páginas en ambos idiomas | Capturas 3, 7 y 11 de esta sección |
+ 
 <p align="center">
-  <img src="../assets/chapter-5/14-repositorio-github.png" width="800" alt="Repositorio de GitHub"/>
-  <br/><i>Repositorio de GitHub sobre la Landing Page de StockIA — https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website</i>
+  <img src="../assets/chapter-5/Lighthouse.png" width="500" alt="Reporte de Lighthouse"/>
+  <br/><i>Reporte de Lighthouse en modo móvil — RNF02, RNF03 y RNF04</i>
+</p>
+Para finalizar, se muestra el repositorio de la Landing Page en la organización de GitHub:
+ 
+<p align="center">
+  <img src="../assets/chapter-5/14-repositorio-github.png" width="800" alt="Repositorio de la Landing Page"/>
+  <br/><i>Repositorio <code>stockia-website</code> en la organización upc-pre-202620-1asi0730-16127-databit</i>
 </p>
 
 #### **5.2.1.6. Services Documentation Evidence for Sprint Review**
