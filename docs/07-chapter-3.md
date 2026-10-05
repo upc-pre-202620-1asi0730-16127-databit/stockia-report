@@ -29,7 +29,668 @@
 | **EP11** | Suscripción y planes | Como administrador, quiero elegir, cambiar y pagar mi plan, para mantener el servicio activo según el tamaño de mi restaurante. | OE6 | % de restaurantes con plan activo; % de renovaciones exitosas | US19, US22 |
 | **EP12** | Base técnica y despliegue continuo | Como Developer, quiero una base de código organizada, versionada y desplegada automáticamente, para entregar cada incremento verificable en una URL pública. | Habilitador de OE4 a OE7 | % de despliegues exitosos desde la rama de producción; tiempo desde el merge hasta la publicación | TS01, TS02, TS03, TS04, TS05, TS06, TS07, TS08, TS09, TS10, TS11, TS12, TS13, TS14, TS15, TS16, RNF09 |
 
-
+### User Stories
+ 
+<table>
+<tr><th>Story ID</th><th>Título</th><th>Descripción</th><th>Criterios de Aceptación</th><th>Relacionado con Epic ID</th></tr>
+<tr>
+<td><strong>US01</strong></td>
+<td>Comprender la propuesta de valor y el impacto de StockIA desde el Home</td>
+<td>Como visitante del segmento dueños y administradores de restaurantes, quiero entender en el primer pantallazo qué problema de inventario resuelve, cuánto le cuesta hoy el desperdicio a un restaurante y cuál es el siguiente paso, para decidir en menos de 30 segundos si continúo hacia la solicitud de demo.</td>
+<td>
+<strong>Scenario 1: Mensaje principal visible al cargar</strong><br>
+<strong>Given</strong> que el visitante abre index.html en una pantalla de escritorio<br>
+<strong>When</strong> la página termina de cargar<br>
+<strong>Then</strong> el hero muestra el título con la propuesta de valor, la descripción del producto y el nombre StockIA sin necesidad de hacer scroll<br><br>
+<strong>Scenario 2: CTA principal hacia la conversión</strong><br>
+<strong>Given</strong> que el visitante está en el hero<br>
+<strong>When</strong> hace clic en "Optimiza tu inventario →"<br>
+<strong>Then</strong> el sitio lo lleva al banner final "Empieza a optimizar tu inventario hoy"<br>
+<strong>And</strong> ese banner ofrece el botón que abre el formulario de contacto en about.html#contacto<br><br>
+<strong>Scenario 3: CTA secundario hacia el detalle del producto</strong><br>
+<strong>Given</strong> que el visitante quiere saber cómo funciona StockIA antes de contactar<br>
+<strong>When</strong> hace clic en "Ver cómo funciona"<br>
+<strong>Then</strong> el sitio abre features.html<br><br>
+<strong>Scenario 4: Indicadores clave del hero identificados como referenciales</strong><br>
+<strong>Given</strong> que el visitante revisa el hero<br>
+<strong>When</strong> observa los indicadores debajo de los botones<br>
+<strong>Then</strong> el hero muestra tres indicadores: "−25 % desperdicio de alimentos*", "+18 % margen operativo estimado*" y "&lt;5 s descuento de insumos por venta"<br>
+<strong>And</strong> los indicadores con asterisco se identifican como cifras referenciales<br><br>
+<strong>Scenario 5: Vista previa del dashboard según el ancho de pantalla</strong><br>
+<strong>Given</strong> que el visitante abre el Home<br>
+<strong>When</strong> el ancho de la pantalla es mayor a 768 px<br>
+<strong>Then</strong> el hero muestra el mockup ilustrativo del dashboard junto al texto<br>
+<strong>And</strong> con un ancho de 768 px o menos el mockup se oculta y el texto ocupa todo el ancho<br><br>
+<strong>Scenario 6: Barra de cuatro indicadores</strong><br>
+<strong>Given</strong> que el visitante se desplaza por el Home<br>
+<strong>When</strong> llega a la barra de estadísticas<br>
+<strong>Then</strong> el sitio muestra cuatro indicadores: "30 %*" de insumos desperdiciados, "1 de 3*" restaurantes sin sistema predictivo, "−20 %*" de pérdidas evitables y "24/7" de monitoreo<br><br>
+<strong>Scenario 7: Nota de transparencia visible</strong><br>
+<strong>Given</strong> que los indicadores con asterisco son referenciales<br>
+<strong>When</strong> el visitante lee la barra<br>
+<strong>Then</strong> debajo de los indicadores aparece una nota que los identifica como cifras referenciales en el idioma seleccionado
+</td>
+<td>EP01 — Propuesta de valor en la Landing Page</td>
+</tr>
+<tr>
+<td><strong>US02</strong></td>
+<td>Identificar si StockIA es para mi rol y explorar sus funcionalidades</td>
+<td>Como visitante del segmento dueños o jefes de cocina de restaurantes, quiero ver un mensaje dirigido a mi rol, el detalle de cada módulo y los pasos para empezar, para confirmar en una sola visita que StockIA cubre inventario, recetas y alertas antes de contactar al equipo.</td>
+<td>
+<strong>Scenario 1: Tarjeta para dueños y CEOs</strong><br>
+<strong>Given</strong> que el visitante es dueño del restaurante<br>
+<strong>When</strong> revisa la sección "¿Para quién es StockIA?"<br>
+<strong>Then</strong> encuentra una tarjeta que describe el control de inventario, mermas y rentabilidad<br><br>
+<strong>Scenario 2: Tarjeta para administradores y jefes de cocina</strong><br>
+<strong>Given</strong> que el visitante dirige la operación diaria<br>
+<strong>When</strong> revisa la misma sección<br>
+<strong>Then</strong> encuentra una tarjeta que describe recetas, stock de insumos y alertas de vencimiento<br><br>
+<strong>Scenario 3: Resumen de funcionalidades en el Home</strong><br>
+<strong>Given</strong> que el visitante llega a la sección "Todo lo que necesita tu restaurante"<br>
+<strong>When</strong> la sección se muestra<br>
+<strong>Then</strong> el sitio presenta seis tarjetas de funcionalidades<br>
+<strong>And</strong> ofrece el botón "Ver todas las características →" que abre features.html<br><br>
+<strong>Scenario 4: Detalle completo en features.html</strong><br>
+<strong>Given</strong> que el visitante abre features.html<br>
+<strong>When</strong> la página termina de cargar<br>
+<strong>Then</strong> el sitio presenta los seis módulos con su descripción extendida<br><br>
+<strong>Scenario 5: Pasos de adopción</strong><br>
+<strong>Given</strong> que el visitante quiere saber qué esfuerzo implica empezar<br>
+<strong>When</strong> llega a la sección "Empieza en minutos"<br>
+<strong>Then</strong> el sitio muestra cuatro pasos numerados desde el registro del restaurante hasta la recepción de alertas<br><br>
+<strong>Scenario 6: Cierre hacia la conversión</strong><br>
+<strong>Given</strong> que el visitante terminó de revisar features.html<br>
+<strong>When</strong> hace clic en el botón del banner final<br>
+<strong>Then</strong> el sitio abre el formulario de contacto en about.html#contacto
+</td>
+<td>EP01 — Propuesta de valor en la Landing Page</td>
+</tr>
+<tr>
+<td><strong>US03</strong></td>
+<td>Evaluar diferenciadores, integraciones y vistas del producto</td>
+<td>Como visitante del segmento dueños y administradores que compara alternativas, quiero ver qué diferencia a StockIA, con qué servicios se integrará y cómo lucen sus pantallas, para justificar el cambio desde mi cuaderno o Excel sin reunirme todavía con el equipo.</td>
+<td>
+<strong>Scenario 1: Diferenciadores</strong><br>
+<strong>Given</strong> que el visitante llega a la sección "Más que un inventario"<br>
+<strong>When</strong> la sección se muestra<br>
+<strong>Then</strong> el sitio presenta tres tarjetas con los diferenciadores de StockIA<br><br>
+<strong>Scenario 2: Integraciones identificadas como en evaluación</strong><br>
+<strong>Given</strong> que el visitante llega a "Se conecta con el ecosistema que ya usas"<br>
+<strong>When</strong> revisa las integraciones<br>
+<strong>Then</strong> el sitio muestra cuatro tarjetas con la etiqueta "En evaluación"<br>
+<strong>And</strong> una nota aclara que la integración definitiva aún no ha sido elegida<br><br>
+<strong>Scenario 3: Pestañas del portafolio</strong><br>
+<strong>Given</strong> que el visitante está en "La plataforma en acción"<br>
+<strong>When</strong> hace clic en una pestaña<br>
+<strong>Then</strong> esa pestaña queda resaltada como activa y las demás dejan de estarlo<br><br>
+<strong>Scenario 4: Espacio del video del producto</strong><br>
+<strong>Given</strong> que el video del producto aún no ha sido publicado<br>
+<strong>When</strong> el visitante llega a la sección de video<br>
+<strong>Then</strong> el sitio muestra el bloque "Video demostrativo próximamente" sin enlaces rotos
+</td>
+<td>EP01 — Propuesta de valor en la Landing Page</td>
+</tr>
+<tr>
+<td><strong>US04</strong></td>
+<td>Comparar planes y resolver dudas antes de contratar</td>
+<td>Como visitante del segmento dueños y administradores, quiero comparar los planes, alternar entre pago mensual y anual y resolver mis dudas frecuentes, para estimar el costo frente a lo que pierdo en mermas y decidir sin contactar a soporte.</td>
+<td>
+<strong>Scenario 1: Planes con precios en soles</strong><br>
+<strong>Given</strong> que el visitante abre pricing.html<br>
+<strong>When</strong> la página termina de cargar<br>
+<strong>Then</strong> el sitio muestra los planes Esencial (S/ 0), Profesional (S/ 39) e IoT Completo (S/ 79) con sus características<br>
+<strong>And</strong> el plan Profesional aparece con la etiqueta "Más popular"<br>
+<strong>And</strong> una nota indica que son precios de ejemplo<br><br>
+<strong>Scenario 2: Cambio a facturación anual</strong><br>
+<strong>Given</strong> que los planes muestran el precio mensual<br>
+<strong>When</strong> el visitante activa el interruptor "Anual"<br>
+<strong>Then</strong> los precios cambian a S/ 0, S/ 27 y S/ 55 sin recargar la página<br><br>
+<strong>Scenario 3: Regreso a facturación mensual</strong><br>
+<strong>Given</strong> que el interruptor está en "Anual"<br>
+<strong>When</strong> el visitante lo desactiva<br>
+<strong>Then</strong> los precios vuelven a S/ 0, S/ 39 y S/ 79<br><br>
+<strong>Scenario 4: Apertura de una pregunta frecuente</strong><br>
+<strong>Given</strong> que el visitante llega a "Preguntas frecuentes"<br>
+<strong>When</strong> hace clic en una pregunta cerrada<br>
+<strong>Then</strong> el sitio despliega su respuesta<br><br>
+<strong>Scenario 5: Una sola pregunta abierta a la vez</strong><br>
+<strong>Given</strong> que una pregunta ya está desplegada<br>
+<strong>When</strong> el visitante abre otra pregunta<br>
+<strong>Then</strong> el sitio cierra la anterior y muestra solo la nueva respuesta
+</td>
+<td>EP02 — Conversión a demo: planes, confianza y contacto</td>
+</tr>
+<tr>
+<td><strong>US05</strong></td>
+<td>Conocer a DataBite Corp y a su equipo</td>
+<td>Como visitante del segmento dueños y administradores, quiero conocer la misión, la visión, los valores y las personas detrás de StockIA, para confiar en el producto antes de compartir los datos de mi restaurante.</td>
+<td>
+<strong>Scenario 1: Propósito de la startup</strong><br>
+<strong>Given</strong> que el visitante abre about.html<br>
+<strong>When</strong> la página termina de cargar<br>
+<strong>Then</strong> el sitio muestra el mensaje principal y las tarjetas de misión y visión<br><br>
+<strong>Scenario 2: Valores de DataBite Corp</strong><br>
+<strong>Given</strong> que el visitante llega a "Sobre DataBite Corp"<br>
+<strong>When</strong> la sección se muestra<br>
+<strong>Then</strong> el sitio presenta la descripción de la startup y sus valores<br><br>
+<strong>Scenario 3: Fichas del equipo</strong><br>
+<strong>Given</strong> que el visitante llega a "El equipo detrás de StockIA"<br>
+<strong>When</strong> la sección se muestra<br>
+<strong>Then</strong> el sitio presenta una ficha por integrante<br>
+<strong>And</strong> si una ficha contiene datos de ejemplo, el sitio lo indica en una nota visible<br><br>
+<strong>Scenario 4: Espacio del video del equipo</strong><br>
+<strong>Given</strong> que el video del equipo aún no ha sido publicado<br>
+<strong>When</strong> el visitante llega a la sección de video<br>
+<strong>Then</strong> el sitio muestra un bloque que indica que el video estará disponible próximamente
+</td>
+<td>EP02 — Conversión a demo: planes, confianza y contacto</td>
+</tr>
+<tr>
+<td><strong>US06</strong></td>
+<td>Solicitar una demo desde el formulario de contacto</td>
+<td>Como visitante del segmento dueños y administradores interesado en StockIA, quiero dejar mis datos y los de mi restaurante en un formulario, para que DataBite Corp me contacte y coordinar una demo en una sola interacción.</td>
+<td>
+<strong>Scenario 1: Acceso al formulario desde cualquier página</strong><br>
+<strong>Given</strong> que el visitante está en index.html, features.html o pricing.html<br>
+<strong>When</strong> hace clic en el botón del banner "Empieza a optimizar tu inventario hoy"<br>
+<strong>Then</strong> el sitio abre about.html en la sección de contacto<br><br>
+<strong>Scenario 2: Campos obligatorios incompletos</strong><br>
+<strong>Given</strong> que el visitante deja vacío el nombre o el correo<br>
+<strong>When</strong> presiona "Enviar solicitud"<br>
+<strong>Then</strong> el navegador bloquea el envío e indica el campo obligatorio<br><br>
+<strong>Scenario 3: Correo con formato inválido</strong><br>
+<strong>Given</strong> que el visitante escribe un correo sin "@"<br>
+<strong>When</strong> presiona "Enviar solicitud"<br>
+<strong>Then</strong> el navegador bloquea el envío y señala el formato del correo<br><br>
+<strong>Scenario 4: Confirmación del envío simulado</strong><br>
+<strong>Given</strong> que el visitante completó nombre y correo válidos<br>
+<strong>When</strong> presiona "Enviar solicitud"<br>
+<strong>Then</strong> el botón cambia a "✓ Enviado" y se deshabilita durante 3 segundos<br>
+<strong>And</strong> luego el formulario se limpia<br>
+<strong>And</strong> en esta versión el envío es simulado en el navegador y no transmite datos a un servidor
+</td>
+<td>EP02 — Conversión a demo: planes, confianza y contacto</td>
+</tr>
+<tr>
+<td><strong>US07</strong></td>
+<td>Navegar entre las páginas del sitio</td>
+<td>Como visitante, quiero un menú y un pie de página consistentes en las cuatro páginas, para llegar a precios o al formulario de demo en máximo dos clics desde cualquier página.</td>
+<td>
+<strong>Scenario 1: Menú común en las cuatro páginas</strong><br>
+<strong>Given</strong> que el visitante está en cualquier página del sitio<br>
+<strong>When</strong> observa la barra de navegación<br>
+<strong>Then</strong> encuentra los enlaces Inicio, Características, Precios y Nosotros, el selector ES/EN y el botón "Solicitar demo"<br><br>
+<strong>Scenario 2: Página actual resaltada</strong><br>
+<strong>Given</strong> que el visitante abre pricing.html<br>
+<strong>When</strong> la barra de navegación se muestra<br>
+<strong>Then</strong> el enlace "Precios" aparece resaltado como página activa<br><br>
+<strong>Scenario 3: Regreso al inicio desde el logo</strong><br>
+<strong>Given</strong> que el visitante está en una página interna<br>
+<strong>When</strong> hace clic en el logo de StockIA<br>
+<strong>Then</strong> el sitio abre index.html<br><br>
+<strong>Scenario 4: Pie de página común</strong><br>
+<strong>Given</strong> que el visitante llega al final de cualquier página<br>
+<strong>When</strong> el pie de página se muestra<br>
+<strong>Then</strong> presenta las columnas Producto, Empresa y Legal con los mismos enlaces en las cuatro páginas
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>US08</strong></td>
+<td>Leer el sitio en inglés o en español</td>
+<td>Como visitante, quiero leer el sitio en inglés, su idioma por defecto, o cambiarlo a español y que mi elección se mantenga entre páginas, para evaluar StockIA sin barreras de idioma y sin repetir la selección en cada página.</td>
+<td>
+<strong>Scenario 1: Inglés como idioma por defecto</strong><br>
+<strong>Given</strong> que el visitante abre el sitio por primera vez y no tiene un idioma guardado<br>
+<strong>When</strong> la página termina de cargar<br>
+<strong>Then</strong> todos los textos marcados para traducción se muestran en inglés (en_US)<br>
+<strong>And</strong> el botón "EN" queda resaltado<br><br>
+<strong>Scenario 2: Cambio a español</strong><br>
+<strong>Given</strong> que el sitio está en inglés<br>
+<strong>When</strong> el visitante hace clic en "ES"<br>
+<strong>Then</strong> todos los textos marcados para traducción cambian a español latinoamericano (es_419) sin recargar la página<br><br>
+<strong>Scenario 3: Regreso a inglés</strong><br>
+<strong>Given</strong> que el sitio está en español<br>
+<strong>When</strong> el visitante hace clic en "EN"<br>
+<strong>Then</strong> todos los textos vuelven a inglés<br><br>
+<strong>Scenario 4: Idioma conservado entre páginas</strong><br>
+<strong>Given</strong> que el visitante eligió español en index.html<br>
+<strong>When</strong> navega a pricing.html<br>
+<strong>Then</strong> la página se carga directamente en español<br><br>
+<strong>Scenario 5: Idioma conservado en una nueva visita</strong><br>
+<strong>Given</strong> que el visitante eligió español y cerró la pestaña<br>
+<strong>When</strong> vuelve a abrir el sitio en el mismo navegador<br>
+<strong>Then</strong> el sitio se muestra en español
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>US09</strong></td>
+<td>Registrar mi restaurante y crear mi cuenta de administrador</td>
+<td>Como dueño o administrador de un restaurante, quiero crear mi cuenta con los datos de mi restaurante, para empezar a registrar mi inventario en menos de 5 minutos sin depender de soporte.</td>
+<td>
+<strong>Scenario 1: Registro exitoso</strong><br>
+<strong>Given</strong> que el usuario está en /auth/sign-up<br>
+<strong>When</strong> completa nombre, restaurante, correo y contraseña válidos y presiona "Crear cuenta"<br>
+<strong>Then</strong> el sistema crea la cuenta con el rol Administrador<br>
+<strong>And</strong> inicia su sesión y lo lleva a /app/dashboard<br><br>
+<strong>Scenario 2: Datos inválidos</strong><br>
+<strong>Given</strong> que el usuario escribe un nombre de menos de 3 caracteres, un correo inválido o una contraseña de menos de 4 caracteres<br>
+<strong>When</strong> presiona "Crear cuenta"<br>
+<strong>Then</strong> el sistema marca los campos inválidos y no envía el formulario<br><br>
+<strong>Scenario 3: Correo ya registrado</strong><br>
+<strong>Given</strong> que existe una cuenta con el correo ingresado<br>
+<strong>When</strong> el usuario presiona "Crear cuenta"<br>
+<strong>Then</strong> el sistema muestra "Ya existe una cuenta con este correo" y no crea una cuenta duplicada<br><br>
+<strong>Scenario 4: Falla del servicio</strong><br>
+<strong>Given</strong> que la API no responde<br>
+<strong>When</strong> el usuario presiona "Crear cuenta"<br>
+<strong>Then</strong> el sistema muestra "No se pudo crear la cuenta. Intenta nuevamente." y conserva los datos escritos
+</td>
+<td>EP04 — Acceso seguro y cuenta del restaurante</td>
+</tr>
+<tr>
+<td><strong>US10</strong></td>
+<td>Iniciar sesión y mantener actualizada mi cuenta</td>
+<td>Como administrador o empleado registrado, quiero iniciar y cerrar sesión de forma segura y mantener actualizados mis datos y los de mi restaurante, para que nadie acceda sin sesión a la información de mi restaurante y el 100 % de las notificaciones llegue a un contacto vigente.</td>
+<td>
+<strong>Scenario 1: Inicio de sesión exitoso</strong><br>
+<strong>Given</strong> que el usuario tiene una cuenta<br>
+<strong>When</strong> ingresa su correo y contraseña correctos y presiona "Iniciar sesión"<br>
+<strong>Then</strong> el sistema abre /app/dashboard con su nombre y su rol en la barra superior<br><br>
+<strong>Scenario 2: Credenciales incorrectas</strong><br>
+<strong>Given</strong> que el usuario escribe un correo o una contraseña incorrectos<br>
+<strong>When</strong> presiona "Iniciar sesión"<br>
+<strong>Then</strong> el sistema muestra "Correo o contraseña incorrectos." y permanece en la pantalla de inicio de sesión<br><br>
+<strong>Scenario 3: Acceso sin sesión</strong><br>
+<strong>Given</strong> que no hay una sesión iniciada<br>
+<strong>When</strong> alguien intenta abrir una ruta bajo /app<br>
+<strong>Then</strong> el sistema lo redirige a /auth/sign-in<br><br>
+<strong>Scenario 4: Sesión conservada al recargar</strong><br>
+<strong>Given</strong> que el usuario inició sesión<br>
+<strong>When</strong> recarga el navegador<br>
+<strong>Then</strong> el sistema mantiene su sesión y su rol<br><br>
+<strong>Scenario 5: Cierre de sesión</strong><br>
+<strong>Given</strong> que el usuario está dentro de la aplicación<br>
+<strong>When</strong> presiona "Salir"<br>
+<strong>Then</strong> el sistema elimina la sesión guardada y muestra /auth/sign-in<br><br>
+<strong>Scenario 6: Cambios guardados</strong><br>
+<strong>Given</strong> que el usuario abre /app/profile con su nombre, restaurante y correo precargados<br>
+<strong>When</strong> modifica datos válidos y presiona "Guardar cambios"<br>
+<strong>Then</strong> el sistema muestra "✓ Perfil actualizado"<br>
+<strong>And</strong> la barra superior muestra el nombre actualizado<br><br>
+<strong>Scenario 7: Contraseña opcional</strong><br>
+<strong>Given</strong> que el usuario deja vacío el campo de nueva contraseña<br>
+<strong>When</strong> guarda los cambios<br>
+<strong>Then</strong> el sistema conserva su contraseña actual<br><br>
+<strong>Scenario 8: Datos inválidos</strong><br>
+<strong>Given</strong> que el usuario escribe un correo inválido o un nombre de menos de 3 caracteres<br>
+<strong>When</strong> intenta guardar<br>
+<strong>Then</strong> el sistema muestra el mensaje del campo y no guarda
+</td>
+<td>EP04 — Acceso seguro y cuenta del restaurante</td>
+</tr>
+<tr>
+<td><strong>US11</strong></td>
+<td>Gestionar el equipo y sus roles</td>
+<td>Como administrador, quiero invitar a mi personal, asignarle el rol Administrador o Empleado y dar de baja a quien ya no trabaja conmigo, para delegar el registro de inventario sin exponer la gestión del equipo y mantener el 100 % de las rutas administrativas restringidas por rol.</td>
+<td>
+<strong>Scenario 1: Invitación exitosa</strong><br>
+<strong>Given</strong> que el administrador está en /app/roles<br>
+<strong>When</strong> completa nombre, correo y rol del integrante y presiona "Enviar invitación"<br>
+<strong>Then</strong> el integrante aparece en la lista del equipo con el rol elegido<br>
+<strong>And</strong> la pantalla informa que la cuenta se crea con una contraseña temporal<br><br>
+<strong>Scenario 2: Invitación con datos inválidos</strong><br>
+<strong>Given</strong> que el administrador deja el nombre vacío o escribe un correo inválido<br>
+<strong>When</strong> presiona "Enviar invitación"<br>
+<strong>Then</strong> el sistema no crea la cuenta y marca los campos<br><br>
+<strong>Scenario 3: Baja de un integrante</strong><br>
+<strong>Given</strong> que el administrador presiona "Eliminar" en un integrante<br>
+<strong>When</strong> confirma la acción<br>
+<strong>Then</strong> el integrante desaparece de la lista y pierde el acceso<br><br>
+<strong>Scenario 4: Intento de eliminar la propia cuenta</strong><br>
+<strong>Given</strong> que el administrador presiona "Eliminar" en su propia fila<br>
+<strong>When</strong> el sistema evalúa la acción<br>
+<strong>Then</strong> muestra "No puedes eliminar tu propia cuenta desde aquí." y no elimina nada<br><br>
+<strong>Scenario 5: Cambio de rol</strong><br>
+<strong>Given</strong> que el administrador está en la lista del equipo<br>
+<strong>When</strong> elige otro rol para un integrante<br>
+<strong>Then</strong> el sistema guarda el nuevo rol y lo muestra en la lista<br><br>
+<strong>Scenario 6: Último administrador protegido</strong><br>
+<strong>Given</strong> que el equipo tiene un solo administrador<br>
+<strong>When</strong> se intenta eliminarlo o cambiarlo a Empleado<br>
+<strong>Then</strong> el sistema muestra "Debe quedar al menos un Administrador en el equipo." y conserva su cuenta y su rol<br><br>
+<strong>Scenario 7: Menú del empleado</strong><br>
+<strong>Given</strong> que un usuario con rol Empleado inicia sesión<br>
+<strong>When</strong> revisa el menú lateral<br>
+<strong>Then</strong> no aparece la opción "Roles y permisos"<br><br>
+<strong>Scenario 8: Ruta administrativa protegida</strong><br>
+<strong>Given</strong> que un Empleado escribe /app/roles en el navegador<br>
+<strong>When</strong> intenta abrir la ruta<br>
+<strong>Then</strong> el sistema lo redirige a /app/dashboard
+</td>
+<td>EP05 — Gestión del equipo y permisos</td>
+</tr>
+<tr>
+<td><strong>US12</strong></td>
+<td>Registrar y monitorear los insumos del inventario</td>
+<td>Como administrador, quiero registrar, editar y eliminar insumos y ver el estado de stock y vencimiento de cada uno, para que el stock del sistema coincida con el físico y detectar en menos de 10 segundos los insumos vencidos, agotados o bajo el mínimo.</td>
+<td>
+<strong>Scenario 1: Alta de un insumo</strong><br>
+<strong>Given</strong> que el administrador está en /app/inventory<br>
+<strong>When</strong> completa los datos de un insumo nuevo y presiona "Guardar"<br>
+<strong>Then</strong> el insumo aparece en la tabla<br>
+<strong>And</strong> su fecha de vencimiento se calcula como la fecha actual más su vida útil en días<br><br>
+<strong>Scenario 2: Datos inválidos</strong><br>
+<strong>Given</strong> que el administrador deja el nombre vacío, escribe una cantidad, un stock mínimo o un costo negativos, o una vida útil menor a 1 día<br>
+<strong>When</strong> presiona "Guardar"<br>
+<strong>Then</strong> el sistema marca los campos inválidos y no guarda<br><br>
+<strong>Scenario 3: Edición de un insumo</strong><br>
+<strong>Given</strong> que el administrador presiona "Editar" en un insumo<br>
+<strong>When</strong> cambia sus datos y guarda<br>
+<strong>Then</strong> la tabla muestra los valores actualizados<br><br>
+<strong>Scenario 4: Eliminación confirmada</strong><br>
+<strong>Given</strong> que el administrador presiona "Eliminar" en un insumo<br>
+<strong>When</strong> confirma la acción<br>
+<strong>Then</strong> el insumo desaparece de la tabla<br>
+<strong>And</strong> si cancela, el insumo se conserva<br><br>
+<strong>Scenario 5: Insumo vencido</strong><br>
+<strong>Given</strong> que la fecha de vencimiento de un insumo es anterior a la fecha actual<br>
+<strong>When</strong> se muestra el inventario<br>
+<strong>Then</strong> el insumo aparece con el estado "Vencido" en rojo, aunque tenga cantidad disponible<br><br>
+<strong>Scenario 6: Insumo agotado</strong><br>
+<strong>Given</strong> que un insumo vigente tiene cantidad 0<br>
+<strong>When</strong> se muestra el inventario<br>
+<strong>Then</strong> el insumo aparece con el estado "Crítico" en rojo<br><br>
+<strong>Scenario 7: Insumo bajo el mínimo</strong><br>
+<strong>Given</strong> que la cantidad de un insumo vigente es mayor a 0 y menor o igual a su stock mínimo<br>
+<strong>When</strong> se muestra el inventario<br>
+<strong>Then</strong> el insumo aparece con el estado "Stock bajo" en amarillo<br><br>
+<strong>Scenario 8: Estado actualizado tras una venta</strong><br>
+<strong>Given</strong> que una venta descuenta un insumo por debajo de su stock mínimo<br>
+<strong>When</strong> el administrador vuelve al inventario<br>
+<strong>Then</strong> el estado del insumo cambia a "Stock bajo" sin intervención manual
+</td>
+<td>EP06 — Control de inventario de insumos</td>
+</tr>
+<tr>
+<td><strong>US13</strong></td>
+<td>Vincular recetas a los insumos del inventario</td>
+<td>Como administrador, quiero registrar la receta de cada plato con las cantidades de insumo que consume, para que el 100 % de las ventas de ese plato descuente el stock sin registro manual.</td>
+<td>
+<strong>Scenario 1: Receta registrada</strong><br>
+<strong>Given</strong> que el administrador está en /app/recipes<br>
+<strong>When</strong> escribe el nombre del plato, agrega al menos un insumo con su cantidad y presiona "Guardar receta"<br>
+<strong>Then</strong> la receta aparece en la lista con sus ingredientes<br><br>
+<strong>Scenario 2: Línea de ingrediente inválida</strong><br>
+<strong>Given</strong> que el administrador no seleccionó un insumo o escribió una cantidad de 0 o menos<br>
+<strong>When</strong> presiona "Agregar"<br>
+<strong>Then</strong> el sistema no agrega la línea a la receta<br><br>
+<strong>Scenario 3: Quitar un ingrediente</strong><br>
+<strong>Given</strong> que la receta en edición tiene varias líneas<br>
+<strong>When</strong> el administrador presiona "Quitar" en una línea<br>
+<strong>Then</strong> la línea desaparece del borrador de la receta<br><br>
+<strong>Scenario 4: Receta incompleta</strong><br>
+<strong>Given</strong> que el plato no tiene nombre o la receta no tiene ingredientes<br>
+<strong>When</strong> el administrador intenta guardar<br>
+<strong>Then</strong> el sistema no guarda la receta<br><br>
+<strong>Scenario 5: Edición y eliminación</strong><br>
+<strong>Given</strong> que el administrador edita o elimina una receta y confirma la acción<br>
+<strong>When</strong> el sistema procesa el cambio<br>
+<strong>Then</strong> la lista de recetas refleja la receta actualizada o eliminada
+</td>
+<td>EP07 — Recetas y ventas con descuento automático</td>
+</tr>
+<tr>
+<td><strong>US14</strong></td>
+<td>Registrar una venta con descuento automático de insumos</td>
+<td>Como administrador o empleado, quiero registrar la venta de un plato y que el sistema valide y descuente sus insumos, para que el 100 % de las ventas actualice el stock sin digitación adicional.</td>
+<td>
+<strong>Scenario 1: Venta con stock suficiente</strong><br>
+<strong>Given</strong> que todos los insumos de la receta tienen stock suficiente<br>
+<strong>When</strong> el usuario presiona "Simular venta" en el plato<br>
+<strong>Then</strong> el sistema registra una venta confirmada en el historial<br>
+<strong>And</strong> descuenta de cada insumo la cantidad indicada en la receta<br><br>
+<strong>Scenario 2: Venta rechazada por stock insuficiente</strong><br>
+<strong>Given</strong> que al menos un insumo de la receta no alcanza<br>
+<strong>When</strong> el usuario presiona "Simular venta"<br>
+<strong>Then</strong> el sistema muestra "Stock insuficiente para vender" con la lista de insumos faltantes<br>
+<strong>And</strong> no registra la venta ni modifica el inventario<br><br>
+<strong>Scenario 3: Stock nunca negativo</strong><br>
+<strong>Given</strong> que una venta consume exactamente el stock disponible de un insumo<br>
+<strong>When</strong> se registra la venta<br>
+<strong>Then</strong> el insumo queda en 0 y pasa al estado "Crítico"<br><br>
+<strong>Scenario 4: Confirmación visual</strong><br>
+<strong>Given</strong> que una venta se registró<br>
+<strong>When</strong> el sistema termina de procesarla<br>
+<strong>Then</strong> el plato vendido se resalta durante 2 segundos
+</td>
+<td>EP07 — Recetas y ventas con descuento automático</td>
+</tr>
+<tr>
+<td><strong>US15</strong></td>
+<td>Consultar el historial de ventas y anular ventas erróneas</td>
+<td>Como administrador, quiero consultar las ventas registradas con su total y anular las ventas registradas por error, para que el historial que alimenta la proyección de demanda refleje solo ventas reales.</td>
+<td>
+<strong>Scenario 1: Historial de ventas</strong><br>
+<strong>Given</strong> que existen ventas registradas<br>
+<strong>When</strong> el administrador abre /app/sales<br>
+<strong>Then</strong> el sistema muestra cada venta con fecha, canal, platos, total en S/ y estado<br><br>
+<strong>Scenario 2: Ingresos del período</strong><br>
+<strong>Given</strong> que hay ventas confirmadas y anuladas<br>
+<strong>When</strong> el administrador revisa el resumen<br>
+<strong>Then</strong> "Ingresos totales del período" suma solo las ventas confirmadas<br><br>
+<strong>Scenario 3: Anulación confirmada</strong><br>
+<strong>Given</strong> que el administrador presiona "Anular" en una venta confirmada<br>
+<strong>When</strong> confirma la acción<br>
+<strong>Then</strong> la venta pasa al estado "Anulada" y deja de mostrar el botón "Anular"<br><br>
+<strong>Scenario 4: Historial vacío</strong><br>
+<strong>Given</strong> que aún no hay ventas<br>
+<strong>When</strong> el administrador abre el historial<br>
+<strong>Then</strong> el sistema indica que use "Simular venta" en Recetas para generar la primera
+</td>
+<td>EP07 — Recetas y ventas con descuento automático</td>
+</tr>
+<tr>
+<td><strong>US16</strong></td>
+<td>Visualizar el resumen operativo en el dashboard</td>
+<td>Como administrador, quiero ver en una sola pantalla los indicadores del inventario, los insumos críticos, las alertas recientes y la última proyección, para identificar en menos de 10 segundos qué debo reponer o usar hoy.</td>
+<td>
+<strong>Scenario 1: Indicadores del inventario</strong><br>
+<strong>Given</strong> que el administrador abre /app/dashboard<br>
+<strong>When</strong> la pantalla carga<br>
+<strong>Then</strong> el sistema muestra insumos registrados, insumos con stock bajo o crítico, insumos por vencer en 3 días o menos y el valor del inventario en S/<br><br>
+<strong>Scenario 2: Insumos críticos</strong><br>
+<strong>Given</strong> que hay insumos con stock bajo, crítico o vencidos<br>
+<strong>When</strong> el administrador revisa el dashboard<br>
+<strong>Then</strong> la tabla "Insumos críticos" los lista con su cantidad y estado<br>
+<strong>And</strong> si no hay ninguno, muestra "Sin insumos en estado crítico."<br><br>
+<strong>Scenario 3: Alertas recientes</strong><br>
+<strong>Given</strong> que existen alertas registradas<br>
+<strong>When</strong> el administrador revisa el dashboard<br>
+<strong>Then</strong> el sistema muestra las cinco alertas más recientes con su severidad<br><br>
+<strong>Scenario 4: Resumen de la última proyección</strong><br>
+<strong>Given</strong> que existe al menos una proyección de demanda<br>
+<strong>When</strong> el administrador revisa el dashboard<br>
+<strong>Then</strong> el sistema muestra el resumen de la proyección más reciente<br><br>
+<strong>Scenario 5: Saludo personalizado</strong><br>
+<strong>Given</strong> que el usuario inició sesión<br>
+<strong>When</strong> abre el dashboard<br>
+<strong>Then</strong> el encabezado lo saluda por su nombre y muestra el nombre de su restaurante
+</td>
+<td>EP08 — Dashboard operativo</td>
+</tr>
+<tr>
+<td><strong>US17</strong></td>
+<td>Gestionar y entregar las alertas operativas</td>
+<td>Como administrador, quiero registrar, atender y eliminar alertas de stock bajo, vencimiento o fallas, y asegurar que cada alerta crítica se entregue por WhatsApp y por correo, para que ninguna alerta quede sin responsable y el 100 % de las alertas críticas llegue por todos sus canales requeridos.</td>
+<td>
+<strong>Scenario 1: Alerta registrada o editada</strong><br>
+<strong>Given</strong> que el administrador está en /app/alerts<br>
+<strong>When</strong> elige tipo, severidad y canal, escribe un mensaje de al menos 5 caracteres y presiona "Crear alerta"<br>
+<strong>Then</strong> la alerta aparece en la lista<br>
+<strong>And</strong> el contador de pendientes aumenta en uno cuando la alerta es nueva<br>
+<strong>And</strong> al editar una alerta, la lista muestra los datos actualizados<br><br>
+<strong>Scenario 2: Mensaje inválido</strong><br>
+<strong>Given</strong> que el mensaje tiene menos de 5 caracteres<br>
+<strong>When</strong> el administrador intenta crear la alerta<br>
+<strong>Then</strong> el sistema muestra "Mínimo 5 caracteres." y no la registra<br><br>
+<strong>Scenario 3: Alerta atendida</strong><br>
+<strong>Given</strong> que una alerta ya fue entregada por todos sus canales<br>
+<strong>When</strong> el administrador presiona "Marcar atendida"<br>
+<strong>Then</strong> la alerta se atenúa en la lista<br>
+<strong>And</strong> el contador de pendientes disminuye en uno<br><br>
+<strong>Scenario 4: Eliminación confirmada</strong><br>
+<strong>Given</strong> que el administrador presiona "Eliminar" en una alerta<br>
+<strong>When</strong> confirma la acción<br>
+<strong>Then</strong> la alerta desaparece de la lista<br><br>
+<strong>Scenario 5: Canales requeridos por severidad</strong><br>
+<strong>Given</strong> que una alerta tiene severidad CRITICAL<br>
+<strong>When</strong> el sistema evalúa su entrega<br>
+<strong>Then</strong> exige WhatsApp y correo como canales requeridos<br>
+<strong>And</strong> una alerta de otra severidad solo exige su canal principal<br><br>
+<strong>Scenario 6: Reintento del canal pendiente</strong><br>
+<strong>Given</strong> que a una alerta crítica le falta el canal de correo<br>
+<strong>When</strong> el administrador presiona "Reintentar entrega"<br>
+<strong>Then</strong> el sistema registra la entrega por ese canal y la alerta pasa a "Entregada"<br><br>
+<strong>Scenario 7: Atención bloqueada hasta la entrega</strong><br>
+<strong>Given</strong> que una alerta tiene un canal pendiente<br>
+<strong>When</strong> el administrador revisa la alerta<br>
+<strong>Then</strong> "Marcar atendida" aparece deshabilitado con el motivo<br><br>
+<strong>Scenario 8: Entrega simulada</strong><br>
+<strong>Given</strong> que el frontend usa la API simulada<br>
+<strong>When</strong> se registra una entrega<br>
+<strong>Then</strong> el sistema actualiza solo el estado de entrega y no envía mensajes reales
+</td>
+<td>EP09 — Alertas y notificaciones</td>
+</tr>
+<tr>
+<td><strong>US18</strong></td>
+<td>Anticipar la demanda y aplicar recomendaciones</td>
+<td>Como administrador, quiero generar la proyección de unidades por plato de los próximos siete días y aplicar las recomendaciones de compra y de menú, para planificar mis compras antes de los días de mayor demanda y medir qué porcentaje de recomendaciones se convierte en acciones.</td>
+<td>
+<strong>Scenario 1: Sin proyecciones previas</strong><br>
+<strong>Given</strong> que el restaurante no tiene proyecciones<br>
+<strong>When</strong> el administrador abre /app/forecast<br>
+<strong>Then</strong> el sistema indica que use el botón de generación<br><br>
+<strong>Scenario 2: Generación de la proyección</strong><br>
+<strong>Given</strong> que el administrador presiona "Generar nueva predicción"<br>
+<strong>When</strong> el sistema procesa la solicitud<br>
+<strong>Then</strong> el botón muestra "Generando…" y queda deshabilitado hasta terminar<br><br>
+<strong>Scenario 3: Resultado de la proyección</strong><br>
+<strong>Given</strong> que la proyección se generó<br>
+<strong>When</strong> el administrador revisa la pantalla<br>
+<strong>Then</strong> el sistema muestra siete días con unidades proyectadas y plato, el nivel de confianza en %, la condición climática y la fecha de generación<br><br>
+<strong>Scenario 4: Proyección identificada como simulada</strong><br>
+<strong>Given</strong> que el modelo de predicción aún no está conectado al backend<br>
+<strong>When</strong> el administrador revisa la proyección<br>
+<strong>Then</strong> la pantalla indica que los valores son simulados<br><br>
+<strong>Scenario 5: Lista de recomendaciones</strong><br>
+<strong>Given</strong> que existen recomendaciones<br>
+<strong>When</strong> el administrador abre /app/recommendations<br>
+<strong>Then</strong> el sistema muestra cada una con su tipo, su mensaje y su impacto esperado<br><br>
+<strong>Scenario 6: Recomendación aplicada</strong><br>
+<strong>Given</strong> que una recomendación está pendiente<br>
+<strong>When</strong> el administrador presiona "Aplicar"<br>
+<strong>Then</strong> la recomendación pasa a "Aplicada" y deja de mostrar el botón<br><br>
+<strong>Scenario 7: Sin recomendaciones</strong><br>
+<strong>Given</strong> que no hay recomendaciones<br>
+<strong>When</strong> el administrador abre la pantalla<br>
+<strong>Then</strong> el sistema muestra "No hay recomendaciones por ahora."
+</td>
+<td>EP10 — Predicción de demanda y recomendaciones</td>
+</tr>
+<tr>
+<td><strong>US19</strong></td>
+<td>Elegir o cambiar el plan de suscripción</td>
+<td>Como administrador, quiero elegir o cambiar mi plan desde la aplicación, para mantener el servicio activo sin interrupciones y subir de plan cuando mi restaurante lo necesite.</td>
+<td>
+<strong>Scenario 1: Planes disponibles</strong><br>
+<strong>Given</strong> que el administrador abre /app/plans<br>
+<strong>When</strong> la pantalla carga<br>
+<strong>Then</strong> el sistema muestra cada plan con su precio mensual en S/, sus características y la etiqueta "Más popular" cuando corresponde<br>
+<strong>And</strong> un aviso indica que el pago es simulado<br><br>
+<strong>Scenario 2: Activación con Stripe simulado</strong><br>
+<strong>Given</strong> que el administrador no tiene plan activo<br>
+<strong>When</strong> presiona "Pagar con Stripe" en un plan<br>
+<strong>Then</strong> el botón muestra "Procesando…"<br>
+<strong>And</strong> luego el plan muestra "✓ Suscripción activada" y aparece como plan activo<br><br>
+<strong>Scenario 3: Activación con PayPal simulado</strong><br>
+<strong>Given</strong> que el administrador elige un plan<br>
+<strong>When</strong> presiona "Pagar con PayPal"<br>
+<strong>Then</strong> el sistema activa la suscripción con el método PayPal<br><br>
+<strong>Scenario 4: Cambio de plan</strong><br>
+<strong>Given</strong> que el administrador ya tiene un plan activo<br>
+<strong>When</strong> paga otro plan<br>
+<strong>Then</strong> el sistema actualiza la suscripción existente sin crear una segunda
+</td>
+<td>EP11 — Suscripción y planes</td>
+</tr>
+<tr>
+<td><strong>US20</strong></td>
+<td>Importar las ventas diarias desde el sistema de ventas</td>
+<td>Como administrador, quiero importar el archivo CSV de ventas del día exportado de mi punto de venta, para que el stock se descuente sin volver a digitar ninguna venta.</td>
+<td>
+<strong>Scenario 1: Importación válida</strong><br>
+<strong>Given</strong> que el administrador sube un CSV con fecha, plato y cantidad<br>
+<strong>When</strong> el sistema procesa el archivo<br>
+<strong>Then</strong> registra las ventas y descuenta los insumos de cada plato con receta<br><br>
+<strong>Scenario 2: Plato sin receta</strong><br>
+<strong>Given</strong> que una fila corresponde a un plato sin receta<br>
+<strong>When</strong> el sistema procesa el archivo<br>
+<strong>Then</strong> omite esa fila y la reporta al final de la importación<br><br>
+<strong>Scenario 3: Archivo inválido</strong><br>
+<strong>Given</strong> que el archivo no tiene las columnas esperadas<br>
+<strong>When</strong> el administrador lo sube<br>
+<strong>Then</strong> el sistema rechaza el archivo e indica las columnas requeridas<br><br>
+<strong>Scenario 4: Importación duplicada</strong><br>
+<strong>Given</strong> que las ventas de esa fecha ya fueron importadas<br>
+<strong>When</strong> el administrador sube el mismo archivo<br>
+<strong>Then</strong> el sistema advierte la duplicidad y no registra ventas repetidas
+</td>
+<td>EP07 — Recetas y ventas con descuento automático</td>
+</tr>
+<tr>
+<td><strong>US21</strong></td>
+<td>Recibir las alertas críticas en mi correo electrónico</td>
+<td>Como administrador, quiero recibir por correo las alertas críticas, para enterarme aunque no tenga la aplicación abierta y atenderlas dentro del mismo turno.</td>
+<td>
+<strong>Scenario 1: Correo enviado</strong><br>
+<strong>Given</strong> que se genera una alerta crítica<br>
+<strong>When</strong> el sistema la procesa<br>
+<strong>Then</strong> envía un correo mediante SendGrid a cada administrador con el insumo afectado y la acción sugerida<br><br>
+<strong>Scenario 2: Reintentos ante falla</strong><br>
+<strong>Given</strong> que el envío del correo falla<br>
+<strong>When</strong> el sistema lo reintenta<br>
+<strong>Then</strong> realiza hasta 3 intentos y, si todos fallan, registra la notificación como fallida<br><br>
+<strong>Scenario 3: Registro de notificaciones</strong><br>
+<strong>Given</strong> que se envía cualquier notificación<br>
+<strong>When</strong> el envío termina<br>
+<strong>Then</strong> el sistema guarda fecha, canal, destinatario y estado de entrega
+</td>
+<td>EP09 — Alertas y notificaciones</td>
+</tr>
+<tr>
+<td><strong>US22</strong></td>
+<td>Pagar la suscripción con tarjeta mediante Stripe</td>
+<td>Como administrador, quiero pagar mi plan con tarjeta en un checkout seguro, para activar o renovar mi suscripción en un solo paso sin entregar los datos de mi tarjeta a StockIA.</td>
+<td>
+<strong>Scenario 1: Pago aprobado</strong><br>
+<strong>Given</strong> que el administrador elige un plan y paga con una tarjeta válida en Stripe (modo de prueba)<br>
+<strong>When</strong> Stripe confirma el cobro<br>
+<strong>Then</strong> el sistema activa o renueva la suscripción y muestra la nueva fecha de renovación<br><br>
+<strong>Scenario 2: Pago rechazado</strong><br>
+<strong>Given</strong> que la tarjeta es rechazada<br>
+<strong>When</strong> Stripe responde con error<br>
+<strong>Then</strong> el sistema muestra el motivo y conserva la suscripción sin cambios<br><br>
+<strong>Scenario 3: Datos de tarjeta protegidos</strong><br>
+<strong>Given</strong> que el administrador ingresa su tarjeta<br>
+<strong>When</strong> Stripe la procesa<br>
+<strong>Then</strong> el API de StockIA solo recibe un token y nunca el número de la tarjeta
+</td>
+<td>EP11 — Suscripción y planes</td>
+</tr>
+</table>
 
 ## **3.2. Impact Mapping**
 En la siguiente sección se presenta el Impact Mapping elaborado a partir del user persona principal: el administrador o dueño del restaurante. Este mapa asegura que se construya funcionalidades que realmente aporten valor al negocio y resuelvan los problemas más críticos de nuestro segmento objetivo.
