@@ -241,13 +241,14 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Time** | 10:00 am |
 | **Location** | Lima/Lima/Santiago de Surco/UPC |
 | **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
-| **Attendees (to planning meeting)** | Tuesta Girón, Kiara Lucia/ Huaman Oscco, Aldo Jesus/ Higa Kohatsu, Alonso Enrique/ Ortiz Laura, Leyla Alisson/ Asmat Alminco, Martin Alejandro |
-| **Sprint Review Summary** | Al ser el primer Sprint, la revisión anterior corresponde a la fase de ideación: segmentos objetivo y propuesta de valor. Resultados alcanzados: Arquitectura C4 finalizada, modelado de base de datos diseñada y repositorios GitHub configurados para el uso de gitflow. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio y siguiendo como base las User Storys. |
-| **Sprint Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de programas de trabajo remoto, el uso de herramientas colaborativos como GitHub y Jira, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
+| **Attendees (to planning meeting)** | Higa Kohatsu, Alonso Enrique / Asmat Alminco, Martin Alejandro / Huaman Oscco, Aldo Jesus / Ortiz Laura, Leyla Alisson / Tuesta Girón, Kiara Lucia |
+| **Sprint Review Summary** | No aplica: es el primer Sprint. Antes de él, el equipo cerró la fase de ideación (segmento, propuesta de valor y entrevistas) y configuró la organización y los repositorios en GitHub. |
+| **Sprint Retrospective Summary** | No aplica al ser el primer Sprint. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | **Contexto:** El equipo prioriza establecer la identidad digital de StockIA y comunicar la propuesta de valor a el segmento objetivo, publicando un sitio de marketing de 4 páginas totalmente bilingüe (ES/EN), antes de invertir esfuerzo en la Web Application. <br><br> **Sprint Goal:**<br>*"Our focus is on building a trustworthy digital presence that clearly communicates StockIA's value proposition. We believe this will let visitors understand the product's benefits within seconds and request a demo with confidence. This will be confirmed when the four-page site is live, fully bilingual, responsive, and generating demo requests."* |
-| **Sprint 1 Velocity** | 40 Story Points |
-| **Sum of Story Points** | 88 Story Points |
+| **Sprint 1 Goal** | **Contexto:** El equipo prioriza comunicar la propuesta de valor al segmento objetivo y habilitar el primer canal de captación de restaurantes antes de construir la Web Application.<br><br>**Sprint Goal:**<br>*"Our focus is on publishing StockIA's bilingual four-page landing page. We believe it delivers a clear understanding of how StockIA connects sales, recipes and inventory to restaurant owners and managers. This will be confirmed when the site is live on Vercel, meets the responsive, accessibility, performance and SEO criteria of RNF01–RNF07, and a visitor can reach the demo request form in no more than two clicks from any page."* |
+| **Sprint 1 Velocity** | No aplica: es el primer Sprint y no existe una velocidad histórica. |
+| **Sum of Story Points** | 40 Story Points comprometidos en 19 ítems (8 US, 4 TS y 7 RNF) |
+ 
 
 #### **5.2.1.2. Aspect Leaders and Collaborators**
 * En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **StockIA**.
