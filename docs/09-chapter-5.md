@@ -598,33 +598,37 @@ La Landing Page se publicó en **Vercel** como sitio estático, servido desde su
 </p>
 
 #### **5.2.1.8. Team Collaboration Insights during Sprint**
-**Dinámica de Implementación**
+**Dinámica de trabajo**
+ 
+Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la documentación del informe. Las tareas se organizaron en Jira, en el proyecto SCRUM, con un responsable por tarea (ver 5.2.1.3). El código y el informe se versionaron en GitHub siguiendo GitFlow: `main` para versiones entregables, `develop` para integración y una rama `feature/*` por capítulo o página, integrada por Pull Request. La comunicación diaria se mantuvo por WhatsApp y las reuniones de coordinación por Google Meet.
+ 
+**Aporte por integrante**
+ 
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 1** | **Commits en `stockia-report` (al 18/09/2026)** | **Commits en `stockia-website`** |
+| :--- | :--- | :--- | :---: | :---: |
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga (Alonso-Higa) | Estructura del repositorio y GitFlow (TS01), `about.html` (US05, US06) e `i18n.js` (TS03, US08); capítulos II y IV, conclusiones y bibliografía del informe | 26 | 3 |
+| Asmat Alminco, Martin Alejandro | Alemarr2 (Martin) | `features.html` (US02), responsive, contraste y SEO (RNF01, RNF02, RNF04); entrevistas, diagramas de clases, base de datos y componentes del informe | 12 | 1 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 (Jesus / Aldo_Jesus) | `pricing.html` (US04, US07), despliegue en Vercel (TS04) y QA (RNF03, RNF05); capítulos III y V y wireframes y mock-up de la Landing Page en el informe | 25 | 7 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O (Leyla Ortiz) | Sistema de diseño (TS02) e interacciones en `main.js` (US03, US04, US06, US07, RNF06); Impact Map, diseño UX/UI de la Web Application y sección 5.1.1 del informe | 16 | 2 |
+| Tuesta Girón, Kiara Lucia | kitu05g | `index.html` (US01, US02, US03) y contenido bilingüe; perfil, entrevistas y secciones 5.1.2 a 5.1.4 del informe | 11 | 1 |
+ 
+**Evidencia: contribuciones por integrante en `stockia-report`**
 <p align="center">
-Durante este ciclo, el equipo DataBit (Martín, Alonso Higa Kohatsu, Aldo Jesús, Kiara Tuesta y Leyla Ortiz) concentró sus esfuerzos en el desarrollo Frontend y la Documentación Técnica de la Landing Page. El equipo trabajó de forma remota, distribuyendo tareas mediante un tablero Kanban (ver evidencia en 5.2.1.3) y centralizando el control de versiones en GitHub, bajo la organización <code>upc-pre-202620-1asi0730-16127-databit</code>.
+  <img src="../assets/chapter-5/Contributors.png" width="700" alt="Contribuciones por integrante en stockia-report"/>
+  <br/><i>Contributors del repositorio stockia-report</i>
+</p>
+**Evidencia: contribuciones por integrante en `stockia-website`**
+<p align="center">
+  <img src="../assets/chapter-5/Contributors-website.png" width="700" alt="Contribuciones por integrante en stockia-website"/>
+  <br/><i>Contributors del repositorio stockia-website</i>
+</p>
+**Evidencia: grafo de GitFlow**
+<p align="center">
+  <img src="../assets/chapter-5/Network.png" width="700" alt="Grafo de ramas de stockia-report"/>
+  <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
 </p>
 
-**Analíticos de Colaboración**
-<p align="center">
-La carga de trabajo se distribuyó para asegurar que todos los integrantes participaran en la construcción de los artefactos visuales y técnicos:
 
-* Desarrollo Frontend: Aldo Jesús implementó la página `pricing.html` completa (navbar, hero, tarjetas de planes, FAQ, CTA y footer); Alonso Higa Kohatsu implementó `about.html`; Kiara Tuesta implementó `index.html`. Martín y Leyla Ortiz aportaron a la documentación técnica y artefactos de diseño (diagramas C4, wireframes).
-
-* Documentación y Calidad: Los cinco integrantes redactaron en paralelo los capítulos del informe mediante ramas `feature/chapter-1` a `feature/chapter-5`: Alonso Higa Kohatsu lideró los Capítulos I y II (Startup/Solution Profile, Competidores, Entrevistas, Needfinding); Aldo Jesús los Capítulos III y V (User Stories, Product Backlog, Sprint 1); Kiara Tuesta y Martín aportaron a los Capítulos I, II y IV (arquitectura, diagramas de clase y base de datos); Leyla Ortiz contribuyó a los Capítulos I a III (perfiles, entrevistas, Ubiquitous Language, Impact Mapping).
-
-* Control de Versiones: El equipo aplica **GitFlow** en los repositorios `stockia-report` y `stockia-website`, con `main` y `develop` como ramas estables y una rama `feature/chapter-X` por cada capítulo del informe (`feature/chapter-1` a `feature/chapter-5`) y `feature/pricing` para la Landing Page, integradas mediante Pull Requests revisados antes de cada merge (a la fecha, PR #1 en `stockia-report` y PR #1 en `stockia-website`, ambos mergeados). Se aplica Conventional Commits en ambos repositorios.
-</p>
-
-**Evidencia GitFlow: Graph**
-<p align="center">
-  <img src="../assets/chapter-5/Network-Grapho.png" width="500" alt="Graph"/>
-  <br/><i>Grafo de versiones para el gitflow</i>
-</p>
-
-**Evidencia GitFlow: Network**
-<p align="center">
-  <img src="../assets/chapter-5/Network.png" width="500" alt="Network"/>
-  <br/><i>Grafo de trabajo</i>
-</p>
 
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
