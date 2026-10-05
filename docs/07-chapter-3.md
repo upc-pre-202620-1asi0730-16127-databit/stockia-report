@@ -692,6 +692,370 @@
 </tr>
 </table>
 
+### Technical Stories
+ 
+Las Technical Stories describen el trabajo técnico que habilita las User Stories y se redactan con el rol Developer. Su «para» expresa el resultado verificable que obtiene el equipo. Las Technical Stories del RESTful API (TS09 y TS11 a TS16) usan como criterios de aceptación los escenarios de request y response.
+ 
+<table>
+<tr><th>Story ID</th><th>Título</th><th>Descripción</th><th>Criterios de Aceptación</th><th>Relacionado con Epic ID</th></tr>
+<tr>
+<td><strong>TS01</strong></td>
+<td>Configurar el repositorio de la Landing Page con GitFlow</td>
+<td>Como Developer, quiero un repositorio con estructura base y ramas main y develop protegidas por Pull Request, para que el 100 % de los cambios de la Landing Page se integre con revisión y con autor identificable.</td>
+<td>
+<strong>Scenario 1: Estructura base del proyecto</strong><br>
+<strong>Given</strong> que el repositorio de la Landing Page fue creado en la organización<br>
+<strong>When</strong> un integrante lo clona<br>
+<strong>Then</strong> encuentra index.html, features.html, pricing.html, about.html y las carpetas css, js y assets<br><br>
+<strong>Scenario 2: Integración por Pull Request</strong><br>
+<strong>Given</strong> que un integrante terminó una tarea en una rama feature/*<br>
+<strong>When</strong> abre un Pull Request hacia develop<br>
+<strong>Then</strong> el cambio solo se integra después de la revisión de otro integrante<br><br>
+<strong>Scenario 3: Publicación desde develop</strong><br>
+<strong>Given</strong> que develop contiene un incremento revisado<br>
+<strong>When</strong> el equipo prepara la publicación<br>
+<strong>Then</strong> el cambio llega a main mediante un Pull Request desde develop
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS02</strong></td>
+<td>Implementar el sistema de diseño centralizado en CSS</td>
+<td>Como Developer, quiero colores, tipografías, espaciados y componentes definidos como variables y clases reutilizables, para cambiar la identidad visual editando un solo archivo y sin colores repetidos fuera de :root.</td>
+<td>
+<strong>Scenario 1: Tokens de diseño en :root</strong><br>
+<strong>Given</strong> que styles.css define las variables de color, tipografía, espaciado y radios en :root<br>
+<strong>When</strong> un integrante revisa el archivo<br>
+<strong>Then</strong> ningún color hexadecimal aparece fuera de :root<br><br>
+<strong>Scenario 2: Componentes reutilizables</strong><br>
+<strong>Given</strong> que una página necesita un botón, una tarjeta o un campo de formulario<br>
+<strong>When</strong> el integrante lo maqueta<br>
+<strong>Then</strong> usa las clases .btn, .feat-card, .price-card o .form-input sin estilos en línea<br><br>
+<strong>Scenario 3: Cambio de identidad en un solo lugar</strong><br>
+<strong>Given</strong> que el equipo decide cambiar el color primario<br>
+<strong>When</strong> modifica --primary en :root<br>
+<strong>Then</strong> el nuevo color se aplica en las cuatro páginas
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS03</strong></td>
+<td>Implementar el motor de internacionalización de la Landing Page</td>
+<td>Como Developer, quiero que todos los textos traducibles vivan en un único diccionario aplicado mediante atributos data-i18n, para traducir el 100 % del contenido visible sin editar cada página.</td>
+<td>
+<strong>Scenario 1: Traducción por atributo</strong><br>
+<strong>Given</strong> que un elemento tiene el atributo data-i18n con una clave del diccionario<br>
+<strong>When</strong> se aplica el idioma seleccionado<br>
+<strong>Then</strong> el elemento muestra el texto de esa clave en el idioma elegido<br><br>
+<strong>Scenario 2: Clave sin traducción en inglés</strong><br>
+<strong>Given</strong> que una clave existe en español pero no en inglés<br>
+<strong>When</strong> el visitante cambia a inglés<br>
+<strong>Then</strong> el elemento conserva el texto en español en lugar de quedar vacío<br><br>
+<strong>Scenario 3: Placeholders traducidos</strong><br>
+<strong>Given</strong> que un campo del formulario tiene data-i18n<br>
+<strong>When</strong> se aplica el idioma<br>
+<strong>Then</strong> su placeholder se muestra en el idioma elegido
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS04</strong></td>
+<td>Desplegar la Landing Page en Vercel con despliegue continuo</td>
+<td>Como Developer, quiero publicar la Landing Page en Vercel conectada al repositorio, para que cada cambio aprobado esté en línea en menos de 5 minutos sin pasos manuales.</td>
+<td>
+<strong>Scenario 1: Despliegue automático</strong><br>
+<strong>Given</strong> que el proyecto de Vercel está vinculado al repositorio<br>
+<strong>When</strong> se integra un cambio en la rama de producción<br>
+<strong>Then</strong> Vercel publica la nueva versión sin intervención manual<br><br>
+<strong>Scenario 2: Cuatro páginas disponibles</strong><br>
+<strong>Given</strong> que el despliegue terminó<br>
+<strong>When</strong> un integrante abre index.html, features.html, pricing.html y about.html en el dominio público<br>
+<strong>Then</strong> las cuatro páginas cargan con sus estilos, scripts y traducciones<br><br>
+<strong>Scenario 3: Vista previa de cambios</strong><br>
+<strong>Given</strong> que un integrante abre un Pull Request<br>
+<strong>When</strong> Vercel procesa la rama<br>
+<strong>Then</strong> genera una URL de vista previa para revisar el cambio antes de integrarlo
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS05</strong></td>
+<td>Estructurar la Web Application en Angular por Bounded Context</td>
+<td>Como Developer, quiero organizar la Web Application en contextos con capas domain, application, infrastructure y presentation, para que cada integrante trabaje un contexto sin conflictos y ningún componente dependa de HttpClient.</td>
+<td>
+<strong>Scenario 1: Capas por contexto</strong><br>
+<strong>Given</strong> que se revisa src/app<br>
+<strong>When</strong> se abre cualquier contexto (iam, product-inventory, sales-order, alerts, demand-forecasting, subscription)<br>
+<strong>Then</strong> el contexto contiene las capas domain, application, infrastructure y presentation<br><br>
+<strong>Scenario 2: Acceso HTTP aislado</strong><br>
+<strong>Given</strong> que un componente de presentation necesita datos<br>
+<strong>When</strong> los solicita<br>
+<strong>Then</strong> lo hace a través de un servicio de application y solo infrastructure usa HttpClient<br><br>
+<strong>Scenario 3: Shell y rutas diferidas</strong><br>
+<strong>Given</strong> que el usuario inicia sesión<br>
+<strong>When</strong> navega entre módulos<br>
+<strong>Then</strong> el shell con menú lateral y barra superior se mantiene y cada pantalla se carga con loadComponent
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS06</strong></td>
+<td>Implementar y desplegar la API simulada de la Web Application</td>
+<td>Como Developer, quiero una API REST simulada y desplegada con las colecciones del dominio, para desarrollar y demostrar el frontend con datos persistentes mientras se construye el backend real.</td>
+<td>
+<strong>Scenario 1: Servicio disponible</strong><br>
+<strong>Given</strong> que la API simulada está desplegada en Render<br>
+<strong>When</strong> se consulta /api/v1/health<br>
+<strong>Then</strong> responde con estado "ok"<br><br>
+<strong>Scenario 2: Colecciones del dominio</strong><br>
+<strong>Given</strong> que el frontend consulta /api/v1/inventoryItems, /recipes, /sales, /alerts u otra colección<br>
+<strong>When</strong> envía GET, POST, PUT, PATCH o DELETE<br>
+<strong>Then</strong> la API responde con el comportamiento REST correspondiente<br><br>
+<strong>Scenario 3: Cambio de API sin tocar componentes</strong><br>
+<strong>Given</strong> que el equipo necesita apuntar a otra API<br>
+<strong>When</strong> cambia apiBaseUrl en environment.ts<br>
+<strong>Then</strong> ningún componente ni servicio de application requiere cambios<br><br>
+<strong>Scenario 4: Modo sin conexión</strong><br>
+<strong>Given</strong> que no hay acceso a la red<br>
+<strong>When</strong> se activa useFakeApi en environment.ts<br>
+<strong>Then</strong> la aplicación funciona con la API en memoria del navegador
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS07</strong></td>
+<td>Desplegar la Web Application en Vercel</td>
+<td>Como Developer, quiero publicar la Web Application en Vercel conectada a la API simulada, para que el docente y los restaurantes del piloto accedan a la versión vigente desde una URL pública.</td>
+<td>
+<strong>Scenario 1: Build de producción</strong><br>
+<strong>Given</strong> que se integra un cambio en la rama de producción<br>
+<strong>When</strong> Vercel ejecuta npm run build<br>
+<strong>Then</strong> publica el contenido de dist/stockia-webapp/browser<br><br>
+<strong>Scenario 2: Rutas internas sin error 404</strong><br>
+<strong>Given</strong> que el usuario recarga /app/inventory en el sitio publicado<br>
+<strong>When</strong> Vercel atiende la solicitud<br>
+<strong>Then</strong> la regla de reescritura entrega index.html y Angular muestra la pantalla<br><br>
+<strong>Scenario 3: Conexión con la API simulada</strong><br>
+<strong>Given</strong> que la aplicación publicada inicia sesión<br>
+<strong>When</strong> consulta datos<br>
+<strong>Then</strong> obtiene la información de la API simulada desplegada en Render
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS08</strong></td>
+<td>Corregir los hallazgos de la revisión del AV1 en la Landing Page</td>
+<td>Como Developer, quiero corregir los defectos y las notas internas señalados en la revisión del AV1, para que la Landing Page publicada no contenga placeholders, instrucciones de edición ni enlaces rotos, y lleve a cada segmento a su vista de la Web Application.</td>
+<td>
+<strong>Scenario 1: Botón "Solicitar demo" del menú</strong><br>
+<strong>Given</strong> que el visitante está en cualquiera de las cuatro páginas<br>
+<strong>When</strong> presiona "Solicitar demo" en la barra de navegación<br>
+<strong>Then</strong> el sitio abre about.html#contacto<br><br>
+<strong>Scenario 2: Menú en móvil</strong><br>
+<strong>Given</strong> que el visitante usa una pantalla de 768 px o menos<br>
+<strong>When</strong> presiona el botón de menú<br>
+<strong>Then</strong> el sitio despliega los enlaces Inicio, Características, Precios y Nosotros<br><br>
+<strong>Scenario 3: Equipo real sin notas internas</strong><br>
+<strong>Given</strong> que el visitante abre about.html<br>
+<strong>When</strong> revisa "El equipo detrás de StockIA"<br>
+<strong>Then</strong> encuentra las fichas reales de los cinco integrantes con nombre, rol y código<br>
+<strong>And</strong> ninguna nota pide completar o reemplazar datos<br><br>
+<strong>Scenario 4: Portafolio filtrable</strong><br>
+<strong>Given</strong> que el visitante presiona la pestaña "Inventario" o "IA &amp; IoT"<br>
+<strong>When</strong> el portafolio se actualiza<br>
+<strong>Then</strong> solo se muestran las vistas de esa categoría<br><br>
+<strong>Scenario 5: Enlaces legales operativos</strong><br>
+<strong>Given</strong> que el visitante presiona "Términos" en el pie de página<br>
+<strong>When</strong> el sitio procesa el clic<br>
+<strong>Then</strong> abre la página de términos y condiciones en lugar de un enlace vacío<br><br>
+<strong>Scenario 6: CTA del segmento dueños hacia el registro</strong><br>
+<strong>Given</strong> que un visitante del segmento dueños de restaurantes está en la sección "¿Para quién es StockIA?"<br>
+<strong>When</strong> presiona el call-to-action de su segmento<br>
+<strong>Then</strong> el sitio abre /auth/sign-up de la Web Application en un solo clic<br><br>
+<strong>Scenario 7: CTA del segmento jefes de cocina hacia el inicio de sesión</strong><br>
+<strong>Given</strong> que un visitante del segmento administradores o jefes de cocina ya fue invitado por su restaurante<br>
+<strong>When</strong> presiona el call-to-action de su segmento o "Iniciar sesión" en la barra de navegación<br>
+<strong>Then</strong> el sitio abre /auth/sign-in de la Web Application<br><br>
+<strong>Scenario 8: Regreso a la Landing Page</strong><br>
+<strong>Given</strong> que el usuario está en la pantalla de inicio de sesión o de registro de la Web Application<br>
+<strong>When</strong> presiona el logo de StockIA<br>
+<strong>Then</strong> la Web Application abre index.html de la Landing Page
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS09</strong></td>
+<td>Estructurar el RESTful API de StockIA en ASP.NET Core por Bounded Context</td>
+<td>Como Developer, quiero un RESTful API en ASP.NET Core con Entity Framework Core, MySQL, un módulo por Bounded Context y documentación OpenAPI, para reemplazar la API simulada sin cambiar los componentes del frontend.</td>
+<td>
+<strong>Scenario 1: Endpoints documentados</strong><br>
+<strong>Given</strong> que el API está desplegado<br>
+<strong>When</strong> se abre Swagger UI<br>
+<strong>Then</strong> se listan los endpoints de IAM, Inventory, Recipes, Sales, Alerts, Demand Forecasting y Subscriptions con sus esquemas de request y response en inglés<br><br>
+<strong>Scenario 2: Solicitud sin token</strong><br>
+<strong>Given</strong> que un cliente envía una solicitud a un endpoint protegido sin un token JWT válido<br>
+<strong>When</strong> el API procesa la solicitud<br>
+<strong>Then</strong> responde 401 Unauthorized sin ejecutar la operación<br><br>
+<strong>Scenario 3: Validación de datos</strong><br>
+<strong>Given</strong> que un cliente envía un body que no cumple las reglas del recurso<br>
+<strong>When</strong> el API procesa la solicitud<br>
+<strong>Then</strong> responde 400 Bad Request con el detalle de cada campo inválido<br><br>
+<strong>Scenario 4: Ownership de datos por contexto</strong><br>
+<strong>Given</strong> que un contexto necesita datos de otro<br>
+<strong>When</strong> los solicita<br>
+<strong>Then</strong> los obtiene por la fachada del contexto dueño y nunca leyendo sus tablas
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS10</strong></td>
+<td>Conectar la Web Application al RESTful API real</td>
+<td>Como Developer, quiero apuntar la Web Application al RESTful API real y enviar el token en cada solicitud, para pasar del entorno simulado a datos persistentes sin modificar la capa de presentación.</td>
+<td>
+<strong>Scenario 1: Cambio de entorno</strong><br>
+<strong>Given</strong> que el RESTful API está desplegado<br>
+<strong>When</strong> se actualiza apiBaseUrl en environment.prod.ts<br>
+<strong>Then</strong> todas las pantallas funcionan contra el API real<br><br>
+<strong>Scenario 2: Token en cada solicitud</strong><br>
+<strong>Given</strong> que el usuario inició sesión<br>
+<strong>When</strong> la aplicación consulta el API<br>
+<strong>Then</strong> un interceptor agrega el token JWT a la cabecera Authorization<br><br>
+<strong>Scenario 3: Sesión expirada</strong><br>
+<strong>Given</strong> que el token expiró<br>
+<strong>When</strong> el API responde 401<br>
+<strong>Then</strong> la aplicación cierra la sesión y muestra /auth/sign-in
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS11</strong></td>
+<td>Exponer los endpoints de registro e inicio de sesión</td>
+<td>Como Developer, quiero endpoints de registro e inicio de sesión que emitan un token JWT, para que la Web Application autentique a administradores y empleados contra el RESTful API.</td>
+<td>
+<strong>Scenario 1: Registro exitoso</strong><br>
+<strong>Given</strong> que no existe un usuario con el correo enviado<br>
+<strong>When</strong> se envía POST /api/v1/authentication/sign-up con fullName, restaurantName, email y password<br>
+<strong>Then</strong> el API responde 201 Created con el id del usuario y el rol ADMIN, sin incluir la contraseña<br><br>
+<strong>Scenario 2: Correo duplicado</strong><br>
+<strong>Given</strong> que ya existe un usuario con el correo enviado<br>
+<strong>When</strong> se envía POST /api/v1/authentication/sign-up<br>
+<strong>Then</strong> el API responde 409 Conflict con el mensaje "Email already registered"<br><br>
+<strong>Scenario 3: Inicio de sesión</strong><br>
+<strong>Given</strong> un usuario registrado<br>
+<strong>When</strong> se envía POST /api/v1/authentication/sign-in con credenciales válidas<br>
+<strong>Then</strong> el API responde 200 OK con el token JWT y el rol del usuario<br>
+<strong>And</strong> con credenciales inválidas responde 401 Unauthorized
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS12</strong></td>
+<td>Exponer los endpoints de insumos</td>
+<td>Como Developer, quiero endpoints para listar, crear, actualizar y eliminar insumos con su estado de stock calculado, para que la Web Application administre el inventario del restaurante.</td>
+<td>
+<strong>Scenario 1: Creación de insumo</strong><br>
+<strong>Given</strong> un token válido<br>
+<strong>When</strong> se envía POST /api/v1/inventory-items con name, unit, quantity, minThreshold, storageType, shelfLifeDays y unitCost<br>
+<strong>Then</strong> el API responde 201 Created con el insumo, su expirationDate calculada como la fecha actual más shelfLifeDays y la cabecera Location<br><br>
+<strong>Scenario 2: Datos inválidos</strong><br>
+<strong>Given</strong> un token válido<br>
+<strong>When</strong> quantity, minThreshold o unitCost son negativos o shelfLifeDays es menor a 1<br>
+<strong>Then</strong> el API responde 400 Bad Request indicando cada campo inválido<br><br>
+<strong>Scenario 3: Estado de stock</strong><br>
+<strong>Given</strong> un insumo con quantity menor o igual a minThreshold<br>
+<strong>When</strong> se envía GET /api/v1/inventory-items/{id}<br>
+<strong>Then</strong> el API responde 200 OK con status LOW<br><br>
+<strong>Scenario 4: Insumo inexistente</strong><br>
+<strong>Given</strong> un id que no existe<br>
+<strong>When</strong> se envía GET, PUT o DELETE a /api/v1/inventory-items/{id}<br>
+<strong>Then</strong> el API responde 404 Not Found
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS13</strong></td>
+<td>Exponer los endpoints de recetas</td>
+<td>Como Developer, quiero endpoints de recetas que validen que cada ingrediente exista en el inventario, para mantener la integridad entre recetas e insumos.</td>
+<td>
+<strong>Scenario 1: Receta válida</strong><br>
+<strong>Given</strong> que todos los ingredientes referencian insumos existentes con quantityRequired mayor a 0<br>
+<strong>When</strong> se envía POST /api/v1/recipes<br>
+<strong>Then</strong> el API responde 201 Created con la receta y sus ingredientes<br><br>
+<strong>Scenario 2: Ingrediente inexistente</strong><br>
+<strong>Given</strong> que un ingrediente referencia un insumo que no existe<br>
+<strong>When</strong> se envía POST o PUT a /api/v1/recipes<br>
+<strong>Then</strong> el API responde 400 Bad Request indicando el id del insumo inexistente<br><br>
+<strong>Scenario 3: Receta sin ingredientes</strong><br>
+<strong>Given</strong> que la receta no tiene ingredientes<br>
+<strong>When</strong> se envía POST /api/v1/recipes<br>
+<strong>Then</strong> el API responde 400 Bad Request
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS14</strong></td>
+<td>Exponer los endpoints de registro y anulación de ventas</td>
+<td>Como Developer, quiero un endpoint que registre ventas descontando los insumos en una sola transacción y otro que las anule, para que el stock nunca quede inconsistente.</td>
+<td>
+<strong>Scenario 1: Venta registrada</strong><br>
+<strong>Given</strong> que hay stock suficiente para todos los ingredientes de la receta<br>
+<strong>When</strong> se envía POST /api/v1/sales con recipeId y quantity<br>
+<strong>Then</strong> el API responde 201 Created con la venta en estado CONFIRMED<br>
+<strong>And</strong> descuenta los insumos en la misma transacción<br><br>
+<strong>Scenario 2: Stock insuficiente</strong><br>
+<strong>Given</strong> que al menos un ingrediente no tiene stock suficiente<br>
+<strong>When</strong> se envía POST /api/v1/sales<br>
+<strong>Then</strong> el API responde 409 Conflict con la lista de insumos faltantes y no modifica ningún insumo<br><br>
+<strong>Scenario 3: Anulación</strong><br>
+<strong>Given</strong> una venta en estado CONFIRMED<br>
+<strong>When</strong> se envía PATCH /api/v1/sales/{id}/void<br>
+<strong>Then</strong> el API responde 200 OK con la venta en estado VOIDED<br>
+<strong>And</strong> si la venta ya estaba anulada responde 409 Conflict
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS15</strong></td>
+<td>Exponer los endpoints de alertas</td>
+<td>Como Developer, quiero endpoints para filtrar alertas por severidad y estado, registrar su entrega por canal y marcarlas como atendidas, para alimentar el dashboard y la pantalla de alertas.</td>
+<td>
+<strong>Scenario 1: Filtro de alertas</strong><br>
+<strong>Given</strong> un token válido<br>
+<strong>When</strong> se envía GET /api/v1/alerts?severity=CRITICAL&acknowledged=false<br>
+<strong>Then</strong> el API responde 200 OK solo con las alertas críticas no atendidas, de la más reciente a la más antigua<br><br>
+<strong>Scenario 2: Entrega por canal</strong><br>
+<strong>Given</strong> una alerta crítica con el canal EMAIL pendiente<br>
+<strong>When</strong> se envía POST /api/v1/alerts/{id}/deliveries con channel EMAIL<br>
+<strong>Then</strong> el API responde 200 OK y agrega EMAIL a deliveredChannels sin duplicarlo<br><br>
+<strong>Scenario 3: Atención bloqueada</strong><br>
+<strong>Given</strong> una alerta con al menos un canal requerido pendiente<br>
+<strong>When</strong> se envía PATCH /api/v1/alerts/{id}/acknowledge<br>
+<strong>Then</strong> el API responde 409 Conflict indicando el canal pendiente
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>TS16</strong></td>
+<td>Exponer el endpoint de proyección de demanda</td>
+<td>Como Developer, quiero un endpoint que genere la proyección de siete días a partir del histórico de ventas y del clima de un servicio externo, para entregar a la Web Application predicciones basadas en datos reales.</td>
+<td>
+<strong>Scenario 1: Proyección generada</strong><br>
+<strong>Given</strong> que el restaurante tiene al menos 14 días de ventas confirmadas<br>
+<strong>When</strong> se envía POST /api/v1/demand-forecasts<br>
+<strong>Then</strong> el API responde 201 Created con 7 puntos de proyección (uno por día), un confidenceScore entre 0 y 1 y la condición climática consultada<br><br>
+<strong>Scenario 2: Histórico insuficiente</strong><br>
+<strong>Given</strong> que el restaurante tiene menos de 14 días de ventas confirmadas<br>
+<strong>When</strong> se envía POST /api/v1/demand-forecasts<br>
+<strong>Then</strong> el API responde 422 Unprocessable Entity indicando cuántos días de ventas faltan<br><br>
+<strong>Scenario 3: Servicio de clima no disponible</strong><br>
+<strong>Given</strong> que el servicio externo de clima no responde en 5 segundos<br>
+<strong>When</strong> se envía POST /api/v1/demand-forecasts<br>
+<strong>Then</strong> el API calcula la proyección solo con el histórico de ventas y lo indica en la respuesta
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+</table>
+
 ## **3.2. Impact Mapping**
 En la siguiente sección se presenta el Impact Mapping elaborado a partir del user persona principal: el administrador o dueño del restaurante. Este mapa asegura que se construya funcionalidades que realmente aporten valor al negocio y resuelvan los problemas más críticos de nuestro segmento objetivo.
 
