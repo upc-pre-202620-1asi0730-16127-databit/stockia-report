@@ -1056,6 +1056,187 @@ Las Technical Stories describen el trabajo técnico que habilita las User Storie
 </tr>
 </table>
 
+### RNF
+ 
+Los requisitos no funcionales se especifican como atributos de calidad: qué se exige, a quién afecta, con qué umbral se acepta y cómo se verifica.
+ 
+<table>
+<tr><th>ID</th><th>Título</th><th>Atributo de calidad</th><th>Requisito y actor afectado</th><th>Criterio medible</th><th>Verificación</th><th>Escenario de aceptación</th><th>Relacionado con Epic ID</th></tr>
+<tr>
+<td><strong>RNF01</strong></td>
+<td>Adaptabilidad de la Landing Page a móvil, tablet y escritorio</td>
+<td>Adaptabilidad</td>
+<td>La Landing Page se adapta a pantallas de teléfono, tablet y escritorio.<br><em>Actor afectado:</em> Visitante que navega desde un teléfono o tablet</td>
+<td>Breakpoints en 1024, 768 y 480 px; sin scroll horizontal a 360 px; grids de una columna en móvil.</td>
+<td>Prueba en DevTools a 360, 768, 1024 y 1440 px y en un teléfono real, con capturas.</td>
+<td>
+<strong>Scenario 1: Lectura sin scroll horizontal</strong><br>
+<strong>Given</strong> que el visitante abre cualquiera de las cuatro páginas en una pantalla de 360 px<br>
+<strong>When</strong> recorre la página completa<br>
+<strong>Then</strong> ningún bloque supera el ancho de la pantalla
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF02</strong></td>
+<td>Contraste legible según WCAG 2.1 AA</td>
+<td>Accesibilidad</td>
+<td>Los textos tienen contraste suficiente con su fondo.<br><em>Actor afectado:</em> Visitante con baja visión</td>
+<td>Contraste ≥ 4.5:1 en texto normal y ≥ 3:1 en texto grande; 0 errores de contraste.</td>
+<td>WebAIM Contrast Checker para cada par de colores y Lighthouse Accessibility.</td>
+<td>
+<strong>Scenario 1: Contraste verificado</strong><br>
+<strong>Given</strong> que la paleta define colores de texto y de fondo<br>
+<strong>When</strong> se mide cada par usado en el sitio<br>
+<strong>Then</strong> todos los textos normales alcanzan al menos 4.5:1
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF03</strong></td>
+<td>Carga rápida de la Landing Page</td>
+<td>Rendimiento</td>
+<td>El sitio carga rápido sin frameworks ni librerías externas.<br><em>Actor afectado:</em> Visitante con datos móviles</td>
+<td>LCP ≤ 2.5 s y CLS ≤ 0.1; Lighthouse Performance móvil ≥ 90.</td>
+<td>Lighthouse en modo móvil sobre la URL publicada, con captura del reporte.</td>
+<td>
+<strong>Scenario 1: Medición en móvil</strong><br>
+<strong>Given</strong> que la Landing Page está publicada<br>
+<strong>When</strong> se ejecuta Lighthouse en modo móvil sobre index.html<br>
+<strong>Then</strong> el reporte muestra Performance de 90 o más y LCP de 2.5 s o menos
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF04</strong></td>
+<td>Metadatos para posicionamiento en buscadores</td>
+<td>Encontrabilidad</td>
+<td>Cada página tiene metadatos descriptivos propios.<br><em>Actor afectado:</em> DataBite Corp (captación de leads)</td>
+<td>title ≤ 60 y description ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90.</td>
+<td>Inspección del &lt;head&gt; de cada página y Lighthouse SEO.</td>
+<td>
+<strong>Scenario 1: Metadatos únicos</strong><br>
+<strong>Given</strong> que se inspecciona el &lt;head&gt; de cualquiera de las cuatro páginas<br>
+<strong>When</strong> se revisan title y meta description<br>
+<strong>Then</strong> ambos existen, son propios de la página y respetan su longitud máxima
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF05</strong></td>
+<td>Compatibilidad con navegadores modernos</td>
+<td>Compatibilidad</td>
+<td>El sitio se ve y funciona igual en los navegadores más usados.<br><em>Actor afectado:</em> Visitante con cualquier navegador actual</td>
+<td>Últimas dos versiones de Chrome, Edge, Firefox y Safari, más Chrome Android y Safari iOS; 0 errores de consola.</td>
+<td>Matriz de pruebas manual por navegador con captura.</td>
+<td>
+<strong>Scenario 1: Funcionamiento cruzado</strong><br>
+<strong>Given</strong> que se abre el sitio en cada navegador de la matriz<br>
+<strong>When</strong> se prueban navegación, idioma, interruptor de precios, FAQ y formulario<br>
+<strong>Then</strong> todo funciona igual y la consola no muestra errores
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF06</strong></td>
+<td>Animaciones de aparición que no bloquean el contenido</td>
+<td>Usabilidad</td>
+<td>Las animaciones de entrada son breves y no ocultan contenido.<br><em>Actor afectado:</em> Visitante</td>
+<td>Duración ≤ 500 ms; solo transform y opacity; contenido visible si el navegador no soporta IntersectionObserver.</td>
+<td>Revisión de main.js y styles.css y prueba con IntersectionObserver deshabilitado.</td>
+<td>
+<strong>Scenario 1: Navegador sin soporte</strong><br>
+<strong>Given</strong> que el navegador no soporta IntersectionObserver<br>
+<strong>When</strong> el visitante abre el Home<br>
+<strong>Then</strong> todas las tarjetas se muestran sin animación y sin quedar ocultas
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF07</strong></td>
+<td>Identificación del contenido ilustrativo</td>
+<td>Transparencia</td>
+<td>Todo dato de ejemplo se identifica como tal en el sitio.<br><em>Actor afectado:</em> Visitante</td>
+<td>100 % de cifras, precios y fichas de ejemplo con nota visible en ES/EN.</td>
+<td>Revisión de las cuatro páginas en ambos idiomas.</td>
+<td>
+<strong>Scenario 1: Datos de ejemplo señalados</strong><br>
+<strong>Given</strong> que una sección muestra cifras, precios o fichas de ejemplo<br>
+<strong>When</strong> el visitante la revisa en cualquier idioma<br>
+<strong>Then</strong> una nota visible indica que el contenido es ilustrativo
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF08</strong></td>
+<td>Control de acceso por sesión y por rol en la Web Application</td>
+<td>Seguridad</td>
+<td>Ninguna pantalla interna se muestra sin sesión y las pantallas administrativas solo se muestran al rol Administrador.<br><em>Actor afectado:</em> Administrador y empleado</td>
+<td>100 % de las rutas bajo /app protegidas por authGuard; 100 % de las rutas administrativas protegidas por adminGuard; 0 accesos sin sesión en las pruebas.</td>
+<td>Prueba manual de cada ruta sin sesión, con rol Empleado y con rol Administrador.</td>
+<td>
+<strong>Scenario 1: Rutas protegidas</strong><br>
+<strong>Given</strong> que no hay sesión o el usuario tiene rol Empleado<br>
+<strong>When</strong> se intenta abrir cada ruta de la aplicación<br>
+<strong>Then</strong> solo se muestran las rutas permitidas para su estado y las demás redirigen
+</td>
+<td>EP04 — Acceso seguro y cuenta del restaurante</td>
+</tr>
+<tr>
+<td><strong>RNF09</strong></td>
+<td>Retroalimentación de estado y confirmaciones en la Web Application</td>
+<td>Usabilidad</td>
+<td>Cada pantalla informa cuándo está cargando, cuándo no hay datos y el resultado de cada acción; las acciones destructivas piden confirmación.<br><em>Actor afectado:</em> Administrador y empleado</td>
+<td>100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario.</td>
+<td>Lista de verificación por pantalla con captura de cada estado.</td>
+<td>
+<strong>Scenario 1: Acción destructiva</strong><br>
+<strong>Given</strong> que el usuario presiona Eliminar o Anular en cualquier pantalla<br>
+<strong>When</strong> el sistema recibe la acción<br>
+<strong>Then</strong> pide confirmación antes de ejecutarla
+</td>
+<td>EP12 — Base técnica y despliegue continuo</td>
+</tr>
+<tr>
+<td><strong>RNF10</strong></td>
+<td>Internacionalización de la Web Application</td>
+<td>Internacionalización</td>
+<td>La Web Application muestra todos sus textos en inglés por defecto y permite cambiarlos a español latinoamericano.<br><em>Actor afectado:</em> Administrador y empleado</td>
+<td>100 % de los textos de navegación, formularios, validaciones y mensajes en archivos de traducción en_US y es_419; inglés al primer ingreso; 0 textos fijos en las plantillas.</td>
+<td>Recorrido de las 12 pantallas en ambos idiomas y búsqueda de textos fijos en las plantillas.</td>
+<td>
+<strong>Scenario 1: Idioma por defecto</strong><br>
+<strong>Given</strong> que un usuario abre la Web Application por primera vez<br>
+<strong>When</strong> se muestra la pantalla de inicio de sesión<br>
+<strong>Then</strong> todos los textos aparecen en inglés<br><br>
+<strong>Scenario 2: Cambio de idioma</strong><br>
+<strong>Given</strong> que el usuario está en cualquier pantalla<br>
+<strong>When</strong> elige español<br>
+<strong>Then</strong> el 100 % de los textos cambia a español sin recargar la página y la elección se conserva al volver a ingresar
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+<tr>
+<td><strong>RNF11</strong></td>
+<td>Accesibilidad de la Web Application con atributos ARIA</td>
+<td>Accesibilidad</td>
+<td>La Web Application puede usarse con teclado y lector de pantalla.<br><em>Actor afectado:</em> Usuario con discapacidad visual o motriz</td>
+<td>100 % de los campos con etiqueta asociada; 100 % de los botones sin texto visible con aria-label; foco visible en el 100 % de los elementos interactivos; Lighthouse Accessibility ≥ 90.</td>
+<td>Lighthouse Accessibility en cada pantalla y recorrido completo solo con teclado.</td>
+<td>
+<strong>Scenario 1: Navegación con teclado</strong><br>
+<strong>Given</strong> que el usuario navega solo con la tecla Tab<br>
+<strong>When</strong> recorre el menú lateral y un formulario<br>
+<strong>Then</strong> el foco sigue el orden visual y siempre es visible<br><br>
+<strong>Scenario 2: Estados sin depender del color</strong><br>
+<strong>Given</strong> un insumo con estado Stock bajo, Crítico o Vencido<br>
+<strong>When</strong> se muestra en el inventario o en el dashboard<br>
+<strong>Then</strong> el estado se comunica con texto además del color
+</td>
+<td>EP03 — Experiencia web bilingüe, accesible y performante</td>
+</tr>
+</table>
+
 ## **3.2. Impact Mapping**
 En la siguiente sección se presenta el Impact Mapping elaborado a partir del user persona principal: el administrador o dueño del restaurante. Este mapa asegura que se construya funcionalidades que realmente aporten valor al negocio y resuelvan los problemas más críticos de nuestro segmento objetivo.
 
