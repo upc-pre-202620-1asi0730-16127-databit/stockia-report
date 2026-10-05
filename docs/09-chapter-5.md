@@ -992,6 +992,36 @@ Response `201 Created`: devuelve la venta con el `id` asignado. Después, la Web
   <br/><i>Respuesta de /api/v1/health en la API simulada desplegada en Render — TS06</i>
 </p>
 
+#### **5.2.2.7. Software Deployment Evidence for Sprint Review**
+ 
+En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS06) y la Web Application en **Vercel** (TS07). Además, se planificó vincular el despliegue de la Landing Page al repositorio `stockia-website` de la organización (TS08).
+ 
+**Actividades de despliegue realizadas**
+ 
+1. Se publicó la API simulada en Render como servicio Node.js (`server.js` con json-server), con CORS habilitado, el prefijo `/api/v1` y el endpoint de salud `/api/v1/health`.
+2. Se configuraron los entornos de Angular (`environment.ts` y `environment.prod.ts`) para que `apiBaseUrl` apunte a la API desplegada (commit `084801e`).
+3. Se preparó `vercel.json` para la Web Application: `npm run build` como comando de build, `dist/stockia-webapp/browser` como carpeta de salida y una regla de reescritura a `index.html` para que las rutas internas no respondan con error 404.
+4. El despliegue de producción quedó en estado **Ready** el 01/10/2026 desde la rama `main` (commit `084801e`).
+5. Se verificó el inicio de sesión y la gestión de alertas contra la API desplegada (commit `084801e`); la prueba de recarga de rutas internas y redirecciones de los guards en producción corresponde a T-TS07-2.
+6. La vinculación del proyecto de Vercel de la Landing Page con `stockia-website` de la organización se realiza en TS08.
+* **URL de la API simulada:** https://stockia-mock-api.onrender.com/api/v1
+* **URL de la Web Application desplegada:** https://stockia-platform.vercel.app
+**Evidencia: API simulada en Render**
+<p align="center">
+  <img src="../assets/chapter-5/sprint-2/s2-deploy-render.png" width="800" alt="API simulada en Render"/>
+  <br/><i>Servicio stockia-mock-api desplegado en Render</i>
+</p>
+**Evidencia: Web Application en Vercel**
+<p align="center">
+  <img src="../assets/chapter-5/sprint-2/s2-deploy-vercel.png" width="800" alt="Web Application en Vercel"/>
+  <br/><i>Proyecto de la Web Application en Vercel con el historial de despliegues</i>
+</p>
+<p align="center">
+  <img src="../assets/chapter-5/sprint-2/s2-deploy-webapp.png" width="800" alt="Web Application desplegada"/>
+  <br/><i>Web Application desplegada</i>
+</p>
+
+
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
 ### **5.3.2. Interview Recording**
