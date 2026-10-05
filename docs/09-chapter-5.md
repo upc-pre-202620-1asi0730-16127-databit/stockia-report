@@ -771,6 +771,80 @@ URL del tablero: https://laplaceho-22.atlassian.net/jira/software/projects/SCRUM
 - **Story Points:** 57 comprometidos; 38 completados (US10 a US17, US19, TS05 y TS06) y 19 en curso al 05/10/2026 (US09, US18, TS07, TS08, RNF08, RNF09, RNF10 y RNF11).
 - **Entregable principal:** Web Application de StockIA conectada a la API simulada desplegada en Render, y Landing Page sin los hallazgos del Sprint 1 y enlazada con la Web Application.
 
+#### **5.2.2.4. Development Evidence for Sprint Review**
+ 
+En esta sección se presentan los avances de implementación del Sprint 2 (Web Application y correcciones de la Landing Page) mediante los commits que los respaldan, relacionados con el ítem del Sprint Backlog 2 que implementan.
+ 
+**Distribución del código por Bounded Context**
+ 
+La subida de la Web Application al repositorio de la organización se repartió por Bounded Context: cada integrante sube su contexto completo en sus cuatro capas (domain, infrastructure, application y presentation), con un commit por capa en su rama `feature/*` y un Pull Request hacia `develop`.
+ 
+| **Bounded Context (Cap. IV)** | **Responsable** | **Archivos en la Web Application** | **Ítems del Sprint Backlog 2** |
+| :--- | :--- | :--- | :--- |
+| Restaurant Registration (IAM y equipo) | Higa Kohatsu, Alonso Enrique | `iam/` y el shell `shared/presentation/shell/` (barra superior y menú por rol) | US09, US10, US11, RNF08 |
+| ML and Recommendations | Huaman Oscco, Aldo Jesus | `demand-forecasting/`, `alerts/domain/recommendation.entity.ts` y `alerts/presentation/recommendations-list/` | US18 |
+| Subscription and Payment Management | Tuesta Girón, Kiara Lucia | `subscription/` | US19 |
+| Stock Management & Recipes Management | Asmat Alminco, Martin Alejandro | `product-inventory/` y `sales-order/` (domain, infrastructure y application: registro de venta) | US12, US13, US14 |
+| Analytics and Dashboard | Ortiz Laura, Leyla Alisson | `dashboard/`, `alerts/` (salvo los archivos de recomendaciones) y `sales-order/presentation/sales-history/` | US15, US16, US17 |
+| Arquitectura transversal | Huaman Oscco, Aldo Jesus | `shared/infrastructure/`, `environments/`, `fake-api/`, `app.config.ts`, `app.routes.ts` base, configuración de Angular y Vercel, y `mock-api/` | TS05, TS06, TS07 |
+| Internacionalización y accesibilidad | Tuesta Girón, Kiara Lucia / Ortiz Laura, Leyla Alisson | archivos de traducción y plantillas de todas las pantallas | RNF10, RNF11 |
+| Landing Page | Tuesta Girón, Kiara Lucia | repositorio `stockia-website` | TS08 |
+ 
+**Avance de la subida por Bounded Context y capa**
+ 
+| **#** | **Integrante** | **Bounded Context** | **Domain** | **Infrastructure** | **Application** | **Presentation** |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| 1 | Ortiz Laura, Leyla Alisson | Analytics and Dashboard | Pendiente | Pendiente | Pendiente | Pendiente |
+| 2 | Asmat Alminco, Martin Alejandro | Stock Management & Recipes Management | Pendiente | Pendiente | Pendiente | Pendiente |
+| 3 | Higa Kohatsu, Alonso Enrique | Restaurant Registration | Pendiente | Pendiente | Pendiente | Pendiente |
+| 4 | Huaman Oscco, Aldo Jesus | ML and Recommendations | Pendiente | Pendiente | Pendiente | Pendiente |
+| 5 | Tuesta Girón, Kiara Lucia | Subscription and Payment Management | Pendiente | Pendiente | Pendiente | Pendiente |
+ 
+> Actualizar cada celda a "En proceso" o "Terminado" según el estado de la capa en `stockia-webapp`.
+ 
+**Orden de integración.** Los contextos dependen entre sí, así que se integran en este orden para que `develop` compile después de cada merge: (1) arquitectura transversal; (2) Restaurant Registration, porque el shell y los guards usan la sesión; (3) Stock Management & Recipes Management, porque recetas y ventas se referencian entre sí; (4) ML and Recommendations, primera parte (`demand-forecasting/` y la entidad Recommendation); (5) Analytics and Dashboard, que consume inventario, alertas, proyección y sesión; (6) ML and Recommendations, segunda parte (vista de recomendaciones, que usa el servicio de alertas); y (7) Subscription and Payment Management, que no depende de otros contextos y puede integrarse desde el paso 2. Cada contexto agrega sus rutas a `app.routes.ts` al subir su capa de presentación.
+ 
+**Repositorio de la Web Application (`stockia-webapp`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+ 
+<!-- ACTUALIZAR: una fila por cada commit de cada Bounded Context, por ejemplo:
+| stockia-webapp | feature/restaurant-registration | `xxxxxxx` | feat(iam): add sign-up, sign-in, profile, team views and app shell (US09, US10, US11) | Capa de presentación de Restaurant Registration (AlonsoHiga). | dd/10/2026 |
+| stockia-webapp | feature/stock-recipes-management | `xxxxxxx` | feat(inventory): add inventory and recipes views with simulated sale (US12, US13, US14) | Capa de presentación de Stock & Recipes Management (Alemarr2). | dd/10/2026 |
+| stockia-webapp | feature/ml-recommendations | `xxxxxxx` | feat(forecast): add seven-day forecast view labeled as simulated (US18) | Capa de presentación de ML and Recommendations (Jesusho22). | dd/10/2026 |
+| stockia-webapp | feature/subscription-payment | `xxxxxxx` | feat(subscription): add plans view with simulated checkout (US19) | Capa de presentación de Subscription and Payment Management (kitu05g). | dd/10/2026 |
+| stockia-webapp | feature/analytics-dashboard | `xxxxxxx` | feat(analytics): add dashboard, alerts and sales history views (US15, US16, US17) | Capa de presentación de Analytics and Dashboard (Leylaa-O). | dd/10/2026 |
+-->
+ 
+**Repositorio de integración del prototipo (`Jesusho22/stockia-platform`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-platform | main | `4f712ae` | feat: StockIA Web Application (Angular DDD) + mock API (json-server) | TS05 y TS06: Web Application en Angular 18 organizada por Bounded Context (iam, product-inventory, sales-order, alerts, demand-forecasting, subscription, dashboard) y API simulada con json-server; incluye las pantallas de US09 a US19, los guards de RNF08 y la configuración de Vercel de TS07. | 01/10/2026 |
+| stockia-platform | main | `084801e` | feat: apuntar el frontend a la mock API desplegada en Render | TS06 y TS07: conexión de los entornos de desarrollo y producción a la API simulada en Render. | 01/10/2026 |
+| stockia-mock-api | main | `7565174` | feat: mock API de StockIA (json-server) | TS06: servidor json-server con prefijo `/api/v1`, CORS, endpoint de salud y colecciones del dominio. | 01/10/2026 |
+ 
+> **Nota:** la versión integrada de la Web Application se encuentra hoy en el repositorio de integración `Jesusho22/stockia-platform`. Siguiendo la mejora acordada en la retrospectiva del Sprint 1, cada integrante sube al repositorio de la organización el Bounded Context a su cargo (ver la tabla de distribución) mediante una rama `feature/*` y su Pull Request, de modo que la autoría de cada tarea quede registrada.
+ 
+**Repositorio de la Landing Page (`stockia-website`) — TS08**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| stockia-website | feature/styles | `9887414` | feat: update styles.css | Ajustes a la hoja de estilos posteriores a la versión `v1.0.0`. | 18/09/2026 |
+| stockia-website | develop | `ab9e52c` | Merge pull request #4 from feature/styles | Integra a `develop` los ajustes de estilos tras revisión vía Pull Request. | 18/09/2026 |
+| stockia-website | develop | `0897fec` | feat: update js files | Limpieza de `i18n.js` y `main.js`. | 18/09/2026 |
+| stockia-website | develop | `eb76e33` | Merge pull request #5 from feature/js-files | Integra a `develop` la limpieza de los scripts tras revisión vía Pull Request. | 18/09/2026 |
+ 
+<!-- ACTUALIZAR: commits de TS08 (Kiara: botón "Solicitar demo", menú móvil, fichas reales, filtro del portafolio, términos y enlaces con la Web Application; Martin: inglés por defecto). -->
+ 
+**Repositorio del informe (`stockia-report`)**
+ 
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+ 
+<!-- ACTUALIZAR: commits del Capítulo III y del Capítulo V del TB1, con su autor. -->
+
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
 ### **5.3.2. Interview Recording**
