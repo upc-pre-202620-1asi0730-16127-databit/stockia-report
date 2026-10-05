@@ -251,22 +251,17 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
  
 
 #### **5.2.1.2. Aspect Leaders and Collaborators**
-* En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **StockIA**.
-
-La organización de líderes y colaboradores está directamente relacionada con la selección de tareas (tasks) que se desarrollarán durante el Sprint. Dado que este Sprint se concentra únicamente en la Landing Page, se proponen los siguientes aspectos:
-
-| Team Member | GitHub Username | Maquetación & UI/UX (L/C) | Contenido & Traducción (i18n) (L/C) | Responsive & Accesibilidad (L/C) | Despliegue & QA (L/C) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| Higa Kohatsu, Alonso Enrique | AlonsoHiga | L | C | C | C |
-| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | L |
-| Asmat Alminco, Martin Alejandro | Alemarr2 | C | C | L | C |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C |
-| Tuesta Girón, Kiara Lucia | kitu05g | C | L | C | C |
----
-
-> **Leyenda:**  </br>
-> **L:** Líder (Líder del aspecto)  
-> **C:** Colaborador (Colaborador y desarrollo)
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 1. Cada aspecto agrupa las tareas del Sprint Backlog; el líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+ 
+| Team Member | GitHub Username | Estructura, estilos e interacciones (CSS/JS) (L/C) | Maquetación del Home y contenido bilingüe (L/C) | Páginas internas (features, pricing, about) (L/C) | Responsive, accesibilidad y SEO (L/C) | Despliegue y QA (L/C) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga | C | C | L | C | C |
+| Asmat Alminco, Martin Alejandro | Alemarr2 | C | C | C | L | C |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | C | C | L |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | L | C | C | C | C |
+| Tuesta Girón, Kiara Lucia | kitu05g | C | L | C | C | C |
+ 
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
 #### **5.2.1.3. Sprint Backlog 1**
 **Periodo:** Semana 1 – Semana 2  
