@@ -628,7 +628,28 @@ Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la docu
   <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
 </p>
 
-
+### **5.2.2. Sprint 2**
+ 
+El Sprint 2 se dedicó a la primera versión de la Frontend Web Application de StockIA, organizada por Bounded Context y conectada a una API REST simulada y desplegada. Incluye además la corrección de los hallazgos del Sprint 1 en la Landing Page y su enlace con la Web Application (TS08), y los requisitos de internacionalización (RNF10) y accesibilidad (RNF11) de la Web Application. El RESTful API en ASP.NET Core no forma parte de este Sprint y se mantiene en el Product Backlog (TS09 a TS16).
+ 
+#### **5.2.2.1. Sprint Planning 2**
+ 
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 22/09/2026 |
+| **Time** | 10:00 am |
+| **Location** | Lima/Lima/Santiago de Surco/UPC (presencial) y Google Meet |
+| **Prepared By** | Huaman Oscco, Aldo Jesus (Jesusho22) |
+| **Attendees (to planning meeting)** | Higa Kohatsu, Alonso Enrique / Asmat Alminco, Martin Alejandro / Huaman Oscco, Aldo Jesus / Ortiz Laura, Leyla Alisson / Tuesta Girón, Kiara Lucia |
+| **Sprint 1 Review Summary** | Se presentó la Landing Page de cuatro páginas, bilingüe y con el formulario de demo simulado, integrada en `main` del repositorio `stockia-website` con la versión `v1.0.0`. Al revisar el incremento publicado se identificaron como pendientes: el botón "Solicitar demo" de la barra de navegación y el enlace "Términos" sin destino, las fichas de equipo y las cifras con notas internas de edición, el español como idioma inicial (la rúbrica exige inglés por defecto), la ausencia de enlaces hacia la Web Application y un despliegue en Vercel vinculado a un repositorio personal. Estos pendientes se planifican en TS08. |
+| **Sprint 1 Retrospective Summary** | Funcionó: la división del trabajo por integrante y la integración por Pull Request en la organización (11 Pull Requests en `stockia-report` y 3 en `stockia-website`). A mejorar: (1) los merges se concentraron el 17 y 18 de setiembre, por lo que se acordó integrar cada tarea a `develop` apenas se termina; (2) usar una rama `feature/*` por tarea con su ID en el mensaje de commit, para que cada tarea tenga su evidencia; y (3) estimar por esfuerzo real y registrar la disponibilidad de cada integrante. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | **Contexto:** Con la Landing Page publicada, el equipo construye el núcleo del producto: que cada venta descuente insumos por receta y que el administrador vea a tiempo lo que debe reponer.<br><br>**Sprint Goal:**<br>*"Our focus is on delivering the first working version of the StockIA web application, organised by bounded context and connected to a deployed mock REST API. We believe it delivers to restaurant administrators the ability to keep their inventory in sync with every sale, manage their team and act on stock alerts from a single dashboard. This will be confirmed when, in the deployed application, an administrator can register, load ingredients and recipes, record a sale that automatically deducts stock, and see the resulting critical items and alerts on the dashboard."* |
+| **Sprint 2 Velocity** | 40 Story Points (completados en el Sprint 1; es la única referencia histórica disponible). |
+| **Sum of Story Points** | 57 Story Points comprometidos en 19 ítems (11 US, 4 TS y 4 RNF) |
+ 
+El compromiso del Sprint 2 (57 SP) se calculó a partir de la velocidad del Sprint 1 ajustada a la nueva disponibilidad: en el Sprint 1 el equipo completó 40 SP con 28 horas por integrante; para el Sprint 2 cada integrante declaró 40 horas, por lo que la capacidad proyectada es 40 × 40 / 28 ≈ 57 SP. Las 153 horas planificadas equivalen al 77 % de la capacidad disponible (200 horas) y ningún integrante supera las 34 horas de sus 40 disponibles; el margen restante cubre revisiones de Pull Request y ceremonias. Si el avance se retrasa, RNF10 y RNF11 (5 SP) pasan al Sprint 3, porque no bloquean el Sprint Goal.
 
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
