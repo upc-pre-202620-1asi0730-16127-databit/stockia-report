@@ -229,7 +229,7 @@ La siguiente imagen muestra el apartado de **Environment Variables** de la plata
 
 ## **5.2. Landing Page, Services & Applications Implementation**
 ### **5.2.1. Sprint 1**
-Este primer ciclo de desarrollo se centró en establecer los pilares de la identidad digital de **StockIA**, integrando el esfuerzo colaborativo del equipo para entregar un sitio de marketing funcional inicial. Durante este Sprint, el equipo priorizó la captación de visitantes mediante una Landing Page de 4 páginas (`index.html`, `features.html`, `pricing.html`, `about.html`), completamente bilingüe (ES/EN) y responsiva, documentando cada fase desde la planificación hasta el despliegue final para validar la propuesta de valor frente al segmento elegido.
+El Sprint 1 se dedicó a la Landing Page de StockIA: cuatro páginas estáticas, bilingües y responsivas, publicadas en Vercel, con el formulario de solicitud de demo como punto de conversión. Los ítems seleccionados son los del Product Backlog que pertenecen a EP01, EP02 y EP03, y los habilitadores TS01 a TS04 de EP12.
 
 #### **5.2.1.1. Sprint Planning 1**
 El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de StockIA. Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionaron las Historias de Usuario más prioritarias del Product Backlog (correspondientes a los Epics EP01–EP08) para definir el objetivo central de la iteración. A continuación, se presenta el cuadro resumen con los detalles y acuerdos de esta reunión:
