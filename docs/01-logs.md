@@ -37,4 +37,25 @@
     Capítulo V: Product Implementation, Validation & Deployment
     </td>
   </tr>
+   <tr>
+    <td style="text-align: center;">
+    Segunda Entrega (TB1)
+    </td>
+    <td style="text-align: center;">
+    09/09/2026
+    </td>
+    <td style="text-align: center;">
+    Higa Kohatsu, Alonso Enrique<br>
+    Asmat Alminco, Martin Alejandro<br>
+    Huaman Oscco, Aldo Jesus<br>
+    Ortiz Laura, Leyla Alisson<br>
+    Tuesta Girón, Kiara Lucia
+    </td>
+    <td style="text-align: justify;">
+    Corrección del reporte AV1<br>
+    Nueva versión desplegada de Landing Page<br>
+    Primera versión desplegada de Frontend Web Applications<br>
+    Capítulo V: Product Implementation, Validation & Deployment (Sprint 2)
+    </td>
+  </tr>
 </table>
