@@ -435,16 +435,16 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. 
 
 #### **5.2.1.4. Development Evidence for Sprint Review**
 En esta sección se presentan los avances de implementación del Sprint 1 (Landing Page) mediante los commits que los respaldan. Cada commit se relaciona con el ítem del Sprint Backlog 1 que implementa, de modo que puede rastrearse el trabajo de cada integrante desde la historia hasta el código.
- 
+
 **Repositorio del informe (`stockia-report`)**
- 
+
 El informe se trabajó con GitFlow: una rama `feature/chapter-N` por capítulo y su integración en `develop` mediante Pull Request (PR #1 al #11 durante el Sprint 1, con la versión `v1.0.0` publicada en `main`). Se presentan los commits más representativos de cada integrante:
- 
+
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
 | stockia-report | main | `147c971` | chore: initialize report repository structure | Creación del repositorio del informe con la estructura de `docs/` (Alonso-Higa). | 27/08/2026 |
 | stockia-report | feature/chapter-3 | `293996b` | docs: create chapter 3 documentation | Estructura inicial del capítulo III (AlonsoHiga). | 09/09/2026 |
-| stockia-report | develop | `3f41c6d` | chore: create develop branch | TS01: rama `develop` como base de integración de GitFlow (AlonsoHiga). | 10/09/2026 |
+| stockia-report | develop | `3f41c6d` | chore: create develop branch | Rama `develop` como base de integración de GitFlow (AlonsoHiga). | 10/09/2026 |
 | stockia-report | feature/chapter-3 | `12b4340` | docs(chapter-3): add User Stories section | User Stories de la Landing Page y de la Web Application (Jesus). | 17/09/2026 |
 | stockia-report | feature/chapter-3 | `6570d87` | docs(chapter-3): add Product Backlog section | Product Backlog priorizado con Story Points (Jesus). | 17/09/2026 |
 | stockia-report | feature/chapter-4 | `794e63c` | docs(chapter-4): add Landing Page Wireframe section | Wireframes de la Landing Page (Jesus). | 17/09/2026 |
@@ -461,28 +461,29 @@ El informe se trabajó con GitFlow: una rama `feature/chapter-N` por capítulo y
 | stockia-report | feature/chapter-4 | `f16e0b4` | docs(chapter-4): add container diagram | Diagrama de contenedores C4 (AlonsoHiga). | 18/09/2026 |
 | stockia-report | feature/chapter-5 | `66c56dd` | docs(chapter-5): add Team Collaboration Insights during Sprint section | Sección 5.2.1.8 (Jesus). | 18/09/2026 |
 | stockia-report | main | `ae58e7f` | Merge pull request #11 from develop | Publicación de la versión `v1.0.0` del informe para el AV1 (Martin). | 18/09/2026 |
- 
+
 <br/>
+
 **Repositorio de la Landing Page (`stockia-website`)**
- 
-La Landing Page se integró en el repositorio de la organización siguiendo GitFlow: Alonso creó la estructura y los scripts base (TS01, TS03), cada integrante integró su página mediante una rama `feature/*` y su Pull Request, y Leyla ajustó los estilos e interacciones (TS02).
- 
+
+La Landing Page se integró en el repositorio de la organización siguiendo GitFlow: Alonso creó la estructura y los scripts base, cada integrante integró su página mediante una rama `feature/*` y su Pull Request, y Leyla ajustó los estilos y las interacciones.
+
 | **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Committed on (Date)** |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| stockia-website | develop | `1a58474` | chore: set up project structure | TS01: estructura base con las cuatro páginas y las carpetas `css`, `js` y `assets` (AlonsoHiga). | 17/09/2026 |
-| stockia-website | develop | `2efd03a` | feat: add about section | US05 y US06: misión, visión, valores, equipo y formulario de solicitud de demo en `about.html` (AlonsoHiga). | 17/09/2026 |
-| stockia-website | develop | `6e0d010` | feat: add index.html code | US01, US02 y US03: hero, estadísticas, segmentos, funcionalidades, diferenciadores, integraciones y portafolio en `index.html` (kitu05g). | 17/09/2026 |
-| stockia-website | feature/pricing | `6f5bf63` | feat(pricing): add navbar section | US07: barra de navegación de `pricing.html` (Jesus). | 18/09/2026 |
-| stockia-website | feature/pricing | `9f5b940` | feat(pricing): add pricing cards section | US04: planes Esencial, Profesional e IoT Completo con interruptor mensual/anual (Jesus). | 18/09/2026 |
-| stockia-website | feature/pricing | `af0e54c` | feat(pricing): add faq section | US04: preguntas frecuentes de `pricing.html` (Jesus). | 18/09/2026 |
-| stockia-website | feature/pricing | `9ca1046` | feat(pricing): add footer section | US07: pie de página de `pricing.html` (Jesus). | 18/09/2026 |
+| stockia-website | develop | `1a58474` | chore: set up project structure | Estructura base con las cuatro páginas y las carpetas `css`, `js` y `assets` (AlonsoHiga). | 17/09/2026 |
+| stockia-website | develop | `2efd03a` | feat: add about section | US18, US19 y US20: misión, visión, valores, equipo y formulario de solicitud de demo en `about.html` (AlonsoHiga). | 17/09/2026 |
+| stockia-website | develop | `6e0d010` | feat: add index.html code | US01 a US09: hero, mockup del dashboard, estadísticas, segmentos, funcionalidades, diferenciadores, integraciones, portafolio y video en `index.html` (kitu05g). | 17/09/2026 |
+| stockia-website | feature/pricing | `6f5bf63` | feat(pricing): add navbar section | US10: barra de navegación de `pricing.html` (Jesus). | 18/09/2026 |
+| stockia-website | feature/pricing | `9f5b940` | feat(pricing): add pricing cards section | US15 y US16: planes Esencial, Profesional e IoT Completo con interruptor mensual/anual (Jesus). | 18/09/2026 |
+| stockia-website | feature/pricing | `af0e54c` | feat(pricing): add faq section | US17: preguntas frecuentes de `pricing.html` (Jesus). | 18/09/2026 |
+| stockia-website | feature/pricing | `9ca1046` | feat(pricing): add footer section | US10 y RNF03: pie de página de `pricing.html` (Jesus). | 18/09/2026 |
 | stockia-website | develop | `0e54999` | Merge pull request #1 from feature/pricing | Integración revisada de `pricing.html` en `develop` (Aldo_Jesus). | 18/09/2026 |
-| stockia-website | feature/features-page | `4082128` | feat(features): update Landing's features page. | US02: detalle de los seis módulos y la sección "Cómo funciona" en `features.html` (Alemarr2). | 18/09/2026 |
+| stockia-website | feature/features-page | `4082128` | feat(features): update Landing's features page. | US11 y US12: detalle de las seis funcionalidades y la sección "Cómo funciona" en `features.html` (Alemarr2). | 18/09/2026 |
 | stockia-website | develop | `be0b019` | Merge pull request #2 from feature/features-page | Integración revisada de `features.html` en `develop` (Martin). | 18/09/2026 |
-| stockia-website | develop | `04782c2` | feat: add js files and cs file | TS02, TS03 y US08: hoja de estilos, diccionario ES/EN e interacciones del sitio (AlonsoHiga). | 18/09/2026 |
+| stockia-website | develop | `04782c2` | feat: add js files and cs file | RNF09, RNF10, US13 y US14: hoja de estilos, diccionario ES/EN e interacciones del sitio (AlonsoHiga). | 18/09/2026 |
 | stockia-website | main | `d89ab65` | Merge pull request #3 from develop | Publicación de la versión `v1.0.0` de la Landing Page (AlonsoHiga). | 18/09/2026 |
-| stockia-website | feature/styles | `9887414` | feat: update styles.css | TS02 y RNF06: ajustes del sistema de diseño (Leylaa-O). | 18/09/2026 |
-| stockia-website | feature/js-files | `0897fec` | feat: update js files | TS03: limpieza de `i18n.js` y `main.js` (Leylaa-O). | 18/09/2026 |
+| stockia-website | feature/styles | `9887414` | feat: update styles.css | RNF07 y RNF09: ajustes del sistema de diseño (Leylaa-O). | 18/09/2026 |
+| stockia-website | feature/js-files | `0897fec` | feat: update js files | RNF10: limpieza de `i18n.js` y `main.js` (Leylaa-O). | 18/09/2026 |
 
 #### **5.2.1.5. Execution Evidence for Sprint Review**
 En el Sprint 1 se implementaron las cuatro páginas de la Landing Page de StockIA. A continuación se presenta cada sección publicada junto con la User Story o el requisito que la respalda:
