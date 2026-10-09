@@ -206,7 +206,7 @@
         TB1
       </i></b>
       <br>
-      .....
+      Durante el desarrollo del TB1, participé en la coordinación de tareas y mantuve una comunicación constante con mis compañeros para cumplir con los objetivos del equipo. En la parte técnica, me encargué del bounded context Subscription and Payment Management, definiendo su estructura y responsabilidades según las necesidades del negocio. Asimismo, realicé ajustes a partir del feedback del equipo para mantener la coherencia con la arquitectura del proyecto y cumplir con los entregables establecidos.
       <br><br>
     </td>
     <td style="text-align: justify; vertical-align: top;">
