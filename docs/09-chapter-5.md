@@ -973,35 +973,32 @@ La Web Application consume una API simulada, por lo que los escenarios que depen
 
 #### **5.2.2.6. Services Documentation Evidence for Sprint Review**
  
-En el Sprint 2 la Web Application consume una API REST simulada con **json-server**, desplegada en Render bajo el prefijo `/api/v1`. Cada colección del dominio expone las operaciones REST estándar (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`) y acepta los filtros de json-server (`?campo=valor`, `?_sort=campo&_order=asc`, `?_page=1&_limit=10`). El frontend accede a ellas desde la capa `infrastructure` de cada Bounded Context; al reemplazar `apiBaseUrl` por la URL del RESTful API (TS10), ningún componente de presentación cambia. La documentación con OpenAPI (Swagger) se publicará con el RESTful API en ASP.NET Core (TS09).
- 
+En el Sprint 2 la Web Application consume una API REST simulada con **json-server**, desplegada en Render bajo el prefijo `/api/v1`. Cada recurso expone las operaciones REST estándar (`GET`, `POST`, `PUT` y `DELETE`) y acepta los filtros de json-server (`?campo=valor`, `?_sort=campo&_order=asc`). La Web Application accede a ellos desde la capa `infrastructure` de cada Bounded Context mediante `BaseApi` y `BaseEndpoint`; la URL base se define en `VITE_STOCKIA_API_URL` y la ruta de cada recurso en su variable `VITE_*_ENDPOINT_PATH`, por lo que al reemplazar la API simulada por el RESTful API no cambia ningún componente de presentación.
+
 | **Endpoint** | **Acción (HTTP)** | **Parámetros** | **Descripción del Response** | **User Story** |
 | :--- | :---: | :--- | :--- | :---: |
-| `/api/v1/health` | GET | — | `200 OK` con `{ "status": "ok", "time": ... }`; permite verificar que el servicio está activo. | TS06 |
-| `/api/v1/users` | POST | `fullName`, `restaurantName`, `email`, `password`, `role` | `201 Created` con el usuario creado; se usa al registrar el restaurante y al invitar integrantes. | US09, US11 |
-| `/api/v1/users?email={email}&password={password}` | GET | `email`, `password` | `200 OK` con la lista de usuarios que coinciden; una lista vacía equivale a credenciales incorrectas. | US10 |
-| `/api/v1/users/{id}` | PUT / DELETE | `id` y datos del usuario | `200 OK` con el usuario actualizado (perfil o rol) o eliminado (baja del equipo). | US10, US11 |
-| `/api/v1/inventoryItems` | GET / POST | `name`, `unit`, `quantity`, `minThreshold`, `storageType`, `shelfLifeDays`, `expirationDate`, `unitCost` | `200 OK` con la lista de insumos o `201 Created` con el insumo registrado. | US12 |
-| `/api/v1/inventoryItems/{id}` | PUT / DELETE | `id` y datos del insumo | `200 OK` con el insumo actualizado (edición o descuento por venta) o eliminado. | US12, US14 |
-| `/api/v1/recipes` y `/api/v1/recipes/{id}` | GET / POST / PUT / DELETE | `dishName` y líneas de ingrediente (`inventoryItemId`, `quantityRequired`, `unit`) | `200 OK` o `201 Created` con la receta y sus ingredientes. | US13 |
-| `/api/v1/sales` | GET / POST | `saleDate`, `channel`, `status`, `lineItems` | `201 Created` con la venta confirmada; el frontend descuenta los insumos solo después de esta respuesta. | US14, US15 |
-| `/api/v1/sales/{id}` | PUT | `status: "VOIDED"` | `200 OK` con la venta anulada. | US15 |
-| `/api/v1/alerts` y `/api/v1/alerts/{id}` | GET / POST / PUT / DELETE | `type`, `severity`, `channel`, `message`, `acknowledged`, `deliveredChannels` | `200 OK` o `201 Created` con la alerta registrada, atendida o con su entrega actualizada. | US17 |
-| `/api/v1/demandForecasts` | GET / POST | `generatedAt`, `confidenceScore`, `weatherCondition`, `dataPoints` | `201 Created` con la proyección simulada de siete días. | US18 |
-| `/api/v1/recommendations` y `/api/v1/recommendations/{id}` | GET / PUT | `applied: true` | `200 OK` con la recomendación aplicada. | US18 |
-| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características. | US19 |
-| `/api/v1/subscriptions` | GET / POST | `planId`, `paymentMethod`, `status`, `renewalDate` | `201 Created` o `200 OK` con la suscripción activada o cambiada. | US19 |
- 
-**Ejemplo de interacción — consulta de insumos (US12)**
- 
+| `/api/v1/users?email={email}` | GET | `email` | `200 OK` con los usuarios que coinciden; se usa para validar el correo duplicado y el inicio de sesión. | US29, US30, US40 |
+| `/api/v1/users` | POST | `fullName`, `restaurantName`, `email`, `password`, `role` | `201 Created` con el usuario creado al registrar el restaurante o invitar a un integrante. | US29, US24 |
+| `/api/v1/users/{id}` | PUT / DELETE | `id` y datos del usuario | `200 OK` con el perfil, el restaurante, la contraseña o el rol actualizados, o con la baja del integrante. | US40, US24 |
+| `/api/v1/inventoryItems` y `/api/v1/inventoryItems/{id}` | GET / POST / PUT / DELETE | `name`, `unit`, `quantity`, `minThreshold`, `storageType`, `shelfLifeDays`, `expirationDate`, `unitCost` | `200 OK` o `201 Created` con el insumo; el `PUT` también registra el descuento por venta. | US21, US36, US22 |
+| `/api/v1/recipes` y `/api/v1/recipes/{id}` | GET / POST / PUT / DELETE | `dishName` e ingredientes (`inventoryItemId`, `quantityRequired`, `unit`) | `200 OK` o `201 Created` con la receta y sus ingredientes. | US22 |
+| `/api/v1/sales` y `/api/v1/sales/{id}` | GET / POST / PUT | `saleDate`, `channel`, `status`, `lineItems` | `201 Created` con la venta confirmada; el `PUT` con `status: "VOIDED"` la anula. | US22, US39 |
+| `/api/v1/alerts` y `/api/v1/alerts/{id}` | GET / POST / PUT / DELETE | `type`, `severity`, `message`, `channel`, `acknowledged`, `deliveredChannels` | `200 OK` o `201 Created` con la alerta registrada, atendida o con su entrega actualizada. | US27, US41 |
+| `/api/v1/recommendations/{id}` | GET / PUT | `applied: true` | `200 OK` con la recomendación aplicada. | US26 |
+| `/api/v1/demandForecasts` | GET / POST | `generatedAt`, `confidenceScore`, `weatherCondition`, `dataPoints` | `201 Created` con la proyección de 7 días. | US25 |
+| `/api/v1/plans` | GET | — | `200 OK` con los planes, su precio y sus características. | US31 |
+| `/api/v1/subscriptions` y `/api/v1/subscriptions/{id}` | GET / POST / PUT | `planId`, `paymentMethod`, `status`, `renewalDate` | `201 Created` o `200 OK` con la suscripción activada o cambiada. | US31 |
+
+**Ejemplo de interacción — consulta de insumos (US21)**
+
 Request:
- 
+
 ```http
 GET https://stockia-mock-api.onrender.com/api/v1/inventoryItems?_limit=1
 ```
- 
+
 Response `200 OK`:
- 
+
 ```json
 [
   {
@@ -1017,37 +1014,13 @@ Response `200 OK`:
   }
 ]
 ```
- 
-El insumo tiene 18 kg frente a un stock mínimo de 10 kg, por lo que la Web Application lo muestra como "Disponible"; al bajar a 10 kg o menos pasaría a "Stock bajo" (US12, Scenario 7).
- 
-**Ejemplo de interacción — registro de una venta (US14)**
- 
-Request:
- 
-```http
-POST https://stockia-mock-api.onrender.com/api/v1/sales
-Content-Type: application/json
- 
-{
-  "saleDate": "2026-10-01T19:30:00.000Z",
-  "channel": "POS",
-  "status": "CONFIRMED",
-  "lineItems": [
-    { "recipeId": 1, "dishName": "Pizza Margarita", "unitPrice": 28, "quantity": 1 }
-  ]
-}
-```
- 
-Response `201 Created`: devuelve la venta con el `id` asignado. Después, la Web Application envía un `PUT /api/v1/inventoryItems/{id}` por cada ingrediente de la receta para descontar 0.30 kg de harina de trigo, 0.20 kg de queso mozzarella y 0.15 kg de tomate.
- 
-**Limitaciones de la API simulada (se resuelven con TS09 a TS16):** el inicio de sesión envía la contraseña como parámetro de consulta y la compara en texto plano; el descuento de insumos no es atómico; y la proyección de demanda usa valores generados en el cliente.
- 
-* **Repositorio de la API simulada:** https://github.com/Jesusho22/stockia-mock-api
+
+* **Repositorio de la Web Application (configuración de json-server en `src/server`):** https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-webapp
 * **URL de la API simulada desplegada:** https://stockia-mock-api.onrender.com/api/v1
-* **Commit relacionado con la documentación de servicios:** `7565174` (servidor, datos de ejemplo y `README.md` con la tabla de endpoints).
+
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-api-health.png" width="700" alt="API simulada en Render"/>
-  <br/><i>Respuesta de /api/v1/health en la API simulada desplegada en Render — TS06</i>
+  <img src="../assets/chapter-5/s2-api-render.png" width="700" alt="API simulada en Render"/>
+  <br/><i>Respuesta de la API simulada desplegada en Render — TS02</i>
 </p>
 
 #### **5.2.2.7. Software Deployment Evidence for Sprint Review**
