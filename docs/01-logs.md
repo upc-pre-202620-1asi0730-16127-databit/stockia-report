@@ -42,7 +42,7 @@
     Segunda Entrega (TB1)
     </td>
     <td style="text-align: center;">
-    09/09/2026
+    09/10/2026
     </td>
     <td style="text-align: center;">
     Higa Kohatsu, Alonso Enrique<br>
