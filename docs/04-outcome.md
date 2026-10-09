@@ -184,6 +184,9 @@
       Participé en reuniones y coordinación de tareas, escuchando las opiniones del equipo para integrar sus aportes en diversas partes del proyecto como las User Stories y los prototipos. Al diseñar la interfaz y planificar el Impact Mapping, establecí metas claras y apoyé la distribución de responsabilidades, asegurando un entorno inclusivo y colaborativo que permitió cumplir los objetivos del AV1 de manera ordenada y efectiva.
       <br>
       <b><i>
+        TB1
+      </i></b>
+      <br>
       Durante el TB1 colaboré en la planificación y ejecución de las tareas técnicas, escuchando las opiniones del equipo para integrar mejoras en el dashboard y los alerts. Al añadir los perfiles en la landing page, consideré las propuestas de mis compañeros para reflejar de manera inclusiva la participación de todos. También apoyé en la organización del reporte, proponiendo correcciones y ajustes que garantizaron la calidad del documento final.
       </i></b>
       <br>
