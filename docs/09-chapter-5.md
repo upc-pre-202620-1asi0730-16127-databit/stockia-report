@@ -487,165 +487,182 @@ La Landing Page se integró en el repositorio de la organización siguiendo GitF
 
 #### **5.2.1.5. Execution Evidence for Sprint Review**
 En el Sprint 1 se implementaron las cuatro páginas de la Landing Page de StockIA. A continuación se presenta cada sección publicada junto con la User Story o el requisito que la respalda:
- 
-1. **Barra de navegación (US07, US08):** menú común a las cuatro páginas con los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES/EN y el botón "Solicitar demo".
+
+1. **Barra de navegación (US10, US13, US14):** menú común a las cuatro páginas con los enlaces Inicio, Características, Precios y Nosotros, el selector de idioma ES/EN y el botón "Solicitar demo".
 <p align="center">
   <img src="../assets/chapter-5/01-header-navbar.png" width="800" alt="Barra de navegación"/>
-  <br/><i>Barra de navegación — US07 y US08</i>
+  <br/><i>Barra de navegación — US10, US13 y US14</i>
 </p>
-2. **Hero con mockup del dashboard (US01):** propuesta de valor, CTA principal y secundario, tres indicadores clave y la vista previa ilustrativa del dashboard.
+
+2. **Hero con mockup del dashboard (US01, US02):** propuesta de valor, CTA principal y secundario y la vista previa ilustrativa del dashboard.
 <p align="center">
   <img src="../assets/chapter-5/02-hero-mockup-dashboard.png" width="800" alt="Hero con mockup del dashboard"/>
-  <br/><i>Hero con mockup del dashboard — US01</i>
+  <br/><i>Hero con mockup del dashboard — US01 y US02</i>
 </p>
-3. **Barra de estadísticas (US01, RNF07):** los cuatro indicadores de impacto y la nota que identifica las cifras referenciales.
+
+3. **Barra de estadísticas (US03, RNF08):** los cuatro indicadores de impacto y la nota que identifica las cifras referenciales.
 <p align="center">
   <img src="../assets/chapter-5/03-barra-estadisticas.png" width="800" alt="Barra de estadísticas"/>
-  <br/><i>Barra de estadísticas — US01 y RNF07</i>
+  <br/><i>Barra de estadísticas — US03 y RNF08</i>
 </p>
-4. **"¿Para quién es StockIA?" (US02):** una tarjeta para dueños y CEOs y otra para administradores y jefes de cocina.
+
+4. **"¿Para quién es StockIA?" (US04):** una tarjeta para dueños y CEOs y otra para administradores y jefes de cocina.
 <p align="center">
   <img src="../assets/chapter-5/04-para-quien-es-stockia.png" width="800" alt="Sección ¿Para quién es StockIA?"/>
-  <br/><i>Sección "¿Para quién es StockIA?" — US02</i>
+  <br/><i>Sección "¿Para quién es StockIA?" — US04</i>
 </p>
-5. **Funcionalidades del Home (US02):** seis tarjetas de funcionalidades y el botón "Ver todas las características →".
+
+5. **Funcionalidades del Home (US05):** seis tarjetas de funcionalidades y el botón "Ver todas las características".
 <p align="center">
   <img src="../assets/chapter-5/05-grid-funcionalidades.png" width="800" alt="Funcionalidades del Home"/>
-  <br/><i>Funcionalidades del Home — US02</i>
+  <br/><i>Funcionalidades del Home — US05</i>
 </p>
-6. **"Más que un inventario" (US03):** las tres tarjetas de diferenciadores de StockIA.
+
+6. **"Más que un inventario" (US06):** las tres tarjetas de diferenciadores de StockIA.
 <p align="center">
   <img src="../assets/chapter-5/06-mas-que-un-inventario.png" width="800" alt="Diferenciadores"/>
-  <br/><i>Diferenciadores — US03</i>
+  <br/><i>Diferenciadores — US06</i>
 </p>
-7. **Integraciones en evaluación (US03, RNF07):** cuatro tarjetas con la etiqueta "En evaluación" y la nota de que la integración definitiva aún no se ha elegido.
+
+7. **Integraciones en evaluación (US07, RNF08):** cuatro tarjetas con la etiqueta "En evaluación" y la nota de que la integración definitiva aún no se ha elegido.
 <p align="center">
   <img src="../assets/chapter-5/07-integraciones-externas.png" width="800" alt="Integraciones en evaluación"/>
-  <br/><i>Integraciones en evaluación — US03 y RNF07</i>
+  <br/><i>Integraciones en evaluación — US07 y RNF08</i>
 </p>
-8. **Portafolio (US03):** vistas ilustrativas de la plataforma con pestañas que resaltan la categoría activa.
+
+8. **Portafolio (US08):** vistas ilustrativas de la plataforma con pestañas Inventario e IA & IoT.
 <p align="center">
   <img src="../assets/chapter-5/08-seccion-portafolio.png" width="800" alt="Portafolio"/>
-  <br/><i>Portafolio — US03</i>
+  <br/><i>Portafolio — US08</i>
 </p>
-9. **Video del producto (US03):** bloque "Video demostrativo próximamente" sin enlaces rotos.
+
+9. **Video del producto (US09):** bloque "Video demostrativo próximamente", con el iframe de YouTube preparado para su reemplazo.
 <p align="center">
   <img src="../assets/chapter-5/09-placeholder-video.png" width="800" alt="Bloque del video del producto"/>
-  <br/><i>Bloque del video del producto — US03</i>
+  <br/><i>Bloque del video del producto — US09</i>
 </p>
-10. **features.html (US02):** detalle de los seis módulos y la sección "Cómo funciona" con cuatro pasos.
+
+10. **features.html (US11, US12):** detalle de las seis funcionalidades y la sección "Cómo funciona" con cuatro pasos.
 <p align="center">
   <img src="../assets/chapter-5/10-features-grid-completo.png" width="800" alt="features.html"/>
-  <br/><i>features.html — US02</i>
+  <br/><i>features.html — US11 y US12</i>
 </p>
-11. **pricing.html (US04, RNF07):** planes Esencial, Profesional e IoT Completo con el interruptor mensual/anual, la nota de precios de ejemplo y el acordeón de preguntas frecuentes.
+
+11. **pricing.html (US15, US16, US17, RNF08):** planes Esencial, Profesional e IoT Completo con el interruptor mensual/anual, la nota de precios de ejemplo y el acordeón de preguntas frecuentes.
 <p align="center">
   <img src="../assets/chapter-5/11-pricing-planes-y-faq.png" width="800" alt="pricing.html"/>
-  <br/><i>pricing.html — US04 y RNF07</i>
+  <br/><i>pricing.html — US15, US16, US17 y RNF08</i>
 </p>
-12. **about.html (US05, US06):** misión, visión, valores, fichas del equipo y formulario de solicitud de demo.
+
+12. **about.html (US18, US19, US20):** misión, visión, valores, fichas del equipo y formulario de solicitud de demo.
 <p align="center">
   <img src="../assets/chapter-5/12-about-mision-vision-equipo-formulario.png" width="800" alt="about.html"/>
-  <br/><i>about.html — US05 y US06</i>
+  <br/><i>about.html — US18, US19 y US20</i>
 </p>
-13. **Pie de página (US07):** columnas Producto, Empresa y Legal, comunes a las cuatro páginas.
+
+13. **Pie de página (US10, RNF03):** columnas Producto, Empresa y Legal, comunes a las cuatro páginas.
 <p align="center">
   <img src="../assets/chapter-5/13-seccion-footer.png" width="800" alt="Pie de página"/>
-  <br/><i>Pie de página — US07</i>
+  <br/><i>Pie de página — US10 y RNF03</i>
 </p>
+
 **Verificación de los requisitos no funcionales**
- 
-Los requisitos no funcionales del Sprint 1 se verificaron con el criterio medible definido en el Capítulo III:
- 
-| **RNF** | **Criterio medible** | **Herramienta de verificación** | **Evidencia** |
+
+| **RNF** | **Requisito** | **Herramienta de verificación** | **Evidencia** |
 | :--- | :--- | :--- | :--- |
-| RNF01 | Sin scroll horizontal a 360 px; breakpoints en 1024, 768 y 480 px | DevTools a 360, 768, 1024 y 1440 px | `rnf01-responsive.png` |
-| RNF02 | Contraste ≥ 4.5:1 en texto normal y ≥ 3:1 en texto grande | WebAIM Contrast Checker y Lighthouse Accessibility | `rnf02-lighthouse-accessibility.png` |
-| RNF03 | Lighthouse Performance móvil ≥ 90; LCP ≤ 2.5 s; CLS ≤ 0.1 | Lighthouse en modo móvil | `rnf03-lighthouse-performance.png` |
-| RNF04 | `title` ≤ 60 y `description` ≤ 160 caracteres, únicos por página; Lighthouse SEO ≥ 90 | Inspección del `<head>` y Lighthouse SEO | `rnf04-lighthouse-seo.png` |
-| RNF05 | Funcionamiento igual en Chrome, Edge, Firefox, Safari, Chrome Android y Safari iOS; 0 errores de consola | Matriz de pruebas manual | `rnf05-navegadores.png` |
-| RNF06 | Animaciones ≤ 500 ms; contenido visible sin IntersectionObserver | Revisión de `main.js` y prueba con el observador deshabilitado | `rnf06-animaciones.png` |
-| RNF07 | 100 % de cifras, precios y fichas de ejemplo con nota visible en ES/EN | Revisión de las cuatro páginas en ambos idiomas | Capturas 3, 7 y 11 de esta sección |
- 
+| RNF01 | Experiencia responsiva en móviles y tablets | DevTools a 390, 768, 1024 y 1440 px | `rnf01-responsive.png` |
+| RNF02 | Contraste y legibilidad accesible | WebAIM Contrast Checker y Lighthouse Accessibility | `rnf02-lighthouse-accessibility.png` |
+| RNF04 | Carga rápida del sitio estático | Lighthouse Performance en modo móvil | `rnf04-lighthouse-performance.png` |
+| RNF05 | Metadatos para buscadores | Inspección del `<head>` y Lighthouse SEO | `rnf05-lighthouse-seo.png` |
+| RNF06 | Compatibilidad con navegadores modernos | Matriz de pruebas en Chrome, Edge, Firefox y Safari | `rnf06-navegadores.png` |
+| RNF07 | Animaciones de entrada que no bloquean la interacción | Revisión de `main.js` y prueba sin IntersectionObserver | `rnf07-animaciones.png` |
+| RNF08 | Identificación del contenido pendiente | Revisión de las cuatro páginas en ES y EN | Capturas 3, 7 y 11 de esta sección |
+
 <p align="center">
   <img src="../assets/chapter-5/Lighthouse.png" width="500" alt="Reporte de Lighthouse"/>
-  <br/><i>Reporte de Lighthouse en modo móvil — RNF02, RNF03 y RNF04</i>
+  <br/><i>Reporte de Lighthouse en modo móvil — RNF02, RNF04 y RNF05</i>
 </p>
+
 Para finalizar, se muestra el repositorio de la Landing Page en la organización de GitHub:
- 
 <p align="center">
   <img src="../assets/chapter-5/14-repositorio-github.png" width="800" alt="Repositorio de la Landing Page"/>
   <br/><i>Repositorio <code>stockia-website</code> en la organización upc-pre-202620-1asi0730-16127-databit</i>
 </p>
 
 #### **5.2.1.6. Services Documentation Evidence for Sprint Review**
-La Landing Page es un sitio estático y en este Sprint no consume servicios de backend. Las interacciones que sí ejecutan lógica se resuelven en el navegador y se documentan a continuación, junto con la User Story que cubren. La recepción real de solicitudes de demo se implementará con el RESTful API.
- 
+La Landing Page es un sitio estático y en este Sprint no consume servicios de backend. Las interacciones que sí ejecutan lógica se resuelven en el navegador y se documentan a continuación, junto con la User Story que cubren.
+
 | **Endpoint / Interacción** | **Acción** | **Parámetros** | **Descripción del Response** | **User Story** |
 | :--- | :---: | :--- | :--- | :---: |
-| `about.html#contactForm` | **POST (simulado)** | `nombre`*, `restaurante`, `correo`*, `mensaje` (`*` obligatorios con `required` y `type="email"`) | El navegador bloquea el envío si falta un campo obligatorio o el correo no es válido. Con datos válidos, `preventDefault()` evita el envío real, el botón cambia a "✓ Enviado" y se deshabilita durante 3 segundos, y luego el formulario se limpia. | US06 |
-| Selector de idioma (`ES` / `EN`) | Lectura y escritura en `localStorage` | Clave `stockia-lang` con valor `es` o `en` | Aplica las traducciones a todos los elementos con `data-i18n` sin recargar la página y conserva el idioma al navegar entre páginas o volver al sitio. | US08 |
-| Interruptor mensual / anual (`pricing.html`) | Cálculo en el cliente | Estado del interruptor | Cambia los precios de S/ 0, 39 y 79 a S/ 0, 27 y 55 y viceversa, sin recargar la página. | US04 |
-| Preguntas frecuentes (`pricing.html`) | Interacción en el cliente | Pregunta seleccionada | Despliega la respuesta elegida y cierra la que estaba abierta. | US04 |
- 
+| `about.html#contactForm` | **POST (simulado)** | `nombre`*, `restaurante`, `correo`*, `mensaje` (`*` obligatorios con `required` y `type="email"`) | El navegador bloquea el envío si falta un campo obligatorio o el correo no es válido. Con datos válidos, `preventDefault()` evita el envío real, el botón cambia a "✓ Enviado" y se deshabilita durante 3 segundos, y luego el formulario se limpia. | US20 |
+| Selector de idioma (`ES` / `EN`) | Lectura y escritura en `localStorage` | Clave `stockia-lang` con valor `es` o `en` | Aplica las traducciones a todos los elementos con `data-i18n` sin recargar la página y conserva el idioma al navegar entre páginas. | US13, US14 |
+| Interruptor mensual / anual (`pricing.html`) | Cálculo en el cliente | Estado del interruptor | Cambia los precios mensuales a los anuales y viceversa, sin recargar la página. | US16 |
+| Preguntas frecuentes (`pricing.html`) | Interacción en el cliente | Pregunta seleccionada | Despliega la respuesta elegida y cierra la que estaba abierta. | US17 |
+
 * **Repositorio de la Landing Page:** https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website
-* **Landing Page desplegada:** https://stockia-landing-giag.vercel.app/index.html
+* **Landing Page desplegada:** https://website-stockia.vercel.app/
 
 #### **5.2.1.7. Software Deployment Evidence for Sprint Review**
-La Landing Page se publicó en **Vercel** como sitio estático, servido desde su CDN global (TS04).
- 
+La Landing Page se publicó en **Vercel** como sitio estático, servido desde su CDN global, a partir del repositorio `stockia-website` de la organización.
+
 **Actividades de despliegue realizadas**
- 
-1. Se creó el proyecto en Vercel con el preset "Other", al tratarse de un sitio estático sin proceso de build.
-2. Se publicó la versión de producción desde la rama `develop` del repositorio de prototipo de la Landing Page; la vinculación del proyecto con el repositorio `stockia-website` de la organización, para el despliegue continuo, se planificó en TS08 del Sprint 2.
-3. Se verificaron las cuatro páginas (`index.html`, `features.html`, `pricing.html` y `about.html`) en el dominio público, incluidos los enlaces entre páginas y el cambio de idioma (T-TS04-2).
+
+1. Se creó el proyecto en Vercel con el preset "Other", al tratarse de un sitio estático sin proceso de build, y se vinculó al repositorio `upc-pre-202620-1asi0730-16127-databit/stockia-website`.
+2. Se activó el despliegue automático: cada cambio integrado en la rama de producción se publica sin pasos manuales, y cada Pull Request genera una URL de vista previa.
+3. Se verificaron las cuatro páginas (`index.html`, `features.html`, `pricing.html` y `about.html`) en el dominio público, incluidos los enlaces entre páginas y el cambio de idioma.
 4. Se verificó la visualización en escritorio y en móvil (RNF01).
-* **URL de la Landing Page desplegada:** https://stockia-landing-giag.vercel.app
+
+* **URL de la Landing Page desplegada:** https://website-stockia.vercel.app/
+
 **Evidencia: proyecto y despliegues en Vercel**
 <p align="center">
   <img src="../assets/chapter-5/web-despliegue.png" width="800" alt="Proyecto de la Landing Page en Vercel"/>
   <br/><i>Proyecto de la Landing Page en Vercel con el historial de despliegues</i>
 </p>
+
 **Evidencia: Landing Page desplegada en escritorio**
 <p align="center">
   <img src="../assets/chapter-5/deploy-desktop-index.png" width="500" alt="Landing Page desplegada en escritorio"/>
-  <br/><i>Landing Page desplegada — stockia-landing-giag.vercel.app</i>
+  <br/><i>Landing Page desplegada — website-stockia.vercel.app</i>
 </p>
+
 **Evidencia: Landing Page desplegada en móvil**
 <p align="center">
   <img src="../assets/chapter-5/deploy-mobile-index.png" width="200" alt="Landing Page desplegada en móvil"/>
-  <br/><i>Landing Page desplegada en móvil (390 px) — stockia-landing-giag.vercel.app</i>
+  <br/><i>Landing Page desplegada en móvil (390 px) — website-stockia.vercel.app</i>
 </p>
 
 #### **5.2.1.8. Team Collaboration Insights during Sprint**
 **Dinámica de trabajo**
- 
+
 Durante el Sprint 1 el equipo trabajó en dos frentes: la Landing Page y la documentación del informe. Las tareas se organizaron en Jira, en el proyecto SCRUM, con un responsable por tarea (ver 5.2.1.3). El código y el informe se versionaron en GitHub siguiendo GitFlow: `main` para versiones entregables, `develop` para integración y una rama `feature/*` por capítulo o página, integrada por Pull Request. La comunicación diaria se mantuvo por WhatsApp y las reuniones de coordinación por Google Meet.
- 
+
 **Aporte por integrante**
- 
+
 | **Integrante** | **GitHub** | **Aporte principal en el Sprint 1** | **Commits en `stockia-report` (al 18/09/2026)** | **Commits en `stockia-website`** |
 | :--- | :--- | :--- | :---: | :---: |
-| Higa Kohatsu, Alonso Enrique | AlonsoHiga (Alonso-Higa) | Estructura del repositorio y GitFlow (TS01), `about.html` (US05, US06) e `i18n.js` (TS03, US08); capítulos II y IV, conclusiones y bibliografía del informe | 26 | 3 |
-| Asmat Alminco, Martin Alejandro | Alemarr2 (Martin) | `features.html` (US02), responsive, contraste y SEO (RNF01, RNF02, RNF04); entrevistas, diagramas de clases, base de datos y componentes del informe | 12 | 1 |
-| Huaman Oscco, Aldo Jesus | Jesusho22 (Jesus / Aldo_Jesus) | `pricing.html` (US04, US07), despliegue en Vercel (TS04) y QA (RNF03, RNF05); capítulos III y V y wireframes y mock-up de la Landing Page en el informe | 25 | 7 |
-| Ortiz Laura, Leyla Alisson | Leylaa-O (Leyla Ortiz) | Sistema de diseño (TS02) e interacciones en `main.js` (US03, US04, US06, US07, RNF06); Impact Map, diseño UX/UI de la Web Application y sección 5.1.1 del informe | 16 | 2 |
-| Tuesta Girón, Kiara Lucia | kitu05g | `index.html` (US01, US02, US03) y contenido bilingüe; perfil, entrevistas y secciones 5.1.2 a 5.1.4 del informe | 11 | 1 |
- 
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga (Alonso-Higa) | Estructura del repositorio, `about.html` (US18, US19, US20) y scripts base (RNF10, US13, US14); capítulos II y IV, conclusiones y bibliografía del informe | 26 | 3 |
+| Asmat Alminco, Martin Alejandro | Alemarr2 (Martin) | `features.html` (US11, US12); entrevistas, diagramas de clases, base de datos y componentes del informe | 12 | 1 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 (Jesus / Aldo_Jesus) | `pricing.html` (US15, US16, US17) y despliegue en Vercel; capítulos III y V, wireframes y mock-up de la Landing Page en el informe | 25 | 7 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O (Leyla Ortiz) | Sistema de diseño (RNF09) e interacciones (RNF07, RNF10); Impact Map, diseño UX/UI de la Web Application y sección 5.1.1 del informe | 16 | 2 |
+| Tuesta Girón, Kiara Lucia | kitu05g | `index.html` (US01 a US09); perfil, entrevistas y secciones 5.1.2 a 5.1.4 del informe | 11 | 1 |
+
 **Evidencia: contribuciones por integrante en `stockia-report`**
 <p align="center">
   <img src="../assets/chapter-5/Contributors.png" width="700" alt="Contribuciones por integrante en stockia-report"/>
   <br/><i>Contributors del repositorio stockia-report</i>
 </p>
+
 **Evidencia: contribuciones por integrante en `stockia-website`**
 <p align="center">
   <img src="../assets/chapter-5/Contributors-website.png" width="700" alt="Contribuciones por integrante en stockia-website"/>
   <br/><i>Contributors del repositorio stockia-website</i>
 </p>
+
 **Evidencia: grafo de GitFlow**
 <p align="center">
   <img src="../assets/chapter-5/Network.png" width="700" alt="Grafo de ramas de stockia-report"/>
-  <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
+  <br/><i>Network: ramas feature integradas mediante Pull Request</i>
 </p>
 
 ### **5.2.2. Sprint 2**
