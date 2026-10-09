@@ -63,6 +63,11 @@
       <br>
       Durante el desarrollo del proyecto asumi un rol de desarrollador, en la creacion de diseños para la lading page. Además, con la elaboracion de la landing page, asumi el desplegar la pagina para que nuestros usuarios puedan acceder desde sus ordenares y mantenga el responsive. 
       <br><br>
+      TB1
+      </i></b>
+      <br>
+      Durante el desarrollo para esta segunda entrega, asumí un rol activo en el desarrollo tecnico para el desarrollo de funcionalidades y testing de la web app, lidere como Scrum Owner para la aplicacion de metodologias agiles en este segundo Sprint. Además, tuve liderasgo en aspectos competentes a la entrega y desarrollo de reuniones para cordinar avances en relacion al trabajo remoto.
+      <br><br>
       <b>
         Ortiz Laura, Leyla Alisson
       </b>
@@ -166,7 +171,7 @@
         TB1
       </i></b>
       <br>
-      .....
+       Durante el TB1 aporte tecnicamente en aspectos relacionados al desarrollo de la webapp en tiempos establecidos para posteriormente tener un feedback grupal mediante un QA, escuchando las opiniones del equipo para integrar mejoras en el las funcionalidades en el flujo del futuro cliente con nuestro programa. Realize la distribucion de trabajos para el Sprint 2 con el uso de la herramienta Jira. 
       <br><br>
       <b>
         Ortiz Laura, Leyla Alisson
