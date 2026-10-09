@@ -863,71 +863,113 @@ Cada integrante implementó y subió al repositorio de la organización su Bound
 
 #### **5.2.2.5. Execution Evidence for Sprint Review**
 
-En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. A continuación se presenta cada pantalla junto con la User Story o el requisito que la respalda:
- 
-1. **Registro de restaurante (US09):** formulario de creación de cuenta con validaciones por campo; la cuenta se crea con el rol Administrador.
+En el Sprint 2 se implementó la primera versión de la Web Application de StockIA. Las capturas corresponden a la versión desplegada en [webapp-stockia.vercel.app](https://webapp-stockia.vercel.app/) (TS03), que consume la API simulada en Render (TS02). A continuación se presenta cada vista junto con la User Story o el requisito que la respalda:
+
+1. **Registro (US29):** creación de la cuenta del restaurante con validaciones por campo y rechazo de correos duplicados; la cuenta se crea con el rol Administrador.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-01-sign-up.png" width="800" alt="Registro de restaurante"/>
-  <br/><i>Registro de restaurante — US09</i>
+  <img src="../assets/chapter-5/s2-01-sign-up.png" width="800" alt="Registro"/>
+  <br/><i>Registro — US29</i>
 </p>
-2. **Inicio de sesión y perfil (US10, RNF08):** inicio de sesión con mensaje de credenciales incorrectas, sesión conservada al recargar y edición del perfil.
+
+2. **Inicio de sesión (US30, RNF13):** inicio de sesión con mensaje de credenciales incorrectas y redirección a `/auth/sign-in` al abrir una ruta interna sin sesión.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-02-sign-in-profile.png" width="800" alt="Inicio de sesión y perfil"/>
-  <br/><i>Inicio de sesión y perfil — US10 y RNF08</i>
+  <img src="../assets/chapter-5/s2-02-sign-in.png" width="800" alt="Inicio de sesión"/>
+  <br/><i>Inicio de sesión — US30 y RNF13</i>
 </p>
-3. **Dashboard operativo (US16):** indicadores del inventario, insumos críticos, alertas recientes y resumen de la última proyección.
+
+3. **Dashboard operativo (US23):** insumos registrados, en estado bajo o crítico y por vencer en 3 días o menos, valor del inventario, insumos críticos, las 5 alertas más recientes y la última proyección.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-03-dashboard.png" width="800" alt="Dashboard operativo"/>
-  <br/><i>Dashboard operativo — US16</i>
+  <img src="../assets/chapter-5/s2-03-dashboard.png" width="800" alt="Dashboard operativo"/>
+  <br/><i>Dashboard operativo — US23</i>
 </p>
-4. **Inventario de insumos (US12):** tabla con los estados Vencido, Crítico, Stock bajo y Disponible, y formulario de alta y edición con la fecha de vencimiento calculada a partir de la vida útil.
+
+4. **Inventario de insumos (US21, US36):** alta, edición y eliminación confirmada de insumos, con su fecha límite de consumo y su estado Disponible, Stock bajo, Crítico o Vencido.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-04-inventory.png" width="800" alt="Inventario de insumos"/>
-  <br/><i>Inventario de insumos — US12</i>
+  <img src="../assets/chapter-5/s2-04-inventory.png" width="800" alt="Inventario de insumos"/>
+  <br/><i>Inventario de insumos — US21 y US36</i>
 </p>
-5. **Recetas y venta con descuento automático (US13, US14):** recetas vinculadas a los insumos y acción "Simular venta" que valida y descuenta el stock.
+
+5. **Recetas y venta con descuento automático (US22):** recetas vinculadas a los insumos y registro de la venta de un plato que valida y descuenta el stock.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-05-recipes-sale.png" width="800" alt="Recetas y venta"/>
-  <br/><i>Recetas y venta con descuento automático — US13 y US14</i>
+  <img src="../assets/chapter-5/s2-05-recipes-sale.png" width="800" alt="Recetas y venta"/>
+  <br/><i>Recetas y venta con descuento automático — US22</i>
 </p>
-6. **Historial de ventas (US15):** ventas con total en S/, estado e ingresos del período, con anulación confirmada.
+
+6. **Historial de ventas (US39):** ventas con total en S/, estado e ingresos del período, con anulación confirmada.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-06-sales-history.png" width="800" alt="Historial de ventas"/>
-  <br/><i>Historial de ventas — US15</i>
+  <img src="../assets/chapter-5/s2-06-sales-history.png" width="800" alt="Historial de ventas"/>
+  <br/><i>Historial de ventas — US39</i>
 </p>
-7. **Alertas operativas (US17):** registro, atención y eliminación de alertas, con el estado de entrega por canal y el reintento del canal pendiente.
+
+7. **Alertas operativas (US27, US41):** alertas por severidad, contador de pendientes, entrega por canal, reintento del canal pendiente y atención.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-07-alerts.png" width="800" alt="Alertas operativas"/>
-  <br/><i>Alertas operativas — US17</i>
+  <img src="../assets/chapter-5/s2-07-alerts.png" width="800" alt="Alertas operativas"/>
+  <br/><i>Alertas operativas — US27 y US41</i>
 </p>
-8. **Proyección de demanda y recomendaciones (US18):** proyección de siete días y recomendaciones con la acción "Aplicar".
+
+8. **Recomendaciones (US26):** recomendaciones de compra y de menú con su impacto esperado y la acción "Aplicar".
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-08-forecast-recommendations.png" width="800" alt="Proyección y recomendaciones"/>
-  <br/><i>Proyección de demanda y recomendaciones — US18</i>
+  <img src="../assets/chapter-5/s2-08-recommendations.png" width="800" alt="Recomendaciones"/>
+  <br/><i>Recomendaciones — US26</i>
 </p>
-9. **Equipo y roles (US11, RNF08):** invitación de integrantes, cambio de rol y baja, con la regla del último administrador.
+
+9. **Proyección de demanda (US25):** proyección de 7 días por plato con su nivel de confianza y la condición climática.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-09-team-roles.png" width="800" alt="Equipo y roles"/>
-  <br/><i>Equipo y roles — US11 y RNF08</i>
+  <img src="../assets/chapter-5/s2-09-forecast.png" width="800" alt="Proyección de demanda"/>
+  <br/><i>Proyección de demanda — US25</i>
 </p>
-10. **Planes de suscripción (US19):** planes con su precio y el pago simulado con Stripe o PayPal.
+
+10. **Equipo y roles (US24, RNF13):** invitación de integrantes, cambio de rol y baja, con la regla del último administrador; vista disponible solo para el rol Administrador.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-10-plans.png" width="800" alt="Planes de suscripción"/>
-  <br/><i>Planes de suscripción — US19</i>
+  <img src="../assets/chapter-5/s2-10-team-roles.png" width="800" alt="Equipo y roles"/>
+  <br/><i>Equipo y roles — US24 y RNF13</i>
 </p>
-11. **Landing Page enlazada con la Web Application (TS08):** botón "Solicitar demo" enlazado al formulario, menú en móvil, fichas reales del equipo, inglés por defecto y accesos por segmento hacia el registro y el inicio de sesión.
+
+11. **Configuración de la cuenta (US40):** datos personales, datos del restaurante y cambio de contraseña.
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-11-landing-fixes.png" width="800" alt="Correcciones de la Landing Page"/>
-  <br/><i>Landing Page enlazada con la Web Application — TS08</i>
+  <img src="../assets/chapter-5/s2-11-account-settings.png" width="800" alt="Configuración de la cuenta"/>
+  <br/><i>Configuración de la cuenta — US40</i>
 </p>
+
+12. **Planes de suscripción (US31):** planes con su precio, plan actual y pago simulado con Stripe o PayPal.
+<p align="center">
+  <img src="../assets/chapter-5/s2-12-plans.png" width="800" alt="Planes de suscripción"/>
+  <br/><i>Planes de suscripción — US31</i>
+</p>
+
+13. **Web Application en español y en móvil (RNF14, RNF16):** la misma vista con el idioma cambiado a español y en una pantalla de 390 px.
+<p align="center">
+  <img src="../assets/chapter-5/s2-13-i18n-mobile.jpeg" width="800" alt="Idioma y vista móvil"/>
+  <br/><i>Idioma y vista móvil — RNF14 y RNF16</i>
+</p>
+
+14. **Nueva versión de la Landing Page (TS04):** sección del equipo con las fichas reales de los cinco integrantes.
+<p align="center">
+  <img src="../assets/chapter-5/landing-update.png" width="800" alt="Equipo en la Landing Page"/>
+  <br/><i>Nueva versión de la Landing Page — TS04</i>
+</p>
+
+**Alcance implementado por escenario**
+
+La Web Application consume una API simulada, por lo que los escenarios que dependen del RESTful API, del modelo de Machine Learning o de servicios externos quedan para los Sprints siguientes:
+
+| **Ítem** | **Escenarios implementados en el Sprint 2** | **Escenarios que dependen del backend** |
+| :--- | :--- | :--- |
+| US25 | Visualización de la proyección de 7 días con confianza y clima (valores simulados) | Escenarios 1 a 3: cálculo a partir de históricos, feriados y aprendizaje del modelo (US37 y US38) |
+| US26 | Lista de recomendaciones y acción "Aplicar" | Escenario 3: logro de gamificación |
+| US24 | Escenarios 1 y 2: roles Empleado y Administrador | Escenario 3: rol especializado |
+| US30 | Escenarios 1 y 2: inicio de sesión exitoso y con error | Escenario 3: recuperación de contraseña por correo |
+| US31 | Escenario 1: elección del plan con pago simulado | Escenarios 2 y 3: renovación y error de transacción con la pasarela real |
+
 **Verificación de los requisitos no funcionales**
- 
+
 | **RNF** | **Criterio medible** | **Verificación** | **Resultado** |
 | :--- | :--- | :--- | :--- |
-| RNF08 | 100 % de las rutas bajo `/app` protegidas por `authGuard`; 100 % de las rutas administrativas protegidas por `adminGuard`; 0 accesos sin sesión | Prueba de cada ruta sin sesión, con rol Empleado y con rol Administrador | Las 10 pantallas bajo `/app` están protegidas por `authGuard` y `/app/roles` usa `adminGuard`. <!-- ACTUALIZAR: resultado de la prueba manual T-RNF08-1. --> |
-| RNF09 | 100 % de las listas con estado vacío; 100 % de las eliminaciones y anulaciones con confirmación; mensaje de éxito o error en cada formulario | Lista de verificación por pantalla | Las eliminaciones de insumos, recetas, alertas e integrantes y la anulación de ventas piden confirmación. <!-- ACTUALIZAR: resultado de T-RNF09-1. --> |
-| RNF10 | 100 % de los textos en en_US y es_419; inglés al primer ingreso | Recorrido de las 12 pantallas en ambos idiomas | En curso (T-RNF10-1 a T-RNF10-3). <!-- ACTUALIZAR: resultado al cerrar RNF10. --> |
-| RNF11 | Lighthouse Accessibility ≥ 90; 100 % de campos con etiqueta y de botones sin texto con aria-label | Lighthouse y recorrido con teclado | En curso (T-RNF11-1 a T-RNF11-3). <!-- ACTUALIZAR: resultado al cerrar RNF11. --> |
+| RNF13 | 100 % de las rutas bajo `/app` con sesión requerida; vistas de equipo, recomendaciones y planes solo para el rol Administrador | Revisión de `router.js` y prueba de cada ruta sin sesión y con rol Empleado | El guard aplica `requiresAuth`, `adminOnly` y `guestOnly` y muestra un aviso en cada bloqueo. |
+| RNF14 | 100 % de los textos en inglés al primer ingreso y cambio a español sin recargar | Recorrido de las vistas en ambos idiomas | `DEFAULT_LOCALE` es `en`; los textos viven en `en.json` y `es.json`. |
+| RNF15 | 100 % de las eliminaciones y anulaciones con confirmación | Lista de verificación por vista | Inventario, recetas, alertas, equipo e historial de ventas piden confirmación. <!-- ACTUALIZAR: resultado de T-RNF15-2. --> |
+| RNF16 | Botones de solo ícono con `aria-label`; sin desborde a 390 px; Lighthouse Accessibility ≥ 90 |
+
 
 #### **5.2.2.6. Services Documentation Evidence for Sprint Review**
  
