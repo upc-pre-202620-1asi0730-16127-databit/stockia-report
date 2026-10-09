@@ -1,25 +1,20 @@
 # **Conclusions**
+
 ## **Conclusions and recommendations.**
 
-**Conclusiones** </br>
-* El equipo logró mantener un liderazgo compartido, distribuyendo responsabilidades técnicas, de diseño y de documentación sin depender de una sola persona.
+**Conclusiones**
 
-* Se evidenció una comunicación efectiva tanto oral como escrita: las presentaciones se adaptaron a audiencias técnicas y no técnicas, y la documentación siguió estándares claros y accesibles.
+* El equipo logró consolidar la primera versión operativa de la Web App mediante su despliegue efectivo en la nube, validando la interacción del usuario y la arquitectura propuesta.
+* Se integró con éxito la Fake API vinculada directamente con el frontend, lo que permitió simular el consumo de datos en tiempo real y validar los flujos de negocio sin bloqueos técnicos.
+* La mejora continua aplicada tanto a los mockups como a la Landing Page permitió alcanzar un primer diseño intuitivo, coherente y alineado con las necesidades identificadas en iteraciones previas.
+* La ejecución rigurosa del Sprint 2 bajo el marco Scrum, incluyendo las ceremonias de Sprint Review y feedback grupal, aseguró un ciclo evolutivo ordenado y un ritmo constante de trabajo colaborativo.
 
-* La integración de herramientas (EventStorming, C4 diagrams, UML, Lean UX, prototipos, entrevistas) permitió construir un modelo de dominio coherente y una aplicación con trazabilidad entre diseño, desarrollo y despliegue.
+---
 
-* La práctica de registrar evidencias (actas, reportes, videos, diagramas) fortaleció la transparencia y la coordinación del equipo, asegurando continuidad en cada sprint.
+**Recomendaciones**
 
-* El proyecto consolidó una dinámica de trabajo colaborativo e inclusivo, donde cada integrante aportó desde su especialidad y se validaron constantemente los entregables con retroalimentación grupal.
-
-
-**Recomendaciones** </br>
-* Fortalecer la planificación inicial: definir desde el comienzo criterios claros de calidad para cada artefacto (diagramas, prototipos, reportes) y asegurar que todos los integrantes los conozcan.
-
-* Optimizar la documentación audiovisual: mantener un repositorio organizado de videos y prototipos, con guías de revisión que faciliten la comprensión de audiencias externas.
-
-* Profundizar en validación con usuarios reales: ampliar el número y diversidad de entrevistas para fortalecer la base de las hipótesis y asegurar que las mejoras de UX/UI respondan a necesidades verificadas.
-
-* Escalar la práctica de liderazgo compartido: replicar la dinámica de distribución de responsabilidades en futuros proyectos, pero complementarla con roles rotativos de coordinación para balancear cargas de trabajo.
+* Iniciar la migración progresiva hacia el backend definitivo: planificar el reemplazo de los endpoints de la Fake API por los servicios reales asegurando la compatibilidad de los contratos de datos establecidos.
+* Establecer pruebas de integración tempranas: definir suites de pruebas automatizadas sobre el frontend y los flujos críticos de la Web App para prevenir regresiones durante los próximos despliegues.
+* Recopilar retroalimentación directa de usuarios sobre el diseño desplegado: utilizar la versión funcional actual para realizar pruebas de usabilidad y validar que los ajustes en los mockups resuelvan eficazmente la interacción esperada.
 
 ## **Video About-the-Team**
