@@ -2,7 +2,6 @@
 ## **3.1. User Stories**
 <table>
 <tr><th>Story ID</th><th>Título</th><th>Descripción</th><th>Criterios de Aceptación</th><th>Relacionado con Epic ID</th></tr>
-
 <tr>
 <td><strong>US01</strong></td>
 <td>Conocer la propuesta de valor de StockIA</td>
@@ -25,7 +24,6 @@ Entonces lo dirige a la sección de solicitud de demo, no a un dashboard interac
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US02</strong></td>
 <td>Ver una vista previa del dashboard de StockIA</td>
@@ -43,7 +41,6 @@ Entonces el sistema oculta el mockup para priorizar el texto.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US03</strong></td>
 <td>Conocer estadísticas e indicadores de impacto de StockIA</td>
@@ -66,7 +63,6 @@ Entonces interpreta en segundos el impacto esperado.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US04</strong></td>
 <td>Identificar si StockIA es para mi rol dentro del restaurante</td>
@@ -84,7 +80,6 @@ Entonces ve una tarjeta orientada a recetas, stock y alertas.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US05</strong></td>
 <td>Conocer las funcionalidades principales desde el Home</td>
@@ -102,7 +97,6 @@ Entonces el sistema lo redirige a features.html.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US06</strong></td>
 <td>Conocer los diferenciadores de StockIA</td>
@@ -115,7 +109,6 @@ Entonces el sistema presenta tres tarjetas de diferenciadores.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US07</strong></td>
 <td>Conocer las integraciones externas en evaluación</td>
@@ -133,7 +126,6 @@ Entonces el sistema aclara que la decisión está pendiente.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US08</strong></td>
 <td>Explorar vistas ilustrativas de la plataforma</td>
@@ -151,7 +143,6 @@ Entonces el sistema resalta la pestaña activa.
 </td>
 <td>EP02 — Navegación</td>
 </tr>
-
 <tr>
 <td><strong>US09</strong></td>
 <td>Ver el video de presentación del producto</td>
@@ -169,7 +160,6 @@ Entonces el visitante puede reproducirlo.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US10</strong></td>
 <td>Navegar entre las páginas del sitio</td>
@@ -187,7 +177,6 @@ Entonces el sistema resalta el enlace activo.
 </td>
 <td>EP02 — Navegación</td>
 </tr>
-
 <tr>
 <td><strong>US11</strong></td>
 <td>Ver el detalle completo de las funcionalidades de StockIA</td>
@@ -200,7 +189,6 @@ Entonces el sistema presenta las seis funcionalidades con descripción detallada
 </td>
 <td>EP02 — Navegación</td>
 </tr>
-
 <tr>
 <td><strong>US12</strong></td>
 <td>Entender cómo empezar a usar StockIA</td>
@@ -213,7 +201,6 @@ Entonces el sistema muestra cuatro pasos numerados.
 </td>
 <td>EP02 — Navegación</td>
 </tr>
-
 <tr>
 <td><strong>US13</strong></td>
 <td>Cambiar el idioma del sitio entre español e inglés</td>
@@ -231,7 +218,6 @@ Entonces el sistema restaura los textos al español.
 </td>
 <td>EP03 — Internacionalización</td>
 </tr>
-
 <tr>
 <td><strong>US14</strong></td>
 <td>Mantener mi idioma preferido al navegar entre páginas</td>
@@ -244,7 +230,6 @@ Entonces el sistema carga esa página ya traducida.
 </td>
 <td>EP03 — Internacionalización</td>
 </tr>
-
 <tr>
 <td><strong>US15</strong></td>
 <td>Consultar los planes disponibles y sus características</td>
@@ -262,7 +247,6 @@ Entonces el sistema indica que son planes de ejemplo.
 </td>
 <td>EP04 — Planes y precios</td>
 </tr>
-
 <tr>
 <td><strong>US16</strong></td>
 <td>Comparar precios mensuales y anuales</td>
@@ -280,7 +264,6 @@ Entonces el sistema restaura los montos mensuales.
 </td>
 <td>EP04 — Planes y precios</td>
 </tr>
-
 <tr>
 <td><strong>US17</strong></td>
 <td>Resolver dudas frecuentes sobre los planes</td>
@@ -298,7 +281,6 @@ Entonces el sistema cierra la anterior.
 </td>
 <td>EP04 — Planes y precios</td>
 </tr>
-
 <tr>
 <td><strong>US18</strong></td>
 <td>Conocer la misión, visión y valores de DataBite Corp</td>
@@ -311,7 +293,6 @@ Entonces el sistema muestra la misión, visión y valores destacados.
 </td>
 <td>EP01 — Landing Page</td>
 </tr>
-
 <tr>
 <td><strong>US19</strong></td>
 <td>Conocer al equipo detrás de StockIA</td>
@@ -329,7 +310,6 @@ Entonces el sistema muestra una nota de "fichas de ejemplo".
 </td>
 <td>EP05 — Sobre DataBite Corp</td>
 </tr>
-
 <tr>
 <td><strong>US20</strong></td>
 <td>Solicitar una demo mediante un formulario de contacto</td>
@@ -352,7 +332,6 @@ Entonces el sistema lo dirige a la sección de contacto.
 </td>
 <td>EP05 — Sobre DataBite Corp</td>
 </tr>
-
 <tr>
 <td><strong>US21</strong></td>
 <td>Gestionar el inventario de insumos (alta, baja y modificación)</td>
@@ -380,7 +359,6 @@ Entonces el sistema muestra un error.
 </td>
 <td>EP09 — Inventario y Recetas</td>
 </tr>
-
 <tr>
 <td><strong>US22</strong></td>
 <td>Vincular recetas al inventario con descuento automático de insumos</td>
@@ -403,7 +381,6 @@ Entonces el sistema alerta que no puede completar el descuento.
 </td>
 <td>EP09 — Inventario y Recetas</td>
 </tr>
-
 <tr>
 <td><strong>US23</strong></td>
 <td>Visualizar un dashboard operativo con alertas y métricas clave</td>
@@ -426,7 +403,6 @@ Entonces ve una vista simplificada sin métricas financieras.
 </td>
 <td>EP09 — Inventario y Recetas</td>
 </tr>
-
 <tr>
 <td><strong>US24</strong></td>
 <td>Configurar roles  de los empleados</td>
@@ -449,7 +425,6 @@ Then el usuario recibe sugerencias personalizadas sobre preparación de recetas 
 </td>
 <td>EP11 — Notificaciones Multicanal</td>
 </tr>
-
 <tr>
 <td><strong>US25</strong></td>
 <td>Recibir predicción de demanda según históricos y clima</td>
@@ -472,7 +447,6 @@ Entonces reflejan el comportamiento del restaurante.
 </td>
 <td>EP10 — Predicción de Demanda con IA</td>
 </tr>
-
 <tr>
 <td><strong>US26</strong></td>
 <td>Recibir recomendaciones automáticas de ajuste de menú</td>
@@ -495,7 +469,6 @@ Entonces otorga un logro de gamificación.
 </td>
 <td>EP10 — Predicción de Demanda con IA</td>
 </tr>
-
 <tr>
 <td><strong>US27</strong></td>
 <td>Recibir alertas de insumos por stock bajo o vencimiento próximo</td>
@@ -518,7 +491,6 @@ Entonces las prioriza por urgencia.
 </td>
 <td>EP10 — Predicción de Demanda con IA</td>
 </tr>
-
 <tr>
 <td><strong>US28</strong></td>
 <td>Recibir alertas y recomendaciones por WhatsApp</td>
@@ -541,7 +513,6 @@ Entonces recibo un mensaje que me mantiene informado.
 </td>
 <td>EP11 — Notificaciones Multicanal</td>
 </tr>
-
 <tr>
 <td><strong>US29</strong></td>
 <td>Registrarme como nuevo usuario en StockIA</td>
@@ -564,7 +535,6 @@ Entonces el sistema muestra un error.
 </td>
 <td>EP12 — Autenticación y Cuentas</td>
 </tr>
-
 <tr>
 <td><strong>US30</strong></td>
 <td>Iniciar sesión con mis credenciales</td>
@@ -587,7 +557,6 @@ Entonces el sistema envía un enlace de recuperación.
 </td>
 <td>EP12 — Autenticación y Cuentas</td>
 </tr>
-
 <tr>
 <td><strong>US31</strong></td>
 <td>Pagar o renovar mi suscripción con Stripe o PayPal</td>
@@ -610,7 +579,6 @@ Entonces el sistema muestra un error y permite reintentar.
 </td>
 <td>EP13 — Suscripciones y Pagos</td>
 </tr>
-
 <tr>
 <td><strong>US32</strong></td>
 <td>Recibir historial de alertas críticas por correo electrónico</td>
@@ -633,7 +601,6 @@ Entonces envía un correo resumen.
 </td>
 <td>EP11 — Notificaciones Multicanal</td>
 </tr>
-
 <tr>
 <td><strong>US33</strong></td>
 <td>Recibir SMS urgentes ante emergencias operativas</td>
@@ -656,7 +623,6 @@ Entonces envía un SMS inmediato.
 </td>
 <td>EP11 — Notificaciones Multicanal</td>
 </tr>
-
 <tr>
 <td><strong>US34</strong></td>
 <td>Consultar la vida útil predeterminada de un insumo mediante una API externa</td>
@@ -674,7 +640,6 @@ Entonces solicita ingresar la vida útil manualmente.
 </td>
 <td>EP09 — Inventario y Recetas</td>
 </tr>
-
 <tr>
 <td><strong>US35</strong></td>
 <td>Editar la vida útil sugerida de un insumo</td>
@@ -692,7 +657,6 @@ Entonces el sistema recalcula la vida útil.
 </td>
 <td>EP09 — Inventario y Recetas</td>
 </tr>
-
 <tr>
 <td><strong>US36</strong></td>
 <td>Calcular automáticamente la fecha límite de consumo de un insumo</td>
@@ -705,7 +669,6 @@ Entonces el sistema calcula y almacena la fecha límite.
 </td>
 <td>EP09 — Inventario y Recetas</td>
 </tr>
-
 <tr>
 <td><strong>US37</strong></td>
 <td>Recopilar automáticamente los datos de ventas diarias</td>
@@ -723,7 +686,6 @@ Entonces genera un registro consolidado.
 </td>
 <td>EP10 — Predicción de Demanda con IA</td>
 </tr>
-
 <tr>
 <td><strong>US38</strong></td>
 <td>Entrenar periódicamente el modelo de predicción de demanda</td>
@@ -756,7 +718,6 @@ Entonces el sistema apila en una sola columna.
 </td>
 <td>EP06 — Usabilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF02</strong></td>
 <td>Contraste y legibilidad accesible</td>
@@ -774,7 +735,6 @@ Entonces el texto se muestra en blanco.
 </td>
 <td>EP06 — Usabilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF03</strong></td>
 <td>Navegación consistente y predecible entre páginas</td>
@@ -787,7 +747,6 @@ Entonces el sistema muestra el mismo navbar y footer.
 </td>
 <td>EP06 — Usabilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF04</strong></td>
 <td>Carga rápida al ser un sitio estático sin dependencias pesadas</td>
@@ -800,7 +759,6 @@ Entonces el sistema solo descarga sus propios archivos.
 </td>
 <td>EP07 — Rendimiento y compatibilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF05</strong></td>
 <td>Buen posicionamiento en buscadores</td>
@@ -813,7 +771,6 @@ Entonces el sistema incluye title y meta description.
 </td>
 <td>EP07 — Rendimiento y compatibilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF06</strong></td>
 <td>Compatibilidad con navegadores modernos de escritorio y móvil</td>
@@ -826,7 +783,6 @@ Entonces el sistema renderiza el layout correctamente.
 </td>
 <td>EP07 — Rendimiento y compatibilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF07</strong></td>
 <td>Animaciones de entrada que no bloquean la interacción</td>
@@ -839,7 +795,6 @@ Entonces el sistema aplica una transición de 0.5s.
 </td>
 <td>EP07 — Rendimiento y compatibilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF08</strong></td>
 <td>Identificación clara de contenido pendiente de completar</td>
@@ -852,7 +807,6 @@ Entonces el sistema muestra notas explícitas.
 </td>
 <td>EP02 — Navegación</td>
 </tr>
-
 <tr>
 <td><strong>RNF09</strong></td>
 <td>Sistema de diseño reutilizable y centralizado</td>
@@ -865,7 +819,6 @@ Entonces basta modificarlo una sola vez.
 </td>
 <td>EP02 — Navegación</td>
 </tr>
-
 <tr>
 <td><strong>RNF10</strong></td>
 <td>Textos traducibles centralizados en un solo archivo</td>
@@ -878,7 +831,6 @@ Entonces basta editar la llave correspondiente.
 </td>
 <td>EP03 — Internacionalización</td>
 </tr>
-
 <tr>
 <td><strong>RNF11</strong></td>
 <td>Protección de credenciales y datos de pago</td>
@@ -896,7 +848,6 @@ Entonces son procesados directamente por Stripe o PayPal.
 </td>
 <td>EP14 — Seguridad y Confiabilidad</td>
 </tr>
-
 <tr>
 <td><strong>RNF12</strong></td>
 <td>Confiabilidad y trazabilidad de las notificaciones multicanal</td>
@@ -914,7 +865,277 @@ Entonces guarda un registro con fecha, canal y contenido.
 </td>
 <td>EP14 — Seguridad y Confiabilidad</td>
 </tr>
+<tr>
+<td><strong>US39</strong></td>
+<td>Consultar el historial de ventas y anular ventas registradas por error</td>
+<td>Como administrador, quiero consultar las ventas registradas con su total y anular las que se registraron por error, para que el historial que alimenta la predicción de demanda refleje solo ventas reales.</td>
+<td>
+<strong>Escenario 1: Historial de ventas</strong><br>
+Dado que existen ventas registradas<br>
+Cuando el administrador abre el historial de ventas<br>
+Entonces el sistema muestra el 100 % de las ventas con fecha, platos, total en S/ y estado, de la más reciente a la más antigua.<br>
+<p></p>
+<strong>Escenario 2: Ingresos del período</strong><br>
+Dado que hay ventas confirmadas y anuladas<br>
+Cuando el administrador revisa el resumen del historial<br>
+Entonces los ingresos del período suman solo las ventas confirmadas, en soles y con 2 decimales.<br>
+<p></p>
+<strong>Escenario 3: Anulación confirmada</strong><br>
+Dado que el administrador elige anular una venta confirmada<br>
+Cuando confirma la acción<br>
+Entonces la venta pasa al estado "Anulada", permanece en el historial y los ingresos del período disminuyen exactamente en su total.<br>
+<p></p>
+<strong>Escenario 4: Venta ya anulada</strong><br>
+Dado que una venta tiene el estado "Anulada"<br>
+Cuando el administrador revisa el historial<br>
+Entonces el sistema no ofrece la acción de anular para esa venta.
+</td>
+<td>EP09 — Inventario y Recetas</td>
+</tr>
+<tr>
+<td><strong>US40</strong></td>
+<td>Actualizar mi perfil, los datos de mi restaurante y mi contraseña</td>
+<td>Como usuario registrado, quiero actualizar mis datos personales, los datos de mi restaurante y mi contraseña, para que el 100 % de las alertas y comunicaciones de StockIA lleguen a un contacto vigente.</td>
+<td>
+<strong>Escenario 1: Datos personales actualizados</strong><br>
+Dado que el usuario está en la configuración de su cuenta con sus datos precargados<br>
+Cuando cambia su nombre o su correo por valores válidos y guarda<br>
+Entonces el sistema confirma la actualización y muestra los nuevos datos en la sesión activa sin pedirle que vuelva a iniciar sesión.<br>
+<p></p>
+<strong>Escenario 2: Correo ya registrado</strong><br>
+Dado que el usuario escribe un correo que pertenece a otra cuenta<br>
+Cuando intenta guardar<br>
+Entonces el sistema rechaza el cambio, indica que el correo ya está registrado y conserva su correo actual.<br>
+<p></p>
+<strong>Escenario 3: Datos del restaurante</strong><br>
+Dado que el administrador edita el nombre, la dirección o el teléfono del restaurante<br>
+Cuando guarda los cambios<br>
+Entonces el sistema actualiza los datos del restaurante y los muestra en el dashboard.<br>
+<p></p>
+<strong>Escenario 4: Cambio de contraseña</strong><br>
+Dado que el usuario ingresa su contraseña actual y una nueva contraseña válida<br>
+Cuando confirma el cambio<br>
+Entonces el sistema actualiza la contraseña; si la contraseña actual es incorrecta, no aplica ningún cambio e informa el error.
+</td>
+<td>EP12 — Autenticación y Cuentas</td>
+</tr>
+<tr>
+<td><strong>US41</strong></td>
+<td>Atender las alertas operativas y asegurar su entrega por canal</td>
+<td>Como administrador, quiero registrar, atender y eliminar las alertas de stock y vencimiento y reintentar su entrega por el canal que falló, para que el 100 % de las alertas críticas llegue por todos sus canales requeridos antes de marcarse como atendida.</td>
+<td>
+<strong>Escenario 1: Alerta registrada</strong><br>
+Dado que el administrador está en la vista de alertas<br>
+Cuando registra una alerta con tipo, severidad, canal y un mensaje de al menos 5 caracteres<br>
+Entonces la alerta aparece en la lista y el contador de alertas pendientes aumenta en 1.<br>
+<p></p>
+<strong>Escenario 2: Canales requeridos por severidad</strong><br>
+Dado que una alerta tiene severidad "Crítica"<br>
+Cuando el sistema evalúa su entrega<br>
+Entonces exige WhatsApp y correo como canales requeridos (2 de 2), y una alerta de otra severidad solo exige su canal principal.<br>
+<p></p>
+<strong>Escenario 3: Reintento del canal pendiente</strong><br>
+Dado que a una alerta crítica le falta la entrega por correo<br>
+Cuando el administrador reintenta la entrega<br>
+Entonces el sistema registra la entrega por ese canal una sola vez, sin duplicarlo.<br>
+<p></p>
+<strong>Escenario 4: Atención de la alerta</strong><br>
+Dado que una alerta ya fue entregada por todos sus canales requeridos<br>
+Cuando el administrador la marca como atendida<br>
+Entonces el contador de alertas pendientes disminuye en 1; mientras falte un canal, la opción permanece deshabilitada con el motivo visible.
+</td>
+<td>EP11 — Notificaciones Multicanal</td>
+</tr>
+<tr>
+<td><strong>RNF13</strong></td>
+<td>Control de acceso por sesión y por rol en la Web Application</td>
+<td>Como administrador del restaurante, quiero que ninguna vista interna se muestre sin sesión y que las vistas administrativas solo se muestren al rol Administrador, para proteger la información de mi restaurante con 0 accesos no autorizados.</td>
+<td>
+<strong>Escenario 1: Acceso sin sesión</strong><br>
+Dado que no hay una sesión iniciada<br>
+Cuando alguien abre cualquier ruta bajo /app<br>
+Entonces el sistema lo redirige a /auth/sign-in y muestra un aviso de sesión requerida en el 100 % de los intentos.<br>
+<p></p>
+<strong>Escenario 2: Vista administrativa con rol Empleado</strong><br>
+Dado que un usuario con rol Empleado inició sesión<br>
+Cuando intenta abrir la gestión de equipo, las recomendaciones o los planes<br>
+Entonces el sistema bloquea la navegación y muestra un aviso de acceso denegado.<br>
+<p></p>
+<strong>Escenario 3: Usuario con sesión en las vistas de acceso</strong><br>
+Dado que el usuario ya inició sesión<br>
+Cuando abre /auth/sign-in o /auth/sign-up<br>
+Entonces el sistema lo lleva al dashboard.
+</td>
+<td>EP14 — Seguridad y Confiabilidad</td>
+</tr>
+<tr>
+<td><strong>RNF14</strong></td>
+<td>Internacionalización de la Web Application</td>
+<td>Como usuario de StockIA, quiero usar la Web Application en inglés, su idioma por defecto, o en español, para operar el inventario en mi idioma sin depender de traducción externa.</td>
+<td>
+<strong>Escenario 1: Idioma por defecto</strong><br>
+Dado que el usuario abre la Web Application por primera vez<br>
+Cuando se muestra la vista de inicio de sesión<br>
+Entonces el 100 % de los textos aparece en inglés.<br>
+<p></p>
+<strong>Escenario 2: Cambio de idioma</strong><br>
+Dado que el usuario está en cualquier vista<br>
+Cuando elige español en el selector de idioma<br>
+Entonces el 100 % de los textos de navegación, formularios, validaciones y mensajes cambia a español sin recargar la página.<br>
+<p></p>
+<strong>Escenario 3: Formatos según el idioma</strong><br>
+Dado que el usuario cambió el idioma<br>
+Cuando revisa fechas, cantidades y montos<br>
+Entonces el sistema los muestra con el formato del idioma elegido y los montos en soles (S/).
+</td>
+<td>EP03 — Internacionalización</td>
+</tr>
+<tr>
+<td><strong>RNF15</strong></td>
+<td>Retroalimentación de estado y confirmaciones en la Web Application</td>
+<td>Como administrador o empleado, quiero que cada vista me informe cuándo no hay datos y el resultado de cada acción, y que las acciones destructivas pidan confirmación, para no perder información del restaurante por un clic accidental.</td>
+<td>
+<strong>Escenario 1: Confirmación de acciones destructivas</strong><br>
+Dado que el usuario elige eliminar un insumo, una receta, una alerta o un integrante, o anular una venta<br>
+Cuando el sistema recibe la acción<br>
+Entonces pide confirmación antes de ejecutarla en el 100 % de los casos.<br>
+<p></p>
+<strong>Escenario 2: Resultado de cada acción</strong><br>
+Dado que el usuario guarda o elimina un registro<br>
+Cuando la operación termina<br>
+Entonces el sistema muestra una notificación de éxito o de error con su motivo.<br>
+<p></p>
+<strong>Escenario 3: Lista sin datos</strong><br>
+Dado que una lista aún no tiene registros<br>
+Cuando el usuario la abre<br>
+Entonces el sistema muestra un mensaje que indica qué acción realizar para registrar el primero.
+</td>
+<td>EP06 — Usabilidad</td>
+</tr>
+<tr>
+<td><strong>RNF16</strong></td>
+<td>Accesibilidad y adaptabilidad de la Web Application</td>
+<td>Como usuario que trabaja desde el celular en la cocina o con un lector de pantalla, quiero que la Web Application se adapte a mi pantalla y tenga etiquetas accesibles, para operar el inventario sin depender del mouse ni de una pantalla grande.</td>
+<td>
+<strong>Escenario 1: Botones con etiqueta accesible</strong><br>
+Dado cualquier vista de la Web Application<br>
+Cuando un lector de pantalla recorre sus botones de solo ícono<br>
+Entonces el 100 % de ellos tiene un atributo aria-label que describe la acción.<br>
+<p></p>
+<strong>Escenario 2: Uso en el celular</strong><br>
+Dado que el usuario abre la Web Application en una pantalla de 390 px<br>
+Cuando navega por el menú y las vistas<br>
+Entonces el menú lateral se reemplaza por la navegación móvil y ningún contenido supera el ancho de la pantalla.<br>
+<p></p>
+<strong>Escenario 3: Medición de accesibilidad</strong><br>
+Dado que la Web Application está publicada<br>
+Cuando se ejecuta Lighthouse en las vistas de inicio de sesión, dashboard e inventario<br>
+Entonces el puntaje de Accessibility es de 90 o más en cada una.
+</td>
+<td>EP06 — Usabilidad</td>
+</tr>
 </table>
+### **Technical Stories**
+ 
+Las Technical Stories describen el trabajo técnico del frontend que habilita las User Stories de la Web Application. Se redactan con el rol Developer y su criterio de aceptación es verificable en el repositorio o en la versión desplegada.
+ 
+<table>
+<tr><th>Story ID</th><th>Título</th><th>Descripción</th><th>Criterios de Aceptación</th><th>Relacionado con Epic ID</th></tr>
+<tr>
+<td><strong>TS01</strong></td>
+<td>Estructurar la Web Application en Vue por Bounded Context</td>
+<td>Como Developer, quiero organizar la Web Application en Vue 3 con una carpeta por Bounded Context y las capas domain, infrastructure, application y presentation, para que cada integrante trabaje su contexto en su propia rama sin conflictos y ningún componente de presentación llame directamente a la API.</td>
+<td>
+<strong>Escenario 1: Capas por contexto</strong><br>
+Dado que se revisa la carpeta src del repositorio stockia-webapp<br>
+Cuando se abre cualquier Bounded Context (iam, stock-management, receipts-management, alerts, demand-forecasting, subscription)<br>
+Entonces el 100 % de los contextos contiene las capas domain, infrastructure, application y presentation.<br>
+<p></p>
+<strong>Escenario 2: Acceso HTTP aislado</strong><br>
+Dado que una vista necesita datos de la API<br>
+Cuando los solicita<br>
+Entonces lo hace a través del store de su capa application, y solo la capa infrastructure usa el cliente HTTP.<br>
+<p></p>
+<strong>Escenario 3: Rutas con carga diferida</strong><br>
+Dado que el usuario navega entre vistas<br>
+Cuando el enrutador resuelve una ruta bajo /app<br>
+Entonces la vista se carga de forma diferida dentro del layout común con menú lateral y barra superior.
+</td>
+<td>EP15 — Plataforma técnica de la Web Application</td>
+</tr>
+<tr>
+<td><strong>TS02</strong></td>
+<td>Implementar y desplegar la API simulada de la Web Application</td>
+<td>Como Developer, quiero una API REST simulada con json-server, publicada en una URL pública y consumida mediante variables de entorno, para desarrollar y demostrar la Web Application con datos persistentes mientras se construye el RESTful API.</td>
+<td>
+<strong>Escenario 1: Recursos del dominio disponibles</strong><br>
+Dado que la API simulada está desplegada en Render<br>
+Cuando la Web Application consulta /api/v1/users, /inventoryItems, /recipes, /sales, /alerts, /recommendations, /demandForecasts, /plans o /subscriptions<br>
+Entonces la API responde con las operaciones GET, POST, PUT y DELETE de cada recurso.<br>
+<p></p>
+<strong>Escenario 2: URL configurable</strong><br>
+Dado que el equipo necesita apuntar a otra API<br>
+Cuando cambia VITE_STOCKIA_API_URL en el archivo de entorno<br>
+Entonces ningún componente ni store requiere cambios.<br>
+<p></p>
+<strong>Escenario 3: Rutas por variable de entorno</strong><br>
+Dado que cada contexto consume su recurso<br>
+Cuando se revisa su servicio de infraestructura<br>
+Entonces la ruta del endpoint se lee de una variable VITE_*_ENDPOINT_PATH y no está escrita en el código.
+</td>
+<td>EP15 — Plataforma técnica de la Web Application</td>
+</tr>
+<tr>
+<td><strong>TS03</strong></td>
+<td>Desplegar la Web Application en Vercel</td>
+<td>Como Developer, quiero publicar la Web Application en Vercel desde el repositorio de la organización, para que el docente y los restaurantes del piloto accedan a la versión vigente en una URL pública en menos de 5 minutos después de cada integración.</td>
+<td>
+<strong>Escenario 1: Build de producción</strong><br>
+Dado que se integra un cambio en la rama de producción<br>
+Cuando Vercel ejecuta npm run build<br>
+Entonces publica el contenido de la carpeta dist sin pasos manuales.<br>
+<p></p>
+<strong>Escenario 2: Rutas internas sin error 404</strong><br>
+Dado que el usuario recarga /app/inventory en el sitio publicado<br>
+Cuando Vercel atiende la solicitud<br>
+Entonces entrega la Web Application y se muestra la vista solicitada.<br>
+<p></p>
+<strong>Escenario 3: Conexión con la API simulada</strong><br>
+Dado que el usuario inicia sesión en la versión publicada<br>
+Cuando la aplicación consulta sus datos<br>
+Entonces obtiene la información de la API simulada desplegada en Render.
+</td>
+<td>EP15 — Plataforma técnica de la Web Application</td>
+</tr>
+<tr>
+<td><strong>TS04</strong></td>
+<td>Publicar la nueva versión de la Landing Page enlazada con la Web Application</td>
+<td>Como Developer, quiero corregir los pendientes de la Landing Page y enlazar sus call-to-action con la Web Application, para que cada segmento llegue a su vista de registro o de inicio de sesión en un solo clic y el sitio no tenga enlaces vacíos.</td>
+<td>
+<strong>Escenario 1: Equipo real</strong><br>
+Dado que el visitante abre about.html<br>
+Cuando revisa la sección del equipo<br>
+Entonces encuentra a los 5 integrantes de DataBit con su foto, nombre y rol, sin notas de datos de ejemplo.<br>
+<p></p>
+<strong>Escenario 2: Call-to-action por segmento</strong><br>
+Dado que un visitante del segmento dueños de restaurante o del segmento administradores y jefes de cocina está en la sección "¿Para quién es StockIA?"<br>
+Cuando presiona el call-to-action de su segmento<br>
+Entonces el sitio abre /auth/sign-up o /auth/sign-in de la Web Application, respectivamente.<br>
+<p></p>
+<strong>Escenario 3: Idioma por defecto</strong><br>
+Dado que el visitante abre el sitio por primera vez<br>
+Cuando la página termina de cargar<br>
+Entonces el contenido se muestra en inglés y el selector permite cambiarlo a español.<br>
+<p></p>
+<strong>Escenario 4: Sin enlaces vacíos</strong><br>
+Dado que el visitante presiona "Solicitar demo" en la barra de navegación de cualquiera de las 4 páginas<br>
+Cuando el sitio procesa el clic<br>
+Entonces abre el formulario de contacto en about.html#contacto.
+</td>
+<td>EP01 — Landing Page</td>
+</tr>
+</table>
+
 
 ## **3.2. Impact Mapping**
 En la siguiente sección se presenta el Impact Mapping elaborado a partir del user persona principal: el administrador o dueño del restaurante. Este mapa asegura que se construya funcionalidades que realmente aporten valor al negocio y resuelvan los problemas más críticos de nuestro segmento objetivo.
@@ -947,51 +1168,59 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 | 19 | **US36** | Calcular automáticamente la fecha límite de consumo de un insumo | Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento. | 5 |
 | 20 | **RNF11** | Protección de credenciales y datos de pago | Como usuario registrado, quiero que mis credenciales y mis datos de pago se manejen de forma segura, para confiar en la plataforma al usar mi tarjeta o mi cuenta de PayPal. | 5 |
 | 21 | **RNF12** | Confiabilidad y trazabilidad de las notificaciones multicanal | Como administrador que depende de alertas por WhatsApp, correo y SMS, quiero que las notificaciones se envíen de forma confiable y quede registro de ellas, para no perder información crítica de mi restaurante. | 5 |
-| 22 | **US02** | Ver una vista previa del dashboard de StockIA | Como visitante, quiero ver una representación visual del futuro dashboard, para entender cómo luciría el producto antes de solicitar una demo. | 3 |
-| 23 | **US05** | Conocer las funcionalidades principales desde el Home | Como visitante, quiero ver un resumen de las funcionalidades clave de StockIA sin salir del Home, para evaluar rápidamente el alcance del producto. | 3 |
-| 24 | **US06** | Conocer los diferenciadores de StockIA | Como visitante, quiero entender qué hace distinto a StockIA de un simple control de inventario, para justificar por qué elegirlo. | 3 |
-| 25 | **US07** | Conocer las integraciones externas en evaluación | Como visitante, quiero saber con qué otras herramientas podría integrarse StockIA, para entender qué tan conectado estará con servicios que ya uso. | 3 |
-| 26 | **US09** | Ver el video de presentación del producto | Como visitante, quiero ver un video que explique StockIA en acción, para comprender el producto más rápido que solo leyendo texto. | 3 |
-| 27 | **US13** | Cambiar el idioma del sitio entre español e inglés | Como visitante que prefiere leer en inglés, quiero cambiar el idioma del sitio, para entender el contenido sin depender de traducción externa. | 3 |
-| 28 | **US16** | Comparar precios mensuales y anuales | Como visitante evaluando el costo, quiero alternar entre facturación mensual y anual, para comparar cuánto ahorraría pagando anualmente. | 3 |
-| 29 | **US17** | Resolver dudas frecuentes sobre los planes | Como visitante con dudas puntuales, quiero consultar preguntas frecuentes sobre los planes, para resolver objeciones antes de solicitar una demo. | 3 |
-| 30 | **US24** | Configurar roles y permisos de los empleados | Como administrador, quiero asignar roles a empleados, para que cada uno tenga permisos adecuados dentro del sistema. | 3 |
-| 31 | **US32** | Recibir historial de alertas críticas por correo electrónico | Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de eventos importantes. | 3 |
-| 32 | **US33** | Recibir SMS urgentes ante emergencias operativas | Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real. | 3 |
-| 33 | **US35** | Editar la vida útil sugerida de un insumo | Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante. | 3 |
-| 34 | **RNF01** | Experiencia responsiva en dispositivos móviles y tablets | Como visitante que navega desde el celular o una tablet, quiero que el sitio se adapte a mi pantalla, para poder leer y usar el sitio sin hacer zoom ni desplazamiento horizontal. | 3 |
-| 35 | **RNF04** | Carga rápida al ser un sitio estático sin dependencias pesadas | Como visitante con una conexión limitada, quiero que el sitio cargue rápido, para no abandonar la página mientras espera que termine de cargar. | 3 |
-| 36 | **RNF05** | Buen posicionamiento en buscadores | Como equipo de DataBite Corp, quiero que cada página tenga metadatos descriptivos, para mejorar la indexación de StockIA en motores de búsqueda. | 3 |
-| 37 | **US08** | Explorar vistas ilustrativas de la plataforma | Como visitante, quiero ver ejemplos visuales de las pantallas de StockIA, para imaginar cómo sería usar el producto día a día. | 2 |
-| 38 | **US10** | Navegar entre las páginas del sitio | Como visitante, quiero moverme fácilmente entre Inicio, Características, Precios y Nosotros, para explorar el sitio según lo que me interese. | 2 |
-| 39 | **US11** | Ver el detalle completo de las funcionalidades de StockIA | Como visitante interesado en profundizar, quiero ver una descripción extendida de cada funcionalidad, para evaluar si el producto cubre mis necesidades. | 2 |
-| 40 | **US12** | Entender cómo empezar a usar StockIA | Como visitante interesado en adoptar StockIA, quiero conocer los pasos para comenzar a usarlo, para saber qué esperar antes de solicitar una demo. | 2 |
-| 41 | **US14** | Mantener mi idioma preferido al navegar entre páginas | Como visitante que ya eligió un idioma, quiero que esa preferencia se mantenga al ir a otra página, para no reseleccionar el idioma en cada una. | 2 |
-| 42 | **US18** | Conocer la misión, visión y valores de DataBite Corp | Como visitante, quiero conocer el propósito y valores del equipo detrás de StockIA, para generar confianza antes de contactarlos. | 2 |
-| 43 | **US19** | Conocer al equipo detrás de StockIA | Como visitante, quiero ver quiénes conforman el equipo de DataBite Corp, para saber que hay personas reales respaldando el producto. | 2 |
-| 44 | **RNF02** | Contraste y legibilidad accesible | Como visitante, incluyendo personas con baja visión, quiero que los textos tengan suficiente contraste con el fondo, para poder leer el contenido sin esfuerzo adicional. | 2 |
-| 45 | **RNF03** | Navegación consistente y predecible entre páginas | Como visitante que recorre varias páginas, quiero encontrar siempre el mismo menú, pie de página y estilo visual, para no perder la orientación. | 2 |
-| 46 | **RNF06** | Compatibilidad con navegadores modernos de escritorio y móvil | Como visitante, quiero que el sitio se vea y funcione igual sin importar el navegador que use, para tener una experiencia confiable. | 2 |
-| 47 | **RNF07** | Animaciones de entrada que no bloquean la interacción | Como visitante, quiero que las animaciones de aparición sean sutiles y fluidas, para una experiencia moderna sin sentir la página lenta. | 1 |
-| 48 | **RNF08** | Identificación clara de contenido pendiente de completar | Como equipo de DataBite Corp, quiero que el contenido de ejemplo esté claramente señalizado, para no publicar por error información ficticia como definitiva. | 1 |
-| 49 | **RNF09** | Sistema de diseño reutilizable y centralizado | Como equipo de desarrollo, quiero que colores, tipografías y espaciados estén centralizados en variables CSS, para actualizar la identidad visual desde un solo lugar. | 1 |
-| 50 | **RNF10** | Textos traducibles centralizados en un solo archivo | Como equipo de desarrollo, quiero que todos los textos traducibles vivan en un único archivo, para actualizar el contenido sin editar cada página. | 1 |
-
+| 22 | **US41** | Atender las alertas operativas y asegurar su entrega por canal | Como administrador, quiero registrar, atender y eliminar las alertas de stock y vencimiento y reintentar su entrega por el canal que falló, para que el 100 % de las alertas críticas llegue por todos sus canales requeridos antes de marcarse como atendida. | 5 |
+| 23 | **US02** | Ver una vista previa del dashboard de StockIA | Como visitante, quiero ver una representación visual del futuro dashboard, para entender cómo luciría el producto antes de solicitar una demo. | 3 |
+| 24 | **US05** | Conocer las funcionalidades principales desde el Home | Como visitante, quiero ver un resumen de las funcionalidades clave de StockIA sin salir del Home, para evaluar rápidamente el alcance del producto. | 3 |
+| 25 | **US06** | Conocer los diferenciadores de StockIA | Como visitante, quiero entender qué hace distinto a StockIA de un simple control de inventario, para justificar por qué elegirlo. | 3 |
+| 26 | **US07** | Conocer las integraciones externas en evaluación | Como visitante, quiero saber con qué otras herramientas podría integrarse StockIA, para entender qué tan conectado estará con servicios que ya uso. | 3 |
+| 27 | **US09** | Ver el video de presentación del producto | Como visitante, quiero ver un video que explique StockIA en acción, para comprender el producto más rápido que solo leyendo texto. | 3 |
+| 28 | **US13** | Cambiar el idioma del sitio entre español e inglés | Como visitante que prefiere leer en inglés, quiero cambiar el idioma del sitio, para entender el contenido sin depender de traducción externa. | 3 |
+| 29 | **US16** | Comparar precios mensuales y anuales | Como visitante evaluando el costo, quiero alternar entre facturación mensual y anual, para comparar cuánto ahorraría pagando anualmente. | 3 |
+| 30 | **US17** | Resolver dudas frecuentes sobre los planes | Como visitante con dudas puntuales, quiero consultar preguntas frecuentes sobre los planes, para resolver objeciones antes de solicitar una demo. | 3 |
+| 31 | **US24** | Configurar roles y permisos de los empleados | Como administrador, quiero asignar roles a empleados, para que cada uno tenga permisos adecuados dentro del sistema. | 3 |
+| 32 | **US32** | Recibir historial de alertas críticas por correo electrónico | Como administrador, quiero recibir alertas críticas por correo vía SendGrid, para tener un historial documentado de eventos importantes. | 3 |
+| 33 | **US33** | Recibir SMS urgentes ante emergencias operativas | Como administrador, quiero recibir SMS críticos vía Twilio, para poder reaccionar rápido ante emergencias en tiempo real. | 3 |
+| 34 | **US35** | Editar la vida útil sugerida de un insumo | Como administrador, quiero poder modificar la vida útil sugerida por la API, para ajustarla a las condiciones reales de mi restaurante. | 3 |
+| 35 | **RNF01** | Experiencia responsiva en dispositivos móviles y tablets | Como visitante que navega desde el celular o una tablet, quiero que el sitio se adapte a mi pantalla, para poder leer y usar el sitio sin hacer zoom ni desplazamiento horizontal. | 3 |
+| 36 | **RNF04** | Carga rápida al ser un sitio estático sin dependencias pesadas | Como visitante con una conexión limitada, quiero que el sitio cargue rápido, para no abandonar la página mientras espera que termine de cargar. | 3 |
+| 37 | **RNF05** | Buen posicionamiento en buscadores | Como equipo de DataBite Corp, quiero que cada página tenga metadatos descriptivos, para mejorar la indexación de StockIA en motores de búsqueda. | 3 |
+| 38 | **US39** | Consultar el historial de ventas y anular ventas registradas por error | Como administrador, quiero consultar las ventas registradas con su total y anular las que se registraron por error, para que el historial que alimenta la predicción de demanda refleje solo ventas reales. | 3 |
+| 39 | **TS01** | Estructurar la Web Application en Vue por Bounded Context | Como Developer, quiero organizar la Web Application en Vue 3 con una carpeta por Bounded Context y las capas domain, infrastructure, application y presentation, para que cada integrante trabaje su contexto en su propia rama sin conflictos y ningún componente de presentación llame directamente a la API. | 3 |
+| 40 | **TS02** | Implementar y desplegar la API simulada de la Web Application | Como Developer, quiero una API REST simulada con json-server, publicada en una URL pública y consumida mediante variables de entorno, para desarrollar y demostrar la Web Application con datos persistentes mientras se construye el RESTful API. | 3 |
+| 41 | **TS04** | Publicar la nueva versión de la Landing Page enlazada con la Web Application | Como Developer, quiero corregir los pendientes de la Landing Page y enlazar sus call-to-action con la Web Application, para que cada segmento llegue a su vista de registro o de inicio de sesión en un solo clic y el sitio no tenga enlaces vacíos. | 3 |
+| 42 | **RNF14** | Internacionalización de la Web Application | Como usuario de StockIA, quiero usar la Web Application en inglés, su idioma por defecto, o en español, para operar el inventario en mi idioma sin depender de traducción externa. | 3 |
+| 43 | **US08** | Explorar vistas ilustrativas de la plataforma | Como visitante, quiero ver ejemplos visuales de las pantallas de StockIA, para imaginar cómo sería usar el producto día a día. | 2 |
+| 44 | **US10** | Navegar entre las páginas del sitio | Como visitante, quiero moverme fácilmente entre Inicio, Características, Precios y Nosotros, para explorar el sitio según lo que me interese. | 2 |
+| 45 | **US11** | Ver el detalle completo de las funcionalidades de StockIA | Como visitante interesado en profundizar, quiero ver una descripción extendida de cada funcionalidad, para evaluar si el producto cubre mis necesidades. | 2 |
+| 46 | **US12** | Entender cómo empezar a usar StockIA | Como visitante interesado en adoptar StockIA, quiero conocer los pasos para comenzar a usarlo, para saber qué esperar antes de solicitar una demo. | 2 |
+| 47 | **US14** | Mantener mi idioma preferido al navegar entre páginas | Como visitante que ya eligió un idioma, quiero que esa preferencia se mantenga al ir a otra página, para no reseleccionar el idioma en cada una. | 2 |
+| 48 | **US18** | Conocer la misión, visión y valores de DataBite Corp | Como visitante, quiero conocer el propósito y valores del equipo detrás de StockIA, para generar confianza antes de contactarlos. | 2 |
+| 49 | **US19** | Conocer al equipo detrás de StockIA | Como visitante, quiero ver quiénes conforman el equipo de DataBite Corp, para saber que hay personas reales respaldando el producto. | 2 |
+| 50 | **RNF02** | Contraste y legibilidad accesible | Como visitante, incluyendo personas con baja visión, quiero que los textos tengan suficiente contraste con el fondo, para poder leer el contenido sin esfuerzo adicional. | 2 |
+| 51 | **RNF03** | Navegación consistente y predecible entre páginas | Como visitante que recorre varias páginas, quiero encontrar siempre el mismo menú, pie de página y estilo visual, para no perder la orientación. | 2 |
+| 52 | **RNF06** | Compatibilidad con navegadores modernos de escritorio y móvil | Como visitante, quiero que el sitio se vea y funcione igual sin importar el navegador que use, para tener una experiencia confiable. | 2 |
+| 53 | **US40** | Actualizar mi perfil, los datos de mi restaurante y mi contraseña | Como usuario registrado, quiero actualizar mis datos personales, los datos de mi restaurante y mi contraseña, para que el 100 % de las alertas y comunicaciones de StockIA lleguen a un contacto vigente. | 2 |
+| 54 | **RNF13** | Control de acceso por sesión y por rol en la Web Application | Como administrador del restaurante, quiero que ninguna vista interna se muestre sin sesión y que las vistas administrativas solo se muestren al rol Administrador, para proteger la información de mi restaurante con 0 accesos no autorizados. | 2 |
+| 55 | **RNF16** | Accesibilidad y adaptabilidad de la Web Application | Como usuario que trabaja desde el celular en la cocina o con un lector de pantalla, quiero que la Web Application se adapte a mi pantalla y tenga etiquetas accesibles, para operar el inventario sin depender del mouse ni de una pantalla grande. | 2 |
+| 56 | **RNF07** | Animaciones de entrada que no bloquean la interacción | Como visitante, quiero que las animaciones de aparición sean sutiles y fluidas, para una experiencia moderna sin sentir la página lenta. | 1 |
+| 57 | **RNF08** | Identificación clara de contenido pendiente de completar | Como equipo de DataBite Corp, quiero que el contenido de ejemplo esté claramente señalizado, para no publicar por error información ficticia como definitiva. | 1 |
+| 58 | **RNF09** | Sistema de diseño reutilizable y centralizado | Como equipo de desarrollo, quiero que colores, tipografías y espaciados estén centralizados en variables CSS, para actualizar la identidad visual desde un solo lugar. | 1 |
+| 59 | **RNF10** | Textos traducibles centralizados en un solo archivo | Como equipo de desarrollo, quiero que todos los textos traducibles vivan en un único archivo, para actualizar el contenido sin editar cada página. | 1 |
+| 60 | **TS03** | Desplegar la Web Application en Vercel | Como Developer, quiero publicar la Web Application en Vercel desde el repositorio de la organización, para que el docente y los restaurantes del piloto accedan a la versión vigente en una URL pública en menos de 5 minutos después de cada integración. | 1 |
+| 61 | **RNF15** | Retroalimentación de estado y confirmaciones en la Web Application | Como administrador o empleado, quiero que cada vista me informe cuándo no hay datos y el resultado de cada acción, y que las acciones destructivas pidan confirmación, para no perder información del restaurante por un clic accidental. | 1 |
+ 
 </br>
 <p align="center">
   <img src="../assets/chapter-3/Jira-Epics.png" width="500" alt="Epicas"/>
   <br/><i>Artefacto: Jira para Epics</i>
 </p>
-
 <p align="center">
   <img src="../assets/chapter-3/Jira-HU.png" width="500" alt="Historias de Usuario"/>
   <br/><i>Artefacto: Jira para User Storys</i>
 </p>
-
 <p align="center">
   <img src="../assets/chapter-3/Jira-Backlog.png" width="500" alt="Product Backlog"/>
   <br/><i>Artefacto: Jira para Backlog Priorizado</i>
 </p>
-
 >Acceso a artefacto Jira para el desarrollo de Backlog
 <https://laplaceho-22.atlassian.net/jira/software/projects/SCRUM/boards/1?filter=&groupBy=none&atlOrigin=eyJpIjoiOGVhOTM0YjRkNzZkNGEzZWExMmY0ZmQ4MTU1NTcyYmQiLCJwIjoiaiJ9>
