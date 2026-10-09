@@ -677,16 +677,16 @@ El compromiso del Sprint 2 (90 SP) se calculó a partir de la velocidad del Spri
 
 #### **5.2.2.2. Aspect Leaders and Collaborators**
  
-En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 2. Los aspectos corresponden a los Bounded Contexts definidos en el Capítulo IV, más la arquitectura transversal, la Landing Page y los requisitos de internacionalización y accesibilidad. Cada integrante lidera un Bounded Context y responde por su integración en el repositorio de la organización en sus cuatro capas (domain, infrastructure, application y presentation). El líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
- 
-| Team Member | GitHub Username | Restaurant Registration (IAM y equipo) (L/C) | Stock Management & Recipes Management (L/C) | ML and Recommendations (L/C) | Subscription and Payment Management (L/C) | Analytics and Dashboard (alertas e historial de ventas) (L/C) | Arquitectura, API simulada y despliegue (L/C) | Landing Page (nueva versión y enlace con la Web App) (L/C) | Internacionalización y accesibilidad (L/C) |
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** del Sprint 2. Los aspectos corresponden a los Bounded Contexts definidos en el Capítulo IV, más la arquitectura transversal, la Landing Page y la internacionalización; cada integrante lidera un Bounded Context y lo implementa en sus cuatro capas (domain, infrastructure, application y presentation). El líder (L) responde por la integración y la revisión de ese aspecto, y los colaboradores (C) desarrollan o revisan sus tareas.
+
+| Team Member | GitHub Username | IAM y Restaurant Registration (L/C) | Stock Management & Recipes Management (L/C) | ML and Recommendations (L/C) | Subscription and Payments Management (L/C) | Analytics and Dashboard y Notifications (L/C) | Arquitectura, API simulada y despliegue (L/C) | Landing Page (L/C) | Internacionalización y accesibilidad (L/C) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Higa Kohatsu, Alonso Enrique | AlonsoHiga | L | C | C | C | C | C | C | C |
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga | L | C | C | C | C | C | C | L |
 | Asmat Alminco, Martin Alejandro | Alemarr2 | C | L | C | C | C | C | C | C |
 | Huaman Oscco, Aldo Jesus | Jesusho22 | C | C | L | C | C | L | C | C |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | C | C | C | C | L | C | C | L |
-| Tuesta Girón, Kiara Lucia | kitu05g | C | C | C | L | C | C | L | C |
- 
+| Ortiz Laura, Leyla Alisson | Leylaa-O | C | C | C | C | L | C | L | C |
+| Tuesta Girón, Kiara Lucia | kitu05g | C | C | C | L | C | C | C | C |
+
 > **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
 **Periodo:** 22/09/2026 – 06/10/2026 (2 semanas)  
