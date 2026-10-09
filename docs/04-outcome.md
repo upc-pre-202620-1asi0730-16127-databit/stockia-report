@@ -35,7 +35,7 @@
         TB1
       </i></b>
       <br>
-      .....
+      En esta parte ayude al desarrollo del frontend ayudó a cumplir este objetivo mediante la coordinación con los demás integrantes del equipo, tomando decisiones en conjunto sobre el diseño y la funcionalidad de la interfaz. Además, se mantuvo una comunicación constante para integrar los avances, resolver problemas y apoyar a los compañeros, contribuyendo al cumplimiento de los objetivos del proyecto.
       <br><br>
       <b>
         Asmat Alminco, Martin Alejandro
@@ -107,7 +107,7 @@
         TB1
       </i></b>
       <br>
-      .....
+      Como equipo, trabajamos de manera coordinada durante el desarrollo del proyecto, compartiendo responsabilidades y tomando decisiones en conjunto para alcanzar los objetivos establecidos. Cada integrante aportó sus ideas y conocimientos, participando activamente en la búsqueda de soluciones y en la resolución de los problemas que surgieron durante el desarrollo del frontend. Además, mantuvimos una comunicación constante para coordinar nuestros avances, brindar apoyo cuando algún compañero lo necesitaba y asegurarnos de que las diferentes partes del proyecto funcionaran correctamente. De esta manera, demostramos un liderazgo compartido, en el que todos contribuimos al trabajo del equipo, asumimos responsabilidades y colaboramos para obtener un resultado que cumpliera con los objetivos propuestos.
       <br><br>
     </td>
   </tr>
@@ -134,7 +134,7 @@
         TB1
       </i></b>
       <br>
-      .....
+      Al desarrollar el frontend, trabajé de manera coordinada con mis compañeros, manteniendo una comunicación constante para organizar las tareas y definir los objetivos que debíamos cumplir. También participé en la planificación de las funcionalidades y en la distribución del trabajo, teniendo en cuenta las ideas y opiniones de los demás integrantes. De esta manera, pude contribuir a crear un entorno colaborativo, donde cada uno aportó desde sus conocimientos y habilidades, permitiéndonos avanzar de forma ordenada y cumplir con los objetivos establecidos para el proyecto.
       <br><br>
       <b>
         Asmat Alminco, Martin Alejandro
@@ -212,7 +212,7 @@
         TB1
       </i></b>
       <br>
-      .....
+      Como equipo, trabajamos de manera coordinada en el desarrollo del proyecto, organizando las tareas y estableciendo metas claras para avanzar de forma ordenada. Mantuvimos una comunicación constante para compartir ideas, escuchar las opiniones de cada integrante y tomar decisiones en conjunto sobre las funcionalidades y el diseño del frontend. Asimismo, nos apoyamos mutuamente para resolver las dificultades que surgieron durante el desarrollo y buscamos aprovechar los conocimientos y habilidades de cada miembro. De esta manera, promovimos un entorno colaborativo e inclusivo, en el que todos pudimos aportar al proyecto, cumplir con nuestras responsabilidades y contribuir al logro de los objetivos establecidos como equipo.
       <br><br>
     </td>
   </tr>
