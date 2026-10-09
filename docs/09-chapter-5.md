@@ -1057,32 +1057,34 @@ En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS
 #### **5.2.2.8. Team Collaboration Insights during Sprint**
  
 **Dinámica de trabajo**
- 
-En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante es responsable de un contexto completo del Capítulo IV en sus cuatro capas (domain, infrastructure, application y presentation) y de su integración en la Web Application (ver 5.2.2.2 y la tabla de distribución de 5.2.2.4). Cada responsable revisa también el diagrama de clases y el diagrama C4 de su contexto para que reflejen lo implementado. Las tareas se gestionaron en Jira, en el proyecto SCRUM, con un responsable por tarea y su estado actualizado. La comunicación diaria se mantuvo por WhatsApp y las reuniones de sincronización por Google Meet. Aplicando la mejora de la retrospectiva del Sprint 1, el trabajo se integra con una rama `feature/*` por contexto o tarea, con el ID de la tarea en el mensaje de commit y con revisión por Pull Request antes de llegar a `develop`.
- 
+
+En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implementó un contexto del Capítulo IV en sus cuatro capas (domain, infrastructure, application y presentation) y lo integró en la Web Application mediante su rama `feature/*` y su Pull Request hacia `develop` (ver 5.2.2.2 y la tabla de distribución de 5.2.2.4). Alonso preparó la estructura base, el layout y la internacionalización desde el inicio del Sprint, y los demás contextos se integraron sobre esa base mediante 10 Pull Requests. Las tareas se gestionaron en Jira, en el proyecto SCRUM. La comunicación diaria se mantuvo por WhatsApp y las reuniones de sincronización por Google Meet.
+
 **Aporte por integrante**
- 
-| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits en el Sprint 2** |
+
+| **Integrante** | **GitHub** | **Aporte principal en el Sprint 2** | **Horas asignadas** | **Commits en `stockia-webapp`** |
 | :--- | :--- | :--- | :---: | :---: |
-| Higa Kohatsu, Alonso Enrique | AlonsoHiga | Restaurant Registration: registro, inicio de sesión, perfil, shell con menú por rol, equipo y roles (US09, US10, US11) y control de acceso (RNF08) | 32.5 | <!-- ACTUALIZAR --> |
-| Asmat Alminco, Martin Alejandro | Alemarr2 | Stock Management & Recipes Management (US12, US13, US14); inglés por defecto en la Landing Page (TS08) | 33.5 | <!-- ACTUALIZAR --> |
-| Huaman Oscco, Aldo Jesus | Jesusho22 | ML and Recommendations (US18); arquitectura por Bounded Context (TS05), API simulada (TS06) y despliegue en Vercel (TS07) | 26 | <!-- ACTUALIZAR --> |
-| Ortiz Laura, Leyla Alisson | Leylaa-O | Analytics and Dashboard (US16), alertas operativas (US17), historial de ventas (US15) y accesibilidad de la Web Application (RNF11) | 31 | <!-- ACTUALIZAR --> |
-| Tuesta Girón, Kiara Lucia | kitu05g | Subscription and Payment Management (US19); nueva versión de la Landing Page y enlace con la Web Application (TS08); internacionalización de la Web Application (RNF10); verificación de estados y pruebas en producción (RNF09, TS07) | 30 | <!-- ACTUALIZAR --> |
- 
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga | Estructura del proyecto, layout y navegación móvil (TS01, RNF16), internacionalización (RNF14), IAM, equipo y configuración de la cuenta (US29, US30, US24, US40) y guard de navegación (RNF13) | 41 | 16 |
+| Asmat Alminco, Martin Alejandro | Alemarr2 | Stock Management & Recipes Management: inventario, fecha límite, recetas, venta con descuento e historial de ventas (US21, US36, US22, US39); dominio y componentes compartidos (TS01) y notificaciones (RNF15) | 36.5 | 11 |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | ML and Recommendations: proyección de demanda (US25); API simulada en Render (TS02) y despliegue en Vercel (TS03) | 17 | 6 |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | Notifications and Messaging y Analytics and Dashboard: alertas, entrega por canal, recomendaciones y dashboard (US27, US41, US26, US23); enrutamiento (TS01), claves de traducción (RNF14), etiquetas accesibles (RNF16) y nueva versión de la Landing Page (TS04) | 31.5 | 22 |
+| Tuesta Girón, Kiara Lucia | kitu05g | Subscription and Payments Management: planes y pago simulado (US31); pruebas en producción y verificación de RNF15 y RNF16 | 16.5 | 7 |
+
 **Evidencia: tablero del Sprint 2 en Jira**
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-jira-board.png" width="800" alt="Tablero del Sprint 2 en Jira"/>
+  <img src="../assets/chapter-5/jira-sprint2-done.png" width="800" alt="Tablero del Sprint 2 en Jira"/>
   <br/><i>Tablero del Sprint 2 en Jira (SCRUM)</i>
 </p>
+
 **Evidencia: contribuciones por integrante en `stockia-webapp`**
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
+  <img src="../assets/chapter-5//Contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
   <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
 </p>
+
 **Evidencia: grafo de GitFlow**
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
+  <img src="../assets/chapter-5/s2-network-webapp.png" width="700" alt="Grafo de ramas de stockia-webapp"/>
   <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
 </p>
 
