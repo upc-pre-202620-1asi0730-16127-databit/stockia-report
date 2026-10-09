@@ -689,111 +689,108 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 
 > **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
 
-**Periodo:** 22/09/2026 – 06/10/2026 (2 semanas)  
-**Objetivo del Sprint:** Entregar el frontend de la Web Application con autenticación, equipo y roles, inventario, recetas, ventas con descuento automático, dashboard, alertas, proyección de demanda, recomendaciones y planes, conectado a la API simulada desplegada; corregir los hallazgos del Sprint 1 en la Landing Page y enlazarla con la Web Application.
- 
+#### **5.2.2.3. Sprint Backlog 2**
+**Periodo:** 25/09/2026 – 08/10/2026 (2 semanas)  
+**Objetivo del Sprint:** Entregar la Frontend Web Application con autenticación, equipo y roles, configuración de la cuenta, inventario, recetas, ventas con descuento automático, historial de ventas, dashboard, alertas, recomendaciones, proyección de demanda y planes, conectada a la API simulada desplegada, y publicar la nueva versión de la Landing Page.
+
 | **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
-| **US12** | Registrar y monitorear los insumos del inventario | T-US12-1 | Modelar InventoryItem y su servicio de API | Crear la entidad del dominio e InventoryApiService en infrastructure. | 2.5 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US12-2 | Construir la tabla de inventario | Listar insumos con estados de carga y de inventario vacío. | 3 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US12-3 | Construir el formulario de alta y edición | Validar campos y calcular la fecha de vencimiento a partir de la vida útil. | 4 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US12-4 | Implementar la eliminación con confirmación | Pedir confirmación antes de eliminar un insumo. | 1 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US12-5 | Implementar la regla de estado en el dominio | Calcular Vencido, Crítico, Stock bajo o Disponible en InventoryItem. | 2 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US12-6 | Mostrar el distintivo de estado | Pintar el badge de color correspondiente en la tabla de inventario. | 1.5 | Asmat Alminco, Martin Alejandro | Done |
-| **US10** | Iniciar sesión y mantener actualizada mi cuenta | T-US10-1 | Construir el formulario de inicio de sesión | Crear sign-in con validaciones y mensaje de error. | 3 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US10-2 | Implementar sesión persistente y cierre de sesión | Guardar y restaurar la sesión en localStorage y limpiarla al salir. | 2 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US10-3 | Implementar los guards de autenticación y rol | Proteger /app con authGuard y las rutas administrativas con adminGuard. | 2 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US10-4 | Construir la pantalla de perfil | Crear el formulario precargado con validaciones por campo. | 3 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US10-5 | Implementar la actualización del perfil | Guardar los cambios, actualizar la sesión y mostrar la confirmación o el error. | 2 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US10-6 | Construir el shell de la aplicación | Crear el layout con barra superior, menú lateral y cierre de sesión, que depende de la sesión de IAM. | 2 | Higa Kohatsu, Alonso Enrique | Done |
-| **US17** | Gestionar y entregar las alertas operativas | T-US17-1 | Modelar Alert y su servicio de API | Crear la entidad con tipo, severidad y canal, y AlertsApiService. | 2 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US17-2 | Construir la lista de alertas con contador | Mostrar alertas, pendientes y estado vacío. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US17-3 | Construir el formulario de creación y edición | Validar tipo, severidad, canal y mensaje. | 3 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US17-4 | Implementar atender y eliminar | Marcar atendida con su regla y eliminar con confirmación. | 2 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US17-5 | Implementar la regla de canales requeridos | Calcular requiredChannels, pendingChannel y delivered en Alert. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US17-6 | Mostrar entrega y reintento por canal | Indicar el estado de entrega y permitir reintentar el canal pendiente. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
-| **US18** | Anticipar la demanda y aplicar recomendaciones | T-US18-1 | Modelar DemandForecast y su servicio | Crear la entidad con puntos por día y el servicio de carga y generación. | 2 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-US18-2 | Implementar la generación de siete días | Generar la proyección simulada y manejar el estado de generación. | 2.5 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-US18-3 | Construir la visualización por día | Mostrar barras por día, plato, confianza, clima y fecha. | 3 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-US18-4 | Etiquetar la proyección como simulada | Agregar el aviso de valores simulados en la pantalla. | 0.5 | Huaman Oscco, Aldo Jesus | To-do |
-|  |  | T-US18-5 | Modelar Recommendation y su lista | Crear la entidad y mostrar tipo, mensaje e impacto esperado. | 2 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-US18-6 | Implementar "Aplicar" | Marcar la recomendación como aplicada y actualizar la lista. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
-| **TS05** | Estructurar la Web Application en Angular por Bounded Context | T-TS05-1 | Crear el proyecto y la estructura por contexto | Inicializar Angular 18 standalone y crear las capas de cada contexto. | 3 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-TS05-2 | Implementar el enrutamiento por contexto | Definir las rutas diferidas de cada contexto con sus redirecciones; cada contexto agrega sus rutas al subir su capa de presentación. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **TS06** | Implementar y desplegar la API simulada de la Web Application | T-TS06-1 | Modelar db.json con las colecciones del dominio | Definir users, inventoryItems, recipes, sales, alerts, recommendations, demandForecasts, plans y subscriptions. | 3 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-TS06-2 | Configurar json-server y desplegarlo en Render | Servir bajo /api/v1 con CORS y health check y publicarlo en Render. | 3 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-TS06-3 | Implementar BaseApiService y environments | Centralizar la URL base, el modo useFakeApi y la API en memoria. | 2 | Huaman Oscco, Aldo Jesus | Done |
-| **US13** | Vincular recetas a los insumos del inventario | T-US13-1 | Modelar Recipe y sus operaciones | Crear la entidad con líneas de ingredientes y las operaciones CRUD del servicio. | 2.5 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US13-2 | Construir el formulario de receta | Seleccionar insumos, agregar y quitar líneas y validar la receta. | 4 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US13-3 | Construir la lista de recetas | Mostrar recetas con ingredientes y opciones de editar y eliminar. | 2.5 | Asmat Alminco, Martin Alejandro | Done |
-| **US14** | Registrar una venta con descuento automático de insumos | T-US14-1 | Modelar Sale y su servicio de API | Crear la entidad con líneas, canal, estado y total, y SalesApiService. | 2 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US14-2 | Validar stock antes de registrar la venta | Rechazar la venta y listar los insumos faltantes cuando no alcanzan. | 3 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US14-3 | Descontar insumos al confirmar la venta | Aplicar el descuento por receta después de persistir la venta. | 3 | Asmat Alminco, Martin Alejandro | Done |
-|  |  | T-US14-4 | Agregar la acción "Simular venta" con confirmación visual | Disparar el registro desde Recetas y resaltar el plato vendido. | 1.5 | Asmat Alminco, Martin Alejandro | Done |
-| **US09** | Registrar mi restaurante y crear mi cuenta de administrador | T-US09-1 | Construir el formulario de registro | Crear sign-up con validaciones reactivas y mensajes por campo. | 3 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US09-2 | Implementar el registro en AuthService | Crear el usuario con rol ADMIN, iniciar la sesión y redirigir al dashboard. | 2 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US09-3 | Validar correo duplicado | Consultar el correo antes de crear la cuenta y mostrar el mensaje de duplicado. | 2 | Higa Kohatsu, Alonso Enrique | To-do |
-| **US16** | Visualizar el resumen operativo en el dashboard | T-US16-1 | Calcular los indicadores del inventario | Exponer conteos y valor del inventario como computed signals. | 3 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US16-2 | Construir las tablas de críticos y alertas recientes | Mostrar insumos críticos y las cinco alertas más recientes con sus estados vacíos. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US16-3 | Agregar el resumen de la última proyección | Mostrar la proyección más reciente cuando exista. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
-| **TS08** | Corregir los hallazgos de la revisión del AV1 en la Landing Page | T-TS08-1 | Enlazar "Solicitar demo" del menú | Apuntar el botón del navbar de las cuatro páginas a about.html#contacto. | 0.5 | Tuesta Girón, Kiara Lucia | To-do |
-|  |  | T-TS08-2 | Agregar el menú desplegable en móvil | Mostrar un botón de menú bajo 768 px que despliegue los enlaces. | 2.5 | Tuesta Girón, Kiara Lucia | To-do |
-|  |  | T-TS08-3 | Publicar las fichas reales del equipo | Reemplazar las fichas de ejemplo por los cinco integrantes de DataBit y retirar las notas internas de cifras y equipo. | 1.5 | Tuesta Girón, Kiara Lucia | To-do |
-|  |  | T-TS08-4 | Filtrar el portafolio por pestaña | Mostrar solo las vistas de la categoría elegida. | 1.5 | Tuesta Girón, Kiara Lucia | To-do |
-|  |  | T-TS08-5 | Crear la página de términos y enlazarla | Publicar términos y condiciones y enlazarlos desde el footer. | 2 | Tuesta Girón, Kiara Lucia | To-do |
-|  |  | T-TS08-6 | Cambiar el idioma por defecto a inglés | Iniciar la Landing Page en inglés (en_US) cuando el visitante no tiene un idioma guardado, conservando el selector ES/EN. | 1 | Asmat Alminco, Martin Alejandro | To-do |
-|  |  | T-TS08-7 | Enlazar la Landing Page con la Web Application por segmento | Llevar el CTA del segmento dueños a /auth/sign-up y el del segmento jefes de cocina e "Iniciar sesión" a /auth/sign-in; agregar en la Web Application el enlace de regreso a la Landing Page. | 2 | Tuesta Girón, Kiara Lucia | To-do |
-| **US11** | Gestionar el equipo y sus roles | T-US11-1 | Construir el formulario de invitación | Crear el formulario con nombre, correo y rol y registrar al integrante. | 3 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US11-2 | Implementar la baja con reglas de negocio | Confirmar la baja e impedir eliminar la propia cuenta o al último administrador. | 2.5 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US11-3 | Construir la lista del equipo con selector de rol | Mostrar integrantes, marcar la propia cuenta y guardar el cambio de rol con la regla del último administrador. | 3 | Higa Kohatsu, Alonso Enrique | Done |
-|  |  | T-US11-4 | Restringir menú y ruta por rol | Ocultar "Roles y permisos" al Empleado y aplicar adminGuard a /app/roles. | 1.5 | Higa Kohatsu, Alonso Enrique | Done |
-| **US19** | Elegir o cambiar el plan de suscripción | T-US19-1 | Modelar Plan y Subscription y su servicio | Crear las entidades y cargar planes y suscripción actual. | 2 | Tuesta Girón, Kiara Lucia | Done |
-|  |  | T-US19-2 | Construir las tarjetas de planes | Mostrar precio, características, plan popular y plan activo. | 2.5 | Tuesta Girón, Kiara Lucia | Done |
-|  |  | T-US19-3 | Implementar el checkout simulado | Activar o cambiar la suscripción con Stripe o PayPal simulados. | 2.5 | Tuesta Girón, Kiara Lucia | Done |
-| **US15** | Consultar el historial de ventas y anular ventas erróneas | T-US15-1 | Construir el historial de ventas | Listar ventas con totales en S/, estado y resumen de ingresos confirmados. | 3 | Ortiz Laura, Leyla Alisson | Done |
-|  |  | T-US15-2 | Implementar la anulación de ventas | Confirmar y cambiar el estado de la venta a Anulada. | 2 | Ortiz Laura, Leyla Alisson | Done |
-| **RNF08** | Control de acceso por sesión y por rol en la Web Application | T-RNF08-1 | Probar el acceso a todas las rutas | Recorrer cada ruta sin sesión, como Empleado y como Administrador. | 1.5 | Higa Kohatsu, Alonso Enrique | To-do |
-| **TS07** | Desplegar la Web Application en Vercel | T-TS07-1 | Configurar Vercel para la Web Application | Definir build, carpeta de salida y reescritura SPA en vercel.json. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
-|  |  | T-TS07-2 | Probar rutas protegidas en producción | Verificar inicio de sesión, recarga de rutas internas y redirecciones. | 1 | Tuesta Girón, Kiara Lucia | To-do |
-| **RNF09** | Retroalimentación de estado y confirmaciones en la Web Application | T-RNF09-1 | Revisar estados y confirmaciones por pantalla | Verificar estados de carga, vacío, éxito, error y confirmación en cada vista. | 2 | Tuesta Girón, Kiara Lucia | To-do |
-| **RNF10** | Internacionalización de la Web Application | T-RNF10-1 | Crear los archivos de traducción | Definir en_US (por defecto) y es_419 con los textos de navegación, formularios, validaciones y mensajes. | 4 | Tuesta Girón, Kiara Lucia | To-do |
-|  |  | T-RNF10-2 | Agregar el selector de idioma | Cambiar el idioma desde la barra superior sin recargar y conservar la elección. | 2 | Tuesta Girón, Kiara Lucia | To-do |
-|  |  | T-RNF10-3 | Reemplazar los textos fijos por claves | Sustituir los textos de las 12 pantallas por claves de traducción. | 4 | Tuesta Girón, Kiara Lucia | To-do |
-| **RNF11** | Accesibilidad de la Web Application con atributos ARIA | T-RNF11-1 | Agregar etiquetas y atributos ARIA | Asociar etiquetas a todos los campos y agregar aria-label a los botones sin texto visible. | 2 | Ortiz Laura, Leyla Alisson | To-do |
-|  |  | T-RNF11-2 | Asegurar foco visible y orden de tabulación | Mostrar el foco en todos los elementos interactivos y ordenar la tabulación según el orden visual. | 1.5 | Ortiz Laura, Leyla Alisson | To-do |
-|  |  | T-RNF11-3 | Medir la accesibilidad por pantalla | Ejecutar Lighthouse Accessibility en cada pantalla y corregir los hallazgos hasta alcanzar 90 o más. | 1 | Ortiz Laura, Leyla Alisson | To-do |
-| | **TOTAL** | | | **Esfuerzo total estimado para el Sprint** | **153** | | |
- 
+| **TS01** | Estructurar la Web Application en Vue por Bounded Context | T-TS01-1 | Inicializar el proyecto Vue 3 | Crear el proyecto con Vite, PrimeVue, Pinia, vue-router y vue-i18n y la estructura de carpetas por Bounded Context. | 3 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-TS01-2 | Construir el layout de la aplicación | Implementar el layout con menú lateral, barra superior y vistas anidadas bajo /app. | 3 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-TS01-3 | Implementar el dominio y la infraestructura compartidos | Crear BaseApi, BaseEndpoint, BusinessRuleError y DecimalQuantity en la carpeta shared. | 3 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-TS01-4 | Construir los componentes compartidos de presentación | Crear page-header, form-field, quantity-input, password-input, el tema de PrimeVue y los composables de formato. | 3 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-TS01-5 | Configurar el enrutamiento por contexto | Registrar las rutas diferidas de cada contexto en router.js y su inicialización en main.js. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **TS02** | Implementar y desplegar la API simulada de la Web Application | T-TS02-1 | Configurar json-server para la Web Application | Definir el prefijo /api/v1 en routes.json y el script de arranque de la API simulada. | 1.5 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-TS02-2 | Configurar las variables de entorno | Leer la URL base y las rutas de cada recurso desde VITE_STOCKIA_API_URL y VITE_*_ENDPOINT_PATH. | 1.5 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-TS02-3 | Modelar las colecciones del dominio | Poblar usuarios, insumos, recetas, ventas, alertas, recomendaciones, proyecciones, planes y suscripciones. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS02-4 | Desplegar la API simulada en Render | Publicar json-server como servicio web con CORS y verificar cada recurso. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **TS03** | Desplegar la Web Application en Vercel | T-TS03-1 | Configurar el proyecto de Vercel | Importar stockia-webapp de la organización con el preset de Vite y las variables de entorno de producción. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-TS03-2 | Probar la versión publicada | Verificar inicio de sesión, recarga de rutas internas y redirecciones de los guards en webapp-stockia.vercel.app. | 1 | Tuesta Girón, Kiara Lucia | To-do |
+| **TS04** | Publicar la nueva versión de la Landing Page enlazada con la Web Application | T-TS04-1 | Publicar las fichas reales del equipo | Agregar las fotos y los datos de los 5 integrantes en about.html. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-TS04-2 | Ajustar estilos y traducciones de la Landing Page | Actualizar styles.css e i18n.js después de la revisión del AV1. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-TS04-3 | Enlazar los call-to-action con la Web Application | Llevar el CTA de cada segmento a /auth/sign-up y /auth/sign-in y enlazar "Solicitar demo" de la barra a about.html#contacto. | 2 | Tuesta Girón, Kiara Lucia | To-do |
+|  |  | T-TS04-4 | Cambiar el idioma por defecto a inglés | Iniciar la Landing Page en inglés cuando el visitante no tiene un idioma guardado. | 0.5 | Tuesta Girón, Kiara Lucia | To-do |
+| **US29** | Registrarme como nuevo usuario en StockIA | T-US29-1 | Modelar el usuario y su rol | Crear la entidad User y el enumerador de roles Administrador y Empleado. | 1.5 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-US29-2 | Implementar la API y el assembler de IAM | Crear IamApi y UserAssembler para registrar y consultar usuarios. | 2 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-US29-3 | Implementar el registro en el store de IAM | Validar el correo duplicado, crear la cuenta con rol Administrador e iniciar la sesión. | 2 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-US29-4 | Construir la vista de registro | Crear sign-up con validaciones por campo dentro de auth-layout. | 2.5 | Higa Kohatsu, Alonso Enrique | Done |
+| **US30** | Iniciar sesión con mis credenciales | T-US30-1 | Implementar el inicio y el cierre de sesión | Validar credenciales, guardar la sesión y restaurarla al recargar; limpiarla al salir. | 2.5 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-US30-2 | Construir la vista de inicio de sesión | Crear sign-in con el mensaje de credenciales incorrectas. | 2.5 | Higa Kohatsu, Alonso Enrique | Done |
+| **US40** | Actualizar mi perfil, los datos de mi restaurante y mi contraseña | T-US40-1 | Construir los formularios de la cuenta | Crear profile-form, restaurant-form y change-password-form con sus validaciones. | 3.5 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-US40-2 | Construir las vistas de configuración | Crear settings-hub, account-settings y help-center en el contexto settings. | 3 | Higa Kohatsu, Alonso Enrique | Done |
+| **US24** | Configurar roles y permisos de los empleados | T-US24-1 | Construir la gestión del equipo | Crear team-roles para invitar integrantes, cambiar su rol y darlos de baja. | 3 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-US24-2 | Aplicar las reglas de roles | Impedir la baja de la propia cuenta y mantener al menos un Administrador. | 1.5 | Higa Kohatsu, Alonso Enrique | Done |
+| **RNF13** | Control de acceso por sesión y por rol en la Web Application | T-RNF13-1 | Implementar el guard de navegación | Aplicar requiresAuth, adminOnly y guestOnly en router.js con un aviso en cada bloqueo. | 2 | Higa Kohatsu, Alonso Enrique | Done |
+| **RNF14** | Internacionalización de la Web Application | T-RNF14-1 | Crear los archivos de traducción | Definir en.json (por defecto) y es.json con los textos de navegación y de cada vista. | 2.5 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-RNF14-2 | Construir el selector de idioma | Agregar el language-switcher en la barra superior sin recargar la página. | 1.5 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-RNF14-3 | Completar las claves de cada contexto | Agregar las claves de inventario, recetas, alertas y dashboard y los formatos de fecha y moneda. | 2 | Ortiz Laura, Leyla Alisson | Done |
+| **US21** | Gestionar el inventario de insumos (alta, baja y modificación) | T-US21-1 | Modelar el insumo y su estado | Crear InventoryItem con el estado Disponible, Stock bajo, Crítico o Vencido. | 2 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-US21-2 | Implementar la API y los assemblers de inventario | Crear el servicio de API de stock-management y los assemblers de insumo y receta. | 2.5 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-US21-3 | Implementar el store de inventario | Cargar, guardar y eliminar insumos y calcular los indicadores del inventario. | 2.5 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-US21-4 | Construir la vista de inventario | Crear inventory-list con alta, edición, eliminación confirmada y stock-status-tag. | 4 | Asmat Alminco, Martin Alejandro | Done |
+| **US36** | Calcular automáticamente la fecha límite de consumo de un insumo | T-US36-1 | Calcular la fecha límite de consumo | Calcular la fecha límite a partir de la vida útil al guardar el insumo y marcar los que vencen en 3 días o menos. | 1.5 | Asmat Alminco, Martin Alejandro | Done |
+| **US22** | Vincular recetas al inventario con descuento automático de insumos | T-US22-1 | Modelar la receta y la asignación de stock | Crear Recipe y el servicio de dominio stock-allocation que verifica y descuenta los insumos. | 3 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-US22-2 | Construir la vista de recetas | Crear recipe-list con alta, edición y eliminación de recetas y sus ingredientes. | 4 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-US22-3 | Registrar la venta con descuento automático | Validar el stock, registrar la venta y descontar los insumos de la receta; listar los faltantes si no alcanzan. | 3 | Asmat Alminco, Martin Alejandro | Done |
+| **US39** | Consultar el historial de ventas y anular ventas registradas por error | T-US39-1 | Implementar la API y el store de ventas | Crear la entidad Receipt, su assembler, el servicio de API y el store de receipts-management. | 2.5 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-US39-2 | Construir el historial de ventas | Crear receipts-history con total por venta e ingresos de las ventas confirmadas. | 2.5 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-US39-3 | Implementar la anulación de ventas | Confirmar y cambiar la venta a Anulada sin eliminarla del historial. | 1.5 | Asmat Alminco, Martin Alejandro | Done |
+| **RNF15** | Retroalimentación de estado y confirmaciones en la Web Application | T-RNF15-1 | Implementar el servicio de notificaciones | Crear la cola de notificaciones de éxito y error usada por las vistas y el enrutador. | 1.5 | Asmat Alminco, Martin Alejandro | Done |
+|  |  | T-RNF15-2 | Verificar confirmaciones y estados vacíos | Recorrer cada vista y comprobar confirmaciones, notificaciones y mensajes de lista vacía. | 1.5 | Tuesta Girón, Kiara Lucia | To-do |
+| **US27** | Recibir alertas de insumos por stock bajo o vencimiento próximo | T-US27-1 | Modelar la alerta y su assembler | Crear Alert con tipo, severidad, canal y canales entregados, y su assembler. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US27-2 | Implementar la API y el store de alertas | Crear alerts-api y el store que carga, crea, actualiza y elimina alertas. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US27-3 | Construir la vista de alertas | Crear alerts-list con alert-severity-tag y el contador de pendientes. | 3 | Ortiz Laura, Leyla Alisson | Done |
+| **US41** | Atender las alertas operativas y asegurar su entrega por canal | T-US41-1 | Implementar la regla de canales requeridos | Exigir WhatsApp y correo en alertas críticas y el canal principal en las demás. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US41-2 | Implementar atención y reintento | Marcar la alerta como atendida solo si fue entregada y reintentar el canal pendiente. | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+| **US26** | Recibir recomendaciones automáticas de ajuste de menú | T-US26-1 | Modelar la recomendación y su assembler | Crear Recommendation con tipo, mensaje, impacto esperado y estado aplicado. | 1.5 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US26-2 | Construir la vista de recomendaciones | Crear recommendations-list con la acción "Aplicar". | 2.5 | Ortiz Laura, Leyla Alisson | Done |
+| **US23** | Visualizar un dashboard operativo con alertas y métricas clave | T-US23-1 | Construir los indicadores del dashboard | Mostrar insumos registrados, en estado bajo o crítico, por vencer en 3 días o menos y valor del inventario. | 3 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-US23-2 | Construir las secciones del dashboard | Mostrar los insumos críticos, las 5 alertas más recientes, la última proyección y los datos del restaurante. | 3 | Ortiz Laura, Leyla Alisson | Done |
+| **RNF16** | Accesibilidad y adaptabilidad de la Web Application | T-RNF16-1 | Construir la navegación móvil | Reemplazar el menú lateral por un menú móvil en pantallas pequeñas. | 2 | Higa Kohatsu, Alonso Enrique | Done |
+|  |  | T-RNF16-2 | Agregar etiquetas accesibles | Agregar aria-label a los botones de solo ícono y etiquetas a los campos de cada vista. | 2 | Ortiz Laura, Leyla Alisson | Done |
+|  |  | T-RNF16-3 | Medir la accesibilidad | Ejecutar Lighthouse en inicio de sesión, dashboard e inventario y corregir hasta alcanzar 90 o más. | 1 | Tuesta Girón, Kiara Lucia | To-do |
+| **US25** | Recibir predicción de demanda según históricos y clima | T-US25-1 | Modelar la proyección de demanda | Crear DemandForecast con unidades proyectadas por plato y día. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US25-2 | Implementar la API y el assembler de proyecciones | Crear ForecastApi y DemandForecastAssembler. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US25-3 | Implementar el store de proyecciones | Cargar las proyecciones y generar la proyección de 7 días. | 2 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US25-4 | Construir el gráfico de demanda | Crear forecast-chart con las unidades proyectadas por día. | 3 | Huaman Oscco, Aldo Jesus | Done |
+|  |  | T-US25-5 | Construir la vista de proyección | Crear forecast-dashboard con el nivel de confianza y la condición climática. | 2 | Huaman Oscco, Aldo Jesus | Done |
+| **US31** | Pagar o renovar mi suscripción con Stripe o PayPal | T-US31-1 | Modelar el plan y la suscripción | Crear las entidades Plan y Subscription. | 2 | Tuesta Girón, Kiara Lucia | Done |
+|  |  | T-US31-2 | Implementar la API y los assemblers de suscripción | Crear subscription-api y los assemblers de plan y suscripción. | 2.5 | Tuesta Girón, Kiara Lucia | Done |
+|  |  | T-US31-3 | Implementar el store de suscripción | Cargar los planes y la suscripción actual y elegir o cambiar de plan. | 2 | Tuesta Girón, Kiara Lucia | Done |
+|  |  | T-US31-4 | Construir la vista de planes | Crear plans-page y subscription-summary con el pago simulado con Stripe o PayPal. | 4 | Tuesta Girón, Kiara Lucia | Done |
+| **TOTAL** | | | | **Esfuerzo total estimado para el Sprint** | **142.5** | | |
+
 **Capacidad del Sprint 2**
- 
+
 | Integrante | Disponibilidad declarada (h) | Horas asignadas | N.° de tareas | Uso de la capacidad |
 | :--- | :---: | :---: | :---: | :---: |
-| Higa Kohatsu, Alonso Enrique | 40 | 32.5 | 14 | 81 % |
-| Asmat Alminco, Martin Alejandro | 40 | 33.5 | 14 | 84 % |
-| Huaman Oscco, Aldo Jesus | 40 | 26 | 12 | 65 % |
-| Ortiz Laura, Leyla Alisson | 40 | 31 | 14 | 78 % |
-| Tuesta Girón, Kiara Lucia | 40 | 30 | 14 | 75 % |
-| **Total** | **200** | **153** | **68** | **77 %** |
- 
+| Higa Kohatsu, Alonso Enrique | 45 | 41 | 18 | 91 % |
+| Asmat Alminco, Martin Alejandro | 45 | 36.5 | 14 | 81 % |
+| Huaman Oscco, Aldo Jesus | 45 | 17 | 8 | 38 % |
+| Ortiz Laura, Leyla Alisson | 45 | 31.5 | 14 | 70 % |
+| Tuesta Girón, Kiara Lucia | 45 | 16.5 | 9 | 37 % |
+| **Total** | **225** | **142.5** | **63** | **63 %** |
+
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/jira-sprint2.png" width="800" alt="Sprint 2 en Jira"/>
+  <img src="../assets/chapter-5/jira-sprint2.png" width="800" alt="Sprint 2 en Jira"/>
   <br/><i>Artefacto: Jira para Sprint 2 Priorizado</i>
 </p>
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/jira-sprint2-progress.png" width="800" alt="Tablero del Sprint 2 en proceso"/>
+  <img src="../assets/chapter-5/jira-sprint2-progress.png" width="800" alt="Tablero del Sprint 2 en proceso"/>
   <br/><i>Artefacto: Jira para demostrar el tablero Kanban del Sprint 2 - Proceso -</i>
 </p>
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/jira-sprint2-done.png" width="800" alt="Tablero del Sprint 2 finalizado"/>
+  <img src="../assets/chapter-5/jira-sprint2-done.png" width="800" alt="Tablero del Sprint 2 finalizado"/>
   <br/><i>Artefacto: Jira para demostrar el tablero Kanban del Sprint 2 - Finalizado -</i>
 </p>
+
 URL del tablero: https://laplaceho-22.atlassian.net/jira/software/projects/SCRUM/boards/1
- 
+
 ##### Resumen Técnico
-- **Total de horas:** 153 horas en 68 tareas.
-- **Distribución:** dos semanas (22/09/2026 – 06/10/2026), con una disponibilidad declarada de 40 horas por integrante (20 h por semana); la capacidad libre cubre revisiones de Pull Request y ceremonias.
-- **Story Points:** 57 comprometidos; 38 completados (US10 a US17, US19, TS05 y TS06) y 19 en curso al 05/10/2026 (US09, US18, TS07, TS08, RNF08, RNF09, RNF10 y RNF11).
-- **Entregable principal:** Web Application de StockIA conectada a la API simulada desplegada en Render, y Landing Page sin los hallazgos del Sprint 1 y enlazada con la Web Application.
+- **Total de horas:** 142.5 horas en 63 tareas.
+- **Distribución:** dos semanas (25/09/2026 – 08/10/2026), con una disponibilidad declarada de 45 horas por integrante; la capacidad libre cubre revisiones de Pull Request, ceremonias y la documentación del informe.
+- **Story Points:** 90 comprometidos; 83 completados al 08/10/2026. Quedan en curso TS03 (prueba en producción), TS04 (enlaces e idioma de la Landing Page), RNF15 (verificación por vista) y RNF16 (medición con Lighthouse), que suman 7 SP.
+- **Entregable principal:** Frontend Web Application de StockIA en Vue 3 conectada a la API simulada desplegada en Render y publicada en Vercel desde el repositorio de la organización.
 
 #### **5.2.2.4. Development Evidence for Sprint Review**
  
