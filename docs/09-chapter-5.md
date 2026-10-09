@@ -1025,31 +1025,33 @@ Response `200 OK`:
 
 #### **5.2.2.7. Software Deployment Evidence for Sprint Review**
  
-En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS06) y la Web Application en **Vercel** (TS07). Además, se planificó vincular el despliegue de la Landing Page al repositorio `stockia-website` de la organización (TS08).
- 
+En el Sprint 2 se desplegaron dos componentes: la API simulada en **Render** (TS02) y la Web Application en **Vercel** (TS03), además de la nueva versión de la Landing Page (TS04).
+
 **Actividades de despliegue realizadas**
- 
-1. Se publicó la API simulada en Render como servicio Node.js (`server.js` con json-server), con CORS habilitado, el prefijo `/api/v1` y el endpoint de salud `/api/v1/health`.
-2. Se configuraron los entornos de Angular (`environment.ts` y `environment.prod.ts`) para que `apiBaseUrl` apunte a la API desplegada (commit `084801e`).
-3. Se preparó `vercel.json` para la Web Application: `npm run build` como comando de build, `dist/stockia-webapp/browser` como carpeta de salida y una regla de reescritura a `index.html` para que las rutas internas no respondan con error 404.
-4. El despliegue de producción quedó en estado **Ready** el 01/10/2026 desde la rama `main` (commit `084801e`).
-5. Se verificó el inicio de sesión y la gestión de alertas contra la API desplegada (commit `084801e`); la prueba de recarga de rutas internas y redirecciones de los guards en producción corresponde a T-TS07-2.
-6. La vinculación del proyecto de Vercel de la Landing Page con `stockia-website` de la organización se realiza en TS08.
+
+1. Se publicó la API simulada en Render como servicio web con json-server, CORS habilitado y el prefijo `/api/v1`.
+2. Se definieron en los archivos de entorno la URL base de la API (`VITE_STOCKIA_API_URL`) y la ruta de cada recurso (`VITE_*_ENDPOINT_PATH`).
+3. Se importó el repositorio `upc-pre-202620-1asi0730-16127-databit/stockia-webapp` en Vercel con el preset de Vite (`npm run build` y carpeta de salida `dist`) y las variables de entorno de producción.
+4. Se publicó la nueva versión de la Landing Page desde `main` del repositorio `stockia-website` (PR #9).
+
 * **URL de la API simulada:** https://stockia-mock-api.onrender.com/api/v1
-* **URL de la Web Application desplegada:** https://stockia-platform.vercel.app
+* **URL de la Web Application desplegada:** https://webapp-stockia.vercel.app/
+* **URL de la Landing Page desplegada:** https://website-stockia.vercel.app/
+
 **Evidencia: API simulada en Render**
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-deploy-render.png" width="800" alt="API simulada en Render"/>
-  <br/><i>Servicio stockia-mock-api desplegado en Render</i>
+  <img src="../assets/chapter-5/s2-deploy-render.png" width="800" alt="API simulada en Render"/>
+  <br/><i>Servicio de la API simulada desplegado en Render</i>
 </p>
+
 **Evidencia: Web Application en Vercel**
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-deploy-vercel.png" width="800" alt="Web Application en Vercel"/>
+  <img src="../assets/chapter-5/s2-deploy-vercel.png" width="800" alt="Web Application en Vercel"/>
   <br/><i>Proyecto de la Web Application en Vercel con el historial de despliegues</i>
 </p>
 <p align="center">
-  <img src="../assets/chapter-5/sprint-2/s2-deploy-webapp.png" width="800" alt="Web Application desplegada"/>
-  <br/><i>Web Application desplegada</i>
+  <img src="../assets/chapter-5/s2-deploy-webapp.png" width="800" alt="Web Application desplegada"/>
+  <br/><i>Web Application desplegada — webapp-stockia.vercel.app</i>
 </p>
 
 #### **5.2.2.8. Team Collaboration Insights during Sprint**
