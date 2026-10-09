@@ -51,8 +51,8 @@
         TB1
       </i></b>
       <br>
-      .....
-      <br><br>
+       Asumí un rol de asertividad facilitando la designación de tareas y responsabilidades dentro del equipo. En el ámbito técnico, lideré el diseño e implementación integral de dos bounded contexts clave: Recipes/Receipts Management y Stock Management, asegurando su desarrollo multicapa bajo el enfoque Domain Driven Design (DDD), resolviendo conflictos de código. Fomenté la toma de decisiones compartida mediante revisiones constantes y la redacción de conclusiones críticas para asegurar que cada entrega estuviera alineada con los estándares de calidad del proyecto.
+      <br>
       <b>
         Huaman Oscco, Aldo Jesus
       </b>
@@ -155,8 +155,8 @@
         TB1
       </i></b>
       <br>
-      .....
-      <br><br>
+       Contribuí a la creación de un entorno de trabajo colaborativo e inclusivo coordinando la distribución equilibrada de tareas técnicas y asegurando que las capacidades de cada integrante fueran aprovechadas al máximo. En la planificación del sprint, definí hitos claros para el desarrollo de los bounded contexts de Receipts Management e Inventario/Stock Management, estructurando cada una de las capas de la arquitectura DDD y validando su compatibilidad con el resto del sistema. Cumplí de manera rigurosa y puntual con los plazos asignados.
+      <br>
       <b>
         Huaman Oscco, Aldo Jesus
       </b>
