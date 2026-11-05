@@ -1092,6 +1092,36 @@ En el Sprint 2 el equipo trabajó por Bounded Context: cada integrante implement
 
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
+
+El diseño de las preguntas para la entrevista de validación fueron orientadas a poder saber 5 puntos claves, los cuales serían primera impresión, navegación y usabilidad, contenido y comunicación, experiencia general y validación heurística.
+
+**Preguntas sobre la primera impresión**
+- ¿Qué es lo primero que notas al entrar al landing page?  
+- ¿Qué tan claro te resulta el propósito de la aplicación?  
+- ¿Te parece atractivo el diseño inicial?
+
+**Preguntas sobre navegación y usabilidad**
+- ¿Encontraste fácilmente la información que buscabas?  
+- ¿Hubo algún momento en que te confundiste sobre qué hacer?  
+- ¿Qué tan intuitivo te resultó completar la tarea asignada?  
+
+**Preguntas sobre contenido y comunicación**
+- ¿El texto y las imágenes te ayudaron a entender la propuesta?  
+- ¿Hay algo que consideres innecesario o que falte en la página?  
+- ¿El lenguaje usado es claro y fácil de comprender?  
+
+**Preguntas sobre experiencia general**
+- ¿Qué tan satisfecho estás con la interacción en general?  
+- ¿Qué mejorarías en el flujo de la aplicación?  
+- ¿Recomendarías esta aplicación a alguien más? ¿Por qué?  
+
+**Preguntas específicas de validación heurística**
+- ¿Tuviste problemas para reconocer los botones o enlaces?  
+- ¿La retroalimentación del sistema (mensajes, alertas) fue suficiente y clara?  
+- ¿Sentiste que el diseño es consistente en todas las secciones?
+
+
+
 ### **5.3.2. Interview Recording**
 ### **5.3.3. Evaluations Based on Heuristics**
 ## **5.4. About-the-Product Video**
