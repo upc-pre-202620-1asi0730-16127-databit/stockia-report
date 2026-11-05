@@ -1157,7 +1157,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td><b>Link</b></td>
-      <td><a href="">Entrevista</a></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416276_upc_edu_pe/IQAXqiWEcvhoQZqnKqKIDEGhAewNugAtGyhfUnLgSHhMGHU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=scAPzU">Entrevista</a></td>
     </tr>
     <tr>
       <td><b>Duración</b></td>
@@ -1172,7 +1172,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <img src="" width="400">
+        <img src="../assets/chapter-5/screenshot-interview-1.png" width="400">
       </td>
     </tr>
     <tr>
