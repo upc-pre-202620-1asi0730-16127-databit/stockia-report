@@ -1123,5 +1123,304 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 
 
 ### **5.3.2. Interview Recording**
+
+<table width="100%">
+  <tbody>
+    <table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #1</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td>Mateo de Mendiburu</td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td>24 años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Administrador de restaurante</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td>Surco</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td>6 minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:00</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+      Durante la entrevista de validación de StockIA, Mateo el entrevistado destacó que la landing page presenta un diseño atractivo, sencillo y bien estructurado, que permite comprender fácilmente el propósito de la aplicación y encontrar rápidamente la información necesaria. Asimismo, señaló que tanto los textos como las imágenes facilitan la comprensión de las funcionalidades y que la navegación resulta intuitiva, permitiendo completar las tareas sin mayores dificultades. Respecto a la interacción, resaltó la rapidez de respuesta del sistema, la claridad de los botones y la utilidad de los mensajes y alertas. Como oportunidades de mejora, sugirió evaluar un cambio en la paleta de colores y realizar algunos ajustes en los estados del dashboard. En general, manifestó una experiencia satisfactoria, resaltando principalmente la simplicidad, facilidad de uso y consistencia del diseño, por lo que consideraría recomendar la aplicación a otras personas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td> años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Jefe de cocina</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td> minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:10</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td> años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Jefe de cocina</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td> minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:10</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td> años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Jefe de cocina</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td> minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:10</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2" align="left">Datos del entrevistado</th>
+    </tr>
+    <tr>
+      <td width="30%"><b>Nombre completo</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Edad</b></td>
+      <td> años</td>
+    </tr>
+    <tr>
+      <td><b>Ocupación</b></td>
+      <td>Jefe de cocina</td>
+    </tr>
+    <tr>
+      <td><b>Distrito donde trabaja</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">Datos del video</th>
+    </tr>
+    <tr>
+      <td><b>Link</b></td>
+      <td><a href="">Entrevista</a></td>
+    </tr>
+    <tr>
+      <td><b>Duración</b></td>
+      <td> minutos</td>
+    </tr>
+    <tr>
+      <td><b>Tiempo de inicio</b></td>
+      <td>0:10</td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Screenshot</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="" width="400">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2" align="center">Resumen descriptivo</th>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+**Entrevista 1:** Lo que se pudo rescatar de esta entrevista es que el entrevistado tuvo una percepción positiva de StockIA, destacando principalmente la simplicidad, facilidad de uso y organización de la plataforma. Considera que la landing page presenta la información de manera clara y atractiva, permitiendo comprender rápidamente el propósito de la aplicación, sus características y funcionalidades. Asimismo, señaló que la navegación es intuitiva, que los botones están correctamente identificados y que tanto los mensajes como las alertas del sistema son fáciles de comprender. También resaltó la rapidez de respuesta de la aplicación y la ausencia de problemas importantes durante su interacción, lo que le permitió completar las tareas sin dificultades.
+
+Por otro lado, identificó algunas oportunidades de mejora, como evaluar un cambio en la paleta de colores de la página y realizar ciertos ajustes en la visualización de los estados dentro del dashboard. Sin embargo, considera que estos aspectos no afectan significativamente la experiencia general, ya que la plataforma mantiene un diseño consistente, sin información o elementos innecesarios. Lo más importante que se pudo identificar es que la simplicidad y la facilidad de comprensión son aspectos valorados por el usuario, por lo que mantener una interfaz intuitiva, una navegación rápida y una presentación clara de la información resulta fundamental para la aceptación de StockIA.
+
 ### **5.3.3. Evaluations Based on Heuristics**
 ## **5.4. About-the-Product Video**
