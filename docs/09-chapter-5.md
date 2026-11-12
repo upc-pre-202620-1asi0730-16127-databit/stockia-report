@@ -1188,7 +1188,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 <table width="100%">
   <thead>
     <tr>
-      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+      <th colspan="2" align="center"><h2>Entrevista #2</h2></th>
     </tr>
   </thead>
   <tbody>
@@ -1197,41 +1197,41 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td width="30%"><b>Nombre completo</b></td>
-      <td></td>
+      <td>Albertina Apumayta</td>
     </tr>
     <tr>
       <td><b>Edad</b></td>
-      <td> años</td>
+      <td>45 años</td>
     </tr>
     <tr>
       <td><b>Ocupación</b></td>
-      <td>Jefe de cocina</td>
+      <td>Jefa de cocina</td>
     </tr>
     <tr>
       <td><b>Distrito donde trabaja</b></td>
-      <td></td>
+      <td>Ate</td>
     </tr>
     <tr>
       <th colspan="2" align="left">Datos del video</th>
     </tr>
     <tr>
       <td><b>Link</b></td>
-      <td><a href="">Entrevista</a></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202415088_upc_edu_pe/IQCdcRcx0Z-uS5gk7OwgMasyATmd8PhuDvTMKd7P7-QV0vI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BYTXMI">Entrevista</a></td>
     </tr>
     <tr>
       <td><b>Duración</b></td>
-      <td> minutos</td>
+      <td>5:00 minutos</td>
     </tr>
     <tr>
       <td><b>Tiempo de inicio</b></td>
-      <td>0:10</td>
+      <td>0:00</td>
     </tr>
     <tr>
       <th colspan="2" align="center">Screenshot</th>
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <img src="" width="400">
+        <img src="../assets/chapter-5/screenshot-interview-2.jpg" width="400">
       </td>
     </tr>
     <tr>
@@ -1239,6 +1239,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td colspan="2" align="left">
+      La entrevistada evidenció una percepción positiva de la propuesta de Stockia. La participante comprendió rápidamente el propósito de la aplicación, identificando que está orientada al control de inventario y al apoyo mediante funciones inteligentes. Asimismo, consideró atractivo el diseño inicial y señaló que la navegación le resultó sencilla, especialmente desde una computadora. Albertina destacó que los textos e imágenes facilitaron la comprensión de la propuesta de valor y que el lenguaje utilizado era claro y fácil de entender. También manifestó que la aplicación podría ayudarla a organizar mejor la información de su negocio y agilizar procesos relacionados con el control de inventario. Como aspectos de mejora, mencionó la necesidad de brindar mayor claridad en la presentación de la información de inventario y mejorar la visibilidad o diferenciación de algunos botones para evitar confusiones. En términos generales, la usuaria se mostró satisfecha con la interacción ofrecida por la aplicación y expresó que recomendaría la aplicación a otros usuarios debido a su utilidad para mantener el orden y facilitar la gestión diaria de un negocio gastronómico, lo que constituye una validación favorable de la propuesta de solución.
       </td>
     </tr>
   </tbody>
