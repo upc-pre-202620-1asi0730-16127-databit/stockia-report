@@ -76,6 +76,7 @@
     Corrección del reporte TB1<br>
     Nueva versión desplegada de Landing Page<br>
     Nueva versión desplegada de Frontend Web Applications<br>
+    Primera versión desplegada del Web Services<br>
     Capítulo V: Product Implementation, Validation & Deployment (Sprint 3)<br>
     Validation Interviews
     </td>
