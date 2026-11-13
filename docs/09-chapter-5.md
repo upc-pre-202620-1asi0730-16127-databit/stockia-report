@@ -1247,7 +1247,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 <table width="100%">
   <thead>
     <tr>
-      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+      <th colspan="2" align="center"><h2>Entrevista #3</h2></th>
     </tr>
   </thead>
   <tbody>
@@ -1255,49 +1255,49 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
       <th colspan="2" align="left">Datos del entrevistado</th>
     </tr>
     <tr>
-      <td width="30%"><b>Nombre completo</b></td>
-      <td></td>
+      <td width="30%"><b>Nombre</b></td>
+      <td>Ian Kimi Sevastian San Martin Cauti</td>
     </tr>
     <tr>
       <td><b>Edad</b></td>
-      <td> años</td>
+      <td> 24 años</td>
     </tr>
     <tr>
       <td><b>Ocupación</b></td>
-      <td>Jefe de cocina</td>
+      <td>Administrador</td>
     </tr>
     <tr>
       <td><b>Distrito donde trabaja</b></td>
-      <td></td>
+      <td>Santiago de Surco</td>
     </tr>
     <tr>
       <th colspan="2" align="left">Datos del video</th>
     </tr>
     <tr>
       <td><b>Link</b></td>
-      <td><a href="">Entrevista</a></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20251i477_upc_edu_pe/IQAIwT9JFcdWQIvTtmruOvNxAST3Fify6y5dSBnJLFhAOVI?e=ZRZzM2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D">Entrevista</a></td>
     </tr>
     <tr>
       <td><b>Duración</b></td>
-      <td> minutos</td>
+      <td> 5:30 minutos</td>
     </tr>
     <tr>
       <td><b>Tiempo de inicio</b></td>
-      <td>0:10</td>
+      <td>0:00</td>
     </tr>
     <tr>
       <th colspan="2" align="center">Screenshot</th>
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <img src="" width="400">
+        <img src="../assets/chapter-5/screenshot-interview-3.png" width="400">
       </td>
     </tr>
     <tr>
       <th colspan="2" align="center">Resumen descriptivo</th>
     </tr>
     <tr>
-      <td colspan="2" align="left">
+      <td colspan="2" align="left"> El entrevistado tuvo una buena impresión de StockIA, ya que le pareció una propuesta interesante, con un diseño atractivo y la información bien organizada. Destacó que la aplicación puede ayudar a los negocios a controlar mejor sus inventarios, evitar pérdidas y ahorrar tiempo gracias a las alertas y predicciones. También mencionó que las características y los precios se entienden fácilmente. En general, se mostró satisfecho con la experiencia y dijo que sí recomendaría la aplicación a otros negocios. Como sugerencia, comentó que sería bueno incluir más ejemplos y una demostración de cómo funciona en la práctica.
       </td>
     </tr>
   </tbody>
