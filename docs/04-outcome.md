@@ -149,7 +149,7 @@
         AV2
       </i></b>
       <br>
-      Durante el desarrollo del AV2 participé activamente en el trabajo colaborativo del equipo mediante la implementación de los bounded contexts de Recipe Management y Restaurant Registration, coordinando las actividades necesarias para avanzar con su desarrollo. Asimismo, colaboré en el despliegue del Platform API, apoyando en las tareas técnicas y contribuyendo a que se cumplieran los objetivos establecidos. Estas actividades me permitieron aportar al progreso del proyecto, mantener una coordinación constante con el equipo y fomentar un entorno de trabajo colaborativo y organizado.
+      Como equipo, trabajamos de manera coordinada y colaborativa durante el desarrollo del proyecto, distribuyendo las tareas entre los integrantes de acuerdo con las responsabilidades establecidas y aplicando la metodología Scrum para organizar y dar seguimiento a nuestro trabajo. Asimismo, mantuvimos una comunicación constante y nos brindamos apoyo mutuamente cuando algún integrante tenía dificultades o dudas durante la implementación. Esto permitió compartir conocimientos, resolver problemas en conjunto y avanzar de manera coordinada en las actividades planificadas. Como resultado de este trabajo conjunto, logramos completar el Sprint 3 y realizar el primer despliegue del Platform API. De esta manera, fomentamos un liderazgo compartido en el que cada integrante asumió responsabilidades, contribuyó al cumplimiento de los objetivos y participó activamente en el progreso del proyecto.
       <br><br>
     </td>
   </tr>
@@ -182,7 +182,7 @@
         AV2
       </i></b>
       <br>
-      ....
+      Durante el desarrollo del AV2 participé activamente en el trabajo colaborativo del equipo mediante la implementación de los bounded contexts de Recipe Management y Restaurant Registration, coordinando las actividades necesarias para avanzar con su desarrollo. Asimismo, colaboré en el despliegue del Platform API, apoyando en las tareas técnicas y contribuyendo a que se cumplieran los objetivos establecidos. Estas actividades me permitieron aportar al progreso del proyecto, mantener una coordinación constante con el equipo y fomentar un entorno de trabajo colaborativo y organizado.
       <br><br>
       <b>
         Asmat Alminco, Martin Alejandro
@@ -285,7 +285,7 @@
         AV2
       </i></b>
       <br>
-      ....
+      Tuvimos un entorno de trabajo colaborativo e inclusivo mediante la distribución equitativa de las tareas y la planificación de actividades utilizando la metodología Scrum. Establecimos metas en conjunto y organizamos el trabajo para cumplir con los objetivos planteados de este sprint. De igual manera, siempre hubo comunicación por sí algún integrante tenía dificultades o necesitaba ayuda, fomentando la participación de todos y el intercambio de conocimientos. Gracias a esta organización y colaboración, logramos completar las actividades correspondientes al Sprint 3 y realizar el primer despliegue del Platform API, demostrando nuestra capacidad para trabajar de manera coordinada, cumplir con las metas establecidas y alcanzar los objetivos del proyecto.
       <br><br>
     </td>
   </tr>
