@@ -41,7 +41,7 @@
         AV2
       </i></b>
       <br>
-      ....
+      Durante el desarrollo de esta entrega, asumí un rol activo en el trabajo colaborativo mediante la implementación de dos bounded contexts: Recipe Management y Restaurant Registration, contribuyendo al desarrollo de funcionalidades clave del sistema. Asimismo, apoyé en el despliegue del Platform API, colaborando en las actividades técnicas necesarias para su puesta en funcionamiento. Estas contribuciones permitieron compartir responsabilidades, apoyar el avance del equipo y fomentar un liderazgo conjunto orientado al cumplimiento de los objetivos del proyecto.
       <br><br>
       <b>
         Asmat Alminco, Martin Alejandro
@@ -149,7 +149,7 @@
         AV2
       </i></b>
       <br>
-      ....
+      Durante el desarrollo del AV2 participé activamente en el trabajo colaborativo del equipo mediante la implementación de los bounded contexts de Recipe Management y Restaurant Registration, coordinando las actividades necesarias para avanzar con su desarrollo. Asimismo, colaboré en el despliegue del Platform API, apoyando en las tareas técnicas y contribuyendo a que se cumplieran los objetivos establecidos. Estas actividades me permitieron aportar al progreso del proyecto, mantener una coordinación constante con el equipo y fomentar un entorno de trabajo colaborativo y organizado.
       <br><br>
     </td>
   </tr>
