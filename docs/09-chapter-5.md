@@ -1372,11 +1372,11 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td width="30%"><b>Nombre completo</b></td>
-      <td></td>
+      <td>Henry David Ayllon</td>
     </tr>
     <tr>
       <td><b>Edad</b></td>
-      <td> años</td>
+      <td>35 años</td>
     </tr>
     <tr>
       <td><b>Ocupación</b></td>
@@ -1384,18 +1384,18 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td><b>Distrito donde trabaja</b></td>
-      <td></td>
+      <td>Surco</td>
     </tr>
     <tr>
       <th colspan="2" align="left">Datos del video</th>
     </tr>
     <tr>
       <td><b>Link</b></td>
-      <td><a href="">Entrevista</a></td>
+      <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231h067_upc_edu_pe/IQCNxJQiBa3CQKVGuDmza6buAamrvjn7II0NNm5r7oDgoAw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UOdYXM">Entrevista</a></td>
     </tr>
     <tr>
       <td><b>Duración</b></td>
-      <td> minutos</td>
+      <td>11 minutos</td>
     </tr>
     <tr>
       <td><b>Tiempo de inicio</b></td>
@@ -1406,7 +1406,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <img src="" width="400">
+        <img src="../assets/chapter-5/screenshot-interview-5.png" width="400">
       </td>
     </tr>
     <tr>
@@ -1414,6 +1414,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
     <tr>
       <td colspan="2" align="left">
+Durante la validación de StockIA, Henry David mencionó que desde su experiencia en cocina valora herramientas directas y sin rodeos, señalando que la plataforma deja claro desde el inicio cómo organizar los insumos y agilizar el control diario. Comentó que la interfaz es fácil de seguir en medio de la rutina operativa, con accesos claros y alertas útiles que evitan pérdidas de tiempo al revisar existencias. Como puntos de mejora, resguardo comentarios porque generalizo que los aspectos generales cumplian y le bastaban para el uso que se le daria. En general, consideró que es una solución práctica que recomendaría a otros colegas.
       </td>
     </tr>
   </tbody>
@@ -1422,6 +1423,10 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 **Entrevista 1:** Lo que se pudo rescatar de esta entrevista es que el entrevistado tuvo una percepción positiva de StockIA, destacando principalmente la simplicidad, facilidad de uso y organización de la plataforma. Considera que la landing page presenta la información de manera clara y atractiva, permitiendo comprender rápidamente el propósito de la aplicación, sus características y funcionalidades. Asimismo, señaló que la navegación es intuitiva, que los botones están correctamente identificados y que tanto los mensajes como las alertas del sistema son fáciles de comprender. También resaltó la rapidez de respuesta de la aplicación y la ausencia de problemas importantes durante su interacción, lo que le permitió completar las tareas sin dificultades.
 
 Por otro lado, identificó algunas oportunidades de mejora, como evaluar un cambio en la paleta de colores de la página y realizar ciertos ajustes en la visualización de los estados dentro del dashboard. Sin embargo, considera que estos aspectos no afectan significativamente la experiencia general, ya que la plataforma mantiene un diseño consistente, sin información o elementos innecesarios. Lo más importante que se pudo identificar es que la simplicidad y la facilidad de comprensión son aspectos valorados por el usuario, por lo que mantener una interfaz intuitiva, una navegación rápida y una presentación clara de la información resulta fundamental para la aceptación de StockIA.
+
+**Entrevista 5:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
+
+Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
 ### **5.3.3. Evaluations Based on Heuristics**
 ## **5.4. About-the-Product Video**
