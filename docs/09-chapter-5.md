@@ -1942,68 +1942,11 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
     </tr>
   </tbody>
 </table>
+
 <table width="100%">
   <thead>
     <tr>
-      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th colspan="2" align="left">Datos del entrevistado</th>
-    </tr>
-    <tr>
-      <td width="30%"><b>Nombre completo</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b>Edad</b></td>
-      <td> años</td>
-    </tr>
-    <tr>
-      <td><b>Ocupación</b></td>
-      <td>Jefe de cocina</td>
-    </tr>
-    <tr>
-      <td><b>Distrito donde trabaja</b></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th colspan="2" align="left">Datos del video</th>
-    </tr>
-    <tr>
-      <td><b>Link</b></td>
-      <td><a href="">Entrevista</a></td>
-    </tr>
-    <tr>
-      <td><b>Duración</b></td>
-      <td> minutos</td>
-    </tr>
-    <tr>
-      <td><b>Tiempo de inicio</b></td>
-      <td>0:10</td>
-    </tr>
-    <tr>
-      <th colspan="2" align="center">Screenshot</th>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="" width="400">
-      </td>
-    </tr>
-    <tr>
-      <th colspan="2" align="center">Resumen descriptivo</th>
-    </tr>
-    <tr>
-      <td colspan="2" align="left">
-      </td>
-    </tr>
-  </tbody>
-</table>
-<table width="100%">
-  <thead>
-    <tr>
-      <th colspan="2" align="center"><h2>Entrevista #5</h2></th>
+      <th colspan="2" align="center"><h2>Entrevista #4</h2></th>
     </tr>
   </thead>
   <tbody>
