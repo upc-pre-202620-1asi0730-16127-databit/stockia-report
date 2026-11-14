@@ -1424,9 +1424,195 @@ Durante la validación de StockIA, Henry David mencionó que desde su experienci
 
 Por otro lado, identificó algunas oportunidades de mejora, como evaluar un cambio en la paleta de colores de la página y realizar ciertos ajustes en la visualización de los estados dentro del dashboard. Sin embargo, considera que estos aspectos no afectan significativamente la experiencia general, ya que la plataforma mantiene un diseño consistente, sin información o elementos innecesarios. Lo más importante que se pudo identificar es que la simplicidad y la facilidad de comprensión son aspectos valorados por el usuario, por lo que mantener una interfaz intuitiva, una navegación rápida y una presentación clara de la información resulta fundamental para la aceptación de StockIA.
 
+**Entrevista 3:** Durante la entrevista, el usuario mostró interés en StockIA y reconoció su potencial como una herramienta útil para los negocios. Le llamó la atención el diseño de la plataforma y la forma en que se presenta la información, ya que permite identificar fácilmente qué ofrece la aplicación y cuáles son sus beneficios. Además, destacó que funcionalidades como las alertas y las predicciones pueden facilitar la gestión de inventarios, ayudando a prevenir pérdidas y optimizar el tiempo. También tuvo una buena impresión de la presentación de los planes y sus respectivos precios, pues consideró que son fáciles de entender.
+
+Como principal recomendación, mencionó que sería conveniente incorporar más ejemplos y una demostración del funcionamiento de la aplicación, de modo que los usuarios puedan visualizar mejor cómo se utilizaría en un negocio real. A pesar de ello, su valoración general fue favorable e incluso manifestó que recomendaría StockIA a otros negocios. Esta entrevista permitió reconocer que, además de presentar una propuesta atractiva, es importante mostrar de manera práctica cómo StockIA puede resolver problemas cotidianos en la gestión de inventarios.
+
 **Entrevista 5:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
 
 Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
 ### **5.3.3. Evaluations Based on Heuristics**
+**UX Heuristics & Principles Evaluation**  
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA		: Ingeniería de Software**  
+**CURSO		: IHC y Tecnologías Móviles**  
+**PROFESORES	: Todos**  
+**AUDITOR		:**   
+**CLIENTE		:** Databit
+
+## 
+
+## **SITE o APP A EVALUAR:** Databit
+
+## **TAREAS A EVALUAR:**
+
+## El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (mockups de aplicación móvil y web):
+
+## **T1: Consultar el dashboard**
+
+## *Pantalla de dashboard:* Se muestra información importante que se le muestra ni bien ingresa el usuario.
+
+## **T2: Revisar el “Demand forecast”**
+
+## Apartado de “Demand forecast”.
+
+## **T3: Revisar el apartado de recomendaciones automáticas**
+
+## *Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+
+## párrafo de que no está incluido
+
+## **ESCALA DE SEVERIDAD:**
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
+
+| Nivel | Descripción |
+| :---- | :---- |
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+## **TABLA RESUMEN:**
+
+| \# | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| :---- | :---- | :---- | :---- |
+| 1 | Mucho texto en el dashboard | 3 | Jerarquía visual; H8-Diseño minimalista |
+| 2 | No hay ningún botón en el dashboard | 1 | H7-Flexibilidad y eficiencia; H9- Recuperación de errores |
+| 3 | Falta de contenido de valor en “Demand Forecast” | 2 | H1-Visibilidad del estado; H2-Sistema y mundo real |
+| 4 | Un solo color en las barras del “Demand Forecast” | 2 | H1-Visibilidad del estado; Jerarquía visual |
+| 5 | Mucho texto distrae y genera mucho ruido visual | 2 | H8-Diseño minimalista; H6-Reconocimiento antes que recuerdo |
+| 6 | Mezcla de inglés y español en la interfaz | 2 | H4-Consistencia y estándares; H2-Sistema y mundo real |
+| 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
+| 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
+
+## 
+
+## **DESCRIPCIÓN DE PROBLEMAS:**
+
+### **Problema 1: Mucho texto en el dashboard**
+
+* **Severidad:** 3
+* **Descripción del problema:**
+  * El dashboard reúne en una sola vista cuatro indicadores generales, el bloque de ahorro semanal (con cuatro métricas y dos listas de insumos), la tabla de insumos que requieren atención y las alertas recientes. Todo tiene casi el mismo peso visual, así que cuesta saber por dónde empezar a leer.
+  * Varios datos se repiten o se solapan: el ahorro estimado y el stock rescatado muestran el mismo monto (S/ 75.27), y los insumos vencidos aparecen tanto en la tabla como en las alertas, por lo que la usuaria termina leyendo dos veces lo mismo.
+* **Recomendación:** Priorizar lo urgente en la parte superior (insumos vencidos o por vencer) y mover el detalle del ahorro semanal a una sección secundaria o colapsable. Conviene unificar la tabla de insumos que requieren atención con las alertas recientes en un solo bloque, usar frases más cortas y reservar los colores de alerta únicamente para los estados críticos.
+* **Categorización:**
+  * **Problema en Principio de jerarquía visual:** el dashboard no marca qué información es la principal; los bloques compiten entre sí y el ojo no tiene un punto de entrada claro.
+  * **Problema en Heurística 8 (Diseño estético y minimalista):** se muestra más información de la necesaria para una primera lectura, con datos duplicados que no aportan valor adicional.
+
+![][image1]
+
+### **Problema 2: No hay ningún botón en el dashboard**
+
+* **Severidad:** 1
+* **Descripción del problema:**
+  * *Ausencia total de controles interactivos o botones de acción directa (como actualizar datos, aplicar filtros rápidos, exportar reportes o cambiar vistas) en la interfaz principal del dashboard, dejándolo en un formato puramente estático.*
+  * *El usuario no puede realizar ninguna acción operativa directamente sobre la pantalla principal y debe recurrir a menús secundarios o externos para ejecutar tareas relacionadas con la información mostrada.*
+* **Recomendación:**   
+  Integrar elementos interactivos esenciales y llamadas a la acción (CTA) bien ubicadas en la cabecera o paneles del dashboard (por ejemplo, botones de *Actualizar*, *Filtrar* o *Exportar*), mejorando la interactividad y permitiendo al usuario realizar acciones rápidas sin abandonar la vista principal.
+
+* **Categorización:**
+  * **Problema en Heurística 7 (Flexibilidad y eficiencia de uso):** las tareas más comunes del dashboard (retirar o reponer un insumo) no tienen un atajo y obligan a navegar por otros módulos.
+  * **Problema en Heurística 9 (Ayudar a reconocer, diagnosticar y recuperarse de errores):** la alerta describe el problema, pero no propone ni permite una solución directa desde el mismo lugar.
+
+![][image1]
+
+### 
+
+### **Problema 3: Falta de contenido de valor en “Demand Forecast”**
+
+* **Severidad:** 2
+* **Descripción del problema:**
+  * *El módulo de pronóstico de demanda muestra información superficial o métricas aisladas sin desgloses clave (como intervalos de confianza, márgenes de error histórico, estacionalidad o factores externos que impacten la predicción).*
+  * La escasez de datos contextuales y explicativos impide que el usuario entienda el *porqué* detrás de la proyección, limitando la utilidad operativa del gráfico para la planificación estratégica de inventarios o recursos.
+* **Recomendación:**  
+  Enriquecer el componente integrando capas de información de valor, tales como bandas de incertidumbre (escenarios optimistas y pesimistas), indicadores de precisión del modelo predictivo, comparativas directas con el periodo anterior y tooltips detallados que muestren el desglose de los datos al interactuar con las barras o líneas.
+
+* **Categorización:**
+  * **Problema en Heurística 1 (Visibilidad del estado del sistema):** el sistema muestra resultados del modelo sin indicar qué significan ni qué tan confiable es el dato, por lo que el usuario no sabe cómo interpretar el estado del pronóstico.
+  * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** se usan términos técnicos como “Model confidence” o “ML model v1.0.0” y una descripción que promete datos por plato que la pantalla no entrega, lo que no coincide con lo que espera un administrador de restaurante.
+
+![][image2]
+
+### **Problema 4: Un solo color en las barras del “Demand Forecast”**
+
+* **Severidad:** 2
+* **Descripción del problema:**
+  * Todas las barras del gráfico *Demand Forecast* comparten exactamente la misma tonalidad cromática, lo que impide diferenciar visualmente de un vistazo entre períodos históricos (demanda real), proyecciones futuras (demanda estimada) o distintos niveles de umbral y rendimiento.
+  * La uniformidad visual obliga al usuario a depender exclusivamente de la lectura de las etiquetas del eje horizontal o a pasar el cursor (*hover*) barra por barra para contextualizar los datos, ralentizando la toma de decisiones y reduciendo la claridad analítica del componente.
+* **Recomendación:**   
+  Incorporar una codificación visual clara mediante una paleta de colores semántica y accesible (con buen contraste). Se recomienda asignar tonos distintos o patrones diferenciados (por ejemplo, barras sólidas para datos reales y barras con opacidad reducida o trama diagonal para el pronóstico), acompañados de una leyenda explícita en la parte superior del gráfico.
+
+* **Categorización:**
+  * **Problema en Heurística 1 (Visibilidad del estado del sistema):** el gráfico no comunica de un vistazo qué días requieren atención, por lo que el usuario debe comparar las alturas una por una.
+  * **Problema en Principio de jerarquía visual:** todas las barras tienen el mismo énfasis, de modo que no hay jerarquía entre los datos más importantes y los secundarios.
+
+![][image2]
+
+### 
+
+### **Problema 5: Mucho texto distrae y genera mucho ruido visual**
+
+* **Severidad:**  2
+* **Descripción del problema:**
+  * *Saturación informativa en las interfaces principales, donde se presentan párrafos densos y extensos sin una jerarquía tipográfica adecuada, lo que desvía la atención del usuario de los objetivos prioritarios o llamadas a la acción (CTA) clave.*
+  * Ausencia de elementos de escaneabilidad (como viñetas, negritas estratégicas, subtítulos descriptivos y espacios en blanco o *whitespace*), obligando al usuario a realizar un esfuerzo de lectura lineal excesivo que incrementa la fricción y la tasa de abandono (*bounce rate*).
+* **Recomendación:**   
+  Implementar una estrategia de redacción UX orientada a la simplicidad y la concisión (*UX Writing*). Se sugiere fragmentar los bloques de texto largos en viñetas o tarjetas interactivas, aplicar principios de diseño escaneable (patrones de lectura en F o Z), destacar visualmente los conceptos clave mediante jerarquías tipográficas claras y dejar respirar el diseño incrementando los márgenes y los espacios negativos para reducir el ruido visual.
+
+* **Categorización:**
+  * **Problema en Heurística 8 (Diseño estético y minimalista):** la pantalla de recomendaciones presenta filas con oraciones completas y repetidas, con mucha información en un mismo bloque, lo que distrae del objetivo principal.
+  * **Problema en Heurística 6 (Reconocimiento antes que recuerdo):** el usuario debe leer cada oración para encontrar el insumo, la cantidad y la fecha límite en lugar de reconocerlos de inmediato en columnas separadas.
+
+![][image3]
+
+### 
+
+### **Problema 6: Mezcla de inglés y español en la interfaz**
+
+* **Severidad:** 2
+* **Descripción del problema:**
+  * El menú, los títulos y los encabezados están en inglés (“Expected impact”, “Menu adjustment”, “Purchase suggestion”), pero las alertas y las recomendaciones llegan en español, incluso con el selector de idioma en EN.
+  * Dentro de una misma pantalla el idioma cambia varias veces, lo que se siente descuidado y deja la duda de si el selector EN/ES realmente funciona para todo el contenido.
+* **Recomendación:** Traducir el contenido generado por el sistema (alertas, recomendaciones e impactos) según el idioma elegido, definir el español como idioma por defecto para este público y revisar que todas las etiquetas fijas y tipos de recomendación tengan su versión en ambos idiomas.
+* **Categorización:**
+  * **Problema en Heurística 4 (Consistencia y estándares):** el idioma no se mantiene de forma coherente dentro de la misma pantalla ni respeta la opción elegida en el selector.
+  * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** los usuarios del restaurante hablan español, y las etiquetas en inglés no se ajustan al lenguaje que ellos usan en su trabajo.
+
+![][image4]
+
+### 
+
+### **Problema 7: Mensaje “Invalid PrimeUI License” visible en todas las pantallas**
+
+* **Severidad:** 2
+* **Descripción del problema:**
+  * En la esquina inferior derecha aparece una etiqueta roja con el texto “Invalid PrimeUI License” que no se puede cerrar y se queda sobre el contenido y el pie de página en todas las pantallas revisadas.
+  * Es un mensaje técnico de desarrollo que un administrador de restaurante no entiende ni puede resolver, y su tono rojo es parecido al de las alertas críticas, así que puede hacer pensar que hay un problema real con la cuenta o con el sistema y restar confianza.
+* **Recomendación:** Configurar una licencia válida de la librería de componentes o retirar el aviso en la versión que ve el cliente, y asegurarse de que los mensajes técnicos de desarrollo nunca lleguen al usuario final.
+* **Categorización:**
+  * **Problema en Heurística 8 (Diseño estético y minimalista):** el aviso es información ajena a las tareas del usuario y ocupa un espacio visible de forma permanente.
+  * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** usa lenguaje técnico de desarrollo que no corresponde al del usuario final.
+
+![][image5]
+
+### 
+
+### **Problema 8: Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto**
+
+* **Severidad:** 3
+* **Descripción del problema:**
+  * Cada recomendación tiene un botón “Apply” idéntico, pero no se explica qué ocurrirá al pulsarlo (si genera un pedido de compra, si cambia el menú). La única señal es que la fila pasa a mostrar “Applied”.
+  * No hay confirmación previa ni una forma visible de deshacer, y los doce botones están tan juntos que un clic accidental es probable. Además, hay sugerencias que parecen contradictorias, como dos compras de Lomo fino (0.5 kg y 57 kg) para el mismo plato, lo que genera dudas sobre cuál aplicar.
+* **Recomendación:** Mostrar un cuadro de confirmación con el resumen de lo que se hará (cantidad, fecha e impacto esperado) y un aviso con la opción “Deshacer” después de aplicar. Conviene permitir aplicar varias recomendaciones a la vez con casillas de selección, consolidar las sugerencias repetidas por insumo y distinguir visualmente los ajustes de menú de las compras.
+* **Categorización:**
+  * **Problema en Heurística 5 (Prevención de errores):** se puede ejecutar una acción con consecuencias reales (compras o cambios al menú) con un solo clic, sin confirmación.
+  * **Problema en Heurística 3 (Control y libertad del usuario):** no existe una salida visible para revertir una recomendación ya aplicada.
+
+![][image6]
 ## **5.4. About-the-Product Video**
