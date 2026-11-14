@@ -29,13 +29,19 @@
         AV1
       </i></b>
       <br>
-      Durante el desarrollo del proyecto tuve que asumir cierto rol de liderazgo, ya sea creando repositorios o la organización. Además, con la elaboración de tareas como el análisis de competidores y la elaboración de ciertos diagramas tuve que asumir la responsabilidad en estas tareas y al estar en siempre comunicación con mi equipo para poder debatir ideas y que salga un buen trabajo. 
+      Durante el desarrollo del proyecto tuve que asumir cierto rol de liderazgo, ya sea creando repositorios o la organización. Además, con la elaboración de tareas como el análisis de competidores y la elaboración de ciertos diagramas tuve que asumir la responsabilidad en estas tareas y al estar en siempre comunicación con mi equipo para poder debatir ideas y que salga un buen trabajo.
       <br>
       <b><i>
         TB1
       </i></b>
       <br>
       En esta parte ayude al desarrollo del frontend ayudó a cumplir este objetivo mediante la coordinación con los demás integrantes del equipo, tomando decisiones en conjunto sobre el diseño y la funcionalidad de la interfaz. Además, se mantuvo una comunicación constante para integrar los avances, resolver problemas y apoyar a los compañeros, contribuyendo al cumplimiento de los objetivos del proyecto.
+      <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Durante el desarrollo de esta entrega, asumí un rol activo en el trabajo colaborativo mediante la implementación de dos bounded contexts: Recipe Management y Restaurant Registration, contribuyendo al desarrollo de funcionalidades clave del sistema. Asimismo, apoyé en el despliegue del Platform API, colaborando en las actividades técnicas necesarias para su puesta en funcionamiento. Estas contribuciones permitieron compartir responsabilidades, apoyar el avance del equipo y fomentar un liderazgo conjunto orientado al cumplimiento de los objetivos del proyecto.
       <br><br>
       <b>
         Asmat Alminco, Martin Alejandro
@@ -53,6 +59,12 @@
       <br>
        Asumí un rol de asertividad facilitando la designación de tareas y responsabilidades dentro del equipo. En el ámbito técnico, lideré el diseño e implementación integral de dos bounded contexts clave: Recipes/Receipts Management y Stock Management, asegurando su desarrollo multicapa bajo el enfoque Domain Driven Design (DDD), resolviendo conflictos de código. Fomenté la toma de decisiones compartida mediante revisiones constantes y la redacción de conclusiones críticas para asegurar que cada entrega estuviera alineada con los estándares de calidad del proyecto.
       <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      ....
+      <br><br>
       <b>
         Huaman Oscco, Aldo Jesus
       </b>
@@ -61,12 +73,19 @@
         AV1
       </i></b>
       <br>
-      Durante el desarrollo del proyecto asumi un rol de desarrollador, en la creacion de diseños para la lading page. Además, con la elaboracion de la landing page, asumi el desplegar la pagina para que nuestros usuarios puedan acceder desde sus ordenares y mantenga el responsive. 
-      <br><br>
+      Durante el desarrollo del proyecto asumi un rol de desarrollador, en la creacion de diseños para la lading page. Además, con la elaboracion de la landing page, asumi el desplegar la pagina para que nuestros usuarios puedan acceder desde sus ordenares y mantenga el responsive.
+      <br>
+      <b><i>
       TB1
       </i></b>
       <br>
       Durante el desarrollo para esta segunda entrega, asumí un rol activo en el desarrollo tecnico para el desarrollo de funcionalidades y testing de la web app, lidere como Scrum Owner para la aplicacion de metodologias agiles en este segundo Sprint. Además, tuve liderasgo en aspectos competentes a la entrega y desarrollo de reuniones para cordinar avances en relacion al trabajo remoto.
+      <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      ....
       <br><br>
       <b>
         Ortiz Laura, Leyla Alisson
@@ -83,6 +102,12 @@
       </i></b>
       <br>
       Durante el desarrollo para esta segunda entrega, asumí un rol activo en el desarrollo técnico en el frontend de la webapp, liderando la programación del bounded context Analytics and dashboard y el bounded de Alerts. Además, me encargué de añadir los perfiles del equipo en la landing page, integrando las observaciones de mis compañeros para mantener coherencia visual y funcional. Mi participación para coordinar las tareas y validar los avances permitió sostener un liderazgo compartido, asegurando que, como equipo, cumpliéramos los objetivos del sprint.
+      <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Durante el desarrollo de esta entrega asumí un rol activo en la implementación de los módulos de Notifications & Messaging, Analytics y Dashboard en el backend, así como en el desarrollo de la nueva versión de la Web Application Frontend. Contribuí en la validación del producto mediante la realización de entrevistas y apoyé en la documentación del informe a través de la redacción del Sprint 3 y la actualización de información relevante, promoviendo un liderazgo compartido en las actividades técnicas y documentales.
       <br><br>
       <b>
         Tuesta Girón, Kiara Lucia
@@ -98,7 +123,13 @@
         TB1
       </i></b>
       <br>
-      .....
+      Durante esta entrega, contribuí al desarrollo del frontend de StockIA, participando en la implementación de las interfaces y coordinando con los demás integrantes para mantener una presentación consistente entre las distintas partes del sistema. Asimismo, colaboré en las entrevistas iniciales y de validación, recogiendo opiniones y sugerencias que permitieron identificar oportunidades de mejora para nuestra propuesta.
+      <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Durante el desarrollo de esta entrega, asumí la responsabilidad de implementar el bounded context Subscription and Payments, trabajando en la organización de sus capas de arquitectura: Domain, Application, Infrastructure y Presentation. Asimismo, contribuí al desarrollo de la lógica relacionada con los planes de suscripción y sus funcionalidades, buscando que este componente se integrara correctamente con el resto de la plataforma. Este trabajo me permitió fortalecer mis conocimientos técnicos y comprender mejor la importancia de dividir un sistema en componentes independientes, además de reforzar la coordinación y colaboración con los demás integrantes para lograr una integración adecuada del proyecto.
       <br><br>
     </td>
     <td style="text-align: justify; vertical-align: top;">
@@ -113,6 +144,12 @@
       </i></b>
       <br>
       Como equipo, trabajamos de manera coordinada durante el desarrollo del proyecto, compartiendo responsabilidades y tomando decisiones en conjunto para alcanzar los objetivos establecidos. Cada integrante aportó sus ideas y conocimientos, participando activamente en la búsqueda de soluciones y en la resolución de los problemas que surgieron durante el desarrollo del frontend. Además, mantuvimos una comunicación constante para coordinar nuestros avances, brindar apoyo cuando algún compañero lo necesitaba y asegurarnos de que las diferentes partes del proyecto funcionaran correctamente. De esta manera, demostramos un liderazgo compartido, en el que todos contribuimos al trabajo del equipo, asumimos responsabilidades y colaboramos para obtener un resultado que cumpliera con los objetivos propuestos.
+      <br><br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Como equipo, trabajamos de manera coordinada y colaborativa durante el desarrollo del proyecto, distribuyendo las tareas entre los integrantes de acuerdo con las responsabilidades establecidas y aplicando la metodología Scrum para organizar y dar seguimiento a nuestro trabajo. Asimismo, mantuvimos una comunicación constante y nos brindamos apoyo mutuamente cuando algún integrante tenía dificultades o dudas durante la implementación. Esto permitió compartir conocimientos, resolver problemas en conjunto y avanzar de manera coordinada en las actividades planificadas. Como resultado de este trabajo conjunto, logramos completar el Sprint 3 y realizar el primer despliegue del Platform API. De esta manera, fomentamos un liderazgo compartido en el que cada integrante asumió responsabilidades, contribuyó al cumplimiento de los objetivos y participó activamente en el progreso del proyecto.
       <br><br>
     </td>
   </tr>
@@ -140,6 +177,12 @@
       </i></b>
       <br>
       Al desarrollar el frontend, trabajé de manera coordinada con mis compañeros, manteniendo una comunicación constante para organizar las tareas y definir los objetivos que debíamos cumplir. También participé en la planificación de las funcionalidades y en la distribución del trabajo, teniendo en cuenta las ideas y opiniones de los demás integrantes. De esta manera, pude contribuir a crear un entorno colaborativo, donde cada uno aportó desde sus conocimientos y habilidades, permitiéndonos avanzar de forma ordenada y cumplir con los objetivos establecidos para el proyecto.
+      <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Durante el desarrollo del AV2 participé activamente en el trabajo colaborativo del equipo mediante la implementación de los bounded contexts de Recipe Management y Restaurant Registration, coordinando las actividades necesarias para avanzar con su desarrollo. Asimismo, colaboré en el despliegue del Platform API, apoyando en las tareas técnicas y contribuyendo a que se cumplieran los objetivos establecidos. Estas actividades me permitieron aportar al progreso del proyecto, mantener una coordinación constante con el equipo y fomentar un entorno de trabajo colaborativo y organizado.
       <br><br>
       <b>
         Asmat Alminco, Martin Alejandro
@@ -157,6 +200,12 @@
       <br>
        Contribuí a la creación de un entorno de trabajo colaborativo e inclusivo coordinando la distribución equilibrada de tareas técnicas y asegurando que las capacidades de cada integrante fueran aprovechadas al máximo. En la planificación del sprint, definí hitos claros para el desarrollo de los bounded contexts de Receipts Management e Inventario/Stock Management, estructurando cada una de las capas de la arquitectura DDD y validando su compatibilidad con el resto del sistema. Cumplí de manera rigurosa y puntual con los plazos asignados.
       <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      ....
+      <br><br>
       <b>
         Huaman Oscco, Aldo Jesus
       </b>
@@ -190,7 +239,11 @@
       Durante el TB1 colaboré en la planificación y ejecución de las tareas técnicas, escuchando las opiniones del equipo para integrar mejoras en el dashboard y los alerts. Al añadir los perfiles en la landing page, consideré las propuestas de mis compañeros para reflejar de manera inclusiva la participación de todos. También apoyé en la organización del reporte, proponiendo correcciones y ajustes que garantizaron la calidad del documento final.
       </i></b>
       <br>
-      .....
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Durante el AV2 participé activamente en la planificación y seguimiento de las tareas asignadas, manteniendo comunicación constante con el equipo para coordinar el desarrollo de los módulos de Notifications & Messaging, Analytics, Dashboard y la nueva versión del frontend. Asimismo, realicé entrevistas de validación para obtener retroalimentación de los usuarios y apoyar la toma de decisiones del proyecto. Complementé estas actividades con la redacción del Sprint 3 y la corrección de información en el informe, contribuyendo al cumplimiento de los objetivos establecidos y al mantenimiento de un entorno de trabajo colaborativo y organizado.
       <br><br>
       <b>
         Tuesta Girón, Kiara Lucia
@@ -207,6 +260,12 @@
       </i></b>
       <br>
       Durante el desarrollo del TB1, participé en la coordinación de tareas y mantuve una comunicación constante con mis compañeros para cumplir con los objetivos del equipo. En la parte técnica, me encargué del bounded context Subscription and Payment Management, definiendo su estructura y responsabilidades según las necesidades del negocio. Asimismo, realicé ajustes a partir del feedback del equipo para mantener la coherencia con la arquitectura del proyecto y cumplir con los entregables establecidos.
+      <br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Durante el avance 2, contribuí al trabajo colaborativo mediante el desarrollo del bounded context Subscription and Payments, coordinando con los demás integrantes para establecer responsabilidades, organizar las tareas y cumplir con los objetivos de esta entrega. Asimismo, mantuve una comunicación constante con el equipo para resolver dudas, compartir avances y asegurar que mi implementación pudiera integrarse correctamente con los demás componentes del sistema.
       <br><br>
     </td>
     <td style="text-align: justify; vertical-align: top;">
@@ -221,6 +280,12 @@
       </i></b>
       <br>
       Como equipo, trabajamos de manera coordinada en el desarrollo del proyecto, organizando las tareas y estableciendo metas claras para avanzar de forma ordenada. Mantuvimos una comunicación constante para compartir ideas, escuchar las opiniones de cada integrante y tomar decisiones en conjunto sobre las funcionalidades y el diseño del frontend. Asimismo, nos apoyamos mutuamente para resolver las dificultades que surgieron durante el desarrollo y buscamos aprovechar los conocimientos y habilidades de cada miembro. De esta manera, promovimos un entorno colaborativo e inclusivo, en el que todos pudimos aportar al proyecto, cumplir con nuestras responsabilidades y contribuir al logro de los objetivos establecidos como equipo.
+      <br><br>
+      <b><i>
+        AV2
+      </i></b>
+      <br>
+      Tuvimos un entorno de trabajo colaborativo e inclusivo mediante la distribución equitativa de las tareas y la planificación de actividades utilizando la metodología Scrum. Establecimos metas en conjunto y organizamos el trabajo para cumplir con los objetivos planteados de este sprint. De igual manera, siempre hubo comunicación por sí algún integrante tenía dificultades o necesitaba ayuda, fomentando la participación de todos y el intercambio de conocimientos. Gracias a esta organización y colaboración, logramos completar las actividades correspondientes al Sprint 3 y realizar el primer despliegue del Platform API, demostrando nuestra capacidad para trabajar de manera coordinada, cumplir con las metas establecidas y alcanzar los objetivos del proyecto.
       <br><br>
     </td>
   </tr>
