@@ -123,13 +123,13 @@
         TB1
       </i></b>
       <br>
-      .....
+      Durante esta entrega, contribuí al desarrollo del frontend de StockIA, participando en la implementación de las interfaces y coordinando con los demás integrantes para mantener una presentación consistente entre las distintas partes del sistema. Asimismo, colaboré en las entrevistas iniciales y de validación, recogiendo opiniones y sugerencias que permitieron identificar oportunidades de mejora para nuestra propuesta.
       <br>
       <b><i>
         AV2
       </i></b>
       <br>
-      ....
+      Durante el desarrollo de esta entrega, asumí la responsabilidad de implementar el bounded context Subscription and Payments, trabajando en la organización de sus capas de arquitectura: Domain, Application, Infrastructure y Presentation. Asimismo, contribuí al desarrollo de la lógica relacionada con los planes de suscripción y sus funcionalidades, buscando que este componente se integrara correctamente con el resto de la plataforma. Este trabajo me permitió fortalecer mis conocimientos técnicos y comprender mejor la importancia de dividir un sistema en componentes independientes, además de reforzar la coordinación y colaboración con los demás integrantes para lograr una integración adecuada del proyecto.
       <br><br>
     </td>
     <td style="text-align: justify; vertical-align: top;">
@@ -265,7 +265,7 @@
         AV2
       </i></b>
       <br>
-      ....
+      Durante el avance 2, contribuí al trabajo colaborativo mediante el desarrollo del bounded context Subscription and Payments, coordinando con los demás integrantes para establecer responsabilidades, organizar las tareas y cumplir con los objetivos de esta entrega. Asimismo, mantuve una comunicación constante con el equipo para resolver dudas, compartir avances y asegurar que mi implementación pudiera integrarse correctamente con los demás componentes del sistema.
       <br><br>
     </td>
     <td style="text-align: justify; vertical-align: top;">
