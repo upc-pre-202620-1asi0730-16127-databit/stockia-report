@@ -12,7 +12,7 @@ Carrera de Ingeniería de Software
 NRC 
 **16127**
 <br><br>
-**Informe del TB 1**
+**Informe del AV 2**
 <br><br>
 Docente:
 **Villafuerte Bazan, Oscar Ivan**
@@ -37,4 +37,4 @@ Proyecto:
 
 **Periodo 202620**
 
-**Setiembre, 2026**
+**Noviembre, 2026**
