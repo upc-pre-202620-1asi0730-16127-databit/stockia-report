@@ -1444,27 +1444,19 @@ Como observaciones puntuales, menciono que los aspectos funcionales bastan para 
 
 ## 
 
-## **SITE o APP A EVALUAR:** Databit
+**SITE o APP A EVALUAR:** Databit<br><br>
+**TAREAS A EVALUAR:**<br>
+ El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (mockups de aplicación móvil y web):
 
-## **TAREAS A EVALUAR:**
+**T1: Consultar el dashboard**<br>
+Pantalla de dashboard: Se muestra información importante que se le muestra ni bien ingresa el usuario.
 
-## El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (mockups de aplicación móvil y web):
+**T2: Revisar el “Demand forecast”**<br>
+Apartado de “Demand forecast”.
 
-## **T1: Consultar el dashboard**
+**T3: Revisar el apartado de recomendaciones automáticas**<br>
+*Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
 
-## *Pantalla de dashboard:* Se muestra información importante que se le muestra ni bien ingresa el usuario.
-
-## **T2: Revisar el “Demand forecast”**
-
-## Apartado de “Demand forecast”.
-
-## **T3: Revisar el apartado de recomendaciones automáticas**
-
-## *Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
-
-**No están incluidas en esta versión de la evaluación las siguientes tareas:**
-
-## párrafo de que no está incluido
 
 ## **ESCALA DE SEVERIDAD:**
 
