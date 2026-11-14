@@ -1497,7 +1497,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Principio de jerarquía visual:** el dashboard no marca qué información es la principal; los bloques compiten entre sí y el ojo no tiene un punto de entrada claro.
   * **Problema en Heurística 8 (Diseño estético y minimalista):** se muestra más información de la necesaria para una primera lectura, con datos duplicados que no aportan valor adicional.
 
-![][image1]
+<img src="../assets/chapter-5/heuristica%201.jpeg" width="800" />
 
 ### **Problema 2: No hay ningún botón en el dashboard**
 
@@ -1512,7 +1512,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 7 (Flexibilidad y eficiencia de uso):** las tareas más comunes del dashboard (retirar o reponer un insumo) no tienen un atajo y obligan a navegar por otros módulos.
   * **Problema en Heurística 9 (Ayudar a reconocer, diagnosticar y recuperarse de errores):** la alerta describe el problema, pero no propone ni permite una solución directa desde el mismo lugar.
 
-![][image1]
+<img src="../assets/chapter-5/heuristica%201.jpeg" width="800" />
 
 ### 
 
@@ -1529,7 +1529,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 1 (Visibilidad del estado del sistema):** el sistema muestra resultados del modelo sin indicar qué significan ni qué tan confiable es el dato, por lo que el usuario no sabe cómo interpretar el estado del pronóstico.
   * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** se usan términos técnicos como “Model confidence” o “ML model v1.0.0” y una descripción que promete datos por plato que la pantalla no entrega, lo que no coincide con lo que espera un administrador de restaurante.
 
-![][image2]
+<img src="../assets/chapter-5/heuristica%202.jpeg" width="800" />
 
 ### **Problema 4: Un solo color en las barras del “Demand Forecast”**
 
@@ -1544,7 +1544,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 1 (Visibilidad del estado del sistema):** el gráfico no comunica de un vistazo qué días requieren atención, por lo que el usuario debe comparar las alturas una por una.
   * **Problema en Principio de jerarquía visual:** todas las barras tienen el mismo énfasis, de modo que no hay jerarquía entre los datos más importantes y los secundarios.
 
-![][image2]
+<img src="../assets/chapter-5/heuristica%202.jpeg" width="800" />
 
 ### 
 
@@ -1561,7 +1561,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 8 (Diseño estético y minimalista):** la pantalla de recomendaciones presenta filas con oraciones completas y repetidas, con mucha información en un mismo bloque, lo que distrae del objetivo principal.
   * **Problema en Heurística 6 (Reconocimiento antes que recuerdo):** el usuario debe leer cada oración para encontrar el insumo, la cantidad y la fecha límite en lugar de reconocerlos de inmediato en columnas separadas.
 
-![][image3]
+<img src="../assets/chapter-5/heuristica%203.jpeg" width="800" />
 
 ### 
 
@@ -1576,7 +1576,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 4 (Consistencia y estándares):** el idioma no se mantiene de forma coherente dentro de la misma pantalla ni respeta la opción elegida en el selector.
   * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** los usuarios del restaurante hablan español, y las etiquetas en inglés no se ajustan al lenguaje que ellos usan en su trabajo.
 
-![][image4]
+<img src="../assets/chapter-5/heuristica%201.jpeg" width="800" />
 
 ### 
 
@@ -1591,7 +1591,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 8 (Diseño estético y minimalista):** el aviso es información ajena a las tareas del usuario y ocupa un espacio visible de forma permanente.
   * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** usa lenguaje técnico de desarrollo que no corresponde al del usuario final.
 
-![][image5]
+<img src="../assets/chapter-5/heuristica%202.jpeg" width="800" />
 
 ### 
 
@@ -1606,5 +1606,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
   * **Problema en Heurística 5 (Prevención de errores):** se puede ejecutar una acción con consecuencias reales (compras o cambios al menú) con un solo clic, sin confirmación.
   * **Problema en Heurística 3 (Control y libertad del usuario):** no existe una salida visible para revertir una recomendación ya aplicada.
 
-![][image6]
+<img src="../assets/chapter-5/heuristica%203.jpeg" width="800" />
+
 ## **5.4. About-the-Product Video**
