@@ -1309,6 +1309,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 
 <!-- IMAGEN PENDIENTE: Jira con el Sprint 3 priorizado -->
 <p align="center">
+  <!-- PONER AQUÍ: captura del tablero de Jira con el Sprint 3 terminado (todas las US en Done). Guardar como assets/chapter-5/s3-jira-sprint3-done.png -->
   <img src="../assets/chapter-5/s3-jira-sprint3-done.png" width="800" alt="Tablero del Sprint 3 finalizado"/>
   <br/><i>Tablero del Sprint 3 finalizado</i>
 </p>
@@ -1574,6 +1575,7 @@ En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. La
 </p>
 
 <p align="center">
+  <!-- PONER AQUÍ: captura de la pantalla de estado de lotes de la Web Application con datos de muestra. Guardar como assets/chapter-5/s3-exec-08-stock-status.png -->
   <img src="../assets/chapter-5/s3-exec-08-stock-status.png" width="800" alt="Estado de los lotes"/>
   <br/><i>Estado de vencimiento de los lotes (US36)</i>
 </p>
@@ -1598,6 +1600,7 @@ En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. La
 **5. ML & Recommendations (US25, US26):** pronóstico de 7 días por plato con el modelo ONNX, estado del modelo y recomendaciones de compra y de menú.
 
 <p align="center">
+  <!-- PONER AQUÍ: captura de la pantalla de pronóstico de demanda (Demand Forecast). Guardar como assets/chapter-5/s3-exec-12-ml-forecast.png -->
   <img src="../assets/chapter-5/s3-exec-12-ml-forecast.png" width="800" alt="Pronóstico de demanda"/>
   <br/><i>Pronóstico de demanda a 7 días y estado del modelo (US25)</i>
 </p>
@@ -1748,15 +1751,15 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 
 #### **5.2.3.7. Software Deployment Evidence for Sprint Review**
  
-En el Sprint 3 se desplegaron el RESTful API en **Azure App Service** y su base de datos en **Azure Database for MySQL (Flexible Server)** (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
+En el Sprint 3 se desplegaron el RESTful API en **Render** y su base de datos MySQL (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos. <!-- VERIFICAR: el repositorio contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Confirmar la plataforma real y su proveedor de MySQL. Si fue Azure, volver a la redacción anterior y cambiar las URLs. Debe coincidir con 5.1.4. -->
 
 **Actividades de despliegue realizadas** *(ajustar a lo realmente ejecutado)*
 
 1. Se creó el flujo `ci.yml` en GitHub Actions: compilación, pruebas xUnit, verificación de migraciones, smoke test contra MySQL 8.4 y prueba E2E con Playwright.
 2. Se probó el API localmente con `docker compose up --build` (MySQL 8.4 y API en el puerto 5000), que aplica las migraciones y carga los datos demo.
-3. Se creó el servidor MySQL en Azure con acceso desde los servicios de Azure y `STOCKIA_DB_SSLMODE=Required`.
-4. Se creó el App Service (Linux, .NET 10) con el comando de inicio `dotnet DataBit.StockIA.Platform.dll` y las variables de entorno `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ORIGINS` e `Iam__PasswordReset__ResetLinkBaseUrl`, sin incluirlas en el repositorio.
-5. Se configuró en GitHub el secreto `AZURE_WEBAPP_PUBLISH_PROFILE` y la variable `AZURE_WEBAPP_NAME`, y `deploy-azure.yml` publica el API en cada push a `main`; las migraciones crean las tablas al arrancar.
+3. Se creó el servicio de base de datos MySQL y se configuró la conexión segura con `STOCKIA_DB_SSLMODE=Required`. <!-- VERIFICAR: proveedor real del MySQL -->
+4. Se creó en Render el Web Service del API a partir del `Dockerfile` del repositorio, y se registraron las variables de entorno `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ORIGINS` e `Iam__PasswordReset__ResetLinkBaseUrl`, sin incluirlas en el repositorio.
+5. Cada push a `main` redespliega el API en Render, y las migraciones crean las tablas al arrancar. <!-- VERIFICAR: si el redespliegue es automático por Render o por el flujo deploy-azure.yml -->
 6. Se actualizó en Vercel `VITE_STOCKIA_API_URL` con la URL del API y se volvió a desplegar la Web Application.
 
 * **URL del RESTful API desplegado:** https://stockia-platform-api.onrender.com
@@ -1777,8 +1780,8 @@ Imágenes del despliegue de la API:
 </p>
 
 <p align="center">
-  <img src="../assets/chapter-5/s3-deploy-platform-api.jpeg" width="800" alt="Azure Database for MySQL"/>
-  <br/><i>Despliegue de la API en AWS</i>
+  <img src="../assets/chapter-5/s3-deploy-platform-api.jpeg" width="800" alt="Despliegue del API y de la base de datos"/>
+  <br/><i>Despliegue del API y de la base de datos (captura de la plataforma)</i>
 </p>
 
 #### **5.2.3.8. Team Collaboration Insights during Sprint**
@@ -1801,6 +1804,7 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 <!-- IMAGEN PENDIENTE: mismo tablero finalizado de 5.2.3.3 -->
 <p align="center">
+  <!-- PONER AQUÍ: captura del tablero de Jira con el Sprint 3 terminado (todas las US en Done). Guardar como assets/chapter-5/s3-jira-sprint3-done.png -->
   <img src="../assets/chapter-5/s3-jira-sprint3-done.png" width="800" alt="Tablero del Sprint 3 en Jira"/>
   <br/><i>Tablero del Sprint 3 en Jira (SCRUM)</i>
 </p>
