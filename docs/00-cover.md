@@ -12,15 +12,18 @@ Carrera de Ingeniería de Software
 NRC 
 **16127**
 <br><br>
-**Informe del AV 2**
+**Informe de Trabajo Final**
 <br><br>
 Docente:
 **Villafuerte Bazan, Oscar Ivan**
 <br><br>
+Startup:
+**DataBite Corp**
+<br><br>
 Equipo:
 **DataBit**
 <br><br>
-Proyecto:
+Producto:
 **StockIA**
 <br><br>
 **Integrantes:**
