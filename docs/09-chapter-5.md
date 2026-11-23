@@ -2158,22 +2158,29 @@ Como observaciones puntuales, menciono que los aspectos funcionales bastan para 
 **CARRERA		: Ingeniería de Software**  
 **CURSO		: Aplicaciones Web**  
 **PROFESORES	: Todos**  
-**AUDITOR		:**   
-**CLIENTE		:** Databit
+**AUDITOR		:** DataBit  
+**CLIENTE(S)		:** <!-- PONER AQUÍ: nombres de las personas que participaron en la sesión de evaluación (en el formato del Anexo D, este campo lleva a los participantes) -->
 
-
-**SITE o APP A EVALUAR:** Databit<br><br>
+**SITE o APP A EVALUAR:** StockIA (Web Application)<br><br>
 **TAREAS A EVALUAR:**<br>
- El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (mockups de aplicación móvil y web):
+ El alcance de esta evaluación incluye la revisión de la usabilidad, el diseño inclusivo y la arquitectura de información de las siguientes tareas de usuario: <!-- VERIFICAR: la evaluación original se hizo sobre mockups; confirmar si ahora se hizo sobre la Web Application desplegada. El formato pide cubrir también el Landing Page y los flujos principales de la aplicación. -->
 
 **T1: Consultar el dashboard**<br>
-Pantalla de dashboard: Se muestra información importante que se le muestra ni bien ingresa el usuario.
+Pantalla de dashboard: se muestra la información más importante apenas el usuario ingresa.
 
 **T2: Revisar el “Demand forecast”**<br>
-Apartado de “Demand forecast”.
+Sección de “Demand forecast”.
 
-**T3: Revisar el sección de recomendaciones automáticas**<br>
-*Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
+**T3: Revisar la sección de recomendaciones automáticas**<br>
+*Uno de los diferenciales de nuestra propuesta son las recomendaciones automáticas.*
+
+<!-- PONER AQUÍ (opcional pero recomendado): tareas T4 en adelante del Landing Page (por ejemplo, ver planes y precios, solicitar una demo) y de la Web Application (por ejemplo, registrar el restaurante, iniciar sesión, registrar un insumo, registrar una receta y una venta). Cada tarea evaluada debe tener sus problemas en la tabla resumen. -->
+
+No están incluidas en esta versión de la evaluación las siguientes tareas: <!-- VERIFICAR: ajustar esta lista a lo que realmente no se evaluó -->
+
+1. Invitar y administrar a los miembros del equipo del restaurante.
+2. Cambiar de plan de suscripción.
+3. Gestionar alertas y canales de notificación.
 
 
 ## **ESCALA DE SEVERIDAD:**
@@ -2200,6 +2207,10 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
 | 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
 
+
+<!-- PONER AQUÍ: filas de la tabla resumen para Inclusive Design (por ejemplo contraste de color, tamaño de texto, uso de ARIA, navegación con teclado) y para Information Architecture (usable / findable: etiquetas del menú, ubicación de las funciones, búsqueda). Cada problema nuevo necesita: número, descripción, severidad (1 a 4), heurística o principio violado y una captura de pantalla en la sección DESCRIPCIÓN DE PROBLEMAS. -->
+
+<!-- VERIFICAR: el problema 7 (“Invalid PrimeUI License”) es un defecto del producto. Corregirlo en la Web Application antes de presentar, y dejar constancia aquí de la corrección (qué se hizo y en qué commit). -->
 
 ## **DESCRIPCIÓN DE PROBLEMAS:**
 
