@@ -243,7 +243,7 @@ Como norma general, todo el código desarrollado en StockIA se redacta completam
 
 ## HTML
 
-Se siguen el **HTML Style Guide and Coding Conventions (W3Schools)** y el **Google HTML/CSS Style Guide**:
+Se siguen el **HTML Style Guide and Coding Conventions (W3Schools)** ([https://www.w3schools.com/html/html5_syntax.asp](https://www.w3schools.com/html/html5_syntax.asp)) y el **Google HTML/CSS Style Guide** ([https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)):
 
 - Etiquetas y atributos en minúsculas, con comillas dobles: `<section id="inventory-summary"></section>`
 - Cierre correcto de todos los elementos.
@@ -252,7 +252,7 @@ Se siguen el **HTML Style Guide and Coding Conventions (W3Schools)** y el **Goog
 
 ## CSS
 
-Se sigue el **Google HTML/CSS Style Guide**:
+Se sigue el **Google HTML/CSS Style Guide** ([https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)):
 
 - Clases e IDs en kebab-case: `.inventory-card`, `.alert-banner`
 - Omitir unidades en valores cero: `margin: 0;`
@@ -262,7 +262,7 @@ Se sigue el **Google HTML/CSS Style Guide**:
 
 ## JavaScript
 
-Se siguen el **Google JavaScript Style Guide**, las **MDN JavaScript Guidelines** y el **W3C JavaScript Style Guide**:
+Se siguen el **Google JavaScript Style Guide** ([https://google.github.io/styleguide/jsguide.html](https://google.github.io/styleguide/jsguide.html)), las **MDN JavaScript Guidelines** ([https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/JavaScript](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/JavaScript)) y el **W3C JavaScript Style Guide** ([https://www.w3schools.com/js/js_conventions.asp](https://www.w3schools.com/js/js_conventions.asp)):
 
 - camelCase para variables y funciones: `function calculateStockLevel() {}`
 - Declaración con `const` y `let`, evitando `var`: `const stockThreshold = 10;`
@@ -272,7 +272,7 @@ Se siguen el **Google JavaScript Style Guide**, las **MDN JavaScript Guidelines*
 
 ## Vue (Frontend Web Application)
 
-Se sigue el **Vue Style Guide oficial**:
+Se sigue el **Vue Style Guide oficial** ([https://vuejs.org/style-guide/](https://vuejs.org/style-guide/)):
 
 - Nombres de componentes en PascalCase: `InventoryDashboard`, `RecipeForm`
 - Nombres de archivos de componente en PascalCase o kebab-case de forma consistente: `InventoryDashboard.vue`
@@ -283,18 +283,18 @@ Se sigue el **Vue Style Guide oficial**:
 
 ## C# (RESTful API con ASP.NET Core)
 
-Se siguen las **C# Coding Conventions** y las **Microsoft ASP.NET Core Coding Guidelines**:
+Se siguen las **C# Coding Conventions** ([https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions](https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions)) y las **Microsoft ASP.NET Core Coding Guidelines** ([https://github.com/dotnet/aspnetcore/wiki/engineering-guidelines](https://github.com/dotnet/aspnetcore/wiki/engineering-guidelines)):
 
 - PascalCase para clases, métodos y propiedades públicas: `public class InventoryService { public void DeductIngredients() { } }`
 - camelCase para variables locales y parámetros: `int stockQuantity;`
 - UPPER_SNAKE_CASE para constantes: `const int MAX_INGREDIENTS = 500;`
 - Sangría de 4 espacios, sin tabulaciones.
 - Aplicación de los principios de responsabilidad única y código modular, organizado por bounded context.
-- Documentación de endpoints con OpenAPI mediante Swagger.
+- Documentación de endpoints con OpenAPI, publicada con Scalar (interfaz interactiva equivalente a Swagger UI).
 
 ## Gherkin (criterios de aceptación y pruebas de aceptación)
 
-Se siguen las **Gherkin Conventions for Readable Specifications**:
+Se siguen las **Gherkin Conventions for Readable Specifications** ([https://cucumber.io/docs/bdd/better-gherkin/](https://cucumber.io/docs/bdd/better-gherkin/)):
 
 - Estructura obligatoria Given – When – Then.
 - Escenarios en inglés, descriptivos, cortos y sin ambigüedad.
