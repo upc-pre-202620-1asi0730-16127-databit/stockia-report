@@ -1828,6 +1828,76 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
   <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
 </p>
 
+### **5.2.4. Sprint 4**
+<!-- PLANTILLA: esta sección es obligatoria en TB2. Todo lo marcado como PONER AQUÍ depende de lo que se implemente y entregue en el Sprint 4. Copiar el formato de las secciones 5.2.3.1 a 5.2.3.8. -->
+Este ciclo de desarrollo cierra el producto con <!-- PONER AQUÍ: resumen de dos o tres líneas del propósito del Sprint 4 (por ejemplo, integrar al menos un servicio externo real de terceros en lugar de los adaptadores simulados de pago, notificaciones o vida útil de los insumos, y cerrar el despliegue final) -->.
+
+#### **5.2.4.1. Sprint Planning 4**
+
+| **Sprint #** | Sprint 4 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | <!-- PONER AQUÍ: fecha de la reunión (dd/mm/2026) --> |
+| **Time** | <!-- PONER AQUÍ: hora --> |
+| **Location** | <!-- PONER AQUÍ: lugar o enlace de la reunión --> |
+| **Prepared By** | <!-- PONER AQUÍ: nombre del integrante que preparó la planificación --> |
+| **Attendees (to planning meeting)** | Higa Kohatsu, Alonso Enrique / Asmat Alminco, Martin Alejandro / Huaman Oscco, Aldo Jesus / Ortiz Laura, Leyla Alisson / Tuesta Girón, Kiara Lucia <!-- VERIFICAR: ajustar si faltó alguien --> |
+| **Sprint 3 Review Summary** | <!-- PONER AQUÍ: qué se presentó en la Sprint Review del Sprint 3 y cuántos Story Points se completaron --> |
+| **Sprint 3 Retrospective Summary** | <!-- PONER AQUÍ: qué funcionó y qué mejorar, según la retrospectiva del Sprint 3 --> |
+| **Sprint Goal & User Stories** | |
+| **Sprint 4 Goal** | Our focus is on <!-- PONER AQUÍ: resultado esperado, no una lista de tareas -->. We believe it delivers <!-- PONER AQUÍ: valor para el administrador de restaurante -->. This will be confirmed when <!-- PONER AQUÍ: criterio de confirmación observable, por ejemplo una demostración con un servicio externo real --> |
+| **Sprint 4 Velocity** | <!-- PONER AQUÍ: Story Points completados en el Sprint 3 --> |
+| **Sum of Story Points** | <!-- PONER AQUÍ: Story Points comprometidos, con el número de ítems --> |
+
+<!-- PONER AQUÍ: párrafo breve que explique cómo se calculó el compromiso del Sprint 4 a partir de la velocidad del Sprint 3, igual que en 5.2.3.1. -->
+
+#### **5.2.4.2. Aspect Leaders and Collaborators**
+
+| Team Member | GitHub Username | <!-- PONER AQUÍ: un aspecto por columna (Bounded Contexts, despliegue, documentación, etc.) --> |
+| :--- | :--- | :---: |
+| Higa Kohatsu, Alonso Enrique | AlonsoHiga | <!-- L o C --> |
+| Asmat Alminco, Martin Alejandro | Alemarr2 | <!-- L o C --> |
+| Huaman Oscco, Aldo Jesus | Jesusho22 | <!-- L o C --> |
+| Ortiz Laura, Leyla Alisson | Leylaa-O | <!-- L o C --> |
+| Tuesta Girón, Kiara Lucia | kitu05g | <!-- L o C --> |
+
+> **Leyenda:** **L:** Líder del aspecto · **C:** Colaborador
+
+#### **5.2.4.3. Sprint Backlog 4**
+
+**Periodo:** <!-- PONER AQUÍ: dd/mm/2026 – dd/mm/2026 -->
+**Objetivo del Sprint:** <!-- PONER AQUÍ: el Sprint Goal en una línea -->
+
+<!-- PONER AQUÍ: captura del tablero de Jira del Sprint 4 (assets/chapter-5/s4-jira-sprint4.png) y el URL público del tablero -->
+
+| **User Story Id** | **Título de la Historia** | **Task Id** | **Título de la Tarea** | **Descripción de la Tarea** | **Est. (Hrs)** | **Asignado** | **Status** |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- | :---: |
+| <!-- PONER AQUÍ: US --> | | <!-- T-USxx-1 --> | | | | | |
+
+#### **5.2.4.4. Development Evidence for Sprint Review**
+
+<!-- PONER AQUÍ: tabla de commits por repositorio (stockia-platform-api, stockia-webapp, stockia-website, stockia-report), con las columnas: Repository, Branch, Commit Id, Commit Message, Commit Body, Commit Date (copiar el formato de 5.2.3.4). Se obtiene con `git log --format` en cada repositorio. -->
+
+| Repository | Branch | Commit Id | Commit Message | Commit Body | Commit Date |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| | | | | | |
+
+#### **5.2.4.5. Execution Evidence for Sprint Review**
+
+<!-- PONER AQUÍ: capturas de la ejecución de las funcionalidades del Sprint 4, cada una con un pie de imagen, y el enlace al video de ejecución (YouTube o Stream). Guardar en assets/chapter-5/ con el prefijo s4-exec- -->
+
+#### **5.2.4.6. Services Documentation Evidence for Sprint Review**
+
+<!-- PONER AQUÍ: endpoints nuevos o modificados en el Sprint 4, en la misma tabla de 5.2.3.6 (endpoint, verbo, acceso, parámetros, response de muestra, US), con capturas de Scalar con datos de muestra y los commits de documentación. -->
+
+#### **5.2.4.7. Software Deployment Evidence for Sprint Review**
+
+<!-- PONER AQUÍ: actividades de despliegue del Sprint 4 y las URLs finales: API, Scalar, Web Application y Landing Page, con capturas de las plataformas. Debe ser coherente con 5.1.4. -->
+
+#### **5.2.4.8. Team Collaboration Insights during Sprint**
+
+<!-- PONER AQUÍ: dinámica de trabajo del Sprint 4 y capturas de GitHub Insights → Contributors y Network de los tres repositorios (stockia-platform-api, stockia-webapp y stockia-website), donde se vea la participación de todos los integrantes. -->
+
 ## **5.3. Validation Interviews**
 ### **5.3.1. Interview Design**
 
