@@ -1,72 +1,124 @@
 # **Chapter V: Product Implementation, Validation & Deployment**
 ## **5.1. Configuration Management Software**
 ### 5.1.1. Software Development Environment Configuration
-A continuación se detallan los productos de software utilizados en el proyecto **StockIA**, organizados según las principales actividades del ciclo de vida del producto digital.
+A continuación se detallan los productos de software utilizados en el proyecto **StockIA**, organizados según las principales actividades del ciclo de vida del producto digital. Cada herramienta indica su propósito en el proyecto y su referencia oficial.
 
-### Project Management  
-- **WhatsApp**  
-  Aplicación de mensajería instantánea que facilita la comunicación rápida y asíncrona entre los miembros del equipo para coordinar tareas operativas.  
-  Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)  
+### Project Management
+- **WhatsApp**
+  Aplicación de mensajería instantánea que facilita la comunicación rápida y asíncrona entre los miembros del equipo para coordinar tareas operativas.
+  Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)
 
-- **Google Meet**  
-  Plataforma de videoconferencias utilizada para ceremonias Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
-  Referencia: [https://meet.google.com/](https://meet.google.com/)  
+- **Google Meet**
+  Plataforma de videoconferencias utilizada para los eventos de Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.
+  Referencia: [https://meet.google.com/](https://meet.google.com/)
 
----
+- **Jira**
+  Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, planificar los Sprints, priorizar requisitos y documentar User Stories con criterios de aceptación.
+  Referencia: [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)
 
-### Product UX/UI Design  
-- **UXPressia**  
-  Plataforma especializada en mapeo de experiencia de usuario y diseño de servicios. Se usó para elaborar user personas, journey mapping, empathy mapping e impact mapping.  
-  Referencia: [https://uxpressia.com/](https://uxpressia.com/)  
-
-- **Miro**  
-  Pizarra colaborativa digital para crear diagramas y esquemas en tiempo real. Se utilizó en sesiones de Event Storming para identificar procesos de negocio y definir Bounded Contexts.  
-  Referencia: [https://miro.com/](https://miro.com/)  
-
-- **Figma**  
-  Editor de gráficos vectoriales y herramienta de prototipado de interfaces. Se empleó para wireframes, mockups y prototipos interactivos del proyecto.  
-  Referencia: [https://www.figma.com/](https://www.figma.com/)  
-
-- **Jira**  
-  Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, priorizar requerimientos y documentar User Stories con criterios de aceptación.  
-  Referencia: [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)  
+- **Google Sheets**
+  Hoja de cálculo colaborativa usada para registrar las horas asignadas por integrante y el seguimiento de las actividades de cada Sprint.
+  Referencia: [https://workspace.google.com/products/sheets/](https://workspace.google.com/products/sheets/)
 
 ---
 
-### Software Development  
-- **Visual Studio Code**  
-  Editor de código fuente ligero y extensible. Se utilizó para el desarrollo de componentes frontend, refactorización de scripts y edición rápida de código.  
-  Descargar: [https://code.visualstudio.com/](https://code.visualstudio.com/)  
+### Product UX/UI Design
+- **UXPressia**
+  Plataforma especializada en mapeo de experiencia de usuario y diseño de servicios. Se usó para elaborar user personas, journey mapping, empathy mapping e impact mapping.
+  Referencia: [https://uxpressia.com/](https://uxpressia.com/)
 
-- **Extensión .rd para Visual Studio Code**  
-  Herramienta integrada en VS Code para diseño y modelado de bases de datos. Se usó para crear y gestionar el esquema relacional de StockIA directamente desde el entorno de desarrollo.  
-  Referencia: Marketplace de Visual Studio Code (extensión .rd).  
+- **Miro**
+  Pizarra colaborativa digital para crear diagramas y esquemas en tiempo real. Se utilizó en sesiones de Event Storming para identificar procesos de negocio y definir Bounded Contexts.
+  Referencia: [https://miro.com/](https://miro.com/)
 
----
-
-### Software Deployment  
-- **GitHub**  
-  Plataforma de desarrollo colaborativo basada en Git. Se empleó para alojar el código fuente y gestionar el despliegue continuo de la aplicación.  
-  Referencia: [https://github.com/](https://github.com/)  
+- **Figma**
+  Editor de gráficos vectoriales y herramienta de prototipado de interfaces. Se empleó para wireframes, mockups y prototipos interactivos del proyecto.
+  Referencia: [https://www.figma.com/](https://www.figma.com/)
 
 ---
 
-### Software Documentation  
-- **GitHub**  
-  Además de control de versiones, se utilizó para redactar, organizar y dar seguimiento al informe completo del proyecto.  
-  Referencia: [https://github.com/](https://github.com/)  
+### Software Development
+- **Visual Studio Code**
+  Editor de código fuente ligero y extensible. Se utilizó para el desarrollo del Landing Page y de la Web Application.
+  Referencia: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-- **Structurizr**  
-  Herramienta para modelado de arquitectura de software mediante el enfoque C4. Se usó para construir los diagramas de arquitectura del proyecto.  
-  Referencia: [https://structurizr.com/](https://structurizr.com/)  
+- **JetBrains Rider** <!-- VERIFICAR: confirmar el IDE usado por cada integrante del backend (Rider o Visual Studio) -->
+  IDE para .NET usado en el desarrollo del RESTful API.
+  Referencia: [https://www.jetbrains.com/rider/](https://www.jetbrains.com/rider/)
+
+- **.NET SDK 10 y ASP.NET Core**
+  Plataforma de desarrollo del RESTful API, organizado en Bounded Contexts.
+  Referencia: [https://dotnet.microsoft.com/](https://dotnet.microsoft.com/)
+
+- **Entity Framework Core**
+  ORM usado para el mapeo objeto-relacional y las migraciones de la base de datos.
+  Referencia: [https://learn.microsoft.com/ef/core/](https://learn.microsoft.com/ef/core/)
+
+- **MySQL 8.4**
+  Sistema gestor de base de datos relacional del RESTful API.
+  Referencia: [https://www.mysql.com/](https://www.mysql.com/)
+
+- **Docker y Docker Compose**
+  Contenedores usados para ejecutar el API y MySQL de forma local y reproducible.
+  Referencia: [https://www.docker.com/](https://www.docker.com/)
+
+- **Node.js, Vite, Vue 3, Pinia, Vue Router y vue-i18n**
+  Entorno y biblioteca base de la Web Application (SPA), con gestión de estado, enrutamiento e internacionalización.
+  Referencia: [https://vuejs.org/](https://vuejs.org/)
+
+- **PrimeVue**
+  Biblioteca de componentes de interfaz usada en la Web Application.
+  Referencia: [https://primevue.org/](https://primevue.org/)
+
+- **Python y ONNX Runtime**
+  Python se usó para entrenar el modelo de pronóstico de demanda y exportarlo a formato ONNX, que el API ejecuta con ONNX Runtime.
+  Referencia: [https://onnxruntime.ai/](https://onnxruntime.ai/)
+
+- **Scalar y OpenAPI**
+  Documentación interactiva del RESTful API generada a partir de la especificación OpenAPI.
+  Referencia: [https://scalar.com/](https://scalar.com/)
+
+- **xUnit y Playwright**
+  xUnit para las pruebas unitarias y de integración del API, y Playwright para la prueba E2E.
+  Referencia: [https://xunit.net/](https://xunit.net/) · [https://playwright.dev/](https://playwright.dev/)
 
 ---
 
-El equipo adopta un enfoque basado en herramientas que permiten la colaboración en tiempo real y el acceso remoto a los recursos del proyecto. **GitHub** actúa como eje central para la gestión del código fuente y la documentación, mientras que las reuniones por **Google Meet** y **WhatsApp** aseguran una comunicación fluida y constante entre los miembros del equipo.  
+### Software Deployment
+- **GitHub y GitHub Actions**
+  GitHub aloja el código fuente. GitHub Actions ejecuta la integración continua del API (compilación, pruebas, migraciones y prueba E2E).
+  Referencia: [https://github.com/](https://github.com/)
 
-Por otro lado, herramientas como **Figma**, **UXPressia** y **Miro** facilitan la construcción de artefactos de diseño centrados en el usuario, mientras que **Jira** permite organizar el trabajo en Sprints siguiendo principios ágiles. En el ámbito del desarrollo, **Visual Studio Code** junto con la extensión **.rd** proporcionan un entorno flexible para programar y modelar la base de datos de StockIA.  
+- **Vercel**
+  Plataforma de despliegue del Landing Page y de la Web Application.
+  Referencia: [https://vercel.com/](https://vercel.com/)
 
-Finalmente, **Structurizr** contribuye al modelado arquitectónico y la documentación técnica, garantizando que diseño, desarrollo, pruebas y despliegue se mantengan alineados. Esta configuración asegura una entrega continua de valor en cada iteración del proyecto **StockIA**.  
+- **Render** <!-- VERIFICAR: confirmar que Render es la plataforma real del API (ver 5.1.4) -->
+  Plataforma de despliegue del RESTful API.
+  Referencia: [https://render.com/](https://render.com/)
+
+---
+
+### Software Documentation
+- **GitHub**
+  Además de control de versiones, se utilizó para redactar, organizar y dar seguimiento al informe completo del proyecto.
+  Referencia: [https://github.com/](https://github.com/)
+
+- **Structurizr**
+  Herramienta para modelado de arquitectura de software mediante el enfoque C4. Se usó para construir los diagramas de arquitectura del proyecto.
+  Referencia: [https://structurizr.com/](https://structurizr.com/)
+
+- **YouTube y Microsoft Stream** <!-- VERIFICAR: confirmar dónde se alojan los videos de entrevistas y exposiciones -->
+  Plataformas de alojamiento de los videos de exposición, validación, About-the-Product y About-the-Team.
+  Referencia: [https://www.youtube.com/](https://www.youtube.com/) · [https://www.microsoft.com/microsoft-365/microsoft-stream](https://www.microsoft.com/microsoft-365/microsoft-stream)
+
+---
+
+El equipo adopta un enfoque basado en herramientas que permiten la colaboración en tiempo real y el acceso remoto a los recursos del proyecto. **GitHub** actúa como eje central para la gestión del código fuente y la documentación, mientras que las reuniones por **Google Meet** y **WhatsApp** aseguran una comunicación fluida y constante entre los miembros del equipo.
+
+Por otro lado, herramientas como **Figma**, **UXPressia** y **Miro** facilitan la construcción de artefactos de diseño centrados en el usuario, mientras que **Jira** permite organizar el trabajo en Sprints siguiendo principios ágiles. En el desarrollo, **ASP.NET Core** con **Entity Framework Core** y **MySQL** sostienen el API, **Vue** con **PrimeVue** la Web Application, y **GitHub Actions**, **Vercel** y **Render** automatizan las pruebas y el despliegue.
+
+Finalmente, **Structurizr** contribuye al modelado arquitectónico y la documentación técnica, garantizando que diseño, desarrollo, pruebas y despliegue se mantengan alineados. Esta configuración asegura una entrega continua de valor en cada iteración del proyecto **StockIA**.
 
 ### **5.1.2. Source Code Management**
 El equipo **DataBite Corp** utiliza **GitHub** como plataforma y sistema de control de versiones para todos los productos digitales de StockIA, lo que permite mantener un registro histórico de cambios, colaborar de forma estructurada y garantizar la trazabilidad durante todo el ciclo de desarrollo.
