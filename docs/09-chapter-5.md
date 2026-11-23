@@ -1761,8 +1761,6 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 
 ### **5.3.2. Interview Recording**
 
-<table width="100%">
-  <tbody>
     <table width="100%">
   <thead>
     <tr>
@@ -2008,7 +2006,7 @@ Por otro lado, identificó algunas oportunidades de mejora, como evaluar un camb
 
 Como principal recomendación, mencionó que sería conveniente incorporar más ejemplos y una demostración del funcionamiento de la aplicación, de modo que los usuarios puedan visualizar mejor cómo se utilizaría en un negocio real. A pesar de ello, su valoración general fue favorable e incluso manifestó que recomendaría StockIA a otros negocios. Esta entrevista permitió reconocer que, además de presentar una propuesta atractiva, es importante mostrar de manera práctica cómo StockIA puede resolver problemas cotidianos en la gestión de inventarios.
 
-**Entrevista 5:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
+**Entrevista 4:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
 
 Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
