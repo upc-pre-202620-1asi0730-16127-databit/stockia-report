@@ -9,7 +9,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)  
 
 - **Google Meet**  
-  Plataforma de videoconferencias utilizada para ceremonias Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
+  Plataforma de videoconferencias utilizada para eventos de Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
   Referencia: [https://meet.google.com/](https://meet.google.com/)  
 
 ---
@@ -82,7 +82,7 @@ Para ello, se creó una organización pública que contiene los siguientes repos
 
 En el caso del repositorio **`stockia-platform-api`**, este incluye tanto el proyecto principal del API como los archivos de pruebas, tanto unitarias como de integración / aceptación.
 
-<img src="/assets/chapter-5/5.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/5.jpeg" alt="Repositorios de la organización en GitHub" width="500"/> <br>
 
 ---
 
@@ -123,7 +123,7 @@ Rama para preparar una nueva versión de producción. Se crea desde `develop` cu
 release/v1.2.0
 ```
 ### `hotfix/<descripción-corta>`
-Rama para correcciones urgentes sobre producción. Se crea desde main y se integra gtanto a main como a develop.
+Rama para correcciones urgentes sobre producción. Se crea desde main y se integra tanto a main como a develop.
 **Ejemplo:**
 
 ```text
@@ -131,7 +131,7 @@ hotfix/stock-discount-error
 ```
 Todas las ramas se nombran en inglés y aplicando kebab-case.
 
-<img src="/assets/chapter-5/6.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/6.jpeg" alt="Ramas de GitFlow en los repositorios" width="500"/> <br>
 
 
 
@@ -162,7 +162,7 @@ docs(chapter-iv): add information architecture section
 ```
 Este enfoque facilita la generación de historiales de cambios y mantiene un registro organizado y semántico del desarrollo.
 
-<img src="/assets/chapter-5/7.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/7.jpeg" alt="Commits con Conventional Commits" width="500"/> <br>
 
 
 ### **5.1.3. Source Code Style Guide & Conventions**
@@ -252,9 +252,9 @@ A continuación se describe la configuración de despliegue de cada producto dig
 
 4. Configurar el proyecto con Framework Preset **"Other"**, al tratarse de un sitio estático sin proceso de build.
 
-<img src="/assets/chapter-5/2.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/2.jpeg" alt="Configuración del proyecto en Vercel" width="500"/> <br>
 
-5. Establecer `develop` como rama de producción. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request hacia `develop` genera un preview deployment para revisión previa a la integración.
+5. Mantener `main` como rama de producción. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request hacia `develop` genera un preview deployment para revisión previa a la integración.
 
 6. Verificar el despliegue accediendo a la URL pública asignada por Vercel y registrarla en la documentación del proyecto.
 
@@ -264,13 +264,13 @@ A continuación se describe la configuración de despliegue de cada producto dig
 
 La siguiente imagen muestra el panel de Vercel con el **Production Deployment** del Landing Page, donde se observa el estado `Ready`, la rama utilizada y el dominio público asignado.
 
-<img src="/assets/chapter-5/1.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/1.jpeg" alt="Production Deployment del Landing Page en Vercel" width="500"/> <br>
 
 ##### Landing Page desplegada
 
 La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible mediante el dominio público proporcionado por Vercel**.
 
-<img src="/assets/chapter-5/3.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/3.jpeg" alt="Landing Page desplegada" width="500"/> <br>
 
 #### RESTful Web Services (ASP.NET Core + MySQL)
 
@@ -292,7 +292,7 @@ La configuración prevista contempla:
 
 La siguiente imagen muestra el sección de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
 
-<img src="/assets/chapter-5/4.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/4.jpeg" alt="Variables de entorno de la plataforma de despliegue" width="500"/> <br>
 
 ## **5.2. Landing Page, Services & Applications Implementation**
 ### **5.2.1. Sprint 1**
