@@ -204,7 +204,7 @@ La siguiente tabla resume las ramas y las versiones (tags) existentes en cada re
 
 <!-- COMPLETAR: tag de la entrega TB2 en stockia-report (por ejemplo v3.0.0) una vez publicada. -->
 
-Los cambios se integran a `develop` mediante Pull Request desde cada rama `feature/*`, y `develop` se publica en `main` mediante un Pull Request de release. En `stockia-platform-api`, por ejemplo, los Pull Requests #1 al #15 muestran este flujo, desde `feature/recipe-managment` (#1) hasta la publicación de `develop` en `main` (#15), tal como se lista en la evidencia de commits del Sprint 3 (sección 5.2.3.4).
+Los cambios se integran a `develop` mediante Pull Request desde cada rama `feature/*`, y `develop` se publica en `main` mediante un Pull Request de release. En `stockia-platform-api`, por ejemplo, los Pull Requests muestran este flujo, desde `feature/recipe-managment` (#1) hasta la publicación de `develop` en `main` (#15), tal como se lista en la evidencia de commits del Sprint 3 (sección 5.2.3.4).
 
 <!-- VERIFICAR: en la rama `develop` de cada repositorio revisar una muestra de 10 commits y confirmar que siguen Conventional Commits. En stockia-report hay commits que no los siguen (por ejemplo "Merge pull request ..."), que son generados por GitHub y son aceptables. -->
 
