@@ -1585,7 +1585,7 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 **Stock Management (Martin) — US21, US36**
 
 | **Endpoint** | **Verbo** | **Acceso** | **Parámetros** | **Response de muestra** | **US** |
-| :--- | :---: | :---: | :--- | :--- | :---: | :---: |
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | `/api/v1/inventory-items` | GET | Usuario | — | `200 OK` con los insumos (lotes), sus cantidades de hasta 32 decimales como texto y su estado. | US21, US36 |
 | `/api/v1/inventory-items` | POST | Usuario | Body: insumo, cantidad, costo y vencimiento  | `201 Created` ✱ con el lote registrado.| US21 |
 | `/api/v1/inventory-items/{id}` | GET | Usuario | Path: `id` | `200 OK` con el insumo; `404 Not Found` si no existe. | US21 |
@@ -1708,7 +1708,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: contribuciones por integrante en `stockia-platform-api`**
 
-<!-- IMAGEN PENDIENTE: GitHub → Insights → Contributors de stockia-platform-api -->
 <p align="center">
   <img src="../assets/chapter-5/s3-contributors-api.png" width="700" alt="Contribuciones por integrante en stockia-platform-api"/>
   <br/><i>Insights → Contributors del repositorio stockia-platform-api</i>
@@ -1716,7 +1715,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: grafo de GitFlow**
 
-<!-- IMAGEN PENDIENTE: GitHub → Insights → Network con las ramas feature/* integradas -->
 <p align="center">
   <img src="../assets/chapter-5/s3-network-api.png" width="700" alt="Grafo de ramas de stockia-platform-api"/>
   <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
@@ -1724,7 +1722,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: contribuciones en `stockia-webapp`**
 
-<!-- IMAGEN PENDIENTE: Insights → Contributors de stockia-webapp durante el Sprint 3 -->
 <p align="center">
   <img src="../assets/chapter-5/s3-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
   <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
