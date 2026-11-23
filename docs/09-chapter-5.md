@@ -2283,3 +2283,37 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 <img src="../assets/chapter-5/heuristica%203.jpeg" width="800" />
 
 ## **5.4. About-the-Product Video**
+<!-- PLANTILLA: esta sección está vacía en el informe actual. Completar todo lo marcado como PONER AQUÍ. En la carpeta local "about the product" existe un video del Sprint 3 (upc-pre-202620-1asi0730-16127-databit-about-the-product-sprint-3.mp4) que puede servir de base; para TB2 debe publicarse la versión final. -->
+
+Esta sección describe el video **About-the-Product** de StockIA. Su público objetivo son los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características principales del producto, y los usuarios de la Web Application, que quieren realizar las tareas que la solución soporta: <!-- PONER AQUÍ: resumen de 3 o 4 líneas del contenido del video: problema que resuelve StockIA, funciones principales (inventario por lotes, recetas y ventas, alertas, pronóstico de demanda y recomendaciones) y beneficio para el restaurante -->. El tono del video es <!-- PONER AQUÍ: debe coincidir con el tono definido en 4.1 Style Guidelines (por ejemplo, profesional y cercano) -->, consistente con el del producto.
+
+**Cuadro representativo del video**
+
+<!-- PONER AQUÍ: captura de un cuadro del video. Guardar como assets/chapter-5/about-the-product-frame.png y reemplazar la línea de abajo -->
+<p align="center">
+  <img src="../assets/chapter-5/about-the-product-frame.png" width="700" alt="Cuadro representativo del video About-the-Product"/>
+  <br/><i>Cuadro del video About-the-Product de StockIA</i>
+</p>
+
+| Dato | Valor |
+|---|---|
+| Nombre del archivo | `upc-pre-202620-1asi0730-16127-databit-about-the-product-<versión>.mp4` <!-- PONER AQUÍ: nombre real según el Anexo C --> |
+| URL en Microsoft Stream | <!-- PONER AQUÍ: enlace de Stream --> |
+| URL en YouTube (incrustado en el Landing Page) | <!-- PONER AQUÍ: enlace de YouTube --> |
+| Duración | <!-- PONER AQUÍ: mm:ss. Debe estar entre 1 y 3 minutos --> |
+
+**Pauta de secuencias del video**
+
+| Sección | Inicio (hh:mm:ss) |
+|---|---|
+| <!-- PONER AQUÍ: por ejemplo, Presentación del problema --> | 00:00:00 |
+| <!-- PONER AQUÍ: Demostración del producto --> | <!-- hh:mm:ss --> |
+| <!-- PONER AQUÍ: Testimonio de un usuario --> | <!-- hh:mm:ss --> |
+
+**Testimonios incluidos**
+
+El video incluye al menos un testimonio positivo de un participante de las entrevistas de validación (5.3.2), y una opinión por cada segmento objetivo.
+
+<!-- PONER AQUÍ: nombre del entrevistado, número de entrevista de 5.3.2 y una frase breve de su testimonio. Hay testimonios positivos en las 4 entrevistas actuales. -->
+
+<!-- DEPENDENCIA: el video debe estar incrustado en el Landing Page (hoy hay un texto "Video demostrativo próximamente"). Eso se cambia en el repositorio stockia-website, no en este informe. -->
