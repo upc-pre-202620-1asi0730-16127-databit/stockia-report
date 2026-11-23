@@ -72,7 +72,7 @@ Los colores semánticos se utilizan principalmente en alertas de inventario y fu
 
 Cada color semántico cuenta además con una variante `light` para utilizarse como fondo de badges y alertas.
 
-<img src="../assets/chapter-4/styleguidelines/1.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-4/styleguidelines/1.jpeg" alt="Artefacto de Figma" width="500"/> <br>
 
 ---
 
@@ -163,7 +163,7 @@ Para mejorar la accesibilidad visual se utiliza:
 - Texto secundario `--text-muted (#5B6B66)` para mantener una lectura clara.
 - Los estados críticos utilizan color + texto + ícono simultáneamente, evitando depender únicamente del color para transmitir información.
 
-<img src="../assets/chapter-4/styleguidelines/2.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/2.jpeg" alt="Artefacto de Figma" width="1000"/> <br>
 
 
 ---
@@ -243,7 +243,7 @@ Se utiliza en:
 - Las predicciones de demanda organizadas por día de la semana (US25).
 - Las alertas ordenadas según urgencia y proximidad del vencimiento (US22 y US23).
 
-<img src="../assets/chapter-4/styleguidelines/3.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/3.jpeg" alt="Artefacto de Figma" width="1000"/> <br>
 
 
 ---
@@ -265,7 +265,7 @@ El objetivo es que el usuario pueda asociar rápidamente cada etiqueta con su co
 | Planes de pago | **Planes / Precios** | Planes Esencial, Profesional e IoT Completo (US16) |
 | Impacto ambiental | **Sostenibilidad y Gamificación** | Métricas de reducción de desperdicio y logros de equipo (US23) |
 
-<img src="../assets/chapter-4/styleguidelines/4.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/4.jpeg" alt="Artefacto de Figma" width="1000"/> <br>
 
 
 ---
@@ -288,7 +288,7 @@ A continuación, se presentan los meta tags implementados en cada página princi
 <meta name="description" content="Descubre todas las funcionalidades de StockIA: inventario inteligente, predicción de demanda con IA, IoT, roles y más para tu restaurante.">
 ```
 
-## Landing Page — Precios (`pircing.html`)
+## Landing Page — Precios (`pricing.html`)
 ```html
 <title>Precios — StockIA</title>
 <meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y monitoreo IoT completo.">
@@ -424,7 +424,7 @@ En dispositivos móviles:
 
 Esta decisión responde a la importancia de las notificaciones críticas, las cuales también pueden enviarse mediante **WhatsApp (US27 / US28)**.
 
-<img src="../assets/chapter-4/styleguidelines/5.jpeg" alt="C4 Diagram" width="1000"/> <br>
+<img src="../assets/chapter-4/styleguidelines/5.jpeg" alt="Artefacto de Figma" width="1000"/> <br>
 
 
 ## **4.3. Landing Page UI Design**
@@ -1015,19 +1015,19 @@ US35 - Como administrador, quiero poder modificar la vida útil sugerida por la 
 
 Para una mejor visualización, se adjunta aquí el [enlace a nuestro tablero de Miro](https://miro.com/app/board/uXjVHl6cdl0=/?share_link_id=720842621161) donde fue realizado el Design-Level Event Storming.
 
-<img src="../assets/chapter-4/Design-Level-Recipes-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
-<img src="../assets/chapter-4/Design-Level-stoc-management.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
-<img src="../assets/chapter-4/Design-Level-Subscription.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/Design-Level-Recipes-management.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
+<img src="../assets/chapter-4/Design-Level-stoc-management.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
+<img src="../assets/chapter-4/Design-Level-Subscription.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
 
-<img src="../assets/chapter-4/Analitics-dashboard-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
-<img src="../assets/chapter-4/IAM-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
-<img src="../assets/chapter-4/ML-recomendations-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/Analitics-dashboard-BC.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
+<img src="../assets/chapter-4/IAM-BC.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
+<img src="../assets/chapter-4/ML-recomendations-BC.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
 
-<img src="../assets/chapter-4/notification-messaging-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
-<img src="../assets/chapter-4/restaurant-registration-BC.png" alt="Design Level EventStorming 1" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/notification-messaging-BC.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
+<img src="../assets/chapter-4/restaurant-registration-BC.png" alt="Design Level EventStorming 1" align="center"  ><br><br>
 ### **4.6.2. Software Architecture Context Diagram**
 
-<img src="../assets/chapter-4/SystemContext.png" alt="" alingn ="center"  ><br><br>
+<img src="../assets/chapter-4/SystemContext.png" alt="" align="center"  ><br><br>
 
 ### **4.6.3. Software Architecture Container Diagrams**
 
@@ -1113,8 +1113,6 @@ Este diagrama modela la estructura de componentes encargados del registro y la g
 
 <img src="../assets/chapter-4/class-diagrams/class-registration-restaurant.png" alt="Class Diagram - Registration Restaurant" width="1000"/> <br>
 
-## **4.8. Database Design**
-En esta sección se presentan los diagramas de base de datos diseñados para asegurar la persistencia de la información en StockIA. La base de datos sigue un enfoque relacional, y el diseño se ha estructurado dividiéndolo por cada Bounded Context identificado, de manera que cada módulo gestiona sus propias tablas, columnas y relaciones (llaves primarias y foráneas). Esto facilita el mantenimiento, la escalabilidad y mantiene la coherencia con la arquitectura orientada a dominios (Domain-Driven Design).
 ## **4.8. Database Design**
 En esta sección se presentan los diagramas de base de datos diseñados para asegurar la persistencia de la información en StockIA. La base de datos sigue un enfoque relacional, y el diseño se ha estructurado dividiéndolo por cada Bounded Context identificado, de manera que cada módulo gestiona sus propias tablas, columnas y relaciones (llaves primarias y foráneas). Esto facilita el mantenimiento, la escalabilidad y mantiene la coherencia con la arquitectura orientada a dominios (Domain-Driven Design).
 

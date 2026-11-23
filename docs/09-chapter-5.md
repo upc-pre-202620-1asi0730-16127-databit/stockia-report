@@ -28,7 +28,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Referencia: [https://www.figma.com/](https://www.figma.com/)  
 
 - **Jira**  
-  Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, priorizar requerimientos y documentar User Stories con criterios de aceptación.  
+  Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, priorizar requisitos y documentar User Stories con criterios de aceptación.  
   Referencia: [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)  
 
 ---
@@ -75,12 +75,12 @@ Para ello, se creó una organización pública que contiene los siguientes repos
 
 | Solución | Nombre del repositorio | Enlace |
 |---|---|---|
-| Report (documentación en Markdown) | `stockia-report` | https://github.com/upc-pre-202620-1asi0730-16127-stockia/stockia-report.git |
+| Report (documentación en Markdown) | `stockia-report` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-report.git |
 | Website (Landing Page) | `stockia-website` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website.git |
 | WebApp (Frontend Web Application) | `stockia-webapp` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-webapp.git |
-| Platform (RESTful Web Services) | `stockia-platform` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-platform-api.git |
+| Platform (RESTful Web Services) | `stockia-platform-api` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-platform-api.git |
 
-En el caso del repositorio **`stockia-platform`**, este incluye tanto el proyecto principal del API como los archivos de pruebas, tanto unitarias como de integración / aceptación.
+En el caso del repositorio **`stockia-platform-api`**, este incluye tanto el proyecto principal del API como los archivos de pruebas, tanto unitarias como de integración / aceptación.
 
 <img src="/assets/chapter-5/5.jpeg" alt="C4 Diagram" width="500"/> <br>
 
@@ -290,7 +290,7 @@ La configuración prevista contempla:
 
 ##### Configuración de variables de entorno
 
-La siguiente imagen muestra el apartado de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
+La siguiente imagen muestra el sección de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
 
 <img src="/assets/chapter-5/4.jpeg" alt="C4 Diagram" width="500"/> <br>
 
@@ -378,7 +378,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 |  |  | T-R1-2 | Ajuste de cuadrículas | Reorganizar columnas y ocultar elementos no esenciales en móvil. | 4 | Ortiz Laura, Leyla Alisson | Done |
 | **RNF02** | Contraste y legibilidad accesible | T-R2-1 | Paleta de contraste | Definir colores de texto con contraste adecuado sobre fondos claros y oscuros. | 3 | Huaman Oscco, Aldo Jesus | Done |
 | **RNF03** | Navegación consistente | T-R3-1 | Navbar y footer compartidos | Reutilizar los mismos componentes en las 4 páginas. | 3 | Higa Kohatsu, Alonso Enrique | Done |
-| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y librerías pesadas innecesarias. | 3 | Tuesta Girón, Kiara Lucia | Done |
+| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y bibliotecas pesadas innecesarias. | 3 | Tuesta Girón, Kiara Lucia | Done |
 | **RNF05** | Buen posicionamiento en buscadores | T-R5-1 | Metadatos por página | Agregar title y meta description a cada página. | 2 | Asmat Alminco, Martin Alejandro | Done |
 |  |  | T-R5-2 | Metadatos adicionales del Home | Agregar meta keywords, author y copyright en index.html. | 2 | Ortiz Laura, Leyla Alisson | Done |
 | **RNF06** | Compatibilidad con navegadores | T-R6-1 | CSS estándar (Flexbox/Grid) | Verificar compatibilidad en navegadores modernos. | 3 | Huaman Oscco, Aldo Jesus | Done |
@@ -1580,7 +1580,7 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 | :--- | :---: | :---: | :--- | :--- | :---: |
 | `/api/v1/restaurant-registrations` | POST | Pública | Body: `fullName`, `restaurantName`, `email`, `password` | `201 Created` ✱ con el restaurante, el dueño Administrador, el plan gratuito y el JWT. | US29 |
 | `/api/v1/restaurants/current` | GET | Usuario | — | `200 OK` con los datos del restaurante. | US40 |
-| `/api/v1/restaurants/current` | PUT | Administrador | Body: `name`, `adsress`, `phone` | `200 OK` con el restaurante actualizado; `403 Forbidden` para el Empleado. | US40 |
+| `/api/v1/restaurants/current` | PUT | Administrador | Body: `name`, `address`, `phone` | `200 OK` con el restaurante actualizado; `403 Forbidden` para el Empleado. | US40 |
 
 **Stock Management (Martin) — US21, US36**
 
@@ -1651,7 +1651,7 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
  
 En el Sprint 3 se desplegaron el RESTful API en **Azure App Service** y su base de datos en **Azure Database for MySQL (Flexible Server)** (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
 
-**Actividades de despliegue realizadas** *(ajustar a lo realmente ejecutado)*
+**Actividades de despliegue realizadas**
 
 1. Se creó el flujo `ci.yml` en GitHub Actions: compilación, pruebas xUnit, verificación de migraciones, smoke test contra MySQL 8.4 y prueba E2E con Playwright.
 2. Se probó el API localmente con `docker compose up --build` (MySQL 8.4 y API en el puerto 5000), que aplica las migraciones y carga los datos demo.
@@ -2020,12 +2020,11 @@ Como observaciones puntuales, menciono que los aspectos funcionales bastan para 
 **Usability – Inclusive Design – Information Architecture**
 
 **CARRERA		: Ingeniería de Software**  
-**CURSO		: IHC y Tecnologías Móviles**  
+**CURSO		: Aplicaciones Web**  
 **PROFESORES	: Todos**  
 **AUDITOR		:**   
 **CLIENTE		:** Databit
 
-## 
 
 **SITE o APP A EVALUAR:** Databit<br><br>
 **TAREAS A EVALUAR:**<br>
@@ -2037,7 +2036,7 @@ Pantalla de dashboard: Se muestra información importante que se le muestra ni b
 **T2: Revisar el “Demand forecast”**<br>
 Apartado de “Demand forecast”.
 
-**T3: Revisar el apartado de recomendaciones automáticas**<br>
+**T3: Revisar el sección de recomendaciones automáticas**<br>
 *Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
 
 
@@ -2065,7 +2064,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
 | 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
 
-## 
 
 ## **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -2097,7 +2095,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%201.jpeg" width="800" />
 
-### 
 
 ### **Problema 3: Falta de contenido de valor en “Demand Forecast”**
 
@@ -2129,7 +2126,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%202.jpeg" width="800" />
 
-### 
 
 ### **Problema 5: Mucho texto distrae y genera mucho ruido visual**
 
@@ -2146,7 +2142,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%203.jpeg" width="800" />
 
-### 
 
 ### **Problema 6: Mezcla de inglés y español en la interfaz**
 
@@ -2161,7 +2156,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%201.jpeg" width="800" />
 
-### 
 
 ### **Problema 7: Mensaje “Invalid PrimeUI License” visible en todas las pantallas**
 
@@ -2169,14 +2163,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 * **Descripción del problema:**
   * En la esquina inferior derecha aparece una etiqueta roja con el texto “Invalid PrimeUI License” que no se puede cerrar y se queda sobre el contenido y el pie de página en todas las pantallas revisadas.
   * Es un mensaje técnico de desarrollo que un administrador de restaurante no entiende ni puede resolver, y su tono rojo es parecido al de las alertas críticas, así que puede hacer pensar que hay un problema real con la cuenta o con el sistema y restar confianza.
-* **Recomendación:** Configurar una licencia válida de la librería de componentes o retirar el aviso en la versión que ve el cliente, y asegurarse de que los mensajes técnicos de desarrollo nunca lleguen al usuario final.
+* **Recomendación:** Configurar una licencia válida de la biblioteca de componentes o retirar el aviso en la versión que ve el cliente, y asegurarse de que los mensajes técnicos de desarrollo nunca lleguen al usuario final.
 * **Categorización:**
   * **Problema en Heurística 8 (Diseño estético y minimalista):** el aviso es información ajena a las tareas del usuario y ocupa un espacio visible de forma permanente.
   * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** usa lenguaje técnico de desarrollo que no corresponde al del usuario final.
 
 <img src="../assets/chapter-5/heuristica%202.jpeg" width="800" />
 
-### 
 
 ### **Problema 8: Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto**
 
