@@ -42,6 +42,10 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Editor de código fuente ligero y extensible. Se utilizó para el desarrollo del Landing Page y de la Web Application.
   Referencia: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
+- **Extensión .rd para Visual Studio Code**
+  Herramienta integrada en VS Code para diseño y modelado de bases de datos. Se usó para crear y gestionar el esquema relacional de StockIA directamente desde el entorno de desarrollo.
+  Referencia: Marketplace de Visual Studio Code (extensión .rd).
+
 - **JetBrains Rider** <!-- VERIFICAR: confirmar el IDE usado por cada integrante del backend (Rider o Visual Studio) -->
   IDE para .NET usado en el desarrollo del RESTful API.
   Referencia: [https://www.jetbrains.com/rider/](https://www.jetbrains.com/rider/)
