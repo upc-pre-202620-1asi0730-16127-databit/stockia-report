@@ -1,5 +1,14 @@
 # **Student Outcome**
 
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 5**
+
+**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
+
+
 
 <table style="width: 100%; border-collapse: collapse;">
   <tr>
@@ -22,7 +31,7 @@
     </td>
     <td style="text-align: justify; vertical-align: top;">
       <b>
-        Higa Kohatsu, Alonso Higa
+        Higa Kohatsu, Alonso Enrique
       </b>
       <br>
       <b><i>
@@ -63,7 +72,7 @@
         AV2
       </i></b>
       <br>
-      ....
+      <!-- PENDIENTE: completar las acciones realizadas en AV2 -->
       <br><br>
       <b>
         Huaman Oscco, Aldo Jesus
@@ -79,13 +88,13 @@
       TB1
       </i></b>
       <br>
-      Durante el desarrollo para esta segunda entrega, asumí un rol activo en el desarrollo tecnico para el desarrollo de funcionalidades y testing de la web app, lidere como Scrum Owner para la aplicacion de metodologias agiles en este segundo Sprint. Además, tuve liderasgo en aspectos competentes a la entrega y desarrollo de reuniones para cordinar avances en relacion al trabajo remoto.
+      Durante el desarrollo para esta segunda entrega, asumí un rol activo en el desarrollo tecnico para el desarrollo de funcionalidades y testing de la web app, lidere como Scrum Owner para la aplicacion de marcos de trabajo ágiles en este segundo Sprint. Además, tuve liderasgo en aspectos competentes a la entrega y desarrollo de reuniones para cordinar avances en relacion al trabajo remoto.
       <br>
       <b><i>
         AV2
       </i></b>
       <br>
-      ....
+      <!-- PENDIENTE: completar las acciones realizadas en AV2 -->
       <br><br>
       <b>
         Ortiz Laura, Leyla Alisson
@@ -149,7 +158,7 @@
         AV2
       </i></b>
       <br>
-      Como equipo, trabajamos de manera coordinada y colaborativa durante el desarrollo del proyecto, distribuyendo las tareas entre los integrantes de acuerdo con las responsabilidades establecidas y aplicando la metodología Scrum para organizar y dar seguimiento a nuestro trabajo. Asimismo, mantuvimos una comunicación constante y nos brindamos apoyo mutuamente cuando algún integrante tenía dificultades o dudas durante la implementación. Esto permitió compartir conocimientos, resolver problemas en conjunto y avanzar de manera coordinada en las actividades planificadas. Como resultado de este trabajo conjunto, logramos completar el Sprint 3 y realizar el primer despliegue del Platform API. De esta manera, fomentamos un liderazgo compartido en el que cada integrante asumió responsabilidades, contribuyó al cumplimiento de los objetivos y participó activamente en el progreso del proyecto.
+      Como equipo, trabajamos de manera coordinada y colaborativa durante el desarrollo del proyecto, distribuyendo las tareas entre los integrantes de acuerdo con las responsabilidades establecidas y aplicando el marco de trabajo ágil Scrum para organizar y dar seguimiento a nuestro trabajo. Asimismo, mantuvimos una comunicación constante y nos brindamos apoyo mutuamente cuando algún integrante tenía dificultades o dudas durante la implementación. Esto permitió compartir conocimientos, resolver problemas en conjunto y avanzar de manera coordinada en las actividades planificadas. Como resultado de este trabajo conjunto, logramos completar el Sprint 3 y realizar el primer despliegue del Platform API. De esta manera, fomentamos un liderazgo compartido en el que cada integrante asumió responsabilidades, contribuyó al cumplimiento de los objetivos y participó activamente en el progreso del proyecto.
       <br><br>
     </td>
   </tr>
@@ -163,7 +172,7 @@
     </td>
     <td style="text-align: justify; vertical-align: top;">
       <b>
-        Higa Kohatsu, Alonso Higa
+        Higa Kohatsu, Alonso Enrique
       </b>
       <br>
       <b><i>
@@ -204,7 +213,7 @@
         AV2
       </i></b>
       <br>
-      ....
+      <!-- PENDIENTE: completar las acciones realizadas en AV2 -->
       <br><br>
       <b>
         Huaman Oscco, Aldo Jesus
@@ -214,7 +223,7 @@
         AV1
       </i></b>
       <br>
-      Durante el desarrollo del proyecto, participe en las reuniones y aporte ideas para un trabajo remoto estable, coordinando y apoyando en la distribución de tareas, cumpliendo a tiempo con mis entregables para no retrasar al equipo. En la fase del modelado de las HU, priorize la informacion otorgada por mi equipo sobre los entrevistados para poder modelar posteriormente las task del equipo. Con base en esto, diseñe los modelos de la landing page en wireframes y mockups que nos ayudaron a poder desarrollar la website para su posterior despliegue en vercel. Además, me encargue de aplicar y orientar el uso de la metodologia agil SCRUM para el trabajo colaborativo.
+      Durante el desarrollo del proyecto, participe en las reuniones y aporte ideas para un trabajo remoto estable, coordinando y apoyando en la distribución de tareas, cumpliendo a tiempo con mis entregables para no retrasar al equipo. En la fase del modelado de las HU, priorize la informacion otorgada por mi equipo sobre los entrevistados para poder modelar posteriormente las task del equipo. Con base en esto, diseñe los modelos de la landing page en wireframes y mockups que nos ayudaron a poder desarrollar la website para su posterior despliegue en vercel. Además, me encargue de aplicar y orientar el uso de la marco de trabajo ágil Scrum para el trabajo colaborativo.
       <br>
       <b><i>
         TB1
@@ -285,7 +294,7 @@
         AV2
       </i></b>
       <br>
-      Tuvimos un entorno de trabajo colaborativo e inclusivo mediante la distribución equitativa de las tareas y la planificación de actividades utilizando la metodología Scrum. Establecimos metas en conjunto y organizamos el trabajo para cumplir con los objetivos planteados de este sprint. De igual manera, siempre hubo comunicación por sí algún integrante tenía dificultades o necesitaba ayuda, fomentando la participación de todos y el intercambio de conocimientos. Gracias a esta organización y colaboración, logramos completar las actividades correspondientes al Sprint 3 y realizar el primer despliegue del Platform API, demostrando nuestra capacidad para trabajar de manera coordinada, cumplir con las metas establecidas y alcanzar los objetivos del proyecto.
+      Tuvimos un entorno de trabajo colaborativo e inclusivo mediante la distribución equitativa de las tareas y la planificación de actividades utilizando el marco de trabajo ágil Scrum. Establecimos metas en conjunto y organizamos el trabajo para cumplir con los objetivos planteados de este sprint. De igual manera, siempre hubo comunicación por sí algún integrante tenía dificultades o necesitaba ayuda, fomentando la participación de todos y el intercambio de conocimientos. Gracias a esta organización y colaboración, logramos completar las actividades correspondientes al Sprint 3 y realizar el primer despliegue del Platform API, demostrando nuestra capacidad para trabajar de manera coordinada, cumplir con las metas establecidas y alcanzar los objetivos del proyecto.
       <br><br>
     </td>
   </tr>
