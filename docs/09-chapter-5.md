@@ -2125,6 +2125,18 @@ Durante la validación de StockIA, Henry David mencionó que desde su experienci
   </tbody>
 </table>
 
+#### Video consolidado de validación
+
+<!-- PLANTILLA: el Anexo C del enunciado pide un video consolidado de las entrevistas de validación, con títulos que indiquen entrevistado, segmento y fecha. Completar todo lo marcado como PONER AQUÍ. -->
+
+| Dato | Valor |
+|---|---|
+| Nombre del archivo | `upc-pre-202620-1asi0730-16127-databit-validation-sprint-<n>.mp4` <!-- PONER AQUÍ: número de Sprint real --> |
+| URL en Microsoft Stream | <!-- PONER AQUÍ: enlace de Stream --> |
+| Duración | <!-- PONER AQUÍ: mm:ss --> |
+
+<!-- PONER AQUÍ: captura de un cuadro del video consolidado (assets/chapter-5/validation-video-frame.png) con su pie de imagen. En la carpeta local "about the product" hay una grabación (grabacion-CEO-validation-SOLO-MIN-8.mkv) que puede servir de material. -->
+
 **Entrevista 1:** Lo que se pudo rescatar de esta entrevista es que el entrevistado tuvo una percepción positiva de StockIA, destacando principalmente la simplicidad, facilidad de uso y organización de la plataforma. Considera que la landing page presenta la información de manera clara y atractiva, permitiendo comprender rápidamente el propósito de la aplicación, sus características y funcionalidades. Asimismo, señaló que la navegación es intuitiva, que los botones están correctamente identificados y que tanto los mensajes como las alertas del sistema son fáciles de comprender. También resaltó la rapidez de respuesta de la aplicación y la ausencia de problemas importantes durante su interacción, lo que le permitió completar las tareas sin dificultades.
 
 Por otro lado, identificó algunas oportunidades de mejora, como evaluar un cambio en la paleta de colores de la página y realizar ciertos ajustes en la visualización de los estados dentro del dashboard. Sin embargo, considera que estos aspectos no afectan significativamente la experiencia general, ya que la plataforma mantiene un diseño consistente, sin información o elementos innecesarios. Lo más importante que se pudo identificar es que la simplicidad y la facilidad de comprensión son aspectos valorados por el usuario, por lo que mantener una interfaz intuitiva, una navegación rápida y una presentación clara de la información resulta fundamental para la aceptación de StockIA.
