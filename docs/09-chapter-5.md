@@ -191,6 +191,23 @@ Todas las ramas se nombran en inglés y aplicando kebab-case.
 
 
 
+### Evidencia de GitFlow y versionado por repositorio
+
+La siguiente tabla resume las ramas y las versiones (tags) existentes en cada repositorio de la organización, para evidenciar la aplicación de GitFlow y de Semantic Versioning.
+
+| Repositorio | Ramas permanentes | Ramas de trabajo (ejemplos) | Tags de versión |
+|---|---|---|---|
+| `stockia-report` | `main`, `develop` | `feature/chapter-1` … `feature/chapter-5` | `v1.0.0`, `v2.0.0` |
+| `stockia-website` | `main`, `develop` | `feature/about`, `feature/features-page`, `feature/styles` | `v1.0.0` |
+| `stockia-webapp` | `main`, `develop` | `feature/iam`, `feature/stock-management`, `feature/recipes-management`, `feature/ml-recommendations`, `feature/notifications-messaging`, `feature/analytics-dashboard`, `feature/subscription`, `fix/webapp-integration` | <!-- COMPLETAR: tags de stockia-webapp (hoy no existen). Crear al menos v1.0.0 sobre main y listarlo aquí. --> |
+| `stockia-platform-api` | `main`, `develop` | `feature/iam`, `feature/stock-management`, `feature/recipe-managment`, `feature/ml-recommendations`, `feature/notifications-messaging`, `feature/analytics-dashboard`, `feature/subscription-payments`, `feature/restaurant-registration`, `chore/add-sln`, `fix/solution-file` | <!-- COMPLETAR: tags de stockia-platform-api (hoy no existen). Crear al menos v1.0.0 sobre main y listarlo aquí. --> |
+
+<!-- COMPLETAR: tag de la entrega TB2 en stockia-report (por ejemplo v3.0.0) una vez publicada. -->
+
+Los cambios se integran a `develop` mediante Pull Request desde cada rama `feature/*`, y `develop` se publica en `main` mediante un Pull Request de release. En `stockia-platform-api`, por ejemplo, los Pull Requests #1 al #15 muestran este flujo, desde `feature/recipe-managment` (#1) hasta la publicación de `develop` en `main` (#15), tal como se lista en la evidencia de commits del Sprint 3 (sección 5.2.3.4).
+
+<!-- VERIFICAR: en la rama `develop` de cada repositorio revisar una muestra de 10 commits y confirmar que siguen Conventional Commits. En stockia-report hay commits que no los siguen (por ejemplo "Merge pull request ..."), que son generados por GitHub y son aceptables. -->
+
 ## Semantic Versioning
 
 El equipo aplica **Semantic Versioning 2.0.0** para el nombrado de releases, bajo el esquema `MAJOR.MINOR.PATCH`, donde **MAJOR** corresponde a cambios incompatibles con versiones anteriores del API, **MINOR** a nuevas funcionalidades compatibles con versiones anteriores, y **PATCH** a correcciones de errores compatibles. La primera versión funcional del producto será `v1.0.0`, correspondiente al entregable del Sprint 1.
