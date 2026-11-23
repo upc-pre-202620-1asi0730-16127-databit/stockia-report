@@ -345,27 +345,53 @@ La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible
 
 <img src="/assets/chapter-5/3.jpeg" alt="C4 Diagram" width="500"/> <br>
 
-#### RESTful Web Services (ASP.NET Core + MySQL)
+#### RESTful Web Services (ASP.NET Core + MySQL) → Render
 
-El RESTful API requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en una plataforma compatible junto con su base de datos relacional.
+El RESTful API (`stockia-platform-api`) requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en **Render** a partir del `Dockerfile` del repositorio, junto con su base de datos MySQL. <!-- VERIFICAR: confirmar la plataforma real del API. El repositorio también contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Si se usó Azure, reemplazar Render por Azure en esta sección y en 5.2.3.7. -->
 
-La configuración prevista contempla:
+1. Crear el servicio de base de datos MySQL y registrar sus datos de conexión. <!-- VERIFICAR: indicar el proveedor real de MySQL usado con Render -->
 
-1. Crear el servicio de base de datos MySQL.
+2. Crear en Render un **Web Service** desde el repositorio `stockia-platform-api`, rama `main`, con entorno **Docker**.
 
-2. Registrar las variables de entorno de conexión (host, puerto, nombre de base de datos, usuario y contraseña) en la plataforma de despliegue.
+3. Registrar las variables de entorno en la plataforma de despliegue, sin incluirlas en el repositorio: `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET` y `STOCKIA_CORS_ORIGINS`.
 
-3. Referenciar dichas variables desde el archivo de configuración `appsettings.json` del proyecto en lugar de escribir las credenciales directamente en el código.
+4. El API lee esas variables al arrancar, en lugar de tener las credenciales escritas en el código, y aplica las migraciones de Entity Framework Core para crear las tablas.
 
-4. La documentación de los endpoints quedará disponible públicamente vía Swagger UI.
+5. La documentación interactiva de los endpoints queda disponible públicamente mediante **Scalar**, sobre el documento OpenAPI generado por el API.
 
-5. La configuración detallada y las URLs finales se documentarán en el Sprint correspondiente, una vez implementado el servicio.
+6. Verificar el despliegue accediendo a la URL pública del API y al endpoint `/api/v1/health`.
+
+* **URL del RESTful API:** https://stockia-platform-api.onrender.com
+* **URL de Scalar:** https://stockia-platform-api.onrender.com/scalar/
+* **Documento OpenAPI:** https://stockia-platform-api.onrender.com/openapi/v1.json
 
 ##### Configuración de variables de entorno
 
 La siguiente imagen muestra el apartado de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
 
-<img src="/assets/chapter-5/4.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/4.jpeg" alt="Variables de entorno de la plataforma de despliegue" width="500"/> <br>
+
+#### Web Application → Vercel
+
+1. El código fuente de la Web Application (Vue 3, Vite y PrimeVue) reside en el repositorio `stockia-webapp`, rama `main`.
+
+2. Importar el repositorio en Vercel mediante **"Add New Project" → "Import Git Repository"**.
+
+3. Configurar el proyecto con Framework Preset **"Vite"**, comando de build `npm run build` y directorio de salida `dist`, tal como declara el archivo `vercel.json`. Ese archivo también reescribe todas las rutas a `index.html` para que el enrutamiento de la SPA funcione.
+
+4. Definir la variable de entorno `VITE_STOCKIA_API_URL` con la URL del RESTful API.
+
+5. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request genera un preview deployment.
+
+* **URL de la Web Application:** https://webapp-stockia.vercel.app/
+
+<!-- IMAGEN PENDIENTE: captura del panel de Vercel de stockia-webapp con el Production Deployment en estado Ready. Guardar en assets/chapter-5/ y enlazarla aquí con alt descriptivo. -->
+
+#### Integración continua (GitHub Actions)
+
+El repositorio `stockia-platform-api` define el flujo `ci.yml` en GitHub Actions, que en cada push y Pull Request compila el API con .NET 10, ejecuta las pruebas xUnit, verifica las migraciones, realiza un smoke test contra MySQL 8.4 y ejecuta la prueba E2E con Playwright.
+
+<!-- IMAGEN PENDIENTE: captura de la pestaña Actions de stockia-platform-api con una ejecución exitosa de ci.yml. -->
 
 ## **5.2. Landing Page, Services & Applications Implementation**
 ### **5.2.1. Sprint 1**
