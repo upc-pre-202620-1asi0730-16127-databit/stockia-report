@@ -1835,6 +1835,28 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 El diseño de las preguntas para la entrevista de validación fueron orientadas a poder saber 5 puntos claves, los cuales serían primera impresión, navegación y usabilidad, contenido y comunicación, experiencia general y validación heurística.
 
+**Segmento objetivo:** Administradores de Restaurante y Jefes de Sucursal (segmento único definido en 1.3).
+
+**Elementos incluidos en la sesión de validación**
+
+| Elemento | Qué se valida |
+|---|---|
+| Landing Page | Comprensión de la propuesta de valor, navegación entre sus páginas (inicio, características, precios, nosotros y contacto), claridad del contenido y llamada a la acción. |
+| Web Application | Flujos principales de la aplicación (ver abajo), claridad de la información y retroalimentación del sistema. |
+| RESTful API | Se valida de forma indirecta, a través de la Web Application que la consume (tiempos de respuesta y mensajes de error visibles para el usuario). |
+
+**User flows de la aplicación que forman parte de la validación** <!-- VERIFICAR: confirmar con el equipo cuáles de estos flujos se asignaron realmente en las entrevistas, y ajustar la lista. Debe ser consistente con las tareas de 5.3.3. -->
+
+| # | User flow (tarea asignada al entrevistado) |
+|---|---|
+| 1 | Registrar el restaurante e iniciar sesión. |
+| 2 | Registrar un insumo con su cantidad, costo y fecha de vencimiento. |
+| 3 | Registrar una receta con sus ingredientes y registrar una venta del plato. |
+| 4 | Consultar el dashboard y las alertas de inventario. |
+| 5 | Revisar el pronóstico de demanda y aplicar una recomendación de compra. |
+
+**Tareas asignadas en el Landing Page:** ubicar qué hace StockIA, revisar los planes y precios, y solicitar una demostración mediante el formulario de contacto.
+
 **Preguntas sobre la primera impresión**
 - ¿Qué es lo primero que notas al entrar al landing page?  
 - ¿Qué tan claro te resulta el propósito de la aplicación?  
@@ -1863,6 +1885,8 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 
 
 ### **5.3.2. Interview Recording**
+<!-- VERIFICAR: el formato pide hacer las entrevistas sobre la versión final desplegada (Landing Page y Web Application), no sobre mockups. Confirmar la versión sobre la que se hicieron las 4 entrevistas actuales y, si fue una versión anterior, agregar al menos una entrevista sobre la versión final. -->
+
 
     <table width="100%">
   <thead>
