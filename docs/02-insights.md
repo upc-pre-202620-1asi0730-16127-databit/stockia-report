@@ -1,5 +1,8 @@
 # **Project Report Collaboration Insights**
 
+**Repositorio del Project Report:** [https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-report](https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-report)
+
+
 
 **Primera Entrega (AV1)**
 
@@ -9,16 +12,16 @@ En paralelo, se avanzó con el diseño y construcción de la *landing page* de *
 
 Para la gestión colaborativa se empleó **GitHub**, plataforma que facilitó el seguimiento de modificaciones mediante *commits*, la estructuración de las tareas y el respaldo cronológico del avance, tanto del reporte como de la página web. De igual forma, las métricas de colaboración y el historial de versiones sirven como constancia de la participación de cada integrante.
 
-Los respaldos incluidos en este apartado guardan total coherencia con el Registro de Versiones del informe, reflejando de forma precisa las actualizaciones y cambios reportados en cada iteración.
+Los respaldos incluidos en esta sección guardan total coherencia con el Registro de Versiones del informe, reflejando de forma precisa las actualizaciones y cambios reportados en cada iteración.
 
 <img src="../assets/chapter-1/insights-stockia.png" width="500"/>
 
 
 **Segunda Entrega (TB1)**
 
-El equipo desarrolló la segunda entrega (TB1) mediante un trabajo colaborativo y coordinado, organizando las actividades y distribuyendo las responsabilidades entre los integrantes para cumplir con los objetivos establecidos. Durante esta etapa, se realizó el seguimiento de los avances, la revisión de los entregables y la consolidación de los resultados obtenidos, procurando mantener la coherencia entre la documentación, los requerimientos del proyecto y la solución propuesta.
+El equipo desarrolló la segunda entrega (TB1) mediante un trabajo colaborativo y coordinado, organizando las actividades y distribuyendo las responsabilidades entre los integrantes para cumplir con los objetivos establecidos. Durante esta etapa, se realizó el seguimiento de los avances, la revisión de los entregables y la consolidación de los resultados obtenidos, procurando mantener la coherencia entre la documentación, los requisitos del proyecto y la solución propuesta.
 
-Asimismo, se llevó a cabo el **Sprint 2**, en el cual se continuó con la planificación, implementación y mejora de las funcionalidades de StockIA. A través de esta iteración, el equipo trabajó en el desarrollo progresivo de la solución, atendiendo los requerimientos identificados y buscando fortalecer la estructura, funcionalidad y experiencia de usuario de la aplicación. Las actividades realizadas permitieron dar continuidad al trabajo iniciado en la entrega anterior y avanzar hacia una versión más completa e integrada del sistema.
+Asimismo, se llevó a cabo el **Sprint 2**, en el cual se continuó con la planificación, implementación y mejora de las funcionalidades de StockIA. A través de esta iteración, el equipo trabajó en el desarrollo progresivo de la solución, atendiendo los requisitos identificados y buscando fortalecer la estructura, funcionalidad y experiencia de usuario de la aplicación. Las actividades realizadas permitieron dar continuidad al trabajo iniciado en la entrega anterior y avanzar hacia una versión más completa e integrada del sistema.
 
 De igual manera, se realizó el desarrollo de la **Web Application de StockIA**, trasladando los avances de diseño y planificación a una solución funcional. Este trabajo comprendió la implementación de los componentes de la interfaz, la organización de las vistas y la incorporación progresiva de las funcionalidades previstas para el sistema, manteniendo la alineación con la propuesta de valor del proyecto. Los avances obtenidos representan un paso importante en la construcción de la plataforma y en la consolidación de sus principales características.
 
@@ -27,3 +30,16 @@ Para gestionar el trabajo colaborativo y mantener un registro ordenado del desar
 Finalmente, las evidencias recopiladas para esta entrega respaldan las actividades desarrolladas, los avances del Sprint 2 y la implementación de la Web Application. Estos registros mantienen coherencia con el historial de versiones y la documentación del proyecto, permitiendo demostrar la continuidad del proceso de desarrollo, la participación colaborativa del equipo y el cumplimiento de los objetivos correspondientes a la segunda entrega (TB1).
 
 <img src="../assets/chapter-1/insights-stockia-tb1.png" width="500"/>
+
+
+**Tercera Entrega (AV2)**
+
+Para la tercera entrega (AV2), el equipo corrigió el informe a partir de la retroalimentación de TB1 y lo amplió con el **Sprint 3** del Capítulo V. Cada integrante trabajó en ramas `feature/*` creadas desde `develop`, siguiendo GitFlow y *Conventional Commits*, y los cambios se integraron mediante *pull requests*. En este periodo se documentó la primera versión desplegada de los Web Services, el diseño y la ejecución de las pruebas, y las entrevistas de validación.
+
+<!-- EVIDENCIA PENDIENTE: captura de GitHub Insights (Contributors y Commits) del periodo AV2 -->
+
+**Cuarta Entrega (TB2)**
+
+Para la entrega final (TB2), el equipo corrigió el informe a partir de la retroalimentación de AV2 y completó el **Sprint 4**, las Conclusiones y los Anexos. El trabajo se organizó por tareas, cada una en una rama `feature/*` creada desde `develop`, con *commits* por capítulo modificado y revisión previa a la integración.
+
+<!-- EVIDENCIA PENDIENTE: captura de GitHub Insights (Contributors y Commits) del periodo TB2 -->
