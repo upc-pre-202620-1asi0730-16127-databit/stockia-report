@@ -9,7 +9,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)  
 
 - **Google Meet**  
-  Plataforma de videoconferencias utilizada para ceremonias Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
+  Plataforma de videoconferencias utilizada para eventos de Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
   Referencia: [https://meet.google.com/](https://meet.google.com/)  
 
 ---
@@ -82,7 +82,7 @@ Para ello, se creó una organización pública que contiene los siguientes repos
 
 En el caso del repositorio **`stockia-platform-api`**, este incluye tanto el proyecto principal del API como los archivos de pruebas, tanto unitarias como de integración / aceptación.
 
-<img src="/assets/chapter-5/5.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/5.jpeg" alt="Repositorios de la organización en GitHub" width="500"/> <br>
 
 ---
 
@@ -123,7 +123,7 @@ Rama para preparar una nueva versión de producción. Se crea desde `develop` cu
 release/v1.2.0
 ```
 ### `hotfix/<descripción-corta>`
-Rama para correcciones urgentes sobre producción. Se crea desde main y se integra gtanto a main como a develop.
+Rama para correcciones urgentes sobre producción. Se crea desde main y se integra tanto a main como a develop.
 **Ejemplo:**
 
 ```text
@@ -131,7 +131,7 @@ hotfix/stock-discount-error
 ```
 Todas las ramas se nombran en inglés y aplicando kebab-case.
 
-<img src="/assets/chapter-5/6.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/6.jpeg" alt="Ramas de GitFlow en los repositorios" width="500"/> <br>
 
 
 
@@ -162,7 +162,7 @@ docs(chapter-iv): add information architecture section
 ```
 Este enfoque facilita la generación de historiales de cambios y mantiene un registro organizado y semántico del desarrollo.
 
-<img src="/assets/chapter-5/7.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/7.jpeg" alt="Commits con Conventional Commits" width="500"/> <br>
 
 
 ### **5.1.3. Source Code Style Guide & Conventions**
@@ -252,9 +252,9 @@ A continuación se describe la configuración de despliegue de cada producto dig
 
 4. Configurar el proyecto con Framework Preset **"Other"**, al tratarse de un sitio estático sin proceso de build.
 
-<img src="/assets/chapter-5/2.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/2.jpeg" alt="Configuración del proyecto en Vercel" width="500"/> <br>
 
-5. Establecer `develop` como rama de producción. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request hacia `develop` genera un preview deployment para revisión previa a la integración.
+5. Mantener `main` como rama de producción. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request hacia `develop` genera un preview deployment para revisión previa a la integración.
 
 6. Verificar el despliegue accediendo a la URL pública asignada por Vercel y registrarla en la documentación del proyecto.
 
@@ -264,13 +264,13 @@ A continuación se describe la configuración de despliegue de cada producto dig
 
 La siguiente imagen muestra el panel de Vercel con el **Production Deployment** del Landing Page, donde se observa el estado `Ready`, la rama utilizada y el dominio público asignado.
 
-<img src="/assets/chapter-5/1.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/1.jpeg" alt="Production Deployment del Landing Page en Vercel" width="500"/> <br>
 
 ##### Landing Page desplegada
 
 La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible mediante el dominio público proporcionado por Vercel**.
 
-<img src="/assets/chapter-5/3.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/3.jpeg" alt="Landing Page desplegada" width="500"/> <br>
 
 #### RESTful Web Services (ASP.NET Core + MySQL)
 
@@ -292,7 +292,7 @@ La configuración prevista contempla:
 
 La siguiente imagen muestra el sección de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
 
-<img src="/assets/chapter-5/4.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/4.jpeg" alt="Variables de entorno de la plataforma de despliegue" width="500"/> <br>
 
 ## **5.2. Landing Page, Services & Applications Implementation**
 ### **5.2.1. Sprint 1**
@@ -1585,7 +1585,7 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 **Stock Management (Martin) — US21, US36**
 
 | **Endpoint** | **Verbo** | **Acceso** | **Parámetros** | **Response de muestra** | **US** |
-| :--- | :---: | :---: | :--- | :--- | :---: | :---: |
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | `/api/v1/inventory-items` | GET | Usuario | — | `200 OK` con los insumos (lotes), sus cantidades de hasta 32 decimales como texto y su estado. | US21, US36 |
 | `/api/v1/inventory-items` | POST | Usuario | Body: insumo, cantidad, costo y vencimiento  | `201 Created` ✱ con el lote registrado.| US21 |
 | `/api/v1/inventory-items/{id}` | GET | Usuario | Path: `id` | `200 OK` con el insumo; `404 Not Found` si no existe. | US21 |
@@ -1708,7 +1708,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: contribuciones por integrante en `stockia-platform-api`**
 
-<!-- IMAGEN PENDIENTE: GitHub → Insights → Contributors de stockia-platform-api -->
 <p align="center">
   <img src="../assets/chapter-5/s3-contributors-api.png" width="700" alt="Contribuciones por integrante en stockia-platform-api"/>
   <br/><i>Insights → Contributors del repositorio stockia-platform-api</i>
@@ -1716,7 +1715,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: grafo de GitFlow**
 
-<!-- IMAGEN PENDIENTE: GitHub → Insights → Network con las ramas feature/* integradas -->
 <p align="center">
   <img src="../assets/chapter-5/s3-network-api.png" width="700" alt="Grafo de ramas de stockia-platform-api"/>
   <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
@@ -1724,7 +1722,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: contribuciones en `stockia-webapp`**
 
-<!-- IMAGEN PENDIENTE: Insights → Contributors de stockia-webapp durante el Sprint 3 -->
 <p align="center">
   <img src="../assets/chapter-5/s3-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
   <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
@@ -1764,8 +1761,6 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 
 ### **5.3.2. Interview Recording**
 
-<table width="100%">
-  <tbody>
     <table width="100%">
   <thead>
     <tr>
@@ -2011,7 +2006,7 @@ Por otro lado, identificó algunas oportunidades de mejora, como evaluar un camb
 
 Como principal recomendación, mencionó que sería conveniente incorporar más ejemplos y una demostración del funcionamiento de la aplicación, de modo que los usuarios puedan visualizar mejor cómo se utilizaría en un negocio real. A pesar de ello, su valoración general fue favorable e incluso manifestó que recomendaría StockIA a otros negocios. Esta entrevista permitió reconocer que, además de presentar una propuesta atractiva, es importante mostrar de manera práctica cómo StockIA puede resolver problemas cotidianos en la gestión de inventarios.
 
-**Entrevista 5:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
+**Entrevista 4:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
 
 Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
