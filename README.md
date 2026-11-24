@@ -96,7 +96,7 @@
 
 * [**Chapter V: Product Implementation, Validation & Deployment**](/docs/09-chapter-5.md#chapter-v-product-implementation-validation--deployment)
 
-  * [5.1. Configuration Management Software](/docs/09-chapter-5.md#51-configuration-management-software)
+  * [5.1. Software Configuration Management](/docs/09-chapter-5.md#51-software-configuration-management)
 
     * [5.1.1. Software Development Environment Configuration](/docs/09-chapter-5.md#511-software-development-environment-configuration)
     * [5.1.2. Source Code Management](/docs/09-chapter-5.md#512-source-code-management)
@@ -149,7 +149,7 @@
     * [5.3.1. Interview Design](/docs/09-chapter-5.md#531-interview-design)
     * [5.3.2. Interview Recording](/docs/09-chapter-5.md#532-interview-recording)
     * [5.3.3. Evaluations Based on Heuristics](/docs/09-chapter-5.md#533-evaluations-based-on-heuristics)
-  * [5.4. About-the-Product Video](/docs/09-chapter-5.md#54-about-the-product-video)
+  * [5.4. Video About-the-Product](/docs/09-chapter-5.md#54-video-about-the-product)
 
 * [**Conclusions**](/docs/10-conclusions.md#conclusions)
 
