@@ -8,9 +8,9 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Aplicación de mensajería instantánea que facilita la comunicación rápida y asíncrona entre los miembros del equipo para coordinar tareas operativas.
   Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)
 
-- **Google Meet**
-  Plataforma de videoconferencias utilizada para los eventos de Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.
-  Referencia: [https://meet.google.com/](https://meet.google.com/)
+- **Google Meet**  
+  Plataforma de videoconferencias utilizada para eventos de Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
+  Referencia: [https://meet.google.com/](https://meet.google.com/)  
 
 - **Jira**
   Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, planificar los Sprints, priorizar requisitos y documentar User Stories con criterios de aceptación.
@@ -31,9 +31,9 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Pizarra colaborativa digital para crear diagramas y esquemas en tiempo real. Se utilizó en sesiones de Event Storming para identificar procesos de negocio y definir Bounded Contexts.
   Referencia: [https://miro.com/](https://miro.com/)
 
-- **Figma**
-  Editor de gráficos vectoriales y herramienta de prototipado de interfaces. Se empleó para wireframes, mockups y prototipos interactivos del proyecto.
-  Referencia: [https://www.figma.com/](https://www.figma.com/)
+- **Jira**  
+  Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, priorizar requisitos y documentar User Stories con criterios de aceptación.  
+  Referencia: [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)  
 
 ---
 
@@ -131,14 +131,14 @@ Para ello, se creó una organización pública que contiene los siguientes repos
 
 | Solución | Nombre del repositorio | Enlace |
 |---|---|---|
-| Report (documentación en Markdown) | `stockia-report` | https://github.com/upc-pre-202620-1asi0730-16127-stockia/stockia-report.git |
+| Report (documentación en Markdown) | `stockia-report` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-report.git |
 | Website (Landing Page) | `stockia-website` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-website.git |
 | WebApp (Frontend Web Application) | `stockia-webapp` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-webapp.git |
-| Platform (RESTful Web Services) | `stockia-platform` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-platform-api.git |
+| Platform (RESTful Web Services) | `stockia-platform-api` | https://github.com/upc-pre-202620-1asi0730-16127-databit/stockia-platform-api.git |
 
-En el caso del repositorio **`stockia-platform`**, este incluye tanto el proyecto principal del API como los archivos de pruebas, tanto unitarias como de integración / aceptación.
+En el caso del repositorio **`stockia-platform-api`**, este incluye tanto el proyecto principal del API como los archivos de pruebas, tanto unitarias como de integración / aceptación.
 
-<img src="/assets/chapter-5/5.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/5.jpeg" alt="Repositorios de la organización en GitHub" width="500"/> <br>
 
 ---
 
@@ -179,7 +179,7 @@ Rama para preparar una nueva versión de producción. Se crea desde `develop` cu
 release/v1.2.0
 ```
 ### `hotfix/<descripción-corta>`
-Rama para correcciones urgentes sobre producción. Se crea desde main y se integra gtanto a main como a develop.
+Rama para correcciones urgentes sobre producción. Se crea desde main y se integra tanto a main como a develop.
 **Ejemplo:**
 
 ```text
@@ -187,7 +187,7 @@ hotfix/stock-discount-error
 ```
 Todas las ramas se nombran en inglés y aplicando kebab-case.
 
-<img src="/assets/chapter-5/6.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/6.jpeg" alt="Ramas de GitFlow en los repositorios" width="500"/> <br>
 
 
 
@@ -235,7 +235,7 @@ docs(chapter-iv): add information architecture section
 ```
 Este enfoque facilita la generación de historiales de cambios y mantiene un registro organizado y semántico del desarrollo.
 
-<img src="/assets/chapter-5/7.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/7.jpeg" alt="Commits con Conventional Commits" width="500"/> <br>
 
 
 ### **5.1.3. Source Code Style Guide & Conventions**
@@ -325,9 +325,9 @@ A continuación se describe la configuración de despliegue de cada producto dig
 
 4. Configurar el proyecto con Framework Preset **"Other"**, al tratarse de un sitio estático sin proceso de build.
 
-<img src="/assets/chapter-5/2.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/2.jpeg" alt="Configuración del proyecto en Vercel" width="500"/> <br>
 
-5. Establecer `develop` como rama de producción. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request hacia `develop` genera un preview deployment para revisión previa a la integración.
+5. Mantener `main` como rama de producción. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request hacia `develop` genera un preview deployment para revisión previa a la integración.
 
 6. Verificar el despliegue accediendo a la URL pública asignada por Vercel y registrarla en la documentación del proyecto.
 
@@ -337,13 +337,13 @@ A continuación se describe la configuración de despliegue de cada producto dig
 
 La siguiente imagen muestra el panel de Vercel con el **Production Deployment** del Landing Page, donde se observa el estado `Ready`, la rama utilizada y el dominio público asignado.
 
-<img src="/assets/chapter-5/1.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/1.jpeg" alt="Production Deployment del Landing Page en Vercel" width="500"/> <br>
 
 ##### Landing Page desplegada
 
 La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible mediante el dominio público proporcionado por Vercel**.
 
-<img src="/assets/chapter-5/3.jpeg" alt="C4 Diagram" width="500"/> <br>
+<img src="../assets/chapter-5/3.jpeg" alt="Landing Page desplegada" width="500"/> <br>
 
 #### RESTful Web Services (ASP.NET Core + MySQL) → Render
 
@@ -367,7 +367,7 @@ El RESTful API (`stockia-platform-api`) requiere un entorno de ejecución de ser
 
 ##### Configuración de variables de entorno
 
-La siguiente imagen muestra el apartado de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
+La siguiente imagen muestra el sección de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
 
 <img src="../assets/chapter-5/4.jpeg" alt="Variables de entorno de la plataforma de despliegue" width="500"/> <br>
 
@@ -477,7 +477,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 |  |  | T-R1-2 | Ajuste de cuadrículas | Reorganizar columnas y ocultar elementos no esenciales en móvil. | 4 | Ortiz Laura, Leyla Alisson | Done |
 | **RNF02** | Contraste y legibilidad accesible | T-R2-1 | Paleta de contraste | Definir colores de texto con contraste adecuado sobre fondos claros y oscuros. | 3 | Huaman Oscco, Aldo Jesus | Done |
 | **RNF03** | Navegación consistente | T-R3-1 | Navbar y footer compartidos | Reutilizar los mismos componentes en las 4 páginas. | 3 | Higa Kohatsu, Alonso Enrique | Done |
-| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y librerías pesadas innecesarias. | 3 | Tuesta Girón, Kiara Lucia | Done |
+| **RNF04** | Carga rápida | T-R4-1 | Optimización de assets | Evitar frameworks y bibliotecas pesadas innecesarias. | 3 | Tuesta Girón, Kiara Lucia | Done |
 | **RNF05** | Buen posicionamiento en buscadores | T-R5-1 | Metadatos por página | Agregar title y meta description a cada página. | 2 | Asmat Alminco, Martin Alejandro | Done |
 |  |  | T-R5-2 | Metadatos adicionales del Home | Agregar meta keywords, author y copyright en index.html. | 2 | Ortiz Laura, Leyla Alisson | Done |
 | **RNF06** | Compatibilidad con navegadores | T-R6-1 | CSS estándar (Flexbox/Grid) | Verificar compatibilidad en navegadores modernos. | 3 | Huaman Oscco, Aldo Jesus | Done |
@@ -1682,12 +1682,12 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 | :--- | :---: | :---: | :--- | :--- | :---: |
 | `/api/v1/restaurant-registrations` | POST | Pública | Body: `fullName`, `restaurantName`, `email`, `password` | `201 Created` ✱ con el restaurante, el dueño Administrador, el plan gratuito y el JWT. | US29 |
 | `/api/v1/restaurants/current` | GET | Usuario | — | `200 OK` con los datos del restaurante. | US40 |
-| `/api/v1/restaurants/current` | PUT | Administrador | Body: `name`, `adsress`, `phone` | `200 OK` con el restaurante actualizado; `403 Forbidden` para el Empleado. | US40 |
+| `/api/v1/restaurants/current` | PUT | Administrador | Body: `name`, `address`, `phone` | `200 OK` con el restaurante actualizado; `403 Forbidden` para el Empleado. | US40 |
 
 **Stock Management (Martin) — US21, US36**
 
 | **Endpoint** | **Verbo** | **Acceso** | **Parámetros** | **Response de muestra** | **US** |
-| :--- | :---: | :---: | :--- | :--- | :---: | :---: |
+| :--- | :---: | :---: | :--- | :--- | :---: |
 | `/api/v1/inventory-items` | GET | Usuario | — | `200 OK` con los insumos (lotes), sus cantidades de hasta 32 decimales como texto y su estado. | US21, US36 |
 | `/api/v1/inventory-items` | POST | Usuario | Body: insumo, cantidad, costo y vencimiento  | `201 Created` ✱ con el lote registrado.| US21 |
 | `/api/v1/inventory-items/{id}` | GET | Usuario | Path: `id` | `200 OK` con el insumo; `404 Not Found` si no existe. | US21 |
@@ -1753,7 +1753,7 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
  
 En el Sprint 3 se desplegaron el RESTful API en **Render** y su base de datos MySQL (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos. <!-- VERIFICAR: el repositorio contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Confirmar la plataforma real y su proveedor de MySQL. Si fue Azure, volver a la redacción anterior y cambiar las URLs. Debe coincidir con 5.1.4. -->
 
-**Actividades de despliegue realizadas** *(ajustar a lo realmente ejecutado)*
+**Actividades de despliegue realizadas**
 
 1. Se creó el flujo `ci.yml` en GitHub Actions: compilación, pruebas xUnit, verificación de migraciones, smoke test contra MySQL 8.4 y prueba E2E con Playwright.
 2. Se probó el API localmente con `docker compose up --build` (MySQL 8.4 y API en el puerto 5000), que aplica las migraciones y carga los datos demo.
@@ -1811,7 +1811,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: contribuciones por integrante en `stockia-platform-api`**
 
-<!-- IMAGEN PENDIENTE: GitHub → Insights → Contributors de stockia-platform-api -->
 <p align="center">
   <img src="../assets/chapter-5/s3-contributors-api.png" width="700" alt="Contribuciones por integrante en stockia-platform-api"/>
   <br/><i>Insights → Contributors del repositorio stockia-platform-api</i>
@@ -1819,7 +1818,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: grafo de GitFlow**
 
-<!-- IMAGEN PENDIENTE: GitHub → Insights → Network con las ramas feature/* integradas -->
 <p align="center">
   <img src="../assets/chapter-5/s3-network-api.png" width="700" alt="Grafo de ramas de stockia-platform-api"/>
   <br/><i>Insights → Network: ramas feature integradas mediante Pull Request</i>
@@ -1827,7 +1825,6 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 **Evidencia: contribuciones en `stockia-webapp`**
 
-<!-- IMAGEN PENDIENTE: Insights → Contributors de stockia-webapp durante el Sprint 3 -->
 <p align="center">
   <img src="../assets/chapter-5/s3-contributors-webapp.png" width="700" alt="Contribuciones por integrante en stockia-webapp"/>
   <br/><i>Insights → Contributors del repositorio stockia-webapp</i>
@@ -1867,8 +1864,6 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 
 ### **5.3.2. Interview Recording**
 
-<table width="100%">
-  <tbody>
     <table width="100%">
   <thead>
     <tr>
@@ -2114,7 +2109,7 @@ Por otro lado, identificó algunas oportunidades de mejora, como evaluar un camb
 
 Como principal recomendación, mencionó que sería conveniente incorporar más ejemplos y una demostración del funcionamiento de la aplicación, de modo que los usuarios puedan visualizar mejor cómo se utilizaría en un negocio real. A pesar de ello, su valoración general fue favorable e incluso manifestó que recomendaría StockIA a otros negocios. Esta entrevista permitió reconocer que, además de presentar una propuesta atractiva, es importante mostrar de manera práctica cómo StockIA puede resolver problemas cotidianos en la gestión de inventarios.
 
-**Entrevista 5:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
+**Entrevista 4:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
 
 Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
@@ -2123,12 +2118,11 @@ Como observaciones puntuales, menciono que los aspectos funcionales bastan para 
 **Usability – Inclusive Design – Information Architecture**
 
 **CARRERA		: Ingeniería de Software**  
-**CURSO		: IHC y Tecnologías Móviles**  
+**CURSO		: Aplicaciones Web**  
 **PROFESORES	: Todos**  
 **AUDITOR		:**   
 **CLIENTE		:** Databit
 
-## 
 
 **SITE o APP A EVALUAR:** Databit<br><br>
 **TAREAS A EVALUAR:**<br>
@@ -2140,7 +2134,7 @@ Pantalla de dashboard: Se muestra información importante que se le muestra ni b
 **T2: Revisar el “Demand forecast”**<br>
 Apartado de “Demand forecast”.
 
-**T3: Revisar el apartado de recomendaciones automáticas**<br>
+**T3: Revisar el sección de recomendaciones automáticas**<br>
 *Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
 
 
@@ -2168,7 +2162,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
 | 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
 
-## 
 
 ## **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -2200,7 +2193,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%201.jpeg" width="800" />
 
-### 
 
 ### **Problema 3: Falta de contenido de valor en “Demand Forecast”**
 
@@ -2232,7 +2224,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%202.jpeg" width="800" />
 
-### 
 
 ### **Problema 5: Mucho texto distrae y genera mucho ruido visual**
 
@@ -2249,7 +2240,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%203.jpeg" width="800" />
 
-### 
 
 ### **Problema 6: Mezcla de inglés y español en la interfaz**
 
@@ -2264,7 +2254,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="../assets/chapter-5/heuristica%201.jpeg" width="800" />
 
-### 
 
 ### **Problema 7: Mensaje “Invalid PrimeUI License” visible en todas las pantallas**
 
@@ -2272,14 +2261,13 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 * **Descripción del problema:**
   * En la esquina inferior derecha aparece una etiqueta roja con el texto “Invalid PrimeUI License” que no se puede cerrar y se queda sobre el contenido y el pie de página en todas las pantallas revisadas.
   * Es un mensaje técnico de desarrollo que un administrador de restaurante no entiende ni puede resolver, y su tono rojo es parecido al de las alertas críticas, así que puede hacer pensar que hay un problema real con la cuenta o con el sistema y restar confianza.
-* **Recomendación:** Configurar una licencia válida de la librería de componentes o retirar el aviso en la versión que ve el cliente, y asegurarse de que los mensajes técnicos de desarrollo nunca lleguen al usuario final.
+* **Recomendación:** Configurar una licencia válida de la biblioteca de componentes o retirar el aviso en la versión que ve el cliente, y asegurarse de que los mensajes técnicos de desarrollo nunca lleguen al usuario final.
 * **Categorización:**
   * **Problema en Heurística 8 (Diseño estético y minimalista):** el aviso es información ajena a las tareas del usuario y ocupa un espacio visible de forma permanente.
   * **Problema en Heurística 2 (Concordancia entre el sistema y el mundo real):** usa lenguaje técnico de desarrollo que no corresponde al del usuario final.
 
 <img src="../assets/chapter-5/heuristica%202.jpeg" width="800" />
 
-### 
 
 ### **Problema 8: Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto**
 

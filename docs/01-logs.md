@@ -81,4 +81,25 @@
     Validation Interviews
     </td>
   </tr>
+  <tr>
+    <td style="text-align: center;">
+    Cuarta Entrega (TB2)
+    </td>
+    <td style="text-align: center;">
+    Por confirmar
+    </td>
+    <td style="text-align: center;">
+    Higa Kohatsu, Alonso Enrique<br>
+    Asmat Alminco, Martin Alejandro<br>
+    Huaman Oscco, Aldo Jesus<br>
+    Ortiz Laura, Leyla Alisson<br>
+    Tuesta Girón, Kiara Lucia
+    </td>
+    <td style="text-align: justify;">
+    Corrección del reporte AV2<br>
+    Corrección de formato: portada, registros, Student Outcome, terminología, bibliografía y anexos<br>
+    Capítulo V: Product Implementation, Validation & Deployment (Sprint 4)<br>
+    Conclusiones y Anexos finales
+    </td>
+  </tr>
 </table>
