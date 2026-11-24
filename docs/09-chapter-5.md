@@ -1,31 +1,35 @@
 # **Chapter V: Product Implementation, Validation & Deployment**
 ## **5.1. Configuration Management Software**
 ### 5.1.1. Software Development Environment Configuration
-A continuación se detallan los productos de software utilizados en el proyecto **StockIA**, organizados según las principales actividades del ciclo de vida del producto digital.
+A continuación se detallan los productos de software utilizados en el proyecto **StockIA**, organizados según las principales actividades del ciclo de vida del producto digital. Cada herramienta indica su propósito en el proyecto y su referencia oficial.
 
-### Project Management  
-- **WhatsApp**  
-  Aplicación de mensajería instantánea que facilita la comunicación rápida y asíncrona entre los miembros del equipo para coordinar tareas operativas.  
-  Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)  
+### Project Management
+- **WhatsApp**
+  Aplicación de mensajería instantánea que facilita la comunicación rápida y asíncrona entre los miembros del equipo para coordinar tareas operativas.
+  Referencia: [https://web.whatsapp.com/](https://web.whatsapp.com/)
 
 - **Google Meet**  
   Plataforma de videoconferencias utilizada para eventos de Scrum, reuniones de sincronización técnica y sesiones de compartición de pantalla en tiempo real.  
   Referencia: [https://meet.google.com/](https://meet.google.com/)  
 
+- **Jira**
+  Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, planificar los Sprints, priorizar requisitos y documentar User Stories con criterios de aceptación.
+  Referencia: [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)
+
+- **Google Sheets**
+  Hoja de cálculo colaborativa usada para registrar las horas asignadas por integrante y el seguimiento de las actividades de cada Sprint.
+  Referencia: [https://workspace.google.com/products/sheets/](https://workspace.google.com/products/sheets/)
+
 ---
 
-### Product UX/UI Design  
-- **UXPressia**  
-  Plataforma especializada en mapeo de experiencia de usuario y diseño de servicios. Se usó para elaborar user personas, journey mapping, empathy mapping e impact mapping.  
-  Referencia: [https://uxpressia.com/](https://uxpressia.com/)  
+### Product UX/UI Design
+- **UXPressia**
+  Plataforma especializada en mapeo de experiencia de usuario y diseño de servicios. Se usó para elaborar user personas, journey mapping, empathy mapping e impact mapping.
+  Referencia: [https://uxpressia.com/](https://uxpressia.com/)
 
-- **Miro**  
-  Pizarra colaborativa digital para crear diagramas y esquemas en tiempo real. Se utilizó en sesiones de Event Storming para identificar procesos de negocio y definir Bounded Contexts.  
-  Referencia: [https://miro.com/](https://miro.com/)  
-
-- **Figma**  
-  Editor de gráficos vectoriales y herramienta de prototipado de interfaces. Se empleó para wireframes, mockups y prototipos interactivos del proyecto.  
-  Referencia: [https://www.figma.com/](https://www.figma.com/)  
+- **Miro**
+  Pizarra colaborativa digital para crear diagramas y esquemas en tiempo real. Se utilizó en sesiones de Event Storming para identificar procesos de negocio y definir Bounded Contexts.
+  Referencia: [https://miro.com/](https://miro.com/)
 
 - **Jira**  
   Software de gestión de proyectos ágil (Scrum/Kanban). Se usó para administrar el Product Backlog, priorizar requisitos y documentar User Stories con criterios de aceptación.  
@@ -33,40 +37,92 @@ A continuación se detallan los productos de software utilizados en el proyecto 
 
 ---
 
-### Software Development  
-- **Visual Studio Code**  
-  Editor de código fuente ligero y extensible. Se utilizó para el desarrollo de componentes frontend, refactorización de scripts y edición rápida de código.  
-  Descargar: [https://code.visualstudio.com/](https://code.visualstudio.com/)  
+### Software Development
+- **Visual Studio Code**
+  Editor de código fuente ligero y extensible. Se utilizó para el desarrollo del Landing Page y de la Web Application.
+  Referencia: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-- **Extensión .rd para Visual Studio Code**  
-  Herramienta integrada en VS Code para diseño y modelado de bases de datos. Se usó para crear y gestionar el esquema relacional de StockIA directamente desde el entorno de desarrollo.  
-  Referencia: Marketplace de Visual Studio Code (extensión .rd).  
+- **Extensión .rd para Visual Studio Code**
+  Herramienta integrada en VS Code para diseño y modelado de bases de datos. Se usó para crear y gestionar el esquema relacional de StockIA directamente desde el entorno de desarrollo.
+  Referencia: Marketplace de Visual Studio Code (extensión .rd).
+
+- **JetBrains Rider** <!-- VERIFICAR: confirmar el IDE usado por cada integrante del backend (Rider o Visual Studio) -->
+  IDE para .NET usado en el desarrollo del RESTful API.
+  Referencia: [https://www.jetbrains.com/rider/](https://www.jetbrains.com/rider/)
+
+- **.NET SDK 10 y ASP.NET Core**
+  Plataforma de desarrollo del RESTful API, organizado en Bounded Contexts.
+  Referencia: [https://dotnet.microsoft.com/](https://dotnet.microsoft.com/)
+
+- **Entity Framework Core**
+  ORM usado para el mapeo objeto-relacional y las migraciones de la base de datos.
+  Referencia: [https://learn.microsoft.com/ef/core/](https://learn.microsoft.com/ef/core/)
+
+- **MySQL 8.4**
+  Sistema gestor de base de datos relacional del RESTful API.
+  Referencia: [https://www.mysql.com/](https://www.mysql.com/)
+
+- **Docker y Docker Compose**
+  Contenedores usados para ejecutar el API y MySQL de forma local y reproducible.
+  Referencia: [https://www.docker.com/](https://www.docker.com/)
+
+- **Node.js, Vite, Vue 3, Pinia, Vue Router y vue-i18n**
+  Entorno y biblioteca base de la Web Application (SPA), con gestión de estado, enrutamiento e internacionalización.
+  Referencia: [https://vuejs.org/](https://vuejs.org/)
+
+- **PrimeVue**
+  Biblioteca de componentes de interfaz usada en la Web Application.
+  Referencia: [https://primevue.org/](https://primevue.org/)
+
+- **Python y ONNX Runtime**
+  Python se usó para entrenar el modelo de pronóstico de demanda y exportarlo a formato ONNX, que el API ejecuta con ONNX Runtime.
+  Referencia: [https://onnxruntime.ai/](https://onnxruntime.ai/)
+
+- **Scalar y OpenAPI**
+  Documentación interactiva del RESTful API generada a partir de la especificación OpenAPI.
+  Referencia: [https://scalar.com/](https://scalar.com/)
+
+- **xUnit y Playwright**
+  xUnit para las pruebas unitarias y de integración del API, y Playwright para la prueba E2E.
+  Referencia: [https://xunit.net/](https://xunit.net/) · [https://playwright.dev/](https://playwright.dev/)
 
 ---
 
-### Software Deployment  
-- **GitHub**  
-  Plataforma de desarrollo colaborativo basada en Git. Se empleó para alojar el código fuente y gestionar el despliegue continuo de la aplicación.  
-  Referencia: [https://github.com/](https://github.com/)  
+### Software Deployment
+- **GitHub y GitHub Actions**
+  GitHub aloja el código fuente. GitHub Actions ejecuta la integración continua del API (compilación, pruebas, migraciones y prueba E2E).
+  Referencia: [https://github.com/](https://github.com/)
+
+- **Vercel**
+  Plataforma de despliegue del Landing Page y de la Web Application.
+  Referencia: [https://vercel.com/](https://vercel.com/)
+
+- **Render** <!-- VERIFICAR: confirmar que Render es la plataforma real del API (ver 5.1.4) -->
+  Plataforma de despliegue del RESTful API.
+  Referencia: [https://render.com/](https://render.com/)
 
 ---
 
-### Software Documentation  
-- **GitHub**  
-  Además de control de versiones, se utilizó para redactar, organizar y dar seguimiento al informe completo del proyecto.  
-  Referencia: [https://github.com/](https://github.com/)  
+### Software Documentation
+- **GitHub**
+  Además de control de versiones, se utilizó para redactar, organizar y dar seguimiento al informe completo del proyecto.
+  Referencia: [https://github.com/](https://github.com/)
 
-- **Structurizr**  
-  Herramienta para modelado de arquitectura de software mediante el enfoque C4. Se usó para construir los diagramas de arquitectura del proyecto.  
-  Referencia: [https://structurizr.com/](https://structurizr.com/)  
+- **Structurizr**
+  Herramienta para modelado de arquitectura de software mediante el enfoque C4. Se usó para construir los diagramas de arquitectura del proyecto.
+  Referencia: [https://structurizr.com/](https://structurizr.com/)
+
+- **YouTube y Microsoft Stream** <!-- VERIFICAR: confirmar dónde se alojan los videos de entrevistas y exposiciones -->
+  Plataformas de alojamiento de los videos de exposición, validación, About-the-Product y About-the-Team.
+  Referencia: [https://www.youtube.com/](https://www.youtube.com/) · [https://www.microsoft.com/microsoft-365/microsoft-stream](https://www.microsoft.com/microsoft-365/microsoft-stream)
 
 ---
 
-El equipo adopta un enfoque basado en herramientas que permiten la colaboración en tiempo real y el acceso remoto a los recursos del proyecto. **GitHub** actúa como eje central para la gestión del código fuente y la documentación, mientras que las reuniones por **Google Meet** y **WhatsApp** aseguran una comunicación fluida y constante entre los miembros del equipo.  
+El equipo adopta un enfoque basado en herramientas que permiten la colaboración en tiempo real y el acceso remoto a los recursos del proyecto. **GitHub** actúa como eje central para la gestión del código fuente y la documentación, mientras que las reuniones por **Google Meet** y **WhatsApp** aseguran una comunicación fluida y constante entre los miembros del equipo.
 
-Por otro lado, herramientas como **Figma**, **UXPressia** y **Miro** facilitan la construcción de artefactos de diseño centrados en el usuario, mientras que **Jira** permite organizar el trabajo en Sprints siguiendo principios ágiles. En el ámbito del desarrollo, **Visual Studio Code** junto con la extensión **.rd** proporcionan un entorno flexible para programar y modelar la base de datos de StockIA.  
+Por otro lado, herramientas como **Figma**, **UXPressia** y **Miro** facilitan la construcción de artefactos de diseño centrados en el usuario, mientras que **Jira** permite organizar el trabajo en Sprints siguiendo principios ágiles. En el desarrollo, **ASP.NET Core** con **Entity Framework Core** y **MySQL** sostienen el API, **Vue** con **PrimeVue** la Web Application, y **GitHub Actions**, **Vercel** y **Render** automatizan las pruebas y el despliegue.
 
-Finalmente, **Structurizr** contribuye al modelado arquitectónico y la documentación técnica, garantizando que diseño, desarrollo, pruebas y despliegue se mantengan alineados. Esta configuración asegura una entrega continua de valor en cada iteración del proyecto **StockIA**.  
+Finalmente, **Structurizr** contribuye al modelado arquitectónico y la documentación técnica, garantizando que diseño, desarrollo, pruebas y despliegue se mantengan alineados. Esta configuración asegura una entrega continua de valor en cada iteración del proyecto **StockIA**.
 
 ### **5.1.2. Source Code Management**
 El equipo **DataBite Corp** utiliza **GitHub** como plataforma y sistema de control de versiones para todos los productos digitales de StockIA, lo que permite mantener un registro histórico de cambios, colaborar de forma estructurada y garantizar la trazabilidad durante todo el ciclo de desarrollo.
@@ -135,6 +191,23 @@ Todas las ramas se nombran en inglés y aplicando kebab-case.
 
 
 
+### Evidencia de GitFlow y versionado por repositorio
+
+La siguiente tabla resume las ramas y las versiones (tags) existentes en cada repositorio de la organización, para evidenciar la aplicación de GitFlow y de Semantic Versioning.
+
+| Repositorio | Ramas permanentes | Ramas de trabajo (ejemplos) | Tags de versión |
+|---|---|---|---|
+| `stockia-report` | `main`, `develop` | `feature/chapter-1` … `feature/chapter-5` | `v1.0.0`, `v2.0.0` |
+| `stockia-website` | `main`, `develop` | `feature/about`, `feature/features-page`, `feature/styles` | `v1.0.0` |
+| `stockia-webapp` | `main`, `develop` | `feature/iam`, `feature/stock-management`, `feature/recipes-management`, `feature/ml-recommendations`, `feature/notifications-messaging`, `feature/analytics-dashboard`, `feature/subscription`, `fix/webapp-integration` | <!-- COMPLETAR: tags de stockia-webapp (hoy no existen). Crear al menos v1.0.0 sobre main y listarlo aquí. --> |
+| `stockia-platform-api` | `main`, `develop` | `feature/iam`, `feature/stock-management`, `feature/recipe-managment`, `feature/ml-recommendations`, `feature/notifications-messaging`, `feature/analytics-dashboard`, `feature/subscription-payments`, `feature/restaurant-registration`, `chore/add-sln`, `fix/solution-file` | <!-- COMPLETAR: tags de stockia-platform-api (hoy no existen). Crear al menos v1.0.0 sobre main y listarlo aquí. --> |
+
+<!-- COMPLETAR: tag de la entrega TB2 en stockia-report (por ejemplo v3.0.0) una vez publicada. -->
+
+Los cambios se integran a `develop` mediante Pull Request desde cada rama `feature/*`, y `develop` se publica en `main` mediante un Pull Request de release. En `stockia-platform-api`, por ejemplo, los Pull Requests muestran este flujo, desde `feature/recipe-managment` (#1) hasta la publicación de `develop` en `main` (#15), tal como se lista en la evidencia de commits del Sprint 3 (sección 5.2.3.4).
+
+<!-- VERIFICAR: en la rama `develop` de cada repositorio revisar una muestra de 10 commits y confirmar que siguen Conventional Commits. En stockia-report hay commits que no los siguen (por ejemplo "Merge pull request ..."), que son generados por GitHub y son aceptables. -->
+
 ## Semantic Versioning
 
 El equipo aplica **Semantic Versioning 2.0.0** para el nombrado de releases, bajo el esquema `MAJOR.MINOR.PATCH`, donde **MAJOR** corresponde a cambios incompatibles con versiones anteriores del API, **MINOR** a nuevas funcionalidades compatibles con versiones anteriores, y **PATCH** a correcciones de errores compatibles. La primera versión funcional del producto será `v1.0.0`, correspondiente al entregable del Sprint 1.
@@ -170,7 +243,7 @@ Como norma general, todo el código desarrollado en StockIA se redacta completam
 
 ## HTML
 
-Se siguen el **HTML Style Guide and Coding Conventions (W3Schools)** y el **Google HTML/CSS Style Guide**:
+Se siguen el **HTML Style Guide and Coding Conventions (W3Schools)** ([https://www.w3schools.com/html/html5_syntax.asp](https://www.w3schools.com/html/html5_syntax.asp)) y el **Google HTML/CSS Style Guide** ([https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)):
 
 - Etiquetas y atributos en minúsculas, con comillas dobles: `<section id="inventory-summary"></section>`
 - Cierre correcto de todos los elementos.
@@ -179,7 +252,7 @@ Se siguen el **HTML Style Guide and Coding Conventions (W3Schools)** y el **Goog
 
 ## CSS
 
-Se sigue el **Google HTML/CSS Style Guide**:
+Se sigue el **Google HTML/CSS Style Guide** ([https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)):
 
 - Clases e IDs en kebab-case: `.inventory-card`, `.alert-banner`
 - Omitir unidades en valores cero: `margin: 0;`
@@ -189,7 +262,7 @@ Se sigue el **Google HTML/CSS Style Guide**:
 
 ## JavaScript
 
-Se siguen el **Google JavaScript Style Guide**, las **MDN JavaScript Guidelines** y el **W3C JavaScript Style Guide**:
+Se siguen el **Google JavaScript Style Guide** ([https://google.github.io/styleguide/jsguide.html](https://google.github.io/styleguide/jsguide.html)), las **MDN JavaScript Guidelines** ([https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/JavaScript](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/JavaScript)) y el **W3C JavaScript Style Guide** ([https://www.w3schools.com/js/js_conventions.asp](https://www.w3schools.com/js/js_conventions.asp)):
 
 - camelCase para variables y funciones: `function calculateStockLevel() {}`
 - Declaración con `const` y `let`, evitando `var`: `const stockThreshold = 10;`
@@ -199,7 +272,7 @@ Se siguen el **Google JavaScript Style Guide**, las **MDN JavaScript Guidelines*
 
 ## Vue (Frontend Web Application)
 
-Se sigue el **Vue Style Guide oficial**:
+Se sigue el **Vue Style Guide oficial** ([https://vuejs.org/style-guide/](https://vuejs.org/style-guide/)):
 
 - Nombres de componentes en PascalCase: `InventoryDashboard`, `RecipeForm`
 - Nombres de archivos de componente en PascalCase o kebab-case de forma consistente: `InventoryDashboard.vue`
@@ -210,18 +283,18 @@ Se sigue el **Vue Style Guide oficial**:
 
 ## C# (RESTful API con ASP.NET Core)
 
-Se siguen las **C# Coding Conventions** y las **Microsoft ASP.NET Core Coding Guidelines**:
+Se siguen las **C# Coding Conventions** ([https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions](https://learn.microsoft.com/dotnet/csharp/fundamentals/coding-style/coding-conventions)) y las **Microsoft ASP.NET Core Coding Guidelines** ([https://github.com/dotnet/aspnetcore/wiki/engineering-guidelines](https://github.com/dotnet/aspnetcore/wiki/engineering-guidelines)):
 
 - PascalCase para clases, métodos y propiedades públicas: `public class InventoryService { public void DeductIngredients() { } }`
 - camelCase para variables locales y parámetros: `int stockQuantity;`
 - UPPER_SNAKE_CASE para constantes: `const int MAX_INGREDIENTS = 500;`
 - Sangría de 4 espacios, sin tabulaciones.
 - Aplicación de los principios de responsabilidad única y código modular, organizado por bounded context.
-- Documentación de endpoints con OpenAPI mediante Swagger.
+- Documentación de endpoints con OpenAPI, publicada con Scalar (interfaz interactiva equivalente a Swagger UI).
 
 ## Gherkin (criterios de aceptación y pruebas de aceptación)
 
-Se siguen las **Gherkin Conventions for Readable Specifications**:
+Se siguen las **Gherkin Conventions for Readable Specifications** ([https://cucumber.io/docs/bdd/better-gherkin/](https://cucumber.io/docs/bdd/better-gherkin/)):
 
 - Estructura obligatoria Given – When – Then.
 - Escenarios en inglés, descriptivos, cortos y sin ambigüedad.
@@ -272,27 +345,53 @@ La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible
 
 <img src="../assets/chapter-5/3.jpeg" alt="Landing Page desplegada" width="500"/> <br>
 
-#### RESTful Web Services (ASP.NET Core + MySQL)
+#### RESTful Web Services (ASP.NET Core + MySQL) → Render
 
-El RESTful API requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en una plataforma compatible junto con su base de datos relacional.
+El RESTful API (`stockia-platform-api`) requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en **Render** a partir del `Dockerfile` del repositorio, junto con su base de datos MySQL. <!-- VERIFICAR: confirmar la plataforma real del API. El repositorio también contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Si se usó Azure, reemplazar Render por Azure en esta sección y en 5.2.3.7. -->
 
-La configuración prevista contempla:
+1. Crear el servicio de base de datos MySQL y registrar sus datos de conexión. <!-- VERIFICAR: indicar el proveedor real de MySQL usado con Render -->
 
-1. Crear el servicio de base de datos MySQL.
+2. Crear en Render un **Web Service** desde el repositorio `stockia-platform-api`, rama `main`, con entorno **Docker**.
 
-2. Registrar las variables de entorno de conexión (host, puerto, nombre de base de datos, usuario y contraseña) en la plataforma de despliegue.
+3. Registrar las variables de entorno en la plataforma de despliegue, sin incluirlas en el repositorio: `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET` y `STOCKIA_CORS_ORIGINS`.
 
-3. Referenciar dichas variables desde el archivo de configuración `appsettings.json` del proyecto en lugar de escribir las credenciales directamente en el código.
+4. El API lee esas variables al arrancar, en lugar de tener las credenciales escritas en el código, y aplica las migraciones de Entity Framework Core para crear las tablas.
 
-4. La documentación de los endpoints quedará disponible públicamente vía Swagger UI.
+5. La documentación interactiva de los endpoints queda disponible públicamente mediante **Scalar**, sobre el documento OpenAPI generado por el API.
 
-5. La configuración detallada y las URLs finales se documentarán en el Sprint correspondiente, una vez implementado el servicio.
+6. Verificar el despliegue accediendo a la URL pública del API y al endpoint `/api/v1/health`.
+
+* **URL del RESTful API:** https://stockia-platform-api.onrender.com
+* **URL de Scalar:** https://stockia-platform-api.onrender.com/scalar/
+* **Documento OpenAPI:** https://stockia-platform-api.onrender.com/openapi/v1.json
 
 ##### Configuración de variables de entorno
 
 La siguiente imagen muestra el sección de **Environment Variables** de la plataforma de despliegue, utilizado para gestionar las variables de configuración del proyecto.
 
 <img src="../assets/chapter-5/4.jpeg" alt="Variables de entorno de la plataforma de despliegue" width="500"/> <br>
+
+#### Web Application → Vercel
+
+1. El código fuente de la Web Application (Vue 3, Vite y PrimeVue) reside en el repositorio `stockia-webapp`, rama `main`.
+
+2. Importar el repositorio en Vercel mediante **"Add New Project" → "Import Git Repository"**.
+
+3. Configurar el proyecto con Framework Preset **"Vite"**, comando de build `npm run build` y directorio de salida `dist`, tal como declara el archivo `vercel.json`. Ese archivo también reescribe todas las rutas a `index.html` para que el enrutamiento de la SPA funcione.
+
+4. Definir la variable de entorno `VITE_STOCKIA_API_URL` con la URL del RESTful API.
+
+5. Cada push a `main` desencadena un redespliegue automático, y cada Pull Request genera un preview deployment.
+
+* **URL de la Web Application:** https://webapp-stockia.vercel.app/
+
+<!-- IMAGEN PENDIENTE: captura del panel de Vercel de stockia-webapp con el Production Deployment en estado Ready. Guardar en assets/chapter-5/ y enlazarla aquí con alt descriptivo. -->
+
+#### Integración continua (GitHub Actions)
+
+El repositorio `stockia-platform-api` define el flujo `ci.yml` en GitHub Actions, que en cada push y Pull Request compila el API con .NET 10, ejecuta las pruebas xUnit, verifica las migraciones, realiza un smoke test contra MySQL 8.4 y ejecuta la prueba E2E con Playwright.
+
+<!-- IMAGEN PENDIENTE: captura de la pestaña Actions de stockia-platform-api con una ejecución exitosa de ci.yml. -->
 
 ## **5.2. Landing Page, Services & Applications Implementation**
 ### **5.2.1. Sprint 1**
@@ -1210,6 +1309,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 
 <!-- IMAGEN PENDIENTE: Jira con el Sprint 3 priorizado -->
 <p align="center">
+  <!-- PONER AQUÍ: captura del tablero de Jira con el Sprint 3 terminado (todas las US en Done). Guardar como assets/chapter-5/s3-jira-sprint3-done.png -->
   <img src="../assets/chapter-5/s3-jira-sprint3-done.png" width="800" alt="Tablero del Sprint 3 finalizado"/>
   <br/><i>Tablero del Sprint 3 finalizado</i>
 </p>
@@ -1475,6 +1575,7 @@ En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. La
 </p>
 
 <p align="center">
+  <!-- PONER AQUÍ: captura de la pantalla de estado de lotes de la Web Application con datos de muestra. Guardar como assets/chapter-5/s3-exec-08-stock-status.png -->
   <img src="../assets/chapter-5/s3-exec-08-stock-status.png" width="800" alt="Estado de los lotes"/>
   <br/><i>Estado de vencimiento de los lotes (US36)</i>
 </p>
@@ -1499,6 +1600,7 @@ En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. La
 **5. ML & Recommendations (US25, US26):** pronóstico de 7 días por plato con el modelo ONNX, estado del modelo y recomendaciones de compra y de menú.
 
 <p align="center">
+  <!-- PONER AQUÍ: captura de la pantalla de pronóstico de demanda (Demand Forecast). Guardar como assets/chapter-5/s3-exec-12-ml-forecast.png -->
   <img src="../assets/chapter-5/s3-exec-12-ml-forecast.png" width="800" alt="Pronóstico de demanda"/>
   <br/><i>Pronóstico de demanda a 7 días y estado del modelo (US25)</i>
 </p>
@@ -1649,15 +1751,15 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 
 #### **5.2.3.7. Software Deployment Evidence for Sprint Review**
  
-En el Sprint 3 se desplegaron el RESTful API en **Azure App Service** y su base de datos en **Azure Database for MySQL (Flexible Server)** (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
+En el Sprint 3 se desplegaron el RESTful API en **Render** y su base de datos MySQL (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos. <!-- VERIFICAR: el repositorio contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Confirmar la plataforma real y su proveedor de MySQL. Si fue Azure, volver a la redacción anterior y cambiar las URLs. Debe coincidir con 5.1.4. -->
 
 **Actividades de despliegue realizadas**
 
 1. Se creó el flujo `ci.yml` en GitHub Actions: compilación, pruebas xUnit, verificación de migraciones, smoke test contra MySQL 8.4 y prueba E2E con Playwright.
 2. Se probó el API localmente con `docker compose up --build` (MySQL 8.4 y API en el puerto 5000), que aplica las migraciones y carga los datos demo.
-3. Se creó el servidor MySQL en Azure con acceso desde los servicios de Azure y `STOCKIA_DB_SSLMODE=Required`.
-4. Se creó el App Service (Linux, .NET 10) con el comando de inicio `dotnet DataBit.StockIA.Platform.dll` y las variables de entorno `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ORIGINS` e `Iam__PasswordReset__ResetLinkBaseUrl`, sin incluirlas en el repositorio.
-5. Se configuró en GitHub el secreto `AZURE_WEBAPP_PUBLISH_PROFILE` y la variable `AZURE_WEBAPP_NAME`, y `deploy-azure.yml` publica el API en cada push a `main`; las migraciones crean las tablas al arrancar.
+3. Se creó el servicio de base de datos MySQL y se configuró la conexión segura con `STOCKIA_DB_SSLMODE=Required`. <!-- VERIFICAR: proveedor real del MySQL -->
+4. Se creó en Render el Web Service del API a partir del `Dockerfile` del repositorio, y se registraron las variables de entorno `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ORIGINS` e `Iam__PasswordReset__ResetLinkBaseUrl`, sin incluirlas en el repositorio.
+5. Cada push a `main` redespliega el API en Render, y las migraciones crean las tablas al arrancar. <!-- VERIFICAR: si el redespliegue es automático por Render o por el flujo deploy-azure.yml -->
 6. Se actualizó en Vercel `VITE_STOCKIA_API_URL` con la URL del API y se volvió a desplegar la Web Application.
 
 * **URL del RESTful API desplegado:** https://stockia-platform-api.onrender.com
@@ -1678,8 +1780,8 @@ Imágenes del despliegue de la API:
 </p>
 
 <p align="center">
-  <img src="../assets/chapter-5/s3-deploy-platform-api.jpeg" width="800" alt="Azure Database for MySQL"/>
-  <br/><i>Despliegue de la API en AWS</i>
+  <img src="../assets/chapter-5/s3-deploy-platform-api.jpeg" width="800" alt="Despliegue del API y de la base de datos"/>
+  <br/><i>Despliegue del API y de la base de datos (captura de la plataforma)</i>
 </p>
 
 #### **5.2.3.8. Team Collaboration Insights during Sprint**
@@ -1702,6 +1804,7 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 
 <!-- IMAGEN PENDIENTE: mismo tablero finalizado de 5.2.3.3 -->
 <p align="center">
+  <!-- PONER AQUÍ: captura del tablero de Jira con el Sprint 3 terminado (todas las US en Done). Guardar como assets/chapter-5/s3-jira-sprint3-done.png -->
   <img src="../assets/chapter-5/s3-jira-sprint3-done.png" width="800" alt="Tablero del Sprint 3 en Jira"/>
   <br/><i>Tablero del Sprint 3 en Jira (SCRUM)</i>
 </p>
