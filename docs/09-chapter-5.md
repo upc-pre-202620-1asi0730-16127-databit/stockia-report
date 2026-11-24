@@ -2157,29 +2157,45 @@ Como observaciones puntuales, menciono que los aspectos funcionales bastan para 
 **CURSO		: Aplicaciones Web**  
 **PROFESORES	: Todos**  
 **AUDITOR		:** DataBit  
-**CLIENTE(S)		:** <!-- PONER AQUÍ: nombres de las personas que participaron en la sesión de evaluación (en el formato del Anexo D, este campo lleva a los participantes) -->
+**CLIENTES**:
+*Asmat Alminco, Martin Alejandro*, 
+*Ortiz Laura, Leyla Alisson*, 
+*Higa Kohatsu, Alonso Enrique*, 
+*Huaman Oscco, Aldo Jesus*,
+*Tuesta Girón, Kiara Lucia*
 
 **SITE o APP A EVALUAR:** StockIA (Web Application)<br><br>
 **TAREAS A EVALUAR:**<br>
- El alcance de esta evaluación incluye la revisión de la usabilidad, el diseño inclusivo y la arquitectura de información de las siguientes tareas de usuario: <!-- VERIFICAR: la evaluación original se hizo sobre mockups; confirmar si ahora se hizo sobre la Web Application desplegada. El formato pide cubrir también el Landing Page y los flujos principales de la aplicación. -->
+ El alcance de esta evaluación incluye la revisión de la usabilidad, el diseño inclusivo y la arquitectura de información de las siguientes tareas de usuario:
 
 **T1: Consultar el dashboard**<br>
 Pantalla de dashboard: se muestra la información más importante apenas el usuario ingresa.
 
-**T2: Revisar el “Demand forecast”**<br>
-Sección de “Demand forecast”.
+**T2: Revisar la sección de alertas**<br>
+Sección de alertas dentro del sidebar donde se muestran alertas de todo tipo y se conectan a un servicio externo que se le acomode a la empresa.
 
 **T3: Revisar la sección de recomendaciones automáticas**<br>
-*Uno de los diferenciales de nuestra propuesta son las recomendaciones automáticas.*
+Uno de los diferenciales de nuestra propuesta son las recomendaciones automáticas mediante el machine learning de los productos que vende cada restaurante.
 
-<!-- PONER AQUÍ (opcional pero recomendado): tareas T4 en adelante del Landing Page (por ejemplo, ver planes y precios, solicitar una demo) y de la Web Application (por ejemplo, registrar el restaurante, iniciar sesión, registrar un insumo, registrar una receta y una venta). Cada tarea evaluada debe tener sus problemas en la tabla resumen. -->
 
-No están incluidas en esta versión de la evaluación las siguientes tareas: <!-- VERIFICAR: ajustar esta lista a lo que realmente no se evaluó -->
+**T4: Consultar el iventario del restaurante**<br>
+Pantalla de resumen de los últimos productos agregados y opción para poder consultar cualquier producto dentro del restaurante.
+
+*Tareas enfocadas en la Landing Page*
+
+**LT1: Consultar la propuesta de valor**<br>
+Nociones y qué diferenciadores brindamos como start-up insercionándose en el mercado.
+
+**LT2: Consultar la sección de features**<br>
+Breve resumen acerca de lo que ofrece nuestra aplicación y lo que se espera a futuro con las nuevas actualizaciones.
+
+**LT3: Consultar precios de la membresía**<br>
+Pantalla de los planes disponibles de pago con una breve descripción de los aportes de cada plan y los diferenciadores de los mismos.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 1. Invitar y administrar a los miembros del equipo del restaurante.
-2. Cambiar de plan de suscripción.
-3. Gestionar alertas y canales de notificación.
-
+2. Cambiar de plan de suscripción dentro de la web app.
 
 ## **ESCALA DE SEVERIDAD:**
 
@@ -2204,11 +2220,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 6 | Mezcla de inglés y español en la interfaz | 2 | H4-Consistencia y estándares; H2-Sistema y mundo real |
 | 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
 | 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
-
-
-<!-- PONER AQUÍ: filas de la tabla resumen para Inclusive Design (por ejemplo contraste de color, tamaño de texto, uso de ARIA, navegación con teclado) y para Information Architecture (usable / findable: etiquetas del menú, ubicación de las funciones, búsqueda). Cada problema nuevo necesita: número, descripción, severidad (1 a 4), heurística o principio violado y una captura de pantalla en la sección DESCRIPCIÓN DE PROBLEMAS. -->
-
-<!-- VERIFICAR: el problema 7 (“Invalid PrimeUI License”) es un defecto del producto. Corregirlo en la Web Application antes de presentar, y dejar constancia aquí de la corrección (qué se hizo y en qué commit). -->
 
 ## **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -2330,7 +2341,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 <img src="../assets/chapter-5/heuristica%203.jpeg" width="800" />
 
 ## **5.4. About-the-Product Video**
-<!-- PLANTILLA: esta sección está vacía en el informe actual. Completar todo lo marcado como PONER AQUÍ. En la carpeta local "about the product" existe un video del Sprint 3 (upc-pre-202620-1asi0730-16127-databit-about-the-product-sprint-3.mp4) que puede servir de base; para TB2 debe publicarse la versión final. -->
 
 Esta sección describe el video **About-the-Product** de StockIA. Su público objetivo son los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características principales del producto, y los usuarios de la Web Application, que quieren realizar las tareas que la solución soporta: <!-- PONER AQUÍ: resumen de 3 o 4 líneas del contenido del video: problema que resuelve StockIA, funciones principales (inventario por lotes, recetas y ventas, alertas, pronóstico de demanda y recomendaciones) y beneficio para el restaurante -->. El tono del video es <!-- PONER AQUÍ: debe coincidir con el tono definido en 4.1 Style Guidelines (por ejemplo, profesional y cercano) -->, consistente con el del producto.
 
@@ -2344,10 +2354,10 @@ Esta sección describe el video **About-the-Product** de StockIA. Su público ob
 
 | Dato | Valor |
 |---|---|
-| Nombre del archivo | `upc-pre-202620-1asi0730-16127-databit-about-the-product-<versión>.mp4` <!-- PONER AQUÍ: nombre real según el Anexo C --> |
-| URL en Microsoft Stream | <!-- PONER AQUÍ: enlace de Stream --> |
-| URL en YouTube (incrustado en el Landing Page) | <!-- PONER AQUÍ: enlace de YouTube --> |
-| Duración | <!-- PONER AQUÍ: mm:ss. Debe estar entre 1 y 3 minutos --> |
+| Nombre del archivo | `upc-pre-202620-1asi0730-16127-databit-about-the-product-4.mp4` |
+| URL en Microsoft Stream | https://upcedupe-my.sharepoint.com/personal/u202416272_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202416272%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0730%2D16127%2Ddatabit%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea0ef6593%2D765a%2D4b8d%2Daf24%2Df2fbc23a0406 |
+| URL en YouTube (incrustado en el Landing Page) | https://youtu.be/iNQvg5DvdFg |
+| Duración | 2:21 min |
 
 **Pauta de secuencias del video**
 
