@@ -46,7 +46,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Herramienta integrada en VS Code para diseño y modelado de bases de datos. Se usó para crear y gestionar el esquema relacional de StockIA directamente desde el entorno de desarrollo.
   Referencia: Marketplace de Visual Studio Code (extensión .rd).
 
-- **JetBrains Rider** <!-- VERIFICAR: confirmar el IDE usado por cada integrante del backend (Rider o Visual Studio) -->
+- **JetBrains Rider** 
   IDE para .NET usado en el desarrollo del RESTful API.
   Referencia: [https://www.jetbrains.com/rider/](https://www.jetbrains.com/rider/)
 
@@ -97,7 +97,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Plataforma de despliegue del Landing Page y de la Web Application.
   Referencia: [https://vercel.com/](https://vercel.com/)
 
-- **Render** <!-- VERIFICAR: confirmar que Render es la plataforma real del API (ver 5.1.4) -->
+- **Render** 
   Plataforma de despliegue del RESTful API.
   Referencia: [https://render.com/](https://render.com/)
 
@@ -112,7 +112,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Herramienta para modelado de arquitectura de software mediante el enfoque C4. Se usó para construir los diagramas de arquitectura del proyecto.
   Referencia: [https://structurizr.com/](https://structurizr.com/)
 
-- **YouTube y Microsoft Stream** <!-- VERIFICAR: confirmar dónde se alojan los videos de entrevistas y exposiciones -->
+- **YouTube y Microsoft Stream** 
   Plataformas de alojamiento de los videos de exposición, validación, About-the-Product y About-the-Team.
   Referencia: [https://www.youtube.com/](https://www.youtube.com/) · [https://www.microsoft.com/microsoft-365/microsoft-stream](https://www.microsoft.com/microsoft-365/microsoft-stream)
 
@@ -206,7 +206,6 @@ La siguiente tabla resume las ramas y las versiones (tags) existentes en cada re
 
 Los cambios se integran a `develop` mediante Pull Request desde cada rama `feature/*`, y `develop` se publica en `main` mediante un Pull Request de release. En `stockia-platform-api`, por ejemplo, los Pull Requests muestran este flujo, desde `feature/recipe-managment` (#1) hasta la publicación de `develop` en `main` (#15), tal como se lista en la evidencia de commits del Sprint 3 (sección 5.2.3.4).
 
-<!-- VERIFICAR: en la rama `develop` de cada repositorio revisar una muestra de 10 commits y confirmar que siguen Conventional Commits. En stockia-report hay commits que no los siguen (por ejemplo "Merge pull request ..."), que son generados por GitHub y son aceptables. -->
 
 ## Semantic Versioning
 
@@ -347,7 +346,7 @@ La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible
 
 #### RESTful Web Services (ASP.NET Core + MySQL) → Render
 
-El RESTful API (`stockia-platform-api`) requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en **Render** a partir del `Dockerfile` del repositorio, junto con su base de datos MySQL. <!-- VERIFICAR: confirmar la plataforma real del API. El repositorio también contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Si se usó Azure, reemplazar Render por Azure en esta sección y en 5.2.3.7. -->
+El RESTful API (`stockia-platform-api`) requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en **Render** a partir del `Dockerfile` del repositorio, junto con su base de datos MySQL. 
 
 1. Crear el servicio de base de datos MySQL y registrar sus datos de conexión. <!-- VERIFICAR: indicar el proveedor real de MySQL usado con Render -->
 
@@ -1575,7 +1574,6 @@ En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. La
 </p>
 
 <p align="center">
-  <!-- PONER AQUÍ: captura de la pantalla de estado de lotes de la Web Application con datos de muestra. Guardar como assets/chapter-5/s3-exec-08-stock-status.png -->
   <img src="../assets/chapter-5/s3-exec-08-stock-status.png" width="800" alt="Estado de los lotes"/>
   <br/><i>Estado de vencimiento de los lotes (US36)</i>
 </p>
@@ -1751,15 +1749,15 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 
 #### **5.2.3.7. Software Deployment Evidence for Sprint Review**
  
-En el Sprint 3 se desplegaron el RESTful API en **Render** y su base de datos MySQL (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos. <!-- VERIFICAR: el repositorio contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Confirmar la plataforma real y su proveedor de MySQL. Si fue Azure, volver a la redacción anterior y cambiar las URLs. Debe coincidir con 5.1.4. -->
+En el Sprint 3 se desplegaron el RESTful API en **Render** y su base de datos MySQL (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
 
 **Actividades de despliegue realizadas**
 
 1. Se creó el flujo `ci.yml` en GitHub Actions: compilación, pruebas xUnit, verificación de migraciones, smoke test contra MySQL 8.4 y prueba E2E con Playwright.
 2. Se probó el API localmente con `docker compose up --build` (MySQL 8.4 y API en el puerto 5000), que aplica las migraciones y carga los datos demo.
-3. Se creó el servicio de base de datos MySQL y se configuró la conexión segura con `STOCKIA_DB_SSLMODE=Required`. <!-- VERIFICAR: proveedor real del MySQL -->
+3. Se creó el servicio de base de datos MySQL y se configuró la conexión segura con `STOCKIA_DB_SSLMODE=Required`. 
 4. Se creó en Render el Web Service del API a partir del `Dockerfile` del repositorio, y se registraron las variables de entorno `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ORIGINS` e `Iam__PasswordReset__ResetLinkBaseUrl`, sin incluirlas en el repositorio.
-5. Cada push a `main` redespliega el API en Render, y las migraciones crean las tablas al arrancar. <!-- VERIFICAR: si el redespliegue es automático por Render o por el flujo deploy-azure.yml -->
+5. Cada push a `main` redespliega el API en Render, y las migraciones crean las tablas al arrancar.
 6. Se actualizó en Vercel `VITE_STOCKIA_API_URL` con la URL del API y se volvió a desplegar la Web Application.
 
 * **URL del RESTful API desplegado:** https://stockia-platform-api.onrender.com
@@ -1834,6 +1832,28 @@ En el Sprint 3 el equipo trabajó por Bounded Context: cada integrante implement
 ### **5.3.1. Interview Design**
 
 El diseño de las preguntas para la entrevista de validación fueron orientadas a poder saber 5 puntos claves, los cuales serían primera impresión, navegación y usabilidad, contenido y comunicación, experiencia general y validación heurística.
+
+**Segmento objetivo:** Administradores de Restaurante y Jefes de Sucursal (segmento único definido en 1.3).
+
+**Elementos incluidos en la sesión de validación**
+
+| Elemento | Qué se valida |
+|---|---|
+| Landing Page | Comprensión de la propuesta de valor, navegación entre sus páginas (inicio, características, precios, nosotros y contacto), claridad del contenido y llamada a la acción. |
+| Web Application | Flujos principales de la aplicación (ver abajo), claridad de la información y retroalimentación del sistema. |
+| RESTful API | Se valida de forma indirecta, a través de la Web Application que la consume (tiempos de respuesta y mensajes de error visibles para el usuario). |
+
+**User flows de la aplicación que forman parte de la validación** 
+
+| # | User flow (tarea asignada al entrevistado) |
+|---|---|
+| 1 | Registrar el restaurante e iniciar sesión. |
+| 2 | Registrar un insumo con su cantidad, costo y fecha de vencimiento. |
+| 3 | Registrar una receta con sus ingredientes y registrar una venta del plato. |
+| 4 | Consultar el dashboard y las alertas de inventario. |
+| 5 | Revisar el pronóstico de demanda y aplicar una recomendación de compra. |
+
+**Tareas asignadas en el Landing Page:** ubicar qué hace StockIA, revisar los planes y precios, y solicitar una demostración mediante el formulario de contacto.
 
 **Preguntas sobre la primera impresión**
 - ¿Qué es lo primero que notas al entrar al landing page?  
@@ -2101,15 +2121,27 @@ Durante la validación de StockIA, Henry David mencionó que desde su experienci
   </tbody>
 </table>
 
+#### Video consolidado de validación
+
+| Dato | Valor |
+|---|---|
+| Nombre del archivo | `upc-pre-202620-1asi0730-16127-databit-validation-sprint-4.mp4` |
+| URL en Microsoft Stream |  |
+| Duración | |
+
+<td colspan="2" align="center">
+        <img src="../assets/chapter-5/evidence-all-interviews.png" width="400">
+      </td>
+
 **Entrevista 1:** Lo que se pudo rescatar de esta entrevista es que el entrevistado tuvo una percepción positiva de StockIA, destacando principalmente la simplicidad, facilidad de uso y organización de la plataforma. Considera que la landing page presenta la información de manera clara y atractiva, permitiendo comprender rápidamente el propósito de la aplicación, sus características y funcionalidades. Asimismo, señaló que la navegación es intuitiva, que los botones están correctamente identificados y que tanto los mensajes como las alertas del sistema son fáciles de comprender. También resaltó la rapidez de respuesta de la aplicación y la ausencia de problemas importantes durante su interacción, lo que le permitió completar las tareas sin dificultades.
 
 Por otro lado, identificó algunas oportunidades de mejora, como evaluar un cambio en la paleta de colores de la página y realizar ciertos ajustes en la visualización de los estados dentro del dashboard. Sin embargo, considera que estos aspectos no afectan significativamente la experiencia general, ya que la plataforma mantiene un diseño consistente, sin información o elementos innecesarios. Lo más importante que se pudo identificar es que la simplicidad y la facilidad de comprensión son aspectos valorados por el usuario, por lo que mantener una interfaz intuitiva, una navegación rápida y una presentación clara de la información resulta fundamental para la aceptación de StockIA.
 
-**Entrevista 3:** Durante la entrevista, el usuario mostró interés en StockIA y reconoció su potencial como una herramienta útil para los negocios. Le llamó la atención el diseño de la plataforma y la forma en que se presenta la información, ya que permite identificar fácilmente qué ofrece la aplicación y cuáles son sus beneficios. Además, destacó que funcionalidades como las alertas y las predicciones pueden facilitar la gestión de inventarios, ayudando a prevenir pérdidas y optimizar el tiempo. También tuvo una buena impresión de la presentación de los planes y sus respectivos precios, pues consideró que son fáciles de entender.
+**Entrevista 2:** Durante la entrevista, el usuario mostró interés en StockIA y reconoció su potencial como una herramienta útil para los negocios. Le llamó la atención el diseño de la plataforma y la forma en que se presenta la información, ya que permite identificar fácilmente qué ofrece la aplicación y cuáles son sus beneficios. Además, destacó que funcionalidades como las alertas y las predicciones pueden facilitar la gestión de inventarios, ayudando a prevenir pérdidas y optimizar el tiempo. También tuvo una buena impresión de la presentación de los planes y sus respectivos precios, pues consideró que son fáciles de entender.
 
 Como principal recomendación, mencionó que sería conveniente incorporar más ejemplos y una demostración del funcionamiento de la aplicación, de modo que los usuarios puedan visualizar mejor cómo se utilizaría en un negocio real. A pesar de ello, su valoración general fue favorable e incluso manifestó que recomendaría StockIA a otros negocios. Esta entrevista permitió reconocer que, además de presentar una propuesta atractiva, es importante mostrar de manera práctica cómo StockIA puede resolver problemas cotidianos en la gestión de inventarios.
 
-**Entrevista 4:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
+**Entrevista 3:** El entrevistado mostró una buena recepción hacia StockIA, resaltando principalmente lo práctico y ordenado que resulta el entorno desde el primer contacto. Señaló que la página inicial comunica de forma directa para qué sirve el sistema, permitiendo ubicar sus funciones principales sin confusiones. Además, valoró que el recorrido entre secciones sea fluido, con controles bien diferenciados y notificaciones claras que guían cada acción sin interrupciones ni demoras al operar.
 
 Como observaciones puntuales, menciono que los aspectos funcionales bastan para el uso que se le dara a la aplicacion pero que no tiene inconvenientes ni solicitudes de mejora. No obstante, aclaró que estos detalles aplicado mejoran el uso diario, pues la herramienta usa elementos visuales que facilitan y mantiene una estructura coherente. En síntesis, el usuario prioriza una experiencia ágil y fácil de entender, confirmando que conservar un flujo limpio y directo es clave para que la plataforma sea adoptada sin resistencia.
 
@@ -2120,23 +2152,46 @@ Como observaciones puntuales, menciono que los aspectos funcionales bastan para 
 **CARRERA		: Ingeniería de Software**  
 **CURSO		: Aplicaciones Web**  
 **PROFESORES	: Todos**  
-**AUDITOR		:**   
-**CLIENTE		:** Databit
+**AUDITOR		:** DataBit  
+**CLIENTES**:
+*Asmat Alminco, Martin Alejandro*, 
+*Ortiz Laura, Leyla Alisson*, 
+*Higa Kohatsu, Alonso Enrique*, 
+*Huaman Oscco, Aldo Jesus*,
+*Tuesta Girón, Kiara Lucia*
 
-
-**SITE o APP A EVALUAR:** Databit<br><br>
+**SITE o APP A EVALUAR:** StockIA (Web Application)<br><br>
 **TAREAS A EVALUAR:**<br>
- El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas de usuario, identificadas en los artefactos proporcionados (mockups de aplicación móvil y web):
+ El alcance de esta evaluación incluye la revisión de la usabilidad, el diseño inclusivo y la arquitectura de información de las siguientes tareas de usuario:
 
 **T1: Consultar el dashboard**<br>
-Pantalla de dashboard: Se muestra información importante que se le muestra ni bien ingresa el usuario.
+Pantalla de dashboard: se muestra la información más importante apenas el usuario ingresa.
 
-**T2: Revisar el “Demand forecast”**<br>
-Apartado de “Demand forecast”.
+**T2: Revisar la sección de alertas**<br>
+Sección de alertas dentro del sidebar donde se muestran alertas de todo tipo y se conectan a un servicio externo que se le acomode a la empresa.
 
-**T3: Revisar el sección de recomendaciones automáticas**<br>
-*Uno de los diferenciales de nuestra propuesta las recomendaciones automáticas.*
+**T3: Revisar la sección de recomendaciones automáticas**<br>
+Uno de los diferenciales de nuestra propuesta son las recomendaciones automáticas mediante el machine learning de los productos que vende cada restaurante.
 
+
+**T4: Consultar el iventario del restaurante**<br>
+Pantalla de resumen de los últimos productos agregados y opción para poder consultar cualquier producto dentro del restaurante.
+
+*Tareas enfocadas en la Landing Page*
+
+**LT1: Consultar la propuesta de valor**<br>
+Nociones y qué diferenciadores brindamos como start-up insercionándose en el mercado.
+
+**LT2: Consultar la sección de features**<br>
+Breve resumen acerca de lo que ofrece nuestra aplicación y lo que se espera a futuro con las nuevas actualizaciones.
+
+**LT3: Consultar precios de la membresía**<br>
+Pantalla de los planes disponibles de pago con una breve descripción de los aportes de cada plan y los diferenciadores de los mismos.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Invitar y administrar a los miembros del equipo del restaurante.
+2. Cambiar de plan de suscripción dentro de la web app.
 
 ## **ESCALA DE SEVERIDAD:**
 
@@ -2161,7 +2216,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 | 6 | Mezcla de inglés y español en la interfaz | 2 | H4-Consistencia y estándares; H2-Sistema y mundo real |
 | 7 | Mensaje “Invalid PrimeUI License” visible en todas las pantallas | 2 | H8-Diseño minimalista; H2-Sistema y mundo real |
 | 8 | Botón “Apply” en recomendaciones sin confirmación ni detalle del efecto | 3 | H5-Prevención de errores; H3-Control y libertad |
-
 
 ## **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -2283,3 +2337,35 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 <img src="../assets/chapter-5/heuristica%203.jpeg" width="800" />
 
 ## **5.4. About-the-Product Video**
+
+Esta sección describe el video **About-the-Product** de StockIA. Su público objetivo son los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características principales del producto, y los usuarios de la Web Application, que quieren realizar las tareas que la solución soporta: <!-- PONER AQUÍ: resumen de 3 o 4 líneas del contenido del video: problema que resuelve StockIA, funciones principales (inventario por lotes, recetas y ventas, alertas, pronóstico de demanda y recomendaciones) y beneficio para el restaurante -->. El tono del video es <!-- PONER AQUÍ: debe coincidir con el tono definido en 4.1 Style Guidelines (por ejemplo, profesional y cercano) -->, consistente con el del producto.
+
+**Cuadro representativo del video**
+
+<p align="center">
+  <img src="../assets/chapter-5/about-the-product-frame.png" width="700" alt="Cuadro representativo del video About-the-Product"/>
+  <br/><i>Cuadro del video About-the-Product de StockIA</i>
+</p>
+
+| Dato | Valor |
+|---|---|
+| Nombre del archivo | `upc-pre-202620-1asi0730-16127-databit-about-the-product-4.mp4` |
+| URL en Microsoft Stream | https://upcedupe-my.sharepoint.com/personal/u202416272_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202416272%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0730%2D16127%2Ddatabit%2Dabout%2Dthe%2Dproduct%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ea0ef6593%2D765a%2D4b8d%2Daf24%2Df2fbc23a0406 |
+| URL en YouTube (incrustado en el Landing Page) | https://youtu.be/iNQvg5DvdFg |
+| Duración | 2:21 min |
+
+**Pauta de secuencias del video**
+
+| Sección | Inicio (hh:mm:ss) |
+|---|---|
+| <!-- PONER AQUÍ: por ejemplo, Presentación del problema --> | 00:00:00 |
+| <!-- PONER AQUÍ: Demostración del producto --> | <!-- hh:mm:ss --> |
+| <!-- PONER AQUÍ: Testimonio de un usuario --> | <!-- hh:mm:ss --> |
+
+**Testimonios incluidos**
+
+El video incluye al menos un testimonio positivo de un participante de las entrevistas de validación (5.3.2), y una opinión por cada segmento objetivo.
+
+<!-- PONER AQUÍ: nombre del entrevistado, número de entrevista de 5.3.2 y una frase breve de su testimonio. Hay testimonios positivos en las 4 entrevistas actuales. -->
+
+<!-- DEPENDENCIA: el video debe estar incrustado en el Landing Page (hoy hay un texto "Video demostrativo próximamente"). Eso se cambia en el repositorio stockia-website, no en este informe. -->
