@@ -46,7 +46,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Herramienta integrada en VS Code para diseño y modelado de bases de datos. Se usó para crear y gestionar el esquema relacional de StockIA directamente desde el entorno de desarrollo.
   Referencia: Marketplace de Visual Studio Code (extensión .rd).
 
-- **JetBrains Rider** <!-- VERIFICAR: confirmar el IDE usado por cada integrante del backend (Rider o Visual Studio) -->
+- **JetBrains Rider** 
   IDE para .NET usado en el desarrollo del RESTful API.
   Referencia: [https://www.jetbrains.com/rider/](https://www.jetbrains.com/rider/)
 
@@ -97,7 +97,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Plataforma de despliegue del Landing Page y de la Web Application.
   Referencia: [https://vercel.com/](https://vercel.com/)
 
-- **Render** <!-- VERIFICAR: confirmar que Render es la plataforma real del API (ver 5.1.4) -->
+- **Render** 
   Plataforma de despliegue del RESTful API.
   Referencia: [https://render.com/](https://render.com/)
 
@@ -112,7 +112,7 @@ A continuación se detallan los productos de software utilizados en el proyecto 
   Herramienta para modelado de arquitectura de software mediante el enfoque C4. Se usó para construir los diagramas de arquitectura del proyecto.
   Referencia: [https://structurizr.com/](https://structurizr.com/)
 
-- **YouTube y Microsoft Stream** <!-- VERIFICAR: confirmar dónde se alojan los videos de entrevistas y exposiciones -->
+- **YouTube y Microsoft Stream** 
   Plataformas de alojamiento de los videos de exposición, validación, About-the-Product y About-the-Team.
   Referencia: [https://www.youtube.com/](https://www.youtube.com/) · [https://www.microsoft.com/microsoft-365/microsoft-stream](https://www.microsoft.com/microsoft-365/microsoft-stream)
 
@@ -206,7 +206,6 @@ La siguiente tabla resume las ramas y las versiones (tags) existentes en cada re
 
 Los cambios se integran a `develop` mediante Pull Request desde cada rama `feature/*`, y `develop` se publica en `main` mediante un Pull Request de release. En `stockia-platform-api`, por ejemplo, los Pull Requests muestran este flujo, desde `feature/recipe-managment` (#1) hasta la publicación de `develop` en `main` (#15), tal como se lista en la evidencia de commits del Sprint 3 (sección 5.2.3.4).
 
-<!-- VERIFICAR: en la rama `develop` de cada repositorio revisar una muestra de 10 commits y confirmar que siguen Conventional Commits. En stockia-report hay commits que no los siguen (por ejemplo "Merge pull request ..."), que son generados por GitHub y son aceptables. -->
 
 ## Semantic Versioning
 
@@ -347,7 +346,7 @@ La siguiente imagen muestra la **Landing Page de StockIA desplegada y disponible
 
 #### RESTful Web Services (ASP.NET Core + MySQL) → Render
 
-El RESTful API (`stockia-platform-api`) requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en **Render** a partir del `Dockerfile` del repositorio, junto con su base de datos MySQL. <!-- VERIFICAR: confirmar la plataforma real del API. El repositorio también contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Si se usó Azure, reemplazar Render por Azure en esta sección y en 5.2.3.7. -->
+El RESTful API (`stockia-platform-api`) requiere un entorno de ejecución de servidor para aplicaciones .NET, por lo que se despliega en **Render** a partir del `Dockerfile` del repositorio, junto con su base de datos MySQL. 
 
 1. Crear el servicio de base de datos MySQL y registrar sus datos de conexión. <!-- VERIFICAR: indicar el proveedor real de MySQL usado con Render -->
 
@@ -1575,7 +1574,6 @@ En el Sprint 3 se implementó la primera versión del RESTful API de StockIA. La
 </p>
 
 <p align="center">
-  <!-- PONER AQUÍ: captura de la pantalla de estado de lotes de la Web Application con datos de muestra. Guardar como assets/chapter-5/s3-exec-08-stock-status.png -->
   <img src="../assets/chapter-5/s3-exec-08-stock-status.png" width="800" alt="Estado de los lotes"/>
   <br/><i>Estado de vencimiento de los lotes (US36)</i>
 </p>
@@ -1751,15 +1749,15 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 
 #### **5.2.3.7. Software Deployment Evidence for Sprint Review**
  
-En el Sprint 3 se desplegaron el RESTful API en **Render** y su base de datos MySQL (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos. <!-- VERIFICAR: el repositorio contiene deploy-azure.yml (Azure App Service), pero las URLs publicadas son de onrender.com. Confirmar la plataforma real y su proveedor de MySQL. Si fue Azure, volver a la redacción anterior y cambiar las URLs. Debe coincidir con 5.1.4. -->
+En el Sprint 3 se desplegaron el RESTful API en **Render** y su base de datos MySQL (TS08), y se reconfiguró la Web Application ya publicada en Vercel para consumirlos.
 
 **Actividades de despliegue realizadas**
 
 1. Se creó el flujo `ci.yml` en GitHub Actions: compilación, pruebas xUnit, verificación de migraciones, smoke test contra MySQL 8.4 y prueba E2E con Playwright.
 2. Se probó el API localmente con `docker compose up --build` (MySQL 8.4 y API en el puerto 5000), que aplica las migraciones y carga los datos demo.
-3. Se creó el servicio de base de datos MySQL y se configuró la conexión segura con `STOCKIA_DB_SSLMODE=Required`. <!-- VERIFICAR: proveedor real del MySQL -->
+3. Se creó el servicio de base de datos MySQL y se configuró la conexión segura con `STOCKIA_DB_SSLMODE=Required`. 
 4. Se creó en Render el Web Service del API a partir del `Dockerfile` del repositorio, y se registraron las variables de entorno `STOCKIA_DB_HOST`, `STOCKIA_DB_PORT`, `STOCKIA_DB_NAME`, `STOCKIA_DB_USER`, `STOCKIA_DB_PASSWORD`, `STOCKIA_DB_SSLMODE`, `STOCKIA_JWT_SECRET`, `STOCKIA_CORS_ORIGINS` e `Iam__PasswordReset__ResetLinkBaseUrl`, sin incluirlas en el repositorio.
-5. Cada push a `main` redespliega el API en Render, y las migraciones crean las tablas al arrancar. <!-- VERIFICAR: si el redespliegue es automático por Render o por el flujo deploy-azure.yml -->
+5. Cada push a `main` redespliega el API en Render, y las migraciones crean las tablas al arrancar.
 6. Se actualizó en Vercel `VITE_STOCKIA_API_URL` con la URL del API y se volvió a desplegar la Web Application.
 
 * **URL del RESTful API desplegado:** https://stockia-platform-api.onrender.com
@@ -1845,7 +1843,7 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 | Web Application | Flujos principales de la aplicación (ver abajo), claridad de la información y retroalimentación del sistema. |
 | RESTful API | Se valida de forma indirecta, a través de la Web Application que la consume (tiempos de respuesta y mensajes de error visibles para el usuario). |
 
-**User flows de la aplicación que forman parte de la validación** <!-- VERIFICAR: confirmar con el equipo cuáles de estos flujos se asignaron realmente en las entrevistas, y ajustar la lista. Debe ser consistente con las tareas de 5.3.3. -->
+**User flows de la aplicación que forman parte de la validación** 
 
 | # | User flow (tarea asignada al entrevistado) |
 |---|---|
@@ -1885,8 +1883,6 @@ El diseño de las preguntas para la entrevista de validación fueron orientadas 
 
 
 ### **5.3.2. Interview Recording**
-<!-- VERIFICAR: el formato pide hacer las entrevistas sobre la versión final desplegada (Landing Page y Web Application), no sobre mockups. Confirmar la versión sobre la que se hicieron las 4 entrevistas actuales y, si fue una versión anterior, agregar al menos una entrevista sobre la versión final. -->
-
 
     <table width="100%">
   <thead>
@@ -2346,7 +2342,6 @@ Esta sección describe el video **About-the-Product** de StockIA. Su público ob
 
 **Cuadro representativo del video**
 
-<!-- PONER AQUÍ: captura de un cuadro del video. Guardar como assets/chapter-5/about-the-product-frame.png y reemplazar la línea de abajo -->
 <p align="center">
   <img src="../assets/chapter-5/about-the-product-frame.png" width="700" alt="Cuadro representativo del video About-the-Product"/>
   <br/><i>Cuadro del video About-the-Product de StockIA</i>
