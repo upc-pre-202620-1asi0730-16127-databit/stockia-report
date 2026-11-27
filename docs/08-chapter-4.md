@@ -526,7 +526,7 @@ usuario con los productos digitales.
 ![wireframe 10](../assets/chapter-4/wireframes/web/US30%20web.png)
 
 11) **Wireframe 11:** 
-**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 ![wireframe 11](../assets/chapter-4/wireframes/mobile/US31%20mobile.png)
 ![wireframe 11](../assets/chapter-4/wireframes/web/US31%20web.png)
@@ -659,7 +659,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - User goal: Como administrador, quiero pagar mi suscripción.
 
-**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 - mobile: 
 ![wireflow 11](../assets/chapter-4/wireflow/mobile/US31%20-%20Wireflow%20diagram.png)
@@ -753,7 +753,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%202%20Web.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%203%20Web.png) |
 
 11) **Mock-up 11:** 
-**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-1%20Mobile.png) | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-2%20mobile.png) | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-3%20Mobile.png) |
 |---------------------------------------------|---------------------------------------------|---------------------------------------------|
@@ -925,7 +925,7 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 - User goal: Como administrador, quiero pagar mi suscripción.
 
 **User Story relacionada:** 
-US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 ![user flow 4](../assets/chapter-4/user%20flow/mobile/US31%20-%20UserFlow%20diagram.png)
 
