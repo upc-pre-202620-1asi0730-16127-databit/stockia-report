@@ -262,7 +262,7 @@ El objetivo es que el usuario pueda asociar rápidamente cada etiqueta con su co
 | Notificaciones críticas | **Alertas** | Alertas de insumos críticos y notificaciones multicanal (US27 / US28) |
 | Sensores de cocina | **Monitoreo IoT de Cocina** | Puertas abiertas, fallas de equipo y flujo de clientes (US29) |
 | Gestión de accesos | **Roles y Permisos** | Asignación de Administrador / Empleado (US24) |
-| Planes de pago | **Planes / Precios** | Planes Esencial, Profesional e IoT Completo (US16) |
+| Planes de pago | **Planes / Precios** | Planes Essential, Starter y Professional (US16) |
 | Impacto ambiental | **Sostenibilidad y Gamificación** | Métricas de reducción de desperdicio y logros de equipo (US23) |
 
 <img src="../assets/chapter-4/styleguidelines/4.jpeg" alt="Artefacto de Figma" width="1000"/> <br>
@@ -291,7 +291,7 @@ A continuación, se presentan los meta tags implementados en cada página princi
 ## Landing Page — Precios (`pricing.html`)
 ```html
 <title>Precios — StockIA</title>
-<meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y monitoreo IoT completo.">
+<meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y automatización completa.">
 ```
 
 ## Landing Page — Nosotros (`about.html`)
@@ -1134,7 +1134,7 @@ Este diagrama se enfoca en la información fundamental de los restaurantes o neg
 <img src="../assets/chapter-4/database-diagram/bd-restaurant-registration.png" alt="Restaurant Registration DB Diagram" width="1000"/> <br>
 
 #### Subscriptions & Payments
-Aquí se detallan las tablas responsables de gestionar los planes de pago, suscripciones (Esencial, Profesional, IoT Completo) y el historial de transacciones o pagos de los restaurantes, permitiendo el control de la facturación.
+Aquí se detallan las tablas responsables de gestionar los planes de pago, suscripciones (Essential, Starter, Professional) y el historial de transacciones o pagos de los restaurantes, permitiendo el control de la facturación.
 
 <img src="../assets/chapter-4/database-diagram/bd-subscriptions-payments.png" alt="Subscriptions Payments DB Diagram" width="1000"/><br>
 

@@ -634,7 +634,7 @@ Este lenguaje debe mantenerse consistente a lo largo de todo el proyecto, incluy
   Sistema de logros y reconocimientos otorgados al personal al aplicar con éxito las recomendaciones y mejoras operativas en el restaurante.
 
 - **Subscription Plan (Plan de Suscripción)**  
-  Modelo de acceso comercial contratado por el restaurante, como Esencial, Profesional o IoT Completo, para utilizar las funcionalidades de la plataforma.
+  Modelo de acceso comercial contratado por el restaurante, como Essential, Starter o Professional, para utilizar las funcionalidades de la plataforma.
 
 - **Transaction (Transacción)**  
   Registro financiero del pago, renovación o gestión de la suscripción a través de pasarelas externas como Stripe o PayPal.

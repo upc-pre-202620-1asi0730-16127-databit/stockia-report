@@ -460,7 +460,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 | **US13** | Cambiar el idioma del sitio | T-13-1 | Selector de idioma (ES/EN) | Implementar los botones de idioma en el navbar. | 3 | Asmat Alminco, Martin Alejandro | Done |
 |  |  | T-13-2 | Motor de traducción (i18n.js) | Programar el reemplazo de textos mediante data-i18n. | 6 | Ortiz Laura, Leyla Alisson | Done |
 | **US14** | Mantener mi idioma preferido | T-14-1 | Persistencia en localStorage | Guardar y leer el idioma seleccionado entre páginas. | 3 | Huaman Oscco, Aldo Jesus | Done |
-| **US15** | Consultar los planes disponibles | T-15-1 | Maquetado de los 3 planes | Construir las tarjetas de Esencial, Profesional e IoT Completo. | 5 | Higa Kohatsu, Alonso Enrique | Done |
+| **US15** | Consultar los planes disponibles | T-15-1 | Maquetado de los 3 planes | Construir las tarjetas de Essential, Starter y Professional. | 5 | Higa Kohatsu, Alonso Enrique | Done |
 |  |  | T-15-2 | Nota de precios de ejemplo | Redactar la nota de transparencia sobre precios ilustrativos. | 2 | Tuesta Girón, Kiara Lucia | Done |
 | **US16** | Comparar precios mensuales y anuales | T-16-1 | Toggle mensual/anual (JS) | Implementar el interruptor y el recálculo de montos. | 4 | Asmat Alminco, Martin Alejandro | Done |
 | **US17** | Resolver dudas frecuentes | T-17-1 | Acordeón de preguntas frecuentes | Implementar la apertura/cierre exclusivo de preguntas. | 4 | Ortiz Laura, Leyla Alisson | Done |
@@ -559,7 +559,7 @@ La Landing Page se integró en el repositorio de la organización siguiendo GitF
 | stockia-website | develop | `2efd03a` | feat: add about section | US18, US19 y US20: misión, visión, valores, equipo y formulario de solicitud de demo en `about.html` (AlonsoHiga). | 17/09/2026 |
 | stockia-website | develop | `6e0d010` | feat: add index.html code | US01 a US09: hero, mockup del dashboard, estadísticas, segmentos, funcionalidades, diferenciadores, integraciones, portafolio y video en `index.html` (kitu05g). | 17/09/2026 |
 | stockia-website | feature/pricing | `6f5bf63` | feat(pricing): add navbar section | US10: barra de navegación de `pricing.html` (Jesus). | 18/09/2026 |
-| stockia-website | feature/pricing | `9f5b940` | feat(pricing): add pricing cards section | US15 y US16: planes Esencial, Profesional e IoT Completo con interruptor mensual/anual (Jesus). | 18/09/2026 |
+| stockia-website | feature/pricing | `9f5b940` | feat(pricing): add pricing cards section | US15 y US16: planes Essential, Starter y Professional con interruptor mensual/anual (Jesus). | 18/09/2026 |
 | stockia-website | feature/pricing | `af0e54c` | feat(pricing): add faq section | US17: preguntas frecuentes de `pricing.html` (Jesus). | 18/09/2026 |
 | stockia-website | feature/pricing | `9ca1046` | feat(pricing): add footer section | US10 y RNF03: pie de página de `pricing.html` (Jesus). | 18/09/2026 |
 | stockia-website | develop | `0e54999` | Merge pull request #1 from feature/pricing | Integración revisada de `pricing.html` en `develop` (Aldo_Jesus). | 18/09/2026 |
@@ -633,7 +633,7 @@ En el Sprint 1 se implementaron las cuatro páginas de la Landing Page de StockI
   <br/><i>features.html — US11 y US12</i>
 </p>
 
-11. **pricing.html (US15, US16, US17, RNF08):** planes Esencial, Profesional e IoT Completo con el interruptor mensual/anual, la nota de precios de ejemplo y el acordeón de preguntas frecuentes.
+11. **pricing.html (US15, US16, US17, RNF08):** planes Essential, Starter y Professional con el interruptor mensual/anual, la nota de precios de ejemplo y el acordeón de preguntas frecuentes.
 <p align="center">
   <img src="../assets/chapter-5/11-pricing-planes-y-faq.png" width="800" alt="pricing.html"/>
   <br/><i>pricing.html — US15, US16, US17 y RNF08</i>
@@ -1288,7 +1288,7 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)** d
 | **US26** | Recibir recomendaciones automáticas de ajuste de menú | T-US26-1 | Modelar la recomendación | Crear el aggregate `Recommendation` con tipo, mensaje y estado aplicado. | 1.5 | Huaman Oscco, Aldo Jesus | Done |
 |  |  | T-US26-2 | Generar recomendaciones de compra y de menú | Atender `DemandForecastGeneratedEvent` para proponer qué comprar y cambios de menú si un plato sube 15 % o más o baja 20 % o más. | 4 | Huaman Oscco, Aldo Jesus | Done |
 |  |  | T-US26-3 | Exponer los endpoints de recomendaciones | Crear `GET /api/v1/recommendations` y `POST /recommendations/{id}/apply` (Administrador). | 2.5 | Huaman Oscco, Aldo Jesus | Done |
-| **US31** | Pagar o renovar mi suscripción con Stripe o PayPal | T-US31-1 | Modelar el plan y la suscripción | Crear los aggregates `Plan` y `Subscription` y el catálogo de planes Esencial, Profesional e IoT Completo. | 3 | Tuesta Girón, Kiara Lucia | Done |
+| **US31** | Pagar o renovar mi suscripción con Stripe o PayPal | T-US31-1 | Modelar el plan y la suscripción | Crear los aggregates `Plan` y `Subscription` y el catálogo de planes Essential, Starter y Professional. | 3 | Tuesta Girón, Kiara Lucia | Done |
 |  |  | T-US31-2 | Consultar los planes y la suscripción | Crear `GET /api/v1/plans` (público) y `GET /subscriptions/current` (Administrador). | 2.5 | Tuesta Girón, Kiara Lucia | Done |
 |  |  | T-US31-3 | Implementar el cambio de plan | Crear `POST /api/v1/subscriptions` (Administrador) con la validación del plan. | 3 | Tuesta Girón, Kiara Lucia | Done |
 |  |  | T-US31-4 | Implementar el pago simulado | Crear el adaptador simulado de Stripe y PayPal detrás de `IPaymentGateway`, con resultado exitoso y de error. | 3 | Tuesta Girón, Kiara Lucia | Done |
@@ -1737,7 +1737,7 @@ En el Sprint 3 el RESTful API de StockIA se documentó con **OpenAPI** (document
 
 | **Endpoint** | **Verbo** | **Acceso** | **Parámetros** | **Response de muestra** | **US** |
 | :--- | :---: | :---: | :--- | :---: | :---: |
-| `/api/v1/plans` | GET | Pública | — | `200 OK` con los planes Esencial, Profesional e IoT Completo. | US31 |
+| `/api/v1/plans` | GET | Pública | — | `200 OK` con los planes Essential, Starter y Professional. | US31 |
 | `/api/v1/subscriptions/current` | GET | Administrador | — | `200 OK` con la suscripción actual. | US31 |
 | `/api/v1/subscriptions` | POST | Administrador | Body: plan elegido ✱ | Cambia el plan con pago simulado; error si el pago simulado es rechazado. | US31, RNF11 |
 

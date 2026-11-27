@@ -238,7 +238,7 @@ Entonces el sistema carga esa página ya traducida.
 <strong>Escenario 1: Visualización de los tres planes</strong><br>
 Dado que el visitante accede a pricing.html<br>
 Cuando la página carga<br>
-Entonces el sistema muestra los planes Esencial, Profesional e IoT Completo.<br>
+Entonces el sistema muestra los planes Essential, Starter y Professional.<br>
 <p></p>
 <strong>Escenario 2: Transparencia sobre precios de ejemplo</strong><br>
 Dado que los precios son ilustrativos<br>
