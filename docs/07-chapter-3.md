@@ -238,7 +238,7 @@ Entonces el sistema carga esa página ya traducida.
 <strong>Escenario 1: Visualización de los tres planes</strong><br>
 Dado que el visitante accede a pricing.html<br>
 Cuando la página carga<br>
-Entonces el sistema muestra los planes Esencial, Profesional e IoT Completo.<br>
+Entonces el sistema muestra los planes Essential, Starter y Professional.<br>
 <p></p>
 <strong>Escenario 2: Transparencia sobre precios de ejemplo</strong><br>
 Dado que los precios son ilustrativos<br>
@@ -559,8 +559,8 @@ Entonces el sistema envía un enlace de recuperación.
 </tr>
 <tr>
 <td><strong>US31</strong></td>
-<td>Pagar o renovar mi suscripción con Stripe o PayPal</td>
-<td>Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.</td>
+<td>Pagar o renovar mi suscripción con Stripe</td>
+<td>Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.</td>
 <td>
 <strong>Escenario 1: Elegir un plan</strong><br>
 Dado que está en la sección de suscripciones<br>
@@ -834,7 +834,7 @@ Entonces basta editar la llave correspondiente.
 <tr>
 <td><strong>RNF11</strong></td>
 <td>Protección de credenciales y datos de pago</td>
-<td>Como usuario registrado, quiero que mis credenciales y datos de pago se manejen de forma segura, para confiar en la plataforma al usar mi tarjeta o PayPal.</td>
+<td>Como usuario registrado, quiero que mis credenciales y datos de pago se manejen de forma segura, para confiar en la plataforma al usar mi tarjeta.</td>
 <td>
 <strong>Escenario 1: Cifrado de contraseñas</strong><br>
 Dado que un usuario se registra o inicia sesión<br>
@@ -844,7 +844,7 @@ Entonces la guarda cifrada, nunca en texto plano.<br>
 <strong>Escenario 2: Datos de pago gestionados por el proveedor externo</strong><br>
 Dado que un usuario realiza un pago<br>
 Cuando ingresa los datos de su tarjeta<br>
-Entonces son procesados directamente por Stripe o PayPal.
+Entonces son procesados directamente por Stripe.
 </td>
 <td>EP14 — Seguridad y Confiabilidad</td>
 </tr>
@@ -1153,7 +1153,7 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 | 4 | **US25** | Recibir predicción de demanda según históricos y clima | Como administrador, quiero que el sistema prediga la demanda según históricos de ventas y clima, para poder preparar insumos con anticipación. | 8 |
 | 5 | **US37** | Recopilar automáticamente los datos de ventas diarias | Como administrador, quiero que el sistema recopile automáticamente los datos de ventas diarias, para que el modelo de Machine Learning pueda analizarlos y detectar patrones de consumo. | 8 |
 | 6 | **US38** | Entrenar periódicamente el modelo de predicción de demanda | Como administrador, quiero que el sistema entrene periódicamente el modelo de Machine Learning con datos históricos, para que las predicciones de demanda sean cada vez más precisas. | 8 |
-| 7 | **US31** | Pagar o renovar mi suscripción con Stripe o PayPal | Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones. | 8 |
+| 7 | **US31** | Pagar o renovar mi suscripción con Stripe | Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones. | 8 |
 | 8 | **US03** | Conocer estadísticas e indicadores de impacto de StockIA | Como visitante, quiero ver cifras sobre el desperdicio y el impacto económico de usar StockIA, para dimensionar el beneficio potencial en mi negocio. | 5 |
 | 9 | **US04** | Identificar si StockIA es para mi rol dentro del restaurante | Como dueño/CEO o administrador/jefe de cocina, quiero identificar contenido dirigido a mi rol, para reconocer que StockIA entiende mis necesidades particulares. | 5 |
 | 10 | **US15** | Consultar los planes disponibles y sus características | Como visitante interesado en el precio, quiero ver los planes de StockIA y qué incluye cada uno, para elegir la opción que mejor se ajuste a mi restaurante. | 5 |
@@ -1166,7 +1166,7 @@ En la siguiente sección se presenta el Impact Mapping elaborado a partir del us
 | 17 | **US30** | Iniciar sesión con mis credenciales | Como usuario registrado, quiero iniciar sesión con mis credenciales, para poder acceder a mi dashboard personalizado. | 5 |
 | 18 | **US34** | Consultar la vida útil predeterminada de un insumo mediante una API externa | Como administrador, quiero que el sistema consulte una API externa de vida útil de alimentos, para asignar automáticamente un tiempo de conservación estándar a cada insumo. | 5 |
 | 19 | **US36** | Calcular automáticamente la fecha límite de consumo de un insumo | Como administrador, quiero que el sistema calcule automáticamente la fecha límite de consumo según la vida útil registrada, para recibir alertas precisas de vencimiento. | 5 |
-| 20 | **RNF11** | Protección de credenciales y datos de pago | Como usuario registrado, quiero que mis credenciales y mis datos de pago se manejen de forma segura, para confiar en la plataforma al usar mi tarjeta o mi cuenta de PayPal. | 5 |
+| 20 | **RNF11** | Protección de credenciales y datos de pago | Como usuario registrado, quiero que mis credenciales y mis datos de pago se manejen de forma segura, para confiar en la plataforma al usar mi tarjeta. | 5 |
 | 21 | **RNF12** | Confiabilidad y trazabilidad de las notificaciones multicanal | Como administrador que depende de alertas por WhatsApp, correo y SMS, quiero que las notificaciones se envíen de forma confiable y quede registro de ellas, para no perder información crítica de mi restaurante. | 5 |
 | 22 | **US41** | Atender las alertas operativas y asegurar su entrega por canal | Como administrador, quiero registrar, atender y eliminar las alertas de stock y vencimiento y reintentar su entrega por el canal que falló, para que el 100 % de las alertas críticas llegue por todos sus canales requeridos antes de marcarse como atendida. | 5 |
 | 23 | **US02** | Ver una vista previa del dashboard de StockIA | Como visitante, quiero ver una representación visual del futuro dashboard, para entender cómo luciría el producto antes de solicitar una demo. | 3 |

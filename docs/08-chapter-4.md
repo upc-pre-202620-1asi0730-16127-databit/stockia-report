@@ -262,7 +262,7 @@ El objetivo es que el usuario pueda asociar rápidamente cada etiqueta con su co
 | Notificaciones críticas | **Alertas** | Alertas de insumos críticos y notificaciones multicanal (US27 / US28) |
 | Sensores de cocina | **Monitoreo IoT de Cocina** | Puertas abiertas, fallas de equipo y flujo de clientes (US29) |
 | Gestión de accesos | **Roles y Permisos** | Asignación de Administrador / Empleado (US24) |
-| Planes de pago | **Planes / Precios** | Planes Esencial, Profesional e IoT Completo (US16) |
+| Planes de pago | **Planes / Precios** | Planes Essential, Starter y Professional (US16) |
 | Impacto ambiental | **Sostenibilidad y Gamificación** | Métricas de reducción de desperdicio y logros de equipo (US23) |
 
 <img src="../assets/chapter-4/styleguidelines/4.jpeg" alt="Artefacto de Figma" width="1000"/> <br>
@@ -291,7 +291,7 @@ A continuación, se presentan los meta tags implementados en cada página princi
 ## Landing Page — Precios (`pricing.html`)
 ```html
 <title>Precios — StockIA</title>
-<meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y monitoreo IoT completo.">
+<meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y automatización completa.">
 ```
 
 ## Landing Page — Nosotros (`about.html`)
@@ -526,7 +526,7 @@ usuario con los productos digitales.
 ![wireframe 10](../assets/chapter-4/wireframes/web/US30%20web.png)
 
 11) **Wireframe 11:** 
-**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 ![wireframe 11](../assets/chapter-4/wireframes/mobile/US31%20mobile.png)
 ![wireframe 11](../assets/chapter-4/wireframes/web/US31%20web.png)
@@ -659,7 +659,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 
 - User goal: Como administrador, quiero pagar mi suscripción.
 
-**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 - mobile: 
 ![wireflow 11](../assets/chapter-4/wireflow/mobile/US31%20-%20Wireflow%20diagram.png)
@@ -753,7 +753,7 @@ US21 - Como administrador, quiero agregar, eliminar y modificar insumos en el in
 | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%202%20Web.png) | ![mockup 10](../assets/chapter-4/mockups/mockups-web/US30%20-%20Escenario%203%20Web.png) |
 
 11) **Mock-up 11:** 
-**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+**User Story relacionada:** US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-1%20Mobile.png) | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-2%20mobile.png) | ![mockup 11](../assets/chapter-4/mockups/mockups-mobile/US31%20-%20Escenario%201-3%20Mobile.png) |
 |---------------------------------------------|---------------------------------------------|---------------------------------------------|
@@ -925,7 +925,7 @@ US30 - Como usuario registrado, quiero iniciar sesión con mis credenciales, par
 - User goal: Como administrador, quiero pagar mi suscripción.
 
 **User Story relacionada:** 
-US31 - Como administrador, quiero pagar mi suscripción con Stripe o PayPal, para poder seguir usando StockIA sin interrupciones.
+US31 - Como administrador, quiero pagar mi suscripción con Stripe, para poder seguir usando StockIA sin interrupciones.
 
 ![user flow 4](../assets/chapter-4/user%20flow/mobile/US31%20-%20UserFlow%20diagram.png)
 
@@ -1134,7 +1134,7 @@ Este diagrama se enfoca en la información fundamental de los restaurantes o neg
 <img src="../assets/chapter-4/database-diagram/bd-restaurant-registration.png" alt="Restaurant Registration DB Diagram" width="1000"/> <br>
 
 #### Subscriptions & Payments
-Aquí se detallan las tablas responsables de gestionar los planes de pago, suscripciones (Esencial, Profesional, IoT Completo) y el historial de transacciones o pagos de los restaurantes, permitiendo el control de la facturación.
+Aquí se detallan las tablas responsables de gestionar los planes de pago, suscripciones (Essential, Starter, Professional) y el historial de transacciones o pagos de los restaurantes, permitiendo el control de la facturación.
 
 <img src="../assets/chapter-4/database-diagram/bd-subscriptions-payments.png" alt="Subscriptions Payments DB Diagram" width="1000"/><br>
 
